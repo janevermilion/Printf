@@ -1,0 +1,3 @@
+/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir
