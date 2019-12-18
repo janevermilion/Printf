@@ -22,7 +22,7 @@ SRC =	srcs/ft_bzero.c srcs/ft_memset.c srcs/ft_strcat.c srcs/ft_strcpy.c \
 		srcs/ft_striter.c srcs/ft_striteri.c srcs/ft_strmap.c srcs/ft_strmapi.c \
 		srcs/ft_toupper.c srcs/ft_tolower.c srcs/ft_strncmp.c srcs/ft_strnstr.c \
 		srcs/ft_memcpy.c srcs/ft_strequ.c srcs/ft_strnequ.c srcs/ft_memccpy.c \
-		srcs/ft_memmove.c srcs/ft_memchr.c srcs/ft_memcmp.c srcs/ft_strchr.c \
+		srcs/ft_itoa_base.c srcs/ft_memmove.c srcs/ft_memchr.c srcs/ft_memcmp.c srcs/ft_strchr.c \
 		srcs/ft_strrchr.c srcs/ft_atoi.c srcs/ft_strlcat.c srcs/ft_strsub.c \
 		srcs/ft_strjoin.c srcs/ft_itoa.c srcs/ft_strtrim.c srcs/ft_strsplit.c \
 		srcs/ft_lstnew.c srcs/ft_lstdelone.c srcs/ft_lstdel.c srcs/ft_lstadd.c \

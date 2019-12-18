@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 
-NAME = ft_printf
+NAME = libftprintf.a
 
 LIBFT = libft
 
@@ -21,7 +21,7 @@ INCLUDES = inc/
 
 FLAGS =  -Wall -Wextra -Werror
 
-SRC = src/main.c
+SRC = src/ft_printf.c src/utils.c src/check_chars.c src/check_width.c src/check_ints.c
 
 OUT = $(SRC:%.c=%.o)
 
@@ -29,7 +29,9 @@ all: $(NAME)
 
 $(NAME): $(OUT)
 	make -C $(LIBFT)
-	gcc $(FLAGS) -o $(NAME) $(OUT) -L $(LIBFT) -lft
+	cp libft/libft.a ./$(NAME)
+	ar rc $(NAME) $(OUT)
+	ranlib $(NAME)
 %.o: %.c
 	gcc $(FLAGS) -I $(LIBFT_INCLUDES) -I $(INCLUDES) -o $@ -c $<
 
@@ -42,3 +44,6 @@ fclean: clean
 	make -C $(LIBFT) fclean
 
 re: fclean all
+
+test: libftprintf.a main_test.c
+	gcc libftprintf.a main_test.c

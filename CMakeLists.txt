@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.15)
-project(PRINTF C)
+project(effective_waffle_printf C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(inc)
 include_directories(libft/includes)
 
-add_executable(PRINTF
+add_executable(effective_waffle_printf
         inc/ft_printf.h
         libft/includes/get_next_line.h
         libft/includes/libft.h
@@ -76,4 +76,5 @@ add_executable(PRINTF
         libft/srcs/ft_tolower.c
         libft/srcs/ft_toupper.c
         libft/srcs/get_next_line.c
-        src/main.c)
+        src/ft_printf.c
+        main_test.c src/utils.c src/check_ints.c src/check_width.c src/check_chars.c libft/srcs/ft_itoa_base.c)

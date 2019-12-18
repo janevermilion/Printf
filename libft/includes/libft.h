@@ -94,5 +94,6 @@ int					ft_count_if(char **tab, int (*f)(char *));
 char				*ft_strjoinfree(char *s1, char *s2);
 int                 get_next_line(int fd, char **line);
 int                 ft_atoi_base(const char *str, int base);
+char				*ft_itoa_base(unsigned long long int value, int base);
 
 #endif

@@ -93,6 +93,9 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/includes/libft.h">
 			<Option target="PRINTF"/>
 		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/main_test.c">
+			<Option target="PRINTF"/>
+		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_atoi.c">
 			<Option target="PRINTF"/>
 		</Unit>
@@ -291,7 +294,7 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/get_next_line.c">
 			<Option target="PRINTF"/>
 		</Unit>
-		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/main.c">
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c">
 			<Option target="PRINTF"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/CMakeLists.txt">

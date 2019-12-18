@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/D2967C27-98FB-4C14-B665-DF468C23ABD0/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/26718CAE-F44E-4964-A7A6-23A44C65F00F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/D2967C27-98FB-4C14-B665-DF468C23ABD0/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/26718CAE-F44E-4964-A7A6-23A44C65F00F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -915,18 +915,31 @@ CMakeFiles/PRINTF.dir/libft/srcs/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/libft/srcs/get_next_line.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/get_next_line.c -o CMakeFiles/PRINTF.dir/libft/srcs/get_next_line.c.s
 
-CMakeFiles/PRINTF.dir/src/main.c.o: CMakeFiles/PRINTF.dir/flags.make
-CMakeFiles/PRINTF.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/PRINTF.dir/src/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/src/main.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/main.c
+CMakeFiles/PRINTF.dir/src/ft_printf.c.o: CMakeFiles/PRINTF.dir/flags.make
+CMakeFiles/PRINTF.dir/src/ft_printf.c.o: ../src/ft_printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/PRINTF.dir/src/ft_printf.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/src/ft_printf.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c
 
-CMakeFiles/PRINTF.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/src/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/main.c > CMakeFiles/PRINTF.dir/src/main.c.i
+CMakeFiles/PRINTF.dir/src/ft_printf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/src/ft_printf.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c > CMakeFiles/PRINTF.dir/src/ft_printf.c.i
 
-CMakeFiles/PRINTF.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/src/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/main.c -o CMakeFiles/PRINTF.dir/src/main.c.s
+CMakeFiles/PRINTF.dir/src/ft_printf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/src/ft_printf.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c -o CMakeFiles/PRINTF.dir/src/ft_printf.c.s
+
+CMakeFiles/PRINTF.dir/libft/main_test.c.o: CMakeFiles/PRINTF.dir/flags.make
+CMakeFiles/PRINTF.dir/libft/main_test.c.o: ../libft/main_test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/PRINTF.dir/libft/main_test.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/main_test.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/libft/main_test.c
+
+CMakeFiles/PRINTF.dir/libft/main_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/libft/main_test.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/libft/main_test.c > CMakeFiles/PRINTF.dir/libft/main_test.c.i
+
+CMakeFiles/PRINTF.dir/libft/main_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/libft/main_test.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/libft/main_test.c -o CMakeFiles/PRINTF.dir/libft/main_test.c.s
 
 # Object files for target PRINTF
 PRINTF_OBJECTS = \
@@ -996,7 +1009,8 @@ PRINTF_OBJECTS = \
 "CMakeFiles/PRINTF.dir/libft/srcs/ft_tolower.c.o" \
 "CMakeFiles/PRINTF.dir/libft/srcs/ft_toupper.c.o" \
 "CMakeFiles/PRINTF.dir/libft/srcs/get_next_line.c.o" \
-"CMakeFiles/PRINTF.dir/src/main.c.o"
+"CMakeFiles/PRINTF.dir/src/ft_printf.c.o" \
+"CMakeFiles/PRINTF.dir/libft/main_test.c.o"
 
 # External object files for target PRINTF
 PRINTF_EXTERNAL_OBJECTS =
@@ -1067,10 +1081,11 @@ PRINTF: CMakeFiles/PRINTF.dir/libft/srcs/ft_strtrim.c.o
 PRINTF: CMakeFiles/PRINTF.dir/libft/srcs/ft_tolower.c.o
 PRINTF: CMakeFiles/PRINTF.dir/libft/srcs/ft_toupper.c.o
 PRINTF: CMakeFiles/PRINTF.dir/libft/srcs/get_next_line.c.o
-PRINTF: CMakeFiles/PRINTF.dir/src/main.c.o
+PRINTF: CMakeFiles/PRINTF.dir/src/ft_printf.c.o
+PRINTF: CMakeFiles/PRINTF.dir/libft/main_test.c.o
 PRINTF: CMakeFiles/PRINTF.dir/build.make
 PRINTF: CMakeFiles/PRINTF.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking C executable PRINTF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking C executable PRINTF"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PRINTF.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

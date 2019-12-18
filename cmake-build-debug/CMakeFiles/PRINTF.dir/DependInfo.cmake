@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/jslave/PRINTF/effective-waffle-printf/libft/main_test.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/main_test.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_atoi.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/srcs/ft_atoi.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_atoi_base.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/srcs/ft_atoi_base.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_bzero.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/srcs/ft_bzero.c.o"
@@ -70,7 +71,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_tolower.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/srcs/ft_tolower.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_toupper.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/srcs/ft_toupper.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/get_next_line.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/srcs/get_next_line.c.o"
-  "/Users/jslave/PRINTF/effective-waffle-printf/src/main.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir/src/main.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/PRINTF.dir/src/ft_printf.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

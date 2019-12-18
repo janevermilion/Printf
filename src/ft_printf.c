@@ -20,24 +20,72 @@ void va_copy(va_list dest, va_list src)	Макрос копирует src в des
  *%[флаги][ширина][.точность][размер]тип
  */
 
+/*
+ *
+ * c s p d i o u x X hh, h, l and ll %% #0-+
+ */
+
+
+
+int        convert_flags(const char *curr, t_pf *pf)
+{
+	int res;
+
+	if ((res = check_percent(curr) != 0))
+		return (res);
+	if ((res = check_ints(curr, pf) != 0))
+		return (res);
+	if ((res = check_width(curr, pf) != 0))
+		return (res);
+	if ((res = check_chars(curr, pf) != 0))
+		return (res);
+	if ((res = check_pointer(curr, pf) != 0))///in check chars
+		return (res);
+    return (0);
+}
+
+int       find_flag(const char *str, t_pf *pf)
+{
+    int flags;
+    char *flag;
+
+	flag = ft_strchr(FLAGS, *(str + 1));
+    if (flag != NULL)//find flag
+    {
+    	pf->printed--;
+        flags = convert_flags((str +1), pf);
+        return(flags);
+    }
+    return (1);
+}
+
 int         ft_printf(const char *format, ...)
 {
-    va_list args;
-    int test;
+    t_pf *pf;
+    int i;
+    int perc_quan;
+    perc_quan = 0;
 
-    va_start(args, format);
-    if(format[1] == 'i')
+    i = 0;
+    if ((pf = init_pf()) == NULL)
+    	return (0);
+    va_start(pf->ap, format);//NUL!!!!!
+    while (format[i])
     {
-        test = va_arg(args,int);
-        ft_putnbr(test);
-    }
-    va_end(args);
-    return (0);
+       if (format[i] != '%')
+	   {
+		   ft_putchar(format[i]);
+		   pf->printed++;
+	   }
+       else if (format[i] == '%')
+       {
+       		i+=find_flag(&format[i], pf);
+       		pf->printed+=find_flag(&format[i], pf);///OPTI
+       }
+       i++;
+   }
+    va_end(pf->ap);
+    return (pf->printed);
 }
 
-int         main()
-{
-    int cat = 165;
-    ft_printf("%i", cat);
-    return (0);
-}
+
