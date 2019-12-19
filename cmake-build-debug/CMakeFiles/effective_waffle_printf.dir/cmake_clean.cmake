@@ -70,6 +70,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/effective_waffle_printf.dir/src/check_chars.c.o"
   "CMakeFiles/effective_waffle_printf.dir/src/check_ints.c.o"
   "CMakeFiles/effective_waffle_printf.dir/src/check_width.c.o"
+  "CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o"
   "CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o"
   "CMakeFiles/effective_waffle_printf.dir/src/utils.c.o"
   "effective_waffle_printf"

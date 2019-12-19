@@ -19,13 +19,14 @@
 #include <stdarg.h>
 #include <string.h>
 #include "stdio.h"
+#include <limits.h>
 
 #define FLAGS "cspdiouxXfyb% 0123456789"
 
 typedef struct  s_pf
 {
     va_list 	ap;
-    int 		spaces;
+    int 		width;
     int 		printed;
 }               t_pf;
 
@@ -34,9 +35,11 @@ t_pf 		*init_pf();
 int			check_sp(const char *curr, t_pf *pf);
 int			check_ints(const char *curr, t_pf *pf);
 int			check_width(const char *curr, t_pf *pf);
-int			check_percent(const char *curr);
+int			check_percent(const char *curr, t_pf *pf);
 int			check_chars(const char *curr, t_pf *pf);
 int 		check_pointer(const char *curr, t_pf *pf);
+
+char		*ft_itoa_long_long(long long int n);
 
 
 

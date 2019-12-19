@@ -20,7 +20,6 @@ unsigned long long int		ft_pow(unsigned long long int nb, int pow)
 		return (nb * ft_pow(nb, pow - 1));
 }
 
-#include <stdio.h>
 char	*ft_itoa_base(unsigned long long int value, int base)
 {
 	int		i;

@@ -15,13 +15,10 @@
 int			check_width(const char *curr, t_pf *pf)
 {
 	int qual;
-	qual = 0;
+	(void)pf;
 
-	if (*curr >= '0' && *curr <= '9')
-	{
-		qual = check_sp(curr, pf);
-		pf->printed+=qual;
+	qual = ft_atoi(curr);
 
-	}
+
 	return (qual);
 }

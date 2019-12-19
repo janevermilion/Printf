@@ -12,21 +12,40 @@
 
 #include "ft_printf.h"
 
+void	lower_symb(char *str)
+{
+	while (*str)
+	{
+		if (ft_isalpha(*str) == 1)
+			*str = ft_tolower(*str);
+		str++;
+	}
+}
+
+short	check_short(long long int num)
+{
+	if (num < SHRT_MIN || num > SHRT_MAX)
+		return (0);
+	return (1);
+}
+
 int		check_ints(const char *curr, t_pf *pf)
 {
 	unsigned long long int qual;
 	unsigned int qual_u;
+	long long int qual2;
+
 	char *result;
 
-	qual = 0;
 	if (*curr == 'i' || *curr == 'd')
 	{
-		qual = check_sp(curr, pf);
-		pf->printed+=(int)qual;
-		ft_putnbr(va_arg(pf->ap, int));
-		return ((int)qual + 1);
+		qual = (unsigned long long int)va_arg(pf->ap, void *);
+		result = ft_itoa_base(qual, 10);
+		ft_putstr(result);
+		pf->printed+=ft_strlen(result);
+		return (ft_strlen(result));
 	}
-	if (*curr == 'o')
+	else if (*curr == 'o')
 	{
 		qual = (unsigned long long int)va_arg(pf->ap, void *);
 		result = ft_itoa_base(qual, 8);
@@ -34,13 +53,37 @@ int		check_ints(const char *curr, t_pf *pf)
 		pf->printed+=ft_strlen(result);
 		return (ft_strlen(result));
 	}
-	if (*curr == 'u')///peredelat!
+	else if (*curr == 'u' || *curr == 'o')///peredelat!
 	{
-		qual_u = (unsigned int)va_arg(pf->ap, unsigned int);
-		result = ft_itoa(qual_u);
+		qual_u = (long long int)va_arg(pf->ap, void *);
+		if (*curr == 'u')
+			result = ft_itoa_long_long(qual_u);
+		else
+			result = ft_itoa_base(qual_u, 8);
 		ft_putstr(result);
 		pf->printed+=ft_strlen(result);
 		return (ft_strlen(result));
+	}
+	else if (*curr == 'x' || *curr == 'X')
+	{
+		qual = (unsigned long long int)va_arg(pf->ap, unsigned long long int);
+		result = ft_itoa_base(qual, 16);
+		if (*curr == 'x')
+			lower_symb(result);
+		ft_putstr(result);
+		pf->printed+=ft_strlen(result);
+		return (ft_strlen(result));
+	}
+	else if(*curr == 'h' && *(curr +1) == 'i')
+	{
+		qual2 = (long long int)va_arg(pf->ap, void *);
+		if ((check_short(qual2) == 1))
+		{
+			result = ft_itoa_base(qual2, 10);
+			ft_putstr(result);
+			pf->printed+=ft_strlen(result);
+			return (ft_strlen(result));
+		}
 	}
 
 	return (0);

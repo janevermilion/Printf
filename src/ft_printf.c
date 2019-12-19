@@ -24,23 +24,49 @@ void va_copy(va_list dest, va_list src)	Макрос копирует src в des
  *
  * c s p d i o u x X hh, h, l and ll %% #0-+
  */
+int			find_step(int num)
+{
+	int res;
 
+	res = 0;
+
+	while (num)
+	{
+		res++;
+		num = num / 10;
+	}
+	return (res);
+}
 
 
 int        convert_flags(const char *curr, t_pf *pf)
 {
 	int res;
+	int width;
+	int step;
 
-	if ((res = check_percent(curr) != 0))
+	width = ft_atoi(curr + 1);
+	pf->width = width;
+
+	if ((res = check_percent(curr, pf) != 0))
+	{
 		return (res);
-	if ((res = check_ints(curr, pf) != 0))
+	}
+	else if ((res = check_ints(curr, pf) != 0))
+	{
+
 		return (res);
-	if ((res = check_width(curr, pf) != 0))
+	}
+	else if ((res = check_chars(curr, pf) != 0))
+	{
+
 		return (res);
-	if ((res = check_chars(curr, pf) != 0))
+	}
+	else if ((res = check_pointer(curr, pf) != 0))///in check chars
+	{
+
 		return (res);
-	if ((res = check_pointer(curr, pf) != 0))///in check chars
-		return (res);
+	}
     return (0);
 }
 
@@ -65,6 +91,7 @@ int         ft_printf(const char *format, ...)
     int i;
     int perc_quan;
     perc_quan = 0;
+    int f;
 
     i = 0;
     if ((pf = init_pf()) == NULL)
@@ -79,8 +106,14 @@ int         ft_printf(const char *format, ...)
 	   }
        else if (format[i] == '%')
        {
-       		i+=find_flag(&format[i], pf);
-       		pf->printed+=find_flag(&format[i], pf);///OPTI
+       		f = find_flag(&format[i], pf);
+       		i+=f;
+       		pf->printed+=f;
+		   if (format[i] == 'h' && (format[i +1] == 'i' || format[i +1] == 'h'))
+		   {
+			   pf->printed--;
+			   i++;
+		   }
        }
        i++;
    }

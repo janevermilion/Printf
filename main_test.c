@@ -3,11 +3,12 @@
 //
 
 #include "inc/ft_printf.h"
-
+//c s p d i o u x X hh, h, l and ll %% #0-+
 int         main()
 {
+	int *pnt;
    // int cat = -10;
-  int dog = 256;
+int dog = 123;
   /*int res;
   res = printf("%5%");
   printf("\norigin returned: %i\n", res);
@@ -20,7 +21,8 @@ int         main()
 	*/
   char *test;
   //ft_printf("%p", test);
-  int res = ft_printf("%u", dog);
+  int res = ft_printf("%i5554", dog);
 	printf("\nres: %i", res);
+
   return (0);
 }

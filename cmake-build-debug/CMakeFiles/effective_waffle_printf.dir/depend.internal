@@ -214,6 +214,10 @@ CMakeFiles/effective_waffle_printf.dir/src/check_width.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/src/check_width.c
+CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o
+ ../inc/ft_printf.h
+ ../libft/includes/libft.h
+ /Users/jslave/PRINTF/effective-waffle-printf/src/ft_itoa_new.c
 CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
