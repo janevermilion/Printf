@@ -77,6 +77,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jslave/PRINTF/effective-waffle-printf/src/check_width.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/check_width.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/ft_itoa_new.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/src/print.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/utils.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

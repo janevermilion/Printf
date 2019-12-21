@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639c2068-db75-42f5-83c8-f52b47cf25de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ft_itoa_new.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/print.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
@@ -43,6 +43,7 @@
       <change beforePath="$PROJECT_DIR$/inc/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/ft_printf.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/srcs/ft_itoa_base.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_itoa_base.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_itoa_base.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_itoa_base.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libftprintf.a" beforeDir="false" afterPath="$PROJECT_DIR$/libftprintf.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/main_test.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/check_chars.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/check_chars.c" afterDir="false" />
@@ -50,6 +51,7 @@
       <change beforePath="$PROJECT_DIR$/src/check_ints.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/check_ints.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/check_ints.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/check_ints.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/check_width.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/check_width.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/check_width.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/check_width.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_printf.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_printf.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_printf.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.c" afterDir="false" />
@@ -69,12 +71,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Uz4EepHbYF0rS7EGe3d9zgxv0X" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RunDashboard">
@@ -113,7 +116,11 @@
       <workItem from="1576586849636" duration="15010000" />
       <workItem from="1576661279250" duration="1238000" />
       <workItem from="1576751789661" duration="10344000" />
-      <workItem from="1576773063820" duration="4372000" />
+      <workItem from="1576773063820" duration="4590000" />
+      <workItem from="1576854512310" duration="2077000" />
+      <workItem from="1576860245430" duration="100000" />
+      <workItem from="1576864313314" duration="1999000" />
+      <workItem from="1576920061201" duration="27083000" />
     </task>
     <servers />
   </component>
@@ -137,14 +144,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/ft_printf.c</url>
-          <line>101</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/print.c</url>
+          <line>35</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/ft_printf.c</url>
-          <line>26</line>
-          <option name="timeStamp" value="15" />
+          <line>168</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

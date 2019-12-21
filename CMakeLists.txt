@@ -83,4 +83,5 @@ add_executable(effective_waffle_printf
         src/ft_itoa_new.c
         src/ft_printf.c
         src/utils.c
+        src/print.c
         main_test.c)

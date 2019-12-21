@@ -24,101 +24,171 @@ void va_copy(va_list dest, va_list src)	Макрос копирует src в des
  *
  * c s p d i o u x X hh, h, l and ll %% #0-+
  */
-int			find_step(int num)
+
+void	lower_symb(char *str)
 {
-	int res;
-
-	res = 0;
-
-	while (num)
+	while (*str)
 	{
-		res++;
-		num = num / 10;
+		if (ft_isalpha(*str) == 1)
+			*str = ft_tolower(*str);
+		str++;
 	}
-	return (res);
+}
+
+int 	find_types(const char *str)
+{
+	char *flag;
+	char a;
+
+	a = *str;
+
+	flag = ft_strchr(TYPES, a);
+	if (flag != NULL)//find flag
+		return (1);
+	return (0);
 }
 
 
-int        convert_flags(const char *curr, t_pf *pf)
+int		check_flags(const char *curr, t_pf *pf)
 {
-	int res;
-	int width;
-	int step;
-
-	width = ft_atoi(curr + 1);
-	pf->width = width;
-
-	if ((res = check_percent(curr, pf) != 0))
+	if (*curr != '\0' && find_types(curr) == 0)//проверить не начался ли тип
 	{
-		return (res);
+		if (pf->align_left != 1 && *curr == '-')
+		{
+			pf->align_left = 1;
+			return (1);
+		}
+		else if (pf->need_sign!= 1 && *curr == '+')
+		{
+			pf->need_sign = 1;
+			return (1);
+		}
+		else if (pf->need_sign != 1 && *curr == ' ')
+		{
+			pf->need_spase = 1;
+			return (1);
+		}
+		else if (pf->need_format != 1 && *curr == '#')
+		{
+			pf->need_format = 1;
+			return (1);
+		}
+		else if (pf->zero_filling != 1 && *curr == '0')
+		{
+			pf->zero_filling = 1;
+			return (1);
+		}
 	}
-	else if ((res = check_ints(curr, pf) != 0))
-	{
-
-		return (res);
-	}
-	else if ((res = check_chars(curr, pf) != 0))
-	{
-
-		return (res);
-	}
-	else if ((res = check_pointer(curr, pf) != 0))///in check chars
-	{
-
-		return (res);
-	}
-    return (0);
+	else if (*curr == '%')
+		return (0);
+	return (0);
 }
 
-int       find_flag(const char *str, t_pf *pf)
+int 		check_types(const char *curr, t_pf *pf)
 {
-    int flags;
-    char *flag;
-
-	flag = ft_strchr(FLAGS, *(str + 1));
-    if (flag != NULL)//find flag
-    {
-    	pf->printed--;
-        flags = convert_flags((str +1), pf);
-        return(flags);
-    }
-    return (1);
+	char a = *curr;
+	if (find_types(curr) == 1)
+		pf->type = a;//////////////////////////////////////////////////////////////////////////
+	return (0);
 }
+
+void		zero_or_space_string(t_pf *pf)
+{
+	pf->str =ft_memalloc(sizeof(char) * (pf->width + 1));
+	if (pf->zero_filling == 1)
+		ft_memset(pf->str,'0', pf->width);
+	else
+		ft_memset(pf->str,' ', pf->width);
+}
+
+void		print_all(t_pf *pf)
+{
+	if (pf->width != 0)
+		zero_or_space_string(pf);
+	if (pf->type == 'c')
+		print_char(pf);
+	else if (pf->type == 's')
+		print_string(pf);
+	else if (pf->type == 'p')
+		print_pointer(pf);
+	else if (pf->type == 'd' || pf->type == 'i')
+		print_int(pf);
+	else if (pf->type == 'o' || pf->type == 'u')
+		print_oct_and_unsigned(pf);
+	else if (pf->type == 'x' || pf->type == 'X')
+		print_hex(pf);
+	else if (pf->type == 'f')
+		print_float(pf);
+	else if (pf->type == '%')
+		print_percent(pf);
+}
+
+int			check_size_flag(const char *curr, t_pf *pf)
+{
+	if (*curr == 'h')
+	{
+		pf->size_flag = "h";
+		return (1);
+	}
+	else if (*curr == 'h' && *(curr + 1) == 'h')
+	{
+		pf->size_flag = "hh";
+		return (2);
+	}
+	else if (*curr == 'l' && *(curr +1) == 'l')
+	{
+		pf->size_flag = "ll";
+		return (2);
+	}
+	else if (*curr == 'l')
+	{
+		pf->size_flag = "l";
+		return (1);
+	}
+	return (0);
+}
+
 
 int         ft_printf(const char *format, ...)
 {
-    t_pf *pf;
-    int i;
-    int perc_quan;
-    perc_quan = 0;
-    int f;
+	t_pf *pf;
+	int i;
+	int f;
 
-    i = 0;
-    if ((pf = init_pf()) == NULL)
-    	return (0);
-    va_start(pf->ap, format);//NUL!!!!!
-    while (format[i])
-    {
-       if (format[i] != '%')
-	   {
-		   ft_putchar(format[i]);
-		   pf->printed++;
-	   }
-       else if (format[i] == '%')
-       {
-       		f = find_flag(&format[i], pf);
-       		i+=f;
-       		pf->printed+=f;
-		   if (format[i] == 'h' && (format[i +1] == 'i' || format[i +1] == 'h'))
-		   {
-			   pf->printed--;
-			   i++;
-		   }
-       }
-       i++;
-   }
-    va_end(pf->ap);
-    return (pf->printed);
+	i = 0;
+	if ((pf = init_pf()) == NULL)
+		return (0);
+	va_start(pf->ap, format);//NUL!!!!!
+	while (format[i] != '\0')
+	{
+		if (format[i] != '%')
+		{
+			ft_putchar(format[i]);
+			pf->printed++;
+		}
+		else if (format[i] == '%')
+		{
+			f = check_flags(&format[++i], pf);
+			i+=f;
+			f = check_width(&format[i], pf);
+			i+=f;
+			f = check_precision(&format[i], pf);
+			i+=f;
+			f = check_size_flag(&format[i], pf);
+			i+=f;
+			f = check_types(&format[i], pf);
+			i+=f;
+			print_all(pf);
+			zero_pf(pf);
+		}
+		i++;
+	}
+	va_end(pf->ap);
+	i = pf->printed;
+	free(pf);
+	return (i);
 }
+
+
 
 

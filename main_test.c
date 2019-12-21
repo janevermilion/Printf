@@ -7,8 +7,9 @@
 int         main()
 {
 	int *pnt;
-   // int cat = -10;
+   int cat = -10;
 int dog = 123;
+char *l = "cat";
   /*int res;
   res = printf("%5%");
   printf("\norigin returned: %i\n", res);
@@ -21,8 +22,9 @@ int dog = 123;
 	*/
   char *test;
   //ft_printf("%p", test);
-  int res = ft_printf("%i5554", dog);
+  int res = ft_printf("%5%");
 	printf("\nres: %i", res);
-
+	//printf("\n");
+//	printf("%25p", pnt);
   return (0);
 }

@@ -21,7 +21,7 @@ INCLUDES = inc/
 
 FLAGS =  -Wall -Wextra -Werror
 
-SRC = src/ft_printf.c src/utils.c src/check_chars.c src/check_width.c src/check_ints.c src/ft_itoa_new.c
+SRC = src/ft_printf.c src/utils.c src/check_chars.c src/check_width.c src/ft_itoa_new.c src/print.c
 
 OUT = $(SRC:%.c=%.o)
 

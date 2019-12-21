@@ -19,42 +19,28 @@ t_pf 		*init_pf()
 	pf = malloc(sizeof(t_pf));
 	pf->width = 0;
 	pf->printed = 0;
+	pf->align_left = 0;
+	pf->need_sign = 0;
+	pf->need_spase = 0;
+	pf->need_format = 0;
+	pf->zero_filling = 0;
+	pf->precision = 0;
+	pf->type = '\0';
+	pf->size_flag = (char *)0;
+	pf->length = 0;
 	return (pf);
 }
 
-int		check_sp(const char *curr, t_pf *pf)
+void		zero_pf(t_pf *pf)
 {
-	int num_of_spaces;
-	int i;
-	int result;
-
-
-	num_of_spaces = ft_atoi(curr);
-	i = num_of_spaces;
-	pf->width = num_of_spaces;
-	pf->printed+=num_of_spaces;
-	result = 0;
-	while (num_of_spaces--)
-	{
-		pf->printed++;
-		ft_putchar(32);
-	}
-	while (i % 10)
-	{
-		result++;
-		i/=10;
-	}
-	return (result);
-}
-
-int			check_percent(const char *curr, t_pf *pf)
-{
-	if (*curr == '%')
-	{
-
-		ft_putchar('%');
-		pf->printed++;
-		return (1);
-	}
-	return (0);
+	pf->width = 0;
+	pf->align_left = 0;
+	pf->need_sign = 0;
+	pf->need_spase = 0;
+	pf->need_format = 0;
+	pf->zero_filling = 0;
+	pf->precision = 0;
+	pf->type = '\0';
+	pf->size_flag = NULL;
+	pf->length = 0;
 }

@@ -222,6 +222,10 @@ CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c
+CMakeFiles/effective_waffle_printf.dir/src/print.c.o
+ ../inc/ft_printf.h
+ ../libft/includes/libft.h
+ /Users/jslave/PRINTF/effective-waffle-printf/src/print.c
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h

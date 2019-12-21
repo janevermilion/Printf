@@ -12,16 +12,8 @@
 
 #include "ft_printf.h"
 
-void	lower_symb(char *str)
-{
-	while (*str)
-	{
-		if (ft_isalpha(*str) == 1)
-			*str = ft_tolower(*str);
-		str++;
-	}
-}
 
+/*
 short	check_short(long long int num)
 {
 	if (num < SHRT_MIN || num > SHRT_MAX)
@@ -88,3 +80,4 @@ int		check_ints(const char *curr, t_pf *pf)
 
 	return (0);
 }
+*/

@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/C6FD83DD-6DC7-45BE-BA12-932913A7926E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/7CD05DE2-5A3A-4261-AAB6-6867BF71679F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/C6FD83DD-6DC7-45BE-BA12-932913A7926E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/7CD05DE2-5A3A-4261-AAB6-6867BF71679F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -1006,9 +1006,22 @@ CMakeFiles/effective_waffle_printf.dir/src/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/utils.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/utils.c -o CMakeFiles/effective_waffle_printf.dir/src/utils.c.s
 
+CMakeFiles/effective_waffle_printf.dir/src/print.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
+CMakeFiles/effective_waffle_printf.dir/src/print.c.o: ../src/print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/effective_waffle_printf.dir/src/print.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/print.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/print.c
+
+CMakeFiles/effective_waffle_printf.dir/src/print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/print.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/print.c > CMakeFiles/effective_waffle_printf.dir/src/print.c.i
+
+CMakeFiles/effective_waffle_printf.dir/src/print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/print.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/print.c -o CMakeFiles/effective_waffle_printf.dir/src/print.c.s
+
 CMakeFiles/effective_waffle_printf.dir/main_test.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
 CMakeFiles/effective_waffle_printf.dir/main_test.c.o: ../main_test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/effective_waffle_printf.dir/main_test.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/effective_waffle_printf.dir/main_test.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/main_test.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/main_test.c
 
 CMakeFiles/effective_waffle_printf.dir/main_test.c.i: cmake_force
@@ -1094,6 +1107,7 @@ effective_waffle_printf_OBJECTS = \
 "CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/utils.c.o" \
+"CMakeFiles/effective_waffle_printf.dir/src/print.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/main_test.c.o"
 
 # External object files for target effective_waffle_printf
@@ -1172,10 +1186,11 @@ effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/check_width.
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/utils.c.o
+effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/print.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/main_test.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/build.make
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Linking C executable effective_waffle_printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Linking C executable effective_waffle_printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/effective_waffle_printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

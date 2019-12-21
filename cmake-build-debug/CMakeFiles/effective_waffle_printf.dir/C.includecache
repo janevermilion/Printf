@@ -50,7 +50,7 @@ unistd.h
 inc/ft_printf.h
 /Users/jslave/PRINTF/effective-waffle-printf/inc/ft_printf.h
 
-/Users/jslave/PRINTF/effective-waffle-printf/src/check_width.c
+/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c
 ft_printf.h
 /Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.h
 

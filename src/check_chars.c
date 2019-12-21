@@ -33,10 +33,10 @@ int			check_chars(const char *curr, t_pf *pf)
 		pf->printed+=ft_strlen(test2);
 		return (ft_strlen(test2));
 	}
-	else if (*curr == 'h' && *(curr + 1) == 'h')
+/*	else if (*curr == 'h' && *(curr + 1) == 'h')
 	{
 
-	}
+	}*/
 	return (0);
 }
 
