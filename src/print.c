@@ -59,12 +59,11 @@ void		fill_string(char *dst, char *src, t_pf *pf)
 	}
 }
 
-
 void		print_string(t_pf *pf)
 {
 	char *str;
 
-	str = (char *)va_arg(pf->ap, char *);
+	str = (char *)va_arg(pf->ap, char *);///prec!!!!
 	if (pf->width == 0 || (size_t)pf->width < ft_strlen(str))
 	{
 		ft_putstr(str);
@@ -84,7 +83,7 @@ void		print_pointer(t_pf *pf)
 	char *test;
 	//int len;
 
-	pnt = (unsigned long long int)va_arg(pf->ap, void *);
+	pnt = (unsigned long long int)va_arg(pf->ap, int);//ширина и точность!!!!
 	test = ft_itoa_base(pnt, 16);
 	test = ft_strjoin("0x", test);
 	if (pf->width > (int)ft_strlen(test))
@@ -99,6 +98,12 @@ void		print_pointer(t_pf *pf)
 
 void		print_int(t_pf *pf)
 {
+	//int num;
+	//char *str;
+
+	//num = va_arg(pf->ap, int);
+	//str = ft_itoa(num);
+
 	(void)pf;
 };
 

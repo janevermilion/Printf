@@ -48,35 +48,34 @@ int 	find_types(const char *str)
 	return (0);
 }
 
-
 int		check_flags(const char *curr, t_pf *pf)
 {
 	if (*curr != '\0' && find_types(curr) == 0)//проверить не начался ли тип
 	{
-		if (pf->align_left != 1 && *curr == '-')
+		if (*curr == '-')
 		{
 			pf->align_left = 1;
-			return (1);
+			return (check_flags((curr + 1), pf) + 1);
 		}
-		else if (pf->need_sign!= 1 && *curr == '+')
+		else if (*curr == '+')
 		{
 			pf->need_sign = 1;
-			return (1);
+			return (check_flags((curr + 1), pf) + 1);
 		}
-		else if (pf->need_sign != 1 && *curr == ' ')
+		else if (*curr == ' ')
 		{
 			pf->need_spase = 1;
-			return (1);
+			return (check_flags((curr + 1), pf) + 1);
 		}
-		else if (pf->need_format != 1 && *curr == '#')
+		else if (*curr == '#')
 		{
 			pf->need_format = 1;
-			return (1);
+			return (check_flags((curr + 1), pf) + 1);
 		}
-		else if (pf->zero_filling != 1 && *curr == '0')
+		else if (*curr == '0')
 		{
 			pf->zero_filling = 1;
-			return (1);
+			return (check_flags((curr + 1), pf) + 1);
 		}
 	}
 	else if (*curr == '%')
@@ -169,6 +168,7 @@ int         ft_printf(const char *format, ...)
 		else if (format[i] == '%')
 		{
 			f = check_flags(&format[++i], pf);
+			printf("\nf: %i", f);
 			i+=f;
 			f = check_width(&format[i], pf);
 			i+=f;
