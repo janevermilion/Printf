@@ -21,16 +21,25 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/check_chars.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/check_chars.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/check_width.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/check_width.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/utils.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/utils.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf.dSYM/Contents/Resources/DWARF/effective_waffle_printf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf.dSYM/Contents/Resources/DWARF/effective_waffle_printf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/ft_printf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libftprintf.a" beforeDir="false" afterPath="$PROJECT_DIR$/libftprintf.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/main_test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/check_width.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/check_width.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/check_width.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/check_width.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_printf.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_printf.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_printf.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/print.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/print.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/print.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/print.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.o" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +61,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
@@ -98,7 +108,10 @@
       <workItem from="1576920061201" duration="27520000" />
       <workItem from="1577110865763" duration="296000" />
       <workItem from="1577111504008" duration="2044000" />
-      <workItem from="1577114193949" duration="2807000" />
+      <workItem from="1577114193949" duration="3414000" />
+      <workItem from="1577182706571" duration="5655000" />
+      <workItem from="1577267670019" duration="85000" />
+      <workItem from="1577267837720" duration="16934000" />
     </task>
     <servers />
   </component>
@@ -122,14 +135,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/ft_printf.c</url>
-          <line>168</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/print.c</url>
+          <line>38</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/ft_printf.c</url>
-          <line>50</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/src/check_width.c</url>
+          <line>61</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

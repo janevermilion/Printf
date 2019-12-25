@@ -12,131 +12,126 @@
 
 #include "ft_printf.h"
 
-void		print_char(t_pf *pf)
+void		handle_char(t_pf *pf)
 {
 	char alpha;
 
 	alpha = va_arg(pf->ap, int);
-	if (pf->width != 0)
-	{
-		if (pf->align_left == 1)
-			pf->str[0] = alpha;
-		else
-			pf->str[pf->width - 1] = alpha;
-		ft_putstr(pf->str);
-		pf->printed+=ft_strlen(pf->str);
-	}
-	else
-	{
-		ft_putchar(alpha);
-		pf->printed+=1;
-	}
+	pf->filling = ft_memalloc(sizeof(char) * 2);
+	pf->filling[0] = alpha;
 };
 
-void		fill_string(char *dst, char *src, t_pf *pf)
+void		handle_string(t_pf *pf)
 {
-	int i;
-	int diff;
 
-	i = 0;
-	if (pf->align_left == 1)
+	pf->filling = (char *)va_arg(pf->ap, char *);///prec!!!!
+};
+
+void		handle_pointer(t_pf *pf)
+{
+	unsigned long long int pnt;
+
+	pnt = (unsigned long long int)va_arg(pf->ap, int);//ширина и точность!!!!
+	pf->filling = ft_itoa_base(pnt, 16);
+	pf->filling = ft_strjoin("0x", pf->filling);//LEAK
+};
+
+void		handle_int(t_pf *pf)
+{
+	int num;
+
+	num = va_arg(pf->ap, int);
+	pf->filling = ft_itoa(num);
+};
+
+void		handle_oct_and_unsigned(t_pf *pf)
+{
+	unsigned int num;
+	char *str;
+
+	num = (unsigned int)va_arg(pf->ap, unsigned int);
+	if (pf->type == 'o')
 	{
-		while (src[i] != '\0')
-		{
-			dst[i] = src[i];
-			i++;
-		}
+		pf->filling = ft_itoa_base(num, 8);
+		if (pf->need_format == 1)
+			str = ft_strjoin("0", pf->filling);//LEAK
 	}
-	else
+	else if (pf->type == 'u')
+		pf->filling = ft_itoa(num);
+};
+
+void		handle_hex(t_pf *pf)
+{
+	unsigned int num;
+
+	num = (unsigned int)va_arg(pf->ap, unsigned int);
+	pf->filling = ft_itoa_base(num, 16);
+	if (pf->type == 'X')
+		upper_symb(pf->filling);
+};
+void		handle_float(t_pf *pf)
+{
+	(void)pf;
+};
+
+void		handle_percent(t_pf *pf)
+{
+	pf->filling = ft_memalloc(sizeof(char) *2);
+	pf->filling[0] = '%';
+};
+
+char 		*cut_string(char *str, int q)
+{
+	char *res;
+
+	res = ft_memalloc(sizeof(char) * q + 1);
+	if (!res)
+		return (NULL);
+	ft_memcpy(res, str, q);
+	return (res);
+}
+
+void		transform_precision(t_pf *pf)
+{
+	int len;
+	char *zero;
+	char *test;
+
+	len = ft_strlen(pf->filling);
+	if (pf->precision > len && (pf->type == 'i' || pf->type == 'd' || pf->type == 'o' || pf->type == 'x' || pf->type == 'X' || pf->type == 'u' || pf->type == 'f'))///ADD TYPES INT
 	{
-		diff = ft_strlen(dst) - ft_strlen(src);
-		while (src[i] != '\0')
-		{
-			dst[diff] = src[i];
-			diff++;
-			i++;
-		}
+		zero = ft_memalloc(pf->precision - len + 1);
+		ft_memset(zero, '0', pf->precision - len);
+		test = ft_strjoinfree(zero, pf->filling);
+		pf->filling = test;//LEAK
+	}
+	else if (pf->precision < len && pf->type == 's')
+	{
+		char *test;
+		test = cut_string(pf->filling, (pf->precision));
+		if (*test)
+			pf->filling = test;//LEAK
 	}
 }
 
-void		print_string(t_pf *pf)
+void		fill_and_print_string(t_pf *pf)
 {
-	char *str;
+	int len;
 
-	str = (char *)va_arg(pf->ap, char *);///prec!!!!
-	if (pf->width == 0 || (size_t)pf->width < ft_strlen(str))
+	transform_precision(pf);
+	len = ft_strlen(pf->filling);
+	if (pf->width == 0 || pf->width < len)
 	{
-		ft_putstr(str);
-		pf->printed+=ft_strlen(str);
+		ft_putstr(pf->filling);
+		pf->printed+=len;
 	}
-	else
-	{
-		fill_string(pf->str, str, pf);
-		ft_putstr(pf->str);
-		pf->printed+=ft_strlen(pf->str);
-	}
-};
-
-void		print_pointer(t_pf *pf)
-{
-	unsigned long long int pnt;
-	char *test;
-	//int len;
-
-	pnt = (unsigned long long int)va_arg(pf->ap, int);//ширина и точность!!!!
-	test = ft_itoa_base(pnt, 16);
-	test = ft_strjoin("0x", test);
-	if (pf->width > (int)ft_strlen(test))
-	{
-		fill_string(pf->str, test, pf);///leak
-		ft_putstr(pf->str);
-	}
-	else
-		ft_putstr(test);
-	pf->printed+= (ft_strlen(test));
-};
-
-void		print_int(t_pf *pf)
-{
-	//int num;
-	//char *str;
-
-	//num = va_arg(pf->ap, int);
-	//str = ft_itoa(num);
-
-	(void)pf;
-};
-
-void		print_oct_and_unsigned(t_pf *pf)
-{
-	(void)pf;
-};
-
-void		print_hex(t_pf *pf)
-{
-	(void)pf;
-};
-void		print_float(t_pf *pf)
-{
-	(void)pf;
-};
-
-void		print_percent(t_pf *pf)
-{
-	if (pf->width != 0)
+	else if (pf->width >= len)
 	{
 		if (pf->align_left == 1)
-		{
-			pf->str[0] = '%';
-		}
+			ft_memcpy(pf->str_empty, pf->filling, len);
 		else
-			pf->str[ft_strlen(pf->str) -1] = '%';
-		pf->printed+=ft_strlen(pf->str);
-		ft_putstr(pf->str);
+			ft_memcpy((pf->str_empty + ft_strlen(pf->str_empty)) - len, pf->filling, len);
+		ft_putstr(pf->str_empty);
+		pf->printed+=ft_strlen(pf->str_empty);
 	}
-	else
-	{
-		ft_putchar('%');
-		pf->printed = 1;
-	}
-};
+}

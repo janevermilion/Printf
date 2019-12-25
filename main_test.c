@@ -22,10 +22,11 @@ char *l = "cat";
 	*/
   char *test;
   //ft_printf("%p", test);
-  int res = ft_printf("%+ c", 'u');
+  //int res = ft_printf("%s", l);
 
 	//printf("\nres: %i", res);
-	printf("\n");
+	//printf("\n");
 //	printf("%25p", pnt);
+ft_printf("%.3s", "hello");
   return (0);
 }
