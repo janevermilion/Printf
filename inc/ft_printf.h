@@ -59,6 +59,8 @@ int         ft_printf(const char *format, ...);
 t_pf 		*init_pf();
 int			check_width(const char *curr, t_pf *pf);
 int 		check_precision(const char *curr, t_pf *pf);
+int			check_size_flag(const char *curr, t_pf *pf);
+int			check_flags(const char *curr, t_pf *pf);
 void		upper_symb(char *str);
 void		handle_char(t_pf *pf);
 void		handle_string(t_pf *pf);
@@ -69,6 +71,10 @@ void		handle_hex(t_pf *pf);
 void		handle_float(t_pf *pf);
 void		handle_percent(t_pf *pf);
 void		fill_and_print_string(t_pf *pf);
+void		print_all(t_pf *pf);
+int 		check_types(const char *curr, t_pf *pf);
+void		zero_or_space_string(t_pf *pf);
+int 		find_types(const char *str);
 
 void		zero_pf(t_pf *pf);
 

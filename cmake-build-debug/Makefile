@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/030F11E9-43B7-4089-A6B6-F41D900E4CCC/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/83FCF2BC-F522-46FD-94C4-C595DB9F1F9B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/030F11E9-43B7-4089-A6B6-F41D900E4CCC/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/83FCF2BC-F522-46FD-94C4-C595DB9F1F9B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/030F11E9-43B7-4089-A6B6-F41D900E4CCC/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/83FCF2BC-F522-46FD-94C4-C595DB9F1F9B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/030F11E9-43B7-4089-A6B6-F41D900E4CCC/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/83FCF2BC-F522-46FD-94C4-C595DB9F1F9B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -1959,86 +1959,59 @@ main_test.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/main_test.c.s
 .PHONY : main_test.c.s
 
-src/check_chars.o: src/check_chars.c.o
+src/chars-int-percent.o: src/chars-int-percent.c.o
 
-.PHONY : src/check_chars.o
-
-# target to build an object file
-src/check_chars.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/check_chars.c.o
-.PHONY : src/check_chars.c.o
-
-src/check_chars.i: src/check_chars.c.i
-
-.PHONY : src/check_chars.i
-
-# target to preprocess a source file
-src/check_chars.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/check_chars.c.i
-.PHONY : src/check_chars.c.i
-
-src/check_chars.s: src/check_chars.c.s
-
-.PHONY : src/check_chars.s
-
-# target to generate assembly for a file
-src/check_chars.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/check_chars.c.s
-.PHONY : src/check_chars.c.s
-
-src/check_ints.o: src/check_ints.c.o
-
-.PHONY : src/check_ints.o
+.PHONY : src/chars-int-percent.o
 
 # target to build an object file
-src/check_ints.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/check_ints.c.o
-.PHONY : src/check_ints.c.o
+src/chars-int-percent.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o
+.PHONY : src/chars-int-percent.c.o
 
-src/check_ints.i: src/check_ints.c.i
+src/chars-int-percent.i: src/chars-int-percent.c.i
 
-.PHONY : src/check_ints.i
+.PHONY : src/chars-int-percent.i
 
 # target to preprocess a source file
-src/check_ints.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/check_ints.c.i
-.PHONY : src/check_ints.c.i
+src/chars-int-percent.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.i
+.PHONY : src/chars-int-percent.c.i
 
-src/check_ints.s: src/check_ints.c.s
+src/chars-int-percent.s: src/chars-int-percent.c.s
 
-.PHONY : src/check_ints.s
+.PHONY : src/chars-int-percent.s
 
 # target to generate assembly for a file
-src/check_ints.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/check_ints.c.s
-.PHONY : src/check_ints.c.s
+src/chars-int-percent.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.s
+.PHONY : src/chars-int-percent.c.s
 
-src/check_width.o: src/check_width.c.o
+src/floats.o: src/floats.c.o
 
-.PHONY : src/check_width.o
+.PHONY : src/floats.o
 
 # target to build an object file
-src/check_width.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/check_width.c.o
-.PHONY : src/check_width.c.o
+src/floats.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats.c.o
+.PHONY : src/floats.c.o
 
-src/check_width.i: src/check_width.c.i
+src/floats.i: src/floats.c.i
 
-.PHONY : src/check_width.i
+.PHONY : src/floats.i
 
 # target to preprocess a source file
-src/check_width.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/check_width.c.i
-.PHONY : src/check_width.c.i
+src/floats.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats.c.i
+.PHONY : src/floats.c.i
 
-src/check_width.s: src/check_width.c.s
+src/floats.s: src/floats.c.s
 
-.PHONY : src/check_width.s
+.PHONY : src/floats.s
 
 # target to generate assembly for a file
-src/check_width.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/check_width.c.s
-.PHONY : src/check_width.c.s
+src/floats.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats.c.s
+.PHONY : src/floats.c.s
 
 src/ft_itoa_new.o: src/ft_itoa_new.c.o
 
@@ -2093,6 +2066,114 @@ src/ft_printf.s: src/ft_printf.c.s
 src/ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.s
 .PHONY : src/ft_printf.c.s
+
+src/ints.o: src/ints.c.o
+
+.PHONY : src/ints.o
+
+# target to build an object file
+src/ints.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints.c.o
+.PHONY : src/ints.c.o
+
+src/ints.i: src/ints.c.i
+
+.PHONY : src/ints.i
+
+# target to preprocess a source file
+src/ints.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints.c.i
+.PHONY : src/ints.c.i
+
+src/ints.s: src/ints.c.s
+
+.PHONY : src/ints.s
+
+# target to generate assembly for a file
+src/ints.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints.c.s
+.PHONY : src/ints.c.s
+
+src/parsing.o: src/parsing.c.o
+
+.PHONY : src/parsing.o
+
+# target to build an object file
+src/parsing.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o
+.PHONY : src/parsing.c.o
+
+src/parsing.i: src/parsing.c.i
+
+.PHONY : src/parsing.i
+
+# target to preprocess a source file
+src/parsing.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/parsing.c.i
+.PHONY : src/parsing.c.i
+
+src/parsing.s: src/parsing.c.s
+
+.PHONY : src/parsing.s
+
+# target to generate assembly for a file
+src/parsing.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/parsing.c.s
+.PHONY : src/parsing.c.s
+
+src/pnt-oct-hex.o: src/pnt-oct-hex.c.o
+
+.PHONY : src/pnt-oct-hex.o
+
+# target to build an object file
+src/pnt-oct-hex.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o
+.PHONY : src/pnt-oct-hex.c.o
+
+src/pnt-oct-hex.i: src/pnt-oct-hex.c.i
+
+.PHONY : src/pnt-oct-hex.i
+
+# target to preprocess a source file
+src/pnt-oct-hex.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.i
+.PHONY : src/pnt-oct-hex.c.i
+
+src/pnt-oct-hex.s: src/pnt-oct-hex.c.s
+
+.PHONY : src/pnt-oct-hex.s
+
+# target to generate assembly for a file
+src/pnt-oct-hex.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.s
+.PHONY : src/pnt-oct-hex.c.s
+
+src/precision.o: src/precision.c.o
+
+.PHONY : src/precision.o
+
+# target to build an object file
+src/precision.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/precision.c.o
+.PHONY : src/precision.c.o
+
+src/precision.i: src/precision.c.i
+
+.PHONY : src/precision.i
+
+# target to preprocess a source file
+src/precision.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/precision.c.i
+.PHONY : src/precision.c.i
+
+src/precision.s: src/precision.c.s
+
+.PHONY : src/precision.s
+
+# target to generate assembly for a file
+src/precision.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/precision.c.s
+.PHONY : src/precision.c.s
 
 src/print.o: src/print.c.o
 
@@ -2361,21 +2442,30 @@ help:
 	@echo "... main_test.o"
 	@echo "... main_test.i"
 	@echo "... main_test.s"
-	@echo "... src/check_chars.o"
-	@echo "... src/check_chars.i"
-	@echo "... src/check_chars.s"
-	@echo "... src/check_ints.o"
-	@echo "... src/check_ints.i"
-	@echo "... src/check_ints.s"
-	@echo "... src/check_width.o"
-	@echo "... src/check_width.i"
-	@echo "... src/check_width.s"
+	@echo "... src/chars-int-percent.o"
+	@echo "... src/chars-int-percent.i"
+	@echo "... src/chars-int-percent.s"
+	@echo "... src/floats.o"
+	@echo "... src/floats.i"
+	@echo "... src/floats.s"
 	@echo "... src/ft_itoa_new.o"
 	@echo "... src/ft_itoa_new.i"
 	@echo "... src/ft_itoa_new.s"
 	@echo "... src/ft_printf.o"
 	@echo "... src/ft_printf.i"
 	@echo "... src/ft_printf.s"
+	@echo "... src/ints.o"
+	@echo "... src/ints.i"
+	@echo "... src/ints.s"
+	@echo "... src/parsing.o"
+	@echo "... src/parsing.i"
+	@echo "... src/parsing.s"
+	@echo "... src/pnt-oct-hex.o"
+	@echo "... src/pnt-oct-hex.i"
+	@echo "... src/pnt-oct-hex.s"
+	@echo "... src/precision.o"
+	@echo "... src/precision.i"
+	@echo "... src/precision.s"
 	@echo "... src/print.o"
 	@echo "... src/print.i"
 	@echo "... src/print.s"

@@ -21,7 +21,7 @@ INCLUDES = inc/
 
 FLAGS =  -Wall -Wextra -Werror
 
-SRC = src/ft_printf.c src/utils.c src/check_chars.c src/check_width.c src/ft_itoa_new.c src/print.c
+SRC = src/chars-int-percent.c src/precision.c src/floats.c src/ft_itoa_new.c src/ft_printf.c src/ints.c src/parsing.c src/pnt-oct-hex.c src/print.c src/utils.c
 
 OUT = $(SRC:%.c=%.o)
 
@@ -47,3 +47,7 @@ re: fclean all
 
 test: libftprintf.a main_test.c
 	gcc libftprintf.a main_test.c
+
+cake: all main_test.c
+	make re
+	make test

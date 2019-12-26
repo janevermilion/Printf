@@ -77,11 +77,14 @@ add_executable(effective_waffle_printf
         libft/srcs/ft_tolower.c
         libft/srcs/ft_toupper.c
         libft/srcs/get_next_line.c
-        src/check_chars.c
-        src/check_ints.c
-        src/check_width.c
+        src/chars-int-percent.c
+        src/floats.c
         src/ft_itoa_new.c
         src/ft_printf.c
-        src/utils.c
+        src/ints.c
+        src/parsing.c
+        src/pnt-oct-hex.c
+        src/precision.c
         src/print.c
+        src/utils.c
         main_test.c)

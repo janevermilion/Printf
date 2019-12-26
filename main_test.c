@@ -27,6 +27,13 @@ char *l = "cat";
 	//printf("\nres: %i", res);
 	//printf("\n");
 //	printf("%25p", pnt);
-ft_printf("%.3s", "hello");
+ft_printf("%.s", "hello");
   return (0);
 }
+/*
+ *     First line of code: {return test("%.s", "hello");}
+      expected output : ""
+      your output     : "s"
+      expected (nonprintable as hex) : ""
+      actual   (nonprintable as hex) : "s"
+ */

@@ -12,49 +12,26 @@
 
 #include "ft_printf.h"
 
-int			check_chars(const char *curr, t_pf *pf)
+void		handle_char(t_pf *pf)
 {
-	int quan;
-	char *test2;
+	char alpha;
 
-
-	quan = 0;
-	if (*curr == 'c')
+	alpha = va_arg(pf->ap, int);
+	if (alpha != '\0')
 	{
-		char test = va_arg(pf->ap, int);
-		ft_putchar(test);
-		pf->printed+=1;
-		return (1);
+		pf->filling = ft_memalloc(sizeof(char) * 2);
+		pf->filling[0] = alpha;
 	}
-	else if (*curr == 's')
-	{
-		test2 = (char *)va_arg(pf->ap, char *);
-		ft_putstr(test2);
-		pf->printed+=ft_strlen(test2);
-		return (ft_strlen(test2));
-	}
-/*	else if (*curr == 'h' && *(curr + 1) == 'h')
-	{
+};
 
-	}*/
-	return (0);
-}
-
-int 	check_pointer(const char *curr, t_pf *pf)
+void		handle_string(t_pf *pf)
 {
-	(void)pf;
-	unsigned long long int pnt;
-	if (*curr == 'p')
-	{
-		pnt = (unsigned long long int)va_arg(pf->ap, void *);
-		char *test;
-		test = ft_itoa_base(pnt, 16);
-		ft_printf("0x");
-		ft_putstr(test);
-		pf->printed+= (ft_strlen(test) + 2);
-		return (ft_strlen(test) + 2);
-	}
+	pf->filling = (char *)va_arg(pf->ap, char *);///prec!!!!
+};
 
-	return (0);
-}//0x7fff5c4ffa48
+void		handle_percent(t_pf *pf)
+{
+	pf->filling = ft_memalloc(sizeof(char) *2);
+	pf->filling[0] = '%';
+};
 

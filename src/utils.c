@@ -44,3 +44,13 @@ void		zero_pf(t_pf *pf)
 	pf->size_flag = NULL;
 	pf->length = 0;
 }
+
+void	upper_symb(char *str)
+{
+	while (*str)
+	{
+		if (ft_isalpha(*str) == 1)
+			*str = ft_toupper(*str);
+		str++;
+	}
+}
