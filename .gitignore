@@ -1,2 +1,4 @@
 pft/
-cmake_build_debug/*
+cmake_build_debug/
+a.out
+.idea/
