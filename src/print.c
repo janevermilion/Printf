@@ -40,26 +40,26 @@ void		transform_precision(t_pf *pf)
 	}
 	else if (pf->precision > 0 && pf->precision < len && pf->type == 's')
 	{
-		char *test;
 		test = cut_string(pf->filling, (pf->precision));
 		if (*test)
 			pf->filling = test;//LEAK
 	}
+	else if (pf->precision == 0)
+		pf->filling = "";
 }
 
 void		fill_and_print_string(t_pf *pf)
 {
 	int len;
-	if (pf->precision >= 0)
-	{
+
 		transform_precision(pf);
 		len = ft_strlen(pf->filling);
-		if (pf->width == 0 || pf->width < len)
+		if (pf->precision != -1 && (pf->width == 0 || pf->width < len))
 		{
 			ft_putstr(pf->filling);
 			pf->printed+=len;
 		}
-		else if (pf->width >= len)
+		else if (pf->width >= len && pf->precision != -1)
 		{
 			if (pf->align_left == 1)
 				ft_memcpy(pf->str_empty, pf->filling, len);
@@ -68,7 +68,11 @@ void		fill_and_print_string(t_pf *pf)
 			ft_putstr(pf->str_empty);
 			pf->printed+=ft_strlen(pf->str_empty);
 		}
-	}
+		else if ((pf->width >= len && pf->precision == -1))
+		{
+			ft_putstr(pf->str_empty);
+			pf->printed+=ft_strlen(pf->str_empty);
+		}
 }
 
 void		print_all(t_pf *pf)

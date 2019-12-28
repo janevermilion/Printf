@@ -24,7 +24,7 @@ t_pf 		*init_pf()
 	pf->need_spase = 0;
 	pf->need_format = 0;
 	pf->zero_filling = 0;
-	pf->precision = 0;
+	pf->precision = -5;
 	pf->type = '\0';
 	pf->size_flag = (char *)0;
 	pf->length = 0;
@@ -39,7 +39,7 @@ void		zero_pf(t_pf *pf)
 	pf->need_spase = 0;
 	pf->need_format = 0;
 	pf->zero_filling = 0;
-	pf->precision = 0;
+	pf->precision = -5;
 	pf->type = '\0';
 	pf->size_flag = NULL;
 	pf->length = 0;

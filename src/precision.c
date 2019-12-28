@@ -134,12 +134,12 @@ int 	check_precision(const char *curr, t_pf *pf)
 	int width;
 
 	i = 0;
-	precision = 0;
-	while (curr[i] != '\0' && find_types(&curr[i]) !=1)
+
+	while (curr[i] && find_types(&(curr[i])) != 1)
 	{
 		if (curr[i] == '.')
 		{
-			if (ft_isdigit(curr[++i]) == 1 && curr[i] != '0')
+			if (ft_isdigit(curr[++i]) == 1 && curr[i] != '0' && find_types(&(curr[i])) != 1)
 			{
 				precision = ft_atoi(&curr[i]);
 				if (precision > 0)
@@ -149,15 +149,32 @@ int 	check_precision(const char *curr, t_pf *pf)
 			{
 				precision= (int)va_arg(pf->ap, int);
 				pf->precision = precision;
-			} else
+			}
+			else if (curr[i] == '0')
+			{
+				precision = ft_atoi(&curr[i]);
+				pf->precision = precision;
+			}
+			else if (find_types(&(curr[i])) == 1)
+			{
+				pf->precision = -1;
+				i+=1;
+				break;
+			}
+			else
 				pf->precision = -1;
 		}
 		i++;
 	}
+	if (pf->precision == -1)
+		return (i - 1);
+	if (pf->precision == 0)
+		return (i);
 	if (pf->precision > 0)
 	{
 		width = find_step(pf->precision);
-		return ((int)(&curr[i -1] - curr) + width);
+		return ((int)(&curr[i - 1] - curr) + width);
 	}
+
 	return (0);
 }

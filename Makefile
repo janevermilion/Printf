@@ -33,7 +33,7 @@ $(NAME): $(OUT)
 	ar rc $(NAME) $(OUT)
 	ranlib $(NAME)
 %.o: %.c
-	gcc $(FLAGS) -I $(LIBFT_INCLUDES) -I $(INCLUDES) -o $@ -c $<
+	gcc -g $(FLAGS) -I $(LIBFT_INCLUDES) -I $(INCLUDES) -o $@ -c $<
 
 clean:
 	/bin/rm -f $(OUT)
@@ -51,3 +51,4 @@ test: libftprintf.a main_test.c
 cake: all main_test.c
 	make re
 	make test
+	make clean

@@ -70,11 +70,7 @@ int 		check_types(const char *curr, t_pf *pf)
 
 void		zero_or_space_string(t_pf *pf)
 {
-//	if (pf->precision == 0)
 	pf->str_empty =ft_memalloc(sizeof(char) * (pf->width + 1));
-//	else
-//		pf->str_empty =ft_memalloc(sizeof(char) * (pf->precision + 1));
-
 	if (pf->zero_filling == 1)
 		ft_memset(pf->str_empty,'0', pf->width);
 	else

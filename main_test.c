@@ -27,7 +27,13 @@ char *l = "cat";
 	//printf("\nres: %i", res);
 	//printf("\n");
 //	printf("%25p", pnt);
-ft_printf("%.s", "hello");
+printf("mine:\n");
+char *s_hidden = "cat\0mk";
+ft_printf("%3.s<-", s_hidden);
+printf("\norigin:\n");
+
+
+printf("%3.s<-", s_hidden);
   return (0);
 }
 /*

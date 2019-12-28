@@ -59,7 +59,7 @@ int         ft_printf(const char *format, ...)
 			i+=f;
 			f = check_types(&format[i], pf);
 			i+=f;
-/*			printf(ANSI_COLOR_YELLOW "width: %i\n", pf->width);
+/*			printf(ANSI_COLOR_YELLOW "\nwidth: %i\n", pf->width);
 			printf(ANSI_COLOR_YELLOW "align-left: %i\n", pf->align_left);
 			printf(ANSI_COLOR_YELLOW "need sign: %i\n", pf->need_sign);
 			printf(ANSI_COLOR_YELLOW "need space: %i\n", pf->need_spase);

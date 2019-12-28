@@ -27,6 +27,8 @@ void		handle_char(t_pf *pf)
 void		handle_string(t_pf *pf)
 {
 	pf->filling = (char *)va_arg(pf->ap, char *);///prec!!!!
+	if (pf->filling == NULL && pf->precision != -1)
+		pf->filling = ("(null)");
 };
 
 void		handle_percent(t_pf *pf)
