@@ -71,10 +71,20 @@ int 		check_types(const char *curr, t_pf *pf)
 void		zero_or_space_string(t_pf *pf)
 {
 	pf->str_empty =ft_memalloc(sizeof(char) * (pf->width + 1));
-	if (pf->zero_filling == 1)
-		ft_memset(pf->str_empty,'0', pf->width);
-	else
-		ft_memset(pf->str_empty,' ', pf->width);
+	if (pf->type != '%')
+	{
+		if (pf->zero_filling == 1)
+			ft_memset(pf->str_empty,'0', pf->width);
+		else
+			ft_memset(pf->str_empty,' ', pf->width);
+	}
+	else///for percent
+	{
+		if (pf->zero_filling == 1 && pf->align_left != 1)
+			ft_memset(pf->str_empty,'0', pf->width);
+		else
+			ft_memset(pf->str_empty,' ', pf->width);
+	}
 
 }
 
@@ -87,7 +97,6 @@ int			check_size_flag(const char *curr, t_pf *pf)
 	}
 	else if (*curr == 'h')
 	{
-		printf("!!!");
 		pf->size_flag = "h";
 		return (1);
 	}

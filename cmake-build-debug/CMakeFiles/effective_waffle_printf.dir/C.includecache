@@ -26,31 +26,7 @@ stdlib.h
 unistd.h
 -
 
-/Users/jslave/PRINTF/effective-waffle-printf/inc/ft_printf.h
-../libft/includes/libft.h
-/Users/jslave/PRINTF/effective-waffle-printf/libft/includes/libft.h
-stdarg.h
--
-string.h
--
-stdio.h
-/Users/jslave/PRINTF/effective-waffle-printf/inc/stdio.h
-limits.h
--
-
-/Users/jslave/PRINTF/effective-waffle-printf/libft/includes/libft.h
-string.h
--
-stdlib.h
--
-unistd.h
--
-
-/Users/jslave/PRINTF/effective-waffle-printf/main_test.c
-inc/ft_printf.h
-/Users/jslave/PRINTF/effective-waffle-printf/inc/ft_printf.h
-
-/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c
+/Users/jslave/PRINTF/effective-waffle-printf/src/ints.c
 ft_printf.h
 /Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.h
 

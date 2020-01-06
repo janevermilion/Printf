@@ -33,6 +33,9 @@ CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa.c.o: ../libft/srcs/ft_
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base.c.o: ../libft/srcs/ft_itoa_base.c
 
+CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.o: ../libft/srcs/ft_itoa_base_unsigned.c
+
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstadd.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstadd.c.o: ../libft/srcs/ft_lstadd.c
 

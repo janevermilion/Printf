@@ -12,23 +12,6 @@
 
 #include "ft_printf.h"
 
-/*
- *va_list	Тип, который используется для извлечения дополнительных параметров функции с переменным числом параметров
-void va_start(va_list ap, paramN)	Макрос инициализирует ap для извлечения дополнительных аргументов, которые идут после переменной paramN. Параметр не должен быть объявлена как register, не может иметь типа массива или указателя на функцию.
-void va_end(va_list ap)	Макрос необходим для нормального завершения работы функции, работает в паре с макросом va_start.
-void va_copy(va_list dest, va_list src)	Макрос копирует src в dest. Поддерживается начиная со стандарта C++11
- *%[флаги][ширина][.точность][размер]тип
- */
-
-/*
- *
- * c s p d i o u x X hh, h, l and ll %% #0-+
- */
-
-
-
-
-
 int         ft_printf(const char *format, ...)
 {
 	t_pf *pf;
@@ -59,7 +42,7 @@ int         ft_printf(const char *format, ...)
 			i+=f;
 			f = check_types(&format[i], pf);
 			i+=f;
-/*			printf(ANSI_COLOR_YELLOW "\nwidth: %i\n", pf->width);
+			/*printf(ANSI_COLOR_YELLOW "\nwidth: %i\n", pf->width);
 			printf(ANSI_COLOR_YELLOW "align-left: %i\n", pf->align_left);
 			printf(ANSI_COLOR_YELLOW "need sign: %i\n", pf->need_sign);
 			printf(ANSI_COLOR_YELLOW "need space: %i\n", pf->need_spase);

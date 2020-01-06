@@ -95,5 +95,6 @@ char				*ft_strjoinfree(char *s1, char *s2);
 int                 get_next_line(int fd, char **line);
 int                 ft_atoi_base(const char *str, int base);
 char				*ft_itoa_base(unsigned long long int value, int base);
+char				*ft_itoa_base_unsigned(unsigned long long int num, int base);
 
 #endif

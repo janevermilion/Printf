@@ -129,6 +129,9 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_itoa_base.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_itoa_base_unsigned.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_lstadd.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>

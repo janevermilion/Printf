@@ -87,4 +87,4 @@ add_executable(effective_waffle_printf
         src/precision.c
         src/print.c
         src/utils.c
-        main_test.c)
+        main_test.c libft/srcs/ft_itoa_base_unsigned.c)

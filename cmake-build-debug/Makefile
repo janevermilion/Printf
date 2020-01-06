@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/A5405360-4184-455C-9B05-481577F42840/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/521D695C-5A74-404F-AB1E-418034617A97/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/A5405360-4184-455C-9B05-481577F42840/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/521D695C-5A74-404F-AB1E-418034617A97/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/A5405360-4184-455C-9B05-481577F42840/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/521D695C-5A74-404F-AB1E-418034617A97/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/A5405360-4184-455C-9B05-481577F42840/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/521D695C-5A74-404F-AB1E-418034617A97/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -446,6 +446,33 @@ libft/srcs/ft_itoa_base.s: libft/srcs/ft_itoa_base.c.s
 libft/srcs/ft_itoa_base.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base.c.s
 .PHONY : libft/srcs/ft_itoa_base.c.s
+
+libft/srcs/ft_itoa_base_unsigned.o: libft/srcs/ft_itoa_base_unsigned.c.o
+
+.PHONY : libft/srcs/ft_itoa_base_unsigned.o
+
+# target to build an object file
+libft/srcs/ft_itoa_base_unsigned.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.o
+.PHONY : libft/srcs/ft_itoa_base_unsigned.c.o
+
+libft/srcs/ft_itoa_base_unsigned.i: libft/srcs/ft_itoa_base_unsigned.c.i
+
+.PHONY : libft/srcs/ft_itoa_base_unsigned.i
+
+# target to preprocess a source file
+libft/srcs/ft_itoa_base_unsigned.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.i
+.PHONY : libft/srcs/ft_itoa_base_unsigned.c.i
+
+libft/srcs/ft_itoa_base_unsigned.s: libft/srcs/ft_itoa_base_unsigned.c.s
+
+.PHONY : libft/srcs/ft_itoa_base_unsigned.s
+
+# target to generate assembly for a file
+libft/srcs/ft_itoa_base_unsigned.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.s
+.PHONY : libft/srcs/ft_itoa_base_unsigned.c.s
 
 libft/srcs/ft_lstadd.o: libft/srcs/ft_lstadd.c.o
 
@@ -2274,6 +2301,9 @@ help:
 	@echo "... libft/srcs/ft_itoa_base.o"
 	@echo "... libft/srcs/ft_itoa_base.i"
 	@echo "... libft/srcs/ft_itoa_base.s"
+	@echo "... libft/srcs/ft_itoa_base_unsigned.o"
+	@echo "... libft/srcs/ft_itoa_base_unsigned.i"
+	@echo "... libft/srcs/ft_itoa_base_unsigned.s"
 	@echo "... libft/srcs/ft_lstadd.o"
 	@echo "... libft/srcs/ft_lstadd.i"
 	@echo "... libft/srcs/ft_lstadd.s"
