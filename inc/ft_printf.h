@@ -77,6 +77,7 @@ int 		check_types(const char *curr, t_pf *pf);
 int			zero_or_space_string(t_pf *pf);
 int 		find_types(const char *str);
 void		print_int(t_pf *pf);
+int			find_step(int num);
 
 
 void		zero_pf(t_pf *pf);

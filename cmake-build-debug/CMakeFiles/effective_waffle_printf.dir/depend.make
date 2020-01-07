@@ -237,9 +237,9 @@ CMakeFiles/effective_waffle_printf.dir/src/precision.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/precision.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/src/precision.c.o: ../src/precision.c
 
-CMakeFiles/effective_waffle_printf.dir/src/print.c.o: ../inc/ft_printf.h
-CMakeFiles/effective_waffle_printf.dir/src/print.c.o: ../libft/includes/libft.h
-CMakeFiles/effective_waffle_printf.dir/src/print.c.o: ../src/print.c
+CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: ../src/print_str_char.c
 
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o: ../libft/includes/libft.h

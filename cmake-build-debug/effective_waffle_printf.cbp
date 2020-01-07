@@ -324,7 +324,7 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/precision.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
-		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/print.c">
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/utils.c">

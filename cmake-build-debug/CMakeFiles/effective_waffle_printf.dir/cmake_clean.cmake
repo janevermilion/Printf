@@ -76,7 +76,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o"
   "CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o"
   "CMakeFiles/effective_waffle_printf.dir/src/precision.c.o"
-  "CMakeFiles/effective_waffle_printf.dir/src/print.c.o"
+  "CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o"
   "CMakeFiles/effective_waffle_printf.dir/src/utils.c.o"
   "effective_waffle_printf"
   "effective_waffle_printf.pdb"

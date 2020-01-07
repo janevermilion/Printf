@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/243949DF-B169-4DF5-8BE4-7148846F363D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/D8C598FD-330D-451F-A995-80D3B539E985/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/243949DF-B169-4DF5-8BE4-7148846F363D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/D8C598FD-330D-451F-A995-80D3B539E985/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -1032,18 +1032,18 @@ CMakeFiles/effective_waffle_printf.dir/src/precision.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/precision.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/precision.c -o CMakeFiles/effective_waffle_printf.dir/src/precision.c.s
 
-CMakeFiles/effective_waffle_printf.dir/src/print.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
-CMakeFiles/effective_waffle_printf.dir/src/print.c.o: ../src/print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/effective_waffle_printf.dir/src/print.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/print.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/print.c
+CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
+CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: ../src/print_str_char.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c
 
-CMakeFiles/effective_waffle_printf.dir/src/print.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/print.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/print.c > CMakeFiles/effective_waffle_printf.dir/src/print.c.i
+CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c > CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.i
 
-CMakeFiles/effective_waffle_printf.dir/src/print.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/print.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/print.c -o CMakeFiles/effective_waffle_printf.dir/src/print.c.s
+CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c -o CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.s
 
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o: ../src/utils.c
@@ -1161,7 +1161,7 @@ effective_waffle_printf_OBJECTS = \
 "CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/precision.c.o" \
-"CMakeFiles/effective_waffle_printf.dir/src/print.c.o" \
+"CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/utils.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/main_test.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.o"
@@ -1244,7 +1244,7 @@ effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/ints.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/precision.c.o
-effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/print.c.o
+effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/utils.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/main_test.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.o

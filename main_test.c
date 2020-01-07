@@ -12,12 +12,12 @@ int         main()
 printf("mine:\n");
 
 
-int t = ft_printf("%+.7i", 234);
+int t = ft_printf("%10.5i", -216);
 printf("\nreturned value : %i", t);
 printf("\norigin:\n");
 
 
- t = printf("%+.7i", 234);
+ t = printf("%10.5i", -216);
 printf("\nreturned value : %i", t);
 
   return (0);

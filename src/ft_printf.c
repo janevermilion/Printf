@@ -77,7 +77,7 @@ int         ft_printf(const char *format, ...)
 	t_pf *pf;
 	int i;
 
-	if ((pf = init_pf(format)) == NULL)
+	if ((pf = init_pf()) == NULL)
 		return (0);
 	va_start(pf->ap, format);//NUL!!!!!
 	if (read_args(pf, format) < 0)

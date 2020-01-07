@@ -237,10 +237,10 @@ CMakeFiles/effective_waffle_printf.dir/src/precision.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/src/precision.c
-CMakeFiles/effective_waffle_printf.dir/src/print.c.o
+CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
- /Users/jslave/PRINTF/effective-waffle-printf/src/print.c
+ /Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h

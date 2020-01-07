@@ -81,7 +81,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jslave/PRINTF/effective-waffle-printf/src/parsing.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/pnt-oct-hex.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/precision.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/precision.c.o"
-  "/Users/jslave/PRINTF/effective-waffle-printf/src/print.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/utils.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
