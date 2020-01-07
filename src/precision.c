@@ -29,57 +29,43 @@ int			find_step(int num)
 
 int			check_width(const char *curr, t_pf *pf)
 {
-	int qual;
+	int quan;
 	int width_of_num;
 
 	if (ft_isdigit(*curr) == 1)
 	{
-		qual = ft_atoi(curr);
-		if (qual >= 0)
+		quan = ft_atoi(curr);
+		if (quan >= 0)
 		{
-			pf->width = qual;
-			width_of_num = find_step(qual);
+			pf->width = quan;
+			width_of_num = find_step(quan);
 			return (width_of_num);
 		}
 	}
 	if (*curr == '*')
 	{
-		qual = (int)va_arg(pf->ap, int);
-		pf->width = qual;
+		quan = (int)va_arg(pf->ap, int);
+		pf->width = quan;
 		return (1);
 	}
 	return (0);
 }
 
-int 	check_precision(const char *curr, t_pf *pf)
+int			check_all_precisions(const char *curr, t_pf *pf)
 {
-
 	int i;
-	int precision;
-	int width;
 
 	i = 0;
-
-	while (curr[i] && find_types(&(curr[i])) != 1)
+	while (*curr && curr[i] != '\0' && find_types(&(curr[i])) != 1)
 	{
 		if (curr[i] == '.')
 		{
-			if (ft_isdigit(curr[++i]) == 1 && curr[i] != '0' && find_types(&(curr[i])) != 1)
-			{
-				precision = ft_atoi(&curr[i]);
-				if (precision > 0)
-					pf->precision = precision;
-			}
+			if (ft_isdigit(curr[++i]) == 1 && curr[i] != '0' && find_types(&(curr[i])) != 1 && (ft_atoi(&curr[i])) > 0)
+				pf->precision = ft_atoi(&curr[i]);
 			else if (curr[i] == '*')
-			{
-				precision= (int)va_arg(pf->ap, int);
-				pf->precision = precision;
-			}
+				pf->precision = (int)va_arg(pf->ap, int);
 			else if (curr[i] == '0')
-			{
-				precision = ft_atoi(&curr[i]);
-				pf->precision = precision;
-			}
+				pf->precision = ft_atoi(&curr[i]);
 			else if (find_types(&(curr[i])) == 1)
 			{
 				pf->precision = -1;
@@ -91,6 +77,16 @@ int 	check_precision(const char *curr, t_pf *pf)
 		}
 		i++;
 	}
+	return (i);
+}
+
+int 	check_precision(const char *curr, t_pf *pf)
+{
+
+	int i;
+	int width;
+
+	i = check_all_precisions(curr, pf);
 	if (pf->precision == -1)
 		return (i - 1);
 	if (pf->precision == 0)
@@ -100,6 +96,5 @@ int 	check_precision(const char *curr, t_pf *pf)
 		width = find_step(pf->precision);
 		return ((int)(&curr[i - 1] - curr) + width);
 	}
-
 	return (0);
 }

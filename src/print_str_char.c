@@ -23,7 +23,7 @@ char 		*cut_string(char *str, int q)
 	return (res);
 }
 
-void		transform_precision(t_pf *pf)
+void		transform_str_precision(t_pf *pf)
 {
 	int len;
 	char *zero;
@@ -80,7 +80,7 @@ void		fill_and_print_string(t_pf *pf)
 {
 	int len;
 
-	transform_precision(pf);
+	transform_str_precision(pf);
 	len = ft_strlen(pf->filling);
 	if (len == 0 && pf->type == 'c')//for char test nullterm
 		print_char(pf);
@@ -102,48 +102,5 @@ void		fill_and_print_string(t_pf *pf)
 	{
 		ft_putstr(pf->str_empty);
 		pf->printed+=ft_strlen(pf->str_empty);
-	}
-}
-
-void		print_all(t_pf *pf)
-{
-	if (pf->width != 0)
-		zero_or_space_string(pf);
-	if (pf->type == 'c')
-	{
-		handle_char(pf);
-		fill_and_print_string(pf);
-	}
-	else if (pf->type == 's')
-	{
-		handle_string(pf);
-		fill_and_print_string(pf);
-	}
-	else if (pf->type == 'p')
-	{
-		handle_pointer(pf);
-		fill_and_print_string(pf);
-	}
-	else if (pf->type == 'd' || pf->type == 'i')
-	{
-		handle_int(pf);
-		print_int(pf);
-	}
-	else if (pf->type == 'o' || pf->type == 'u')
-	{
-		handle_oct_and_unsigned(pf);
-	}
-	else if (pf->type == 'x' || pf->type == 'X')
-	{
-		handle_hex(pf);
-	}
-	else if (pf->type == 'f')
-	{
-		handle_float(pf);
-	}
-	else if (pf->type == '%')
-	{
-		handle_percent(pf);
-		fill_and_print_string(pf);
 	}
 }

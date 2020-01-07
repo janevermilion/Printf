@@ -18,7 +18,6 @@ int 	find_types(const char *str)
 	char a;
 
 	a = *str;
-
 	flag = ft_strchr(TYPES, a);
 	if (flag != NULL)//find flag
 		return (1);
@@ -64,13 +63,15 @@ int 		check_types(const char *curr, t_pf *pf)
 {
 	char a = *curr;
 	if (find_types(curr) == 1)
-		pf->type = a;//////////////////////////////////////////////////////////////////////////
+		pf->type = a;
 	return (0);
 }
 
-void		zero_or_space_string(t_pf *pf)
+int		zero_or_space_string(t_pf *pf)
 {
 	pf->str_empty =ft_memalloc(sizeof(char) * (pf->width + 1));
+	if (pf->str_empty == NULL)
+		return (-1);
 	if (pf->type != '%')
 	{
 		if (pf->zero_filling == 1)
@@ -78,14 +79,14 @@ void		zero_or_space_string(t_pf *pf)
 		else
 			ft_memset(pf->str_empty,' ', pf->width);
 	}
-	else///for percent
+	else
 	{
 		if (pf->zero_filling == 1 && pf->align_left != 1)
 			ft_memset(pf->str_empty,'0', pf->width);
 		else
 			ft_memset(pf->str_empty,' ', pf->width);
 	}
-
+	return (1);
 }
 
 int			check_size_flag(const char *curr, t_pf *pf)

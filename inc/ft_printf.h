@@ -71,11 +71,13 @@ void		handle_hex(t_pf *pf);
 void		handle_float(t_pf *pf);
 void		handle_percent(t_pf *pf);
 void		fill_and_print_string(t_pf *pf);
+void		transform_str_precision(t_pf *pf);
 void		print_all(t_pf *pf);
 int 		check_types(const char *curr, t_pf *pf);
-void		zero_or_space_string(t_pf *pf);
+int			zero_or_space_string(t_pf *pf);
 int 		find_types(const char *str);
 void		print_int(t_pf *pf);
+
 
 void		zero_pf(t_pf *pf);
 

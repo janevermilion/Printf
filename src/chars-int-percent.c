@@ -27,6 +27,7 @@ void		handle_char(t_pf *pf)
 		pf->filling = ft_memalloc(sizeof(char));
 		pf->printed = 1;//////nado ili net?
 	}
+	fill_and_print_string(pf);
 };
 
 void		handle_string(t_pf *pf)
@@ -34,11 +35,13 @@ void		handle_string(t_pf *pf)
 	pf->filling = (char *)va_arg(pf->ap, char *);///prec!!!!
 	if (pf->filling == NULL && pf->precision != -1)
 		pf->filling = ("(null)");
+	fill_and_print_string(pf);
 };
 
 void		handle_percent(t_pf *pf)
 {
 	pf->filling = ft_memalloc(sizeof(char) *2);
 	pf->filling[0] = '%';
+	fill_and_print_string(pf);
 };
 

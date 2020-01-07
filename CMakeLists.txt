@@ -85,6 +85,6 @@ add_executable(effective_waffle_printf
         src/parsing.c
         src/pnt-oct-hex.c
         src/precision.c
-        src/print.c
+        src/print_str_char.c
         src/utils.c
         main_test.c libft/srcs/ft_itoa_base_unsigned.c)

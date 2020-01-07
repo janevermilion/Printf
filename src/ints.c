@@ -28,6 +28,7 @@ void		handle_int(t_pf *pf)
 	else if (ft_strequ(pf->size_flag, "l") == 1)
 		num = (long int)va_arg(pf->ap, long int);
 		pf->filling = ft_itoa(num);///itoa long long!
+	print_int(pf);
 };
 
 
