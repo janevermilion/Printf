@@ -94,7 +94,8 @@ int 	check_precision(const char *curr, t_pf *pf)
 	if (pf->precision > 0)
 	{
 		width = find_step(pf->precision);
-		return ((int)(&curr[i - 1] - curr) + width);
+		//return ((int)(&curr[i - 1] - curr) + width);
+        return (i - width + 1);
 	}
 	return (0);
 }

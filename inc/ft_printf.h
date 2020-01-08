@@ -78,9 +78,14 @@ int			zero_or_space_string(t_pf *pf);
 int 		find_types(const char *str);
 void		print_int(t_pf *pf);
 int			find_step(int num);
-
-
+char		*ft_itoa_long_long(long long int n);
+long long int				ft_atoi_long_long(const char *str);
+char        *fill_zero_string(t_pf *pf, int len, long long int num);
+void        put_sign(t_pf *pf, long long int num);
+void        fill_empty_str_neg_num(t_pf *pf, int len, long long num);
+void         fill_empty_str_pos_num(t_pf *pf, int len);
 void		zero_pf(t_pf *pf);
+
 
 
 

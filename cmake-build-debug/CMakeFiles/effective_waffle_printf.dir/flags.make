@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/jslave/PRINTF/effective-waffle-printf/inc -I/Users/jslave/PRINTF/effective-waffle-printf/libft/includes 
+C_INCLUDES = -I/Users/jslave/PRINTF/effective-waffle-printf/inc -I/Users/jslave/PRINTF/effective-waffle-printf/libft/includes -I/Users/jslave/PRINTF/effective-waffle-printf/pft/src 
 
