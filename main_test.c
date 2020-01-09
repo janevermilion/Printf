@@ -18,10 +18,10 @@ int         main()
 	static long long llmax = 9223372036854775807;
 	static long long	llmin = -9223372036854775807ll;
 printf("mine:\n");
-int t = ft_printf("this % i number", 17);
+int t = ft_printf("%+5.0i<-", 0);
 printf("\nreturned value : %i", t);
 printf("\norigin:\n");
- t = printf("this % i number", 17);
+ t = printf("%+5.0i<-", 0);
 printf("\nreturned value : %i", t);
 printf("\n------------\n");
   return (0);

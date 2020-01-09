@@ -1,4 +1,4 @@
-/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/05AA0BC3-53E7-487D-824A-6356B2AEBCA4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jslave/PRINTF/effective-waffle-printf
+/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/3AB248B9-B4F6-4ADC-B859-569588379848/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jslave/PRINTF/effective-waffle-printf
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug

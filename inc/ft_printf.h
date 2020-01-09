@@ -55,39 +55,72 @@ typedef struct  s_pf
 
 }               t_pf;
 
-int         ft_printf(const char *format, ...);
-t_pf 		*init_pf();
-int			check_width(const char *curr, t_pf *pf);
-int 		check_precision(const char *curr, t_pf *pf);
-int			check_size_flag(const char *curr, t_pf *pf);
-int			check_flags(const char *curr, t_pf *pf);
-void		upper_symb(char *str);
+/*
+ * * ft_itoa_new.c
+ */
+long long int				ft_atoi_long_long(const char *str);
+char		                *ft_itoa_long_long(long long int n);
+/*
+ * * chars-int-percent.c
+ */
 void		handle_char(t_pf *pf);
 void		handle_string(t_pf *pf);
-void		handle_pointer(t_pf *pf);
-void		handle_int(t_pf *pf);
-void		handle_oct_and_unsigned(t_pf *pf);
-void		handle_hex(t_pf *pf);
-void		handle_float(t_pf *pf);
 void		handle_percent(t_pf *pf);
-void		fill_and_print_string(t_pf *pf);
-void		transform_str_precision(t_pf *pf);
+/*
+ * * ft_printf.c
+ */
+int         ft_printf(const char *format, ...);
+int 		read_args(t_pf *pf, const char *format);
 void		print_all(t_pf *pf);
-int 		check_types(const char *curr, t_pf *pf);
-int			zero_or_space_string(t_pf *pf);
-int 		find_types(const char *str);
+/*
+ * * ints.c
+ */
+void		handle_int(t_pf *pf);
+void		handle_int_precision(t_pf *pf);
+void		handle_int_width(t_pf *pf);
+void		handle_int_width_and_precision(t_pf *pf);
 void		print_int(t_pf *pf);
-int			find_step(int num);
-char		*ft_itoa_long_long(long long int n);
-long long int				ft_atoi_long_long(const char *str);
+/*
+ * * ints_utils
+ */
 char        *fill_zero_string(t_pf *pf, int len, long long int num);
 void        put_sign(t_pf *pf, long long int num);
 void        fill_empty_str_neg_num(t_pf *pf, int len, long long num);
 void         fill_empty_str_pos_num(t_pf *pf, int len);
+/*
+ * * parsing.c
+ */
+int			check_flags(const char *curr, t_pf *pf);
+int 		find_types(const char *str);
+int 		check_types(const char *curr, t_pf *pf);
+int			zero_or_space_string(t_pf *pf);
+int			check_size_flag(const char *curr, t_pf *pf);
+/*
+ * * print_oct_hex.c
+ */
+void		handle_pointer(t_pf *pf);
+void		handle_oct_and_unsigned(t_pf *pf);
+void		handle_hex(t_pf *pf);
+/*
+ * precision.c
+ */
+int			find_step(long long int num);
+int			check_width(const char *curr, t_pf *pf);
+int 		check_precision(const char *curr, t_pf *pf);
+int			check_all_precisions(const char *curr, t_pf *pf);
+/*
+ * * print_str_char.c
+ */
+void		fill_and_print_string(t_pf *pf);
+void 		print_char(t_pf *pf);
+void		transform_str_precision(t_pf *pf);
+char 		*cut_string(char *str, int q);
+/*
+ * * utils.c
+ */
+t_pf 		*init_pf();
+void		upper_symb(char *str);
+void		handle_float(t_pf *pf);
 void		zero_pf(t_pf *pf);
-
-
-
-
 
 #endif

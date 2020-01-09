@@ -225,6 +225,10 @@ CMakeFiles/effective_waffle_printf.dir/src/ints.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/ints.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/src/ints.c.o: ../src/ints.c
 
+CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o: ../src/ints_utils.c
+
 CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o: ../src/parsing.c

@@ -27,7 +27,10 @@ void		handle_int(t_pf *pf)
 		num = (long long int)va_arg(pf->ap, long long int);
 	else if (ft_strequ(pf->size_flag, "l") == 1)
 		num = (long int)va_arg(pf->ap,  long int);
-	pf->filling = ft_itoa_long_long(num);///itoa long long!
+	if (num == 0 && (pf->precision == -1 || pf->precision == 0))
+	    pf->filling = "";
+	else
+	    pf->filling = ft_itoa_long_long(num);///itoa long long!
 	print_int(pf);
 }
 
@@ -66,11 +69,12 @@ void		handle_int_width(t_pf *pf)
 	len = ft_strlen(pf->filling);
 	if (pf->width > len)
 	{
-		if (num < 0)
-            fill_empty_str_neg_num(pf, len, num);
-		else
-		    fill_empty_str_pos_num(pf, len);
-		free(pf->filling);
+
+            if (num < 0)
+                fill_empty_str_neg_num(pf, len, num);
+            else
+                fill_empty_str_pos_num(pf, len);
+            free(pf->filling);
 		pf->filling = pf->str_empty;
 	}
 }
@@ -84,13 +88,76 @@ void		handle_int_width_and_precision(t_pf *pf)
 		ft_memset(pf->str_empty, ' ', pf->width);
 	if (pf->width > pf->precision)
 	{
-		if (pf->align_left != 1)
-			ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
-		else
-			ft_memcpy(pf->str_empty, pf->filling, len);
-		free(pf->filling);
-		pf->filling = pf->str_empty;
+	    if (pf->precision != 0 && pf->precision != -1)
+        {
+            if (pf->align_left != 1)
+                ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
+            else
+                ft_memcpy(pf->str_empty, pf->filling, len);
+            free(pf->filling);
+        }
+		    pf->filling = pf->str_empty;
 	}
+}
+
+void        ft_str_overlap_copy(char *str)
+{
+    char *tmp;
+    size_t len;
+    int i;
+    int j;
+
+    i = 1;
+    j = 0;
+    len = ft_strlen(str);
+
+    tmp = ft_strnew(len);
+    ft_memcpy(tmp, str, len);
+    while (len-1)
+    {
+        str[i] = tmp[j];
+        i++;
+        j++;
+        len--;
+    }
+    free(tmp);
+}
+
+int handle_max_and_min_long_long(t_pf *pf)
+{
+    if (ft_strequ(pf->filling, "9223372036854775807") == 1)
+    {
+        pf->filling = " 9223372036854775807";
+        return (1);
+    }
+    else if (ft_strequ(pf->filling, "-9223372036854775807") == 1)
+    {
+        pf->filling = "-9223372036854775807";
+        return (1);
+    }
+    return (0);
+}
+
+void        handle_int_space(t_pf *pf)
+{
+    int len;
+    long long num;
+
+    if (handle_max_and_min_long_long(pf) == 1)
+        return;
+    num = ft_atoi_long_long(pf->filling);
+    len = find_step((int)num);
+    if (num >= 0 && pf->need_sign != 1)
+    {
+        if (pf->width <= len)
+            pf->filling = ft_strjoin(" ", pf->filling);////FREEEE
+        if (pf->width > len + 1 && pf->align_left == 1)
+        {
+            ft_str_overlap_copy(pf->filling);
+            pf->filling[0] = ' ';
+        }
+            pf->filling[0] = ' ';
+    }
 }
 
 void		print_int(t_pf *pf)
@@ -105,7 +172,9 @@ void		print_int(t_pf *pf)
 	if (pf->width != 0 && pf->precision == -5)
 		handle_int_width(pf);
 	else if (pf->width != 0 && pf->precision != -5)
-		handle_int_width_and_precision(pf);
+	    handle_int_width_and_precision(pf);
+	if (pf->need_spase == 1)
+	    handle_int_space(pf);
 	ft_putstr(pf->filling);
 	pf->printed+=ft_strlen(pf->filling);
 }

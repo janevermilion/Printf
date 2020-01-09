@@ -12,13 +12,17 @@
 
 #include "ft_printf.h"
 
-int			find_step(int num)
+int			find_step(long long int num)
 {
 	int res;
 
 	res = 0;
 	if (num < 0)
-		return (0);
+    {
+        res++;
+        num*=-1;
+    }
+
 	while (num)
 	{
 		res++;
@@ -94,7 +98,6 @@ int 	check_precision(const char *curr, t_pf *pf)
 	if (pf->precision > 0)
 	{
 		width = find_step(pf->precision);
-		//return ((int)(&curr[i - 1] - curr) + width);
         return (i - width + 1);
 	}
 	return (0);

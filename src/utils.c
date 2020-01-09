@@ -29,6 +29,7 @@ t_pf 		*init_pf()
 	pf->size_flag = (char *)0;
 	pf->length = 0;
 	pf->str_empty = (char *)0;
+	pf->filling = (char *)0;
 	return (pf);
 }
 
