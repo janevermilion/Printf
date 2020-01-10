@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/3AB248B9-B4F6-4ADC-B859-569588379848/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/C438DE80-3690-45B1-B5BB-C76290742274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/3AB248B9-B4F6-4ADC-B859-569588379848/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/C438DE80-3690-45B1-B5BB-C76290742274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/3AB248B9-B4F6-4ADC-B859-569588379848/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/C438DE80-3690-45B1-B5BB-C76290742274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/3AB248B9-B4F6-4ADC-B859-569588379848/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/C438DE80-3690-45B1-B5BB-C76290742274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -2148,6 +2148,33 @@ src/ints_utils.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.s
 .PHONY : src/ints_utils.c.s
 
+src/oct_test.o: src/oct_test.c.o
+
+.PHONY : src/oct_test.o
+
+# target to build an object file
+src/oct_test.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o
+.PHONY : src/oct_test.c.o
+
+src/oct_test.i: src/oct_test.c.i
+
+.PHONY : src/oct_test.i
+
+# target to preprocess a source file
+src/oct_test.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.i
+.PHONY : src/oct_test.c.i
+
+src/oct_test.s: src/oct_test.c.s
+
+.PHONY : src/oct_test.s
+
+# target to generate assembly for a file
+src/oct_test.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.s
+.PHONY : src/oct_test.c.s
+
 src/parsing.o: src/parsing.c.o
 
 .PHONY : src/parsing.o
@@ -2517,6 +2544,9 @@ help:
 	@echo "... src/ints_utils.o"
 	@echo "... src/ints_utils.i"
 	@echo "... src/ints_utils.s"
+	@echo "... src/oct_test.o"
+	@echo "... src/oct_test.i"
+	@echo "... src/oct_test.s"
 	@echo "... src/parsing.o"
 	@echo "... src/parsing.i"
 	@echo "... src/parsing.s"

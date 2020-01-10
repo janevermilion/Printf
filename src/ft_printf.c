@@ -25,8 +25,10 @@ void		print_all(t_pf *pf)
 		handle_pointer(pf);
 	else if (pf->type == 'd' || pf->type == 'i')
 		handle_int(pf);
-	else if (pf->type == 'o' || pf->type == 'u')
-		handle_oct_and_unsigned(pf);
+	else if (pf->type == 'o')
+		handle_oct(pf);
+	else if (pf->type == 'u')
+	    handle_unsigned(pf);
 	else if (pf->type == 'x' || pf->type == 'X')
 		handle_hex(pf);
 	else if (pf->type == 'f')

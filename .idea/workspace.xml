@@ -12,27 +12,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639c2068-db75-42f5-83c8-f52b47cf25de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/oct_test.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ints.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ints.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/precision.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/precision.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/ft_printf.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libftprintf.a" beforeDir="false" afterPath="$PROJECT_DIR$/libftprintf.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/main_test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_itoa_new.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_itoa_new.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_printf.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ints.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ints.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/precision.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/precision.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pnt-oct-hex.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/pnt-oct-hex.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +58,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectId" id="1Uz4EepHbYF0rS7EGe3d9zgxv0X" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -130,7 +142,10 @@
       <workItem from="1578495544021" duration="50000" />
       <workItem from="1578495634923" duration="11039000" />
       <workItem from="1578564124505" duration="2582000" />
-      <workItem from="1578578952534" duration="11074000" />
+      <workItem from="1578578952534" duration="13991000" />
+      <workItem from="1578656306684" duration="1249000" />
+      <workItem from="1578660663795" duration="3460000" />
+      <workItem from="1578669497606" duration="7985000" />
     </task>
     <servers />
   </component>
@@ -154,9 +169,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/ints.c</url>
-          <line>155</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/oct_test.c</url>
+          <line>126</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

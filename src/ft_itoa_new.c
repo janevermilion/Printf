@@ -88,6 +88,25 @@ char				*ft_itoa_long_long(long long int n) {
     return (res);
 }
 
+char				*ft_itoa_long_long_uns(unsigned long long int n)
+{
+    char *res;
+    size_t i;
+    size_t len;
+
+    res = check_validity(n);
+    i = 0;
+    len = find_len(n);
+    if (res && n != 0) {
+        while (i < len) {
+            res[i++] = n % 10 + '0';
+            n /= 10;
+        }
+        reverse(res, 1);
+    }
+    return (res);
+}
+
 long long  int		ft_return(unsigned long long int res, long long int neg)
 {
     if (res >= 9223372036854775807 && neg == 1)
@@ -101,6 +120,31 @@ long long int				ft_atoi_long_long(const char *str)
 {
     int				i;
     long long int	result;
+    long long int	neg;
+
+    result = 0;
+    i = 0;
+    neg = 1;
+    while (str[i] == 32 || (str[i] > 8 && str[i] < 14))
+        i++;
+    if (str[i] == '-' || str[i] == '+')
+    {
+        if (str[i] == '-')
+            neg = -1;
+        i++;
+    }
+    while (str[i] > 47 && str[i] < 58)
+    {
+        result = result * 10 + (str[i] - 48);
+        i++;
+    }
+    return (ft_return(result, neg));
+}
+
+unsigned long long int				ft_atoi_long_long_uns(const char *str)
+{
+    int				i;
+    unsigned long long int	result;
     long long int	neg;
 
     result = 0;

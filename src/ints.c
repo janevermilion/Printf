@@ -152,21 +152,19 @@ void        handle_int_space(t_pf *pf)
         if (pf->width <= len)
             pf->filling = ft_strjoin(" ", pf->filling);////FREEEE
         if (pf->width > len + 1 && pf->align_left == 1)
-        {
             ft_str_overlap_copy(pf->filling);
-            pf->filling[0] = ' ';
-        }
-            pf->filling[0] = ' ';
+        pf->filling[0] = ' ';
     }
 }
 
 void		print_int(t_pf *pf)
 {
-	if (pf->precision == -5 && pf->width == 0 && pf->align_left == 0)
-	{
-		if (pf->need_sign == 1 && ft_atoi_long_long(pf->filling) >= 0)
+    long long int num;
+
+    num = ft_atoi_long_long(pf->filling);
+	if (pf->precision == -5 && pf->width == 0 && pf->align_left == 0 &&
+	(pf->need_sign == 1 && num >= 0))
 			pf->filling = ft_strjoin("+", pf->filling);////FREEEEE
-	}
 	if (pf->precision != -5)
 		handle_int_precision(pf);
 	if (pf->width != 0 && pf->precision == -5)
@@ -175,6 +173,14 @@ void		print_int(t_pf *pf)
 	    handle_int_width_and_precision(pf);
 	if (pf->need_spase == 1)
 	    handle_int_space(pf);
+	if (num == 0 && (pf->precision == 0 || pf->precision == -1) && pf->width >
+	0 && pf->need_sign == 1)
+    {
+	    if(pf->align_left == 1)
+	        pf->filling[0] = '+';
+	    else
+	        pf->filling[ft_strlen(pf->filling) - 1] = '+';
+    }
 	ft_putstr(pf->filling);
 	pf->printed+=ft_strlen(pf->filling);
 }

@@ -20,23 +20,17 @@ void		handle_pointer(t_pf *pf)
 	pf->filling = ft_itoa_base_unsigned(pnt, 16);
 	pf->filling = ft_strjoin("0x", pf->filling);//LEAK
 	fill_and_print_string(pf);
-};
+}
 
-void		handle_oct_and_unsigned(t_pf *pf)
+void        handle_unsigned(t_pf *pf)
 {
-	unsigned int num;
-	char *str;
+    unsigned int num;
 
-	num = (unsigned int)va_arg(pf->ap, unsigned int);
-	if (pf->type == 'o')
-	{
-		pf->filling = ft_itoa_base(num, 8);
-		if (pf->need_format == 1)
-			str = ft_strjoin("0", pf->filling);//LEAK
-	}
-	else if (pf->type == 'u')
-		pf->filling = ft_itoa(num);
-};
+    num = (unsigned int)va_arg(pf->ap, unsigned int);
+    if (pf->type == 'u')
+        pf->filling = ft_itoa(num);
+    print_int(pf);
+}
 
 void		handle_hex(t_pf *pf)
 {

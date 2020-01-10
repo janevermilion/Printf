@@ -60,6 +60,7 @@ typedef struct  s_pf
  */
 long long int				ft_atoi_long_long(const char *str);
 char		                *ft_itoa_long_long(long long int n);
+unsigned long long int				ft_atoi_long_long_uns(const char *str);
 /*
  * * chars-int-percent.c
  */
@@ -80,6 +81,9 @@ void		handle_int_precision(t_pf *pf);
 void		handle_int_width(t_pf *pf);
 void		handle_int_width_and_precision(t_pf *pf);
 void		print_int(t_pf *pf);
+void        handle_int_space(t_pf *pf);
+int         handle_max_and_min_long_long(t_pf *pf);
+void        ft_str_overlap_copy(char *str);
 /*
  * * ints_utils
  */
@@ -99,8 +103,9 @@ int			check_size_flag(const char *curr, t_pf *pf);
  * * print_oct_hex.c
  */
 void		handle_pointer(t_pf *pf);
-void		handle_oct_and_unsigned(t_pf *pf);
+//void		handle_oct(t_pf *pf);
 void		handle_hex(t_pf *pf);
+void        handle_unsigned(t_pf *pf);
 /*
  * precision.c
  */
@@ -122,5 +127,15 @@ t_pf 		*init_pf();
 void		upper_symb(char *str);
 void		handle_float(t_pf *pf);
 void		zero_pf(t_pf *pf);
+
+/*
+ * oct_test.c
+ */
+void		handle_oct(t_pf *pf);
+void		print_int_oct(t_pf *pf);
+void        handle_int_space_oct(t_pf *pf);
+void		handle_int_width_oct(t_pf *pf);
+void		handle_int_precision_oct(t_pf *pf);
+char		*ft_itoa_long_long_uns(unsigned long long int n);
 
 #endif

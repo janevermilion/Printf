@@ -79,6 +79,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/ints.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ints.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/ints_utils.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/src/oct_test.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/parsing.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/pnt-oct-hex.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/precision.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/precision.c.o"

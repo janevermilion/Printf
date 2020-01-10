@@ -320,6 +320,9 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/ints_utils.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/oct_test.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/parsing.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
