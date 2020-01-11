@@ -69,22 +69,32 @@ int         handle_zero_oct(t_pf *pf)
         {
             if (pf->precision == 0 || pf->precision == -1)
                 pf->filling = "";
-            if (pf->need_format == 1)
+            if (pf->width <= 0 && pf->need_format == 1 && pf->precision != -5)
                 pf->filling = ft_strjoin("0", pf->filling);//FREEEE
         }
-        else if(pf->width > 1 && pf->precision == -5)
+        else if(pf->width > 1 && pf->precision <= 0)
         {
             free(pf->filling);
             pf->filling = pf->str_empty;
-            if (pf->align_left == 1)
+            if (pf->align_left == 1 && pf->precision != 0 && pf->precision != -1)
                 pf->str_empty[0] = '0';
-            else
+            else if (pf->align_left !=1 && pf->precision != 0 && pf->precision != -1)
+                pf->str_empty[pf->width-1] = '0';
+            else if (pf->align_left == 1 && ((pf->precision == 0 || pf->precision == -1)) && pf->need_format == 1)
+                pf->str_empty[0] = '0';
+            else if (pf->align_left !=1 && ((pf->precision == 0 || pf->precision == -1) && pf->need_format == 1))
+                pf->str_empty[pf->width-1] = '0';
+            else if (pf->align_left == 1 && (pf->precision == -5))
+                pf->str_empty[0] = '0';
+            else if (pf->align_left !=1 && (pf->precision == -5))
                 pf->str_empty[pf->width-1] = '0';
         }
         else if (pf->precision > 1)
         {
             zero = fill_zero_string(pf, 1, 0);
             pf->filling = ft_strjoin(zero, pf->filling);////FREEEEEE
+            if (pf->width > pf->precision)
+                handle_int_width_and_precision(pf);
         }
 
         return (1);
@@ -125,15 +135,15 @@ void		handle_oct(t_pf *pf)
     if (pf->size_flag == NULL)
         num = (unsigned int)va_arg(pf->ap, unsigned int);
     else if (ft_strequ(pf->size_flag, "hh") == 1)
-        num = (signed char)va_arg(pf->ap, unsigned int);
+        num = (unsigned char)va_arg(pf->ap, unsigned int);
     else if (ft_strequ(pf->size_flag, "h") == 1)
-        num = (short)va_arg(pf->ap, unsigned int);
+        num = (unsigned short)va_arg(pf->ap, unsigned int);
     else if (ft_strequ(pf->size_flag, "ll") == 1)
-        num = (long long int)va_arg(pf->ap, unsigned long long int);
+        num = (unsigned long long int)va_arg(pf->ap, unsigned long long int);
     else if (ft_strequ(pf->size_flag, "l") == 1)
-        num = (long int)va_arg(pf->ap,  unsigned long int);
+        num = (unsigned long int)va_arg(pf->ap,  unsigned long int);
     pf->filling = ft_itoa_base_unsigned(num, 8);
-    if (pf->need_format == 1)
+    if (pf->need_format == 1 && num)
         pf->filling = ft_strjoin("0", pf->filling);//FREEEE
     print_int_oct(pf);
 };
