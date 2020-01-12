@@ -102,8 +102,6 @@ int         handle_zero_oct(t_pf *pf)
     return (0);
 }
 
-
-
 void		print_int_oct(t_pf *pf)
 {
     unsigned long long int num;

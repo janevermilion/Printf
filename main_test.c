@@ -15,10 +15,10 @@ int         main()
     static unsigned long  		ulmax = 9223372036854775807;
 
 printf("mine:\n");
-int t = ft_printf("%llu", ull_pos_1);
+int t = ft_printf("%.0i", 0);
 printf("<-\nreturned value : %i", t);
 printf("\norigin:\n");
- t = printf("%llu", ull_pos_1);
+ t = printf("%.0i", 0);
 printf("<-\nreturned value : %i", t);
 printf("\n------------\n");
   return (0);

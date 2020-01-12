@@ -34,8 +34,6 @@ void		handle_int(t_pf *pf)
 	print_int(pf);
 }
 
-
-
 void		handle_int_precision(t_pf *pf)
 {
 	char *zero;
