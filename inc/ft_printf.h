@@ -138,4 +138,6 @@ void		handle_int_width_oct(t_pf *pf);
 void		handle_int_precision_oct(t_pf *pf);
 char		*ft_itoa_long_long_uns(unsigned long long int n);
 
+
+void        print_int_hex(t_pf *pf);
 #endif

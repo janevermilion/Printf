@@ -57,15 +57,6 @@ int 		read_args(t_pf *pf, const char *format)
 			i+=check_precision(&format[i], pf);
 			i+=check_size_flag(&format[i], pf);
 			i+=check_types(&format[i], pf);
-			/*printf(ANSI_COLOR_YELLOW "\nwidth: %i\n", pf->width);
-			printf(ANSI_COLOR_YELLOW "align-left: %i\n", pf->align_left);
-			printf(ANSI_COLOR_YELLOW "need sign: %i\n", pf->need_sign);
-			printf(ANSI_COLOR_YELLOW "need space: %i\n", pf->need_spase);
-			printf(ANSI_COLOR_YELLOW "need_format: %i\n", pf->need_format);
-			printf(ANSI_COLOR_YELLOW "precision: %i\n", pf->precision);
-			printf(ANSI_COLOR_YELLOW "type: %c\n", pf->type);
-			printf(ANSI_COLOR_YELLOW "size_flag: %s\n", pf->size_flag);
-			printf(ANSI_COLOR_YELLOW "length: %i\n\n" ANSI_COLOR_RESET, pf->length);*/
 			print_all(pf);//Need to return success\fail?
 			zero_pf(pf);
 		}
