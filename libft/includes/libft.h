@@ -91,7 +91,9 @@ t_list				*ft_lstpushelem(t_list *begin, void const *content, \
 		size_t content_size);
 t_list				*ft_lstappendelem(t_list *start, t_list *new);
 int					ft_count_if(char **tab, int (*f)(char *));
-char				*ft_strjoinfree(char *s1, char *s2);
+char				*ft_strjoinfree_s1(char *s1, char *s2);
+char				*ft_strjoinfree_s2(char *s1, char *s2);
+char				*ft_strjoinfree_both(char *s1, char *s2);
 int                 get_next_line(int fd, char **line);
 int                 ft_atoi_base(const char *str, int base);
 char				*ft_itoa_base(unsigned long long int value, int base);

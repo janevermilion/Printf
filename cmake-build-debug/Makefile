@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/63812B64-0421-467B-82F5-F7259189D918/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/259C7C4C-BE56-4A4F-A216-690581F872C4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/63812B64-0421-467B-82F5-F7259189D918/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/259C7C4C-BE56-4A4F-A216-690581F872C4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/63812B64-0421-467B-82F5-F7259189D918/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/259C7C4C-BE56-4A4F-A216-690581F872C4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/63812B64-0421-467B-82F5-F7259189D918/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/259C7C4C-BE56-4A4F-A216-690581F872C4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -2094,6 +2094,33 @@ src/ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.s
 .PHONY : src/ft_printf.c.s
 
+src/ft_strjoin_printf.o: src/ft_strjoin_printf.c.o
+
+.PHONY : src/ft_strjoin_printf.o
+
+# target to build an object file
+src/ft_strjoin_printf.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_strjoin_printf.c.o
+.PHONY : src/ft_strjoin_printf.c.o
+
+src/ft_strjoin_printf.i: src/ft_strjoin_printf.c.i
+
+.PHONY : src/ft_strjoin_printf.i
+
+# target to preprocess a source file
+src/ft_strjoin_printf.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_strjoin_printf.c.i
+.PHONY : src/ft_strjoin_printf.c.i
+
+src/ft_strjoin_printf.s: src/ft_strjoin_printf.c.s
+
+.PHONY : src/ft_strjoin_printf.s
+
+# target to generate assembly for a file
+src/ft_strjoin_printf.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_strjoin_printf.c.s
+.PHONY : src/ft_strjoin_printf.c.s
+
 src/hex.o: src/hex.c.o
 
 .PHONY : src/hex.o
@@ -2565,6 +2592,9 @@ help:
 	@echo "... src/ft_printf.o"
 	@echo "... src/ft_printf.i"
 	@echo "... src/ft_printf.s"
+	@echo "... src/ft_strjoin_printf.o"
+	@echo "... src/ft_strjoin_printf.i"
+	@echo "... src/ft_strjoin_printf.s"
 	@echo "... src/hex.o"
 	@echo "... src/hex.i"
 	@echo "... src/hex.s"

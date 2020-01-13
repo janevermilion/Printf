@@ -65,7 +65,7 @@ static char				*read_buf(char *buf, t_list *save, int res)
 
 	result = NULL;
 	if (res > 0)
-		save->content = ft_strjoinfree(save->content, buf);
+		save->content = ft_strjoinfree_s1(save->content, buf);
 	lenofsave = ft_strlen((char *)save->content);
 	if ((ft_strchr(save->content, '\n')))
 		return (result = read_save(save, lenofsave));

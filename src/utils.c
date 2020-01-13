@@ -17,6 +17,8 @@ t_pf 		*init_pf()
 	t_pf *pf;
 
 	pf = malloc(sizeof(t_pf));
+	if (!pf)
+	    return(NULL);
 	pf->width = 0;
 	pf->printed = 0;
 	pf->align_left = 0;
@@ -26,6 +28,7 @@ t_pf 		*init_pf()
 	pf->zero_filling = 0;
 	pf->precision = -5;
 	pf->type = '\0';
+
 	pf->size_flag = (char *)0;
 	pf->length = 0;
 	pf->str_empty = (char *)0;
@@ -47,7 +50,17 @@ void		zero_pf(t_pf *pf)
 	pf->length = 0;
 }
 
-void	upper_symb(char *str)
+void        free_pf(t_pf *pf)
+{
+    zero_pf(pf);
+    if (*pf->filling)
+        free(pf->filling);
+    if (*pf->str_empty)
+        free(pf->str_empty);
+   free(pf);
+}
+
+void        upper_symb(char *str)
 {
 	while (*str)
 	{

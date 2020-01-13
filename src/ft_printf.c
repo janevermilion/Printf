@@ -70,14 +70,17 @@ int         ft_printf(const char *format, ...)
 	t_pf *pf;
 	int i;
 
-	if ((pf = init_pf()) == NULL)
+	if (format == NULL || (pf = init_pf()) == NULL)
 		return (0);
-	va_start(pf->ap, format);//NUL!!!!!
+	va_start(pf->ap, format);
 	if (read_args(pf, format) < 0)
-		return (-1);
+    {
+	    free_pf(pf);
+        return (-1);
+    }
 	va_end(pf->ap);
 	i = pf->printed;
-	free(pf);
+    free_pf(pf);
 	return (i);
 }
 
