@@ -12,29 +12,30 @@
 
 #include "ft_printf.h"
 
-void		print_all(t_pf *pf)
+int		print_all(t_pf *pf)
 {
 	if (pf->width != 0)
 		if (zero_or_space_string(pf) == -1)
-			return;
+			return (-1);
 	if (pf->type == 'c')
-		handle_char(pf);
+        return (handle_char(pf));
 	else if (pf->type == 's')
-		handle_string(pf);
+        return (handle_string(pf));
 	else if (pf->type == 'p')
-		handle_pointer(pf);
+		return (handle_pointer(pf));
 	else if (pf->type == 'd' || pf->type == 'i')
-		handle_int(pf);
+		return (handle_int(pf));
 	else if (pf->type == 'o')
-		handle_oct(pf);
+        return (handle_oct(pf));
 	else if (pf->type == 'u')
-	    handle_unsigned(pf);
+	    return (handle_unsigned(pf));
 	else if (pf->type == 'x' || pf->type == 'X')
-		handle_hex(pf);
+		return (handle_hex(pf));
 	else if (pf->type == 'f')
-		handle_float(pf);
+		return (handle_float(pf));
 	else if (pf->type == '%')
-		handle_percent(pf);
+		return (handle_percent(pf));
+    return (-1);//////?????????????
 }
 
 int 		read_args(t_pf *pf, const char *format)
@@ -57,8 +58,8 @@ int 		read_args(t_pf *pf, const char *format)
 			i+=check_precision(&format[i], pf);
 			i+=check_size_flag(&format[i], pf);
 			i+=check_types(&format[i], pf);
-			print_all(pf);//Need to return success\fail?
-			zero_pf(pf);
+			if (print_all(pf) >= 0)//Need to return success\fail?
+			    zero_pf(pf);
 		}
 		i++;
 	}
@@ -80,7 +81,7 @@ int         ft_printf(const char *format, ...)
     }
 	va_end(pf->ap);
 	i = pf->printed;
-    free_pf(pf);
+    //free_pf(pf);
 	return (i);
 }
 

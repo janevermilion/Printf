@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void		handle_int(t_pf *pf)
+int		handle_int(t_pf *pf)
 {
 	long long int num;
 
@@ -32,6 +32,7 @@ void		handle_int(t_pf *pf)
 	else
 	    pf->filling = ft_itoa_long_long(num);///itoa long long!
 	print_int(pf);
+    return (pf->printed);
 }
 
 void		handle_int_precision(t_pf *pf)
@@ -49,11 +50,11 @@ void		handle_int_precision(t_pf *pf)
 			len--;
 		}
 		zero = fill_zero_string(pf, len, num);
-		pf->filling = ft_strjoin(zero, pf->filling);////FREEEEEE
+		pf->filling = ft_strjoinfree_both(zero, pf->filling);////FREEEEEE
 		put_sign(pf, num);
 	}
 	else if (pf->need_sign == 1 && num >= 0)
-		pf->filling = ft_strjoin("+", pf->filling);///FREEEEE
+		pf->filling = ft_strjoinfree_s2("+", pf->filling);///FREEEEE
 }
 
 void		handle_int_width(t_pf *pf)
@@ -63,16 +64,15 @@ void		handle_int_width(t_pf *pf)
 
     num = ft_atoi_long_long(pf->filling);
 	if (pf->need_sign == 1 && num >= 0 && pf->zero_filling == 0)
-		pf->filling = ft_strjoin("+", pf->filling);//FREEEEE
+		pf->filling = ft_strjoinfree_s2("+", pf->filling);//FREEEEE
 	len = ft_strlen(pf->filling);
 	if (pf->width > len)
 	{
-
-            if (num < 0)
-                fill_empty_str_neg_num(pf, len, num);
-            else
-                fill_empty_str_pos_num(pf, len);
-            free(pf->filling);
+        if (num < 0)
+            fill_empty_str_neg_num(pf, len, num);
+        else
+            fill_empty_str_pos_num(pf, len);
+        free(pf->filling);///////////////
 		pf->filling = pf->str_empty;
 	}
 }
@@ -148,7 +148,7 @@ void        handle_int_space(t_pf *pf)
     if (num >= 0 && pf->need_sign != 1)
     {
         if (pf->width <= len)
-            pf->filling = ft_strjoin(" ", pf->filling);////FREEEE
+            pf->filling = ft_strjoinfree_s2(" ", pf->filling);////FREEEE
         if (pf->width > len + 1 && pf->align_left == 1)
             ft_str_overlap_copy(pf->filling);
         pf->filling[0] = ' ';
@@ -162,7 +162,7 @@ void		print_int(t_pf *pf)
     num = ft_atoi_long_long(pf->filling);
 	if (pf->precision == -5 && pf->width == 0 && pf->align_left == 0 &&
 	(pf->need_sign == 1 && num >= 0))
-			pf->filling = ft_strjoin("+", pf->filling);////FREEEEE
+			pf->filling = ft_strjoinfree_s2("+", pf->filling);////FREEEEE
 	if (pf->precision != -5)
 		handle_int_precision(pf);
 	if (pf->width != 0 && pf->precision == -5)

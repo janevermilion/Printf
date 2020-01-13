@@ -14,11 +14,11 @@ void		handle_int_precision_oct(t_pf *pf)
     if (pf->precision > len)
     {
         zero = fill_zero_string(pf, len, num);
-        pf->filling = ft_strjoin(zero, pf->filling);////FREEEEEE
+        pf->filling = ft_strjoinfree_both(zero, pf->filling);////FREEEEEE
         put_sign(pf, num);
     }
     else if (pf->need_sign == 1)
-        pf->filling = ft_strjoin("+", pf->filling);///FREEEEE
+        pf->filling = ft_strjoinfree_both("+", pf->filling);///FREEEEE
 }
 
 void		handle_int_width_oct(t_pf *pf)
@@ -28,7 +28,7 @@ void		handle_int_width_oct(t_pf *pf)
 
     num = ft_atoi_long_long_uns(pf->filling);
     if (pf->need_sign == 1 && pf->zero_filling == 0)
-        pf->filling = ft_strjoin("+", pf->filling);//FREEEEE
+        pf->filling = ft_strjoinfree_s2("+", pf->filling);//FREEEEE
     len = ft_strlen(pf->filling);
     if (pf->width > len)
     {
@@ -50,7 +50,7 @@ void        handle_int_space_oct(t_pf *pf)
     if (pf->need_sign != 1)
     {
         if (pf->width <= len)
-            pf->filling = ft_strjoin(" ", pf->filling);////FREEEE
+            pf->filling = ft_strjoinfree_s2(" ", pf->filling);////FREEEE
         if (pf->width > len + 1 && pf->align_left == 1)
             ft_str_overlap_copy(pf->filling);
         pf->filling[0] = ' ';
@@ -82,14 +82,14 @@ void        handle_zero_oct(t_pf *pf)
         if (pf->precision == 0 || pf->precision == -1)
             pf->filling = "";
         if (pf->width <= 0 && pf->need_format == 1 && pf->precision != -5)
-            pf->filling = ft_strjoin("0", pf->filling);//FREEEE
+            pf->filling = ft_strjoinfree_s2("0", pf->filling);//FREEEE
     }
     else if(pf->width > 1 && pf->precision <= 0)
         change_str_empty_pos_width_neg_pres(pf);
     else if (pf->precision > 1)
     {
         zero = fill_zero_string(pf, 1, 0);
-        pf->filling = ft_strjoin(zero, pf->filling);////FREEEEEE
+        pf->filling = ft_strjoinfree_both(zero, pf->filling);////FREEEEEE
         if (pf->width > pf->precision)
             handle_int_width_and_precision(pf);
     }
@@ -104,7 +104,7 @@ void		print_int_oct(t_pf *pf)
     {
         if (pf->precision == -5 && pf->width == 0 && pf->align_left == 0 &&
             (pf->need_sign == 1))
-            pf->filling = ft_strjoin("+", pf->filling);////FREEEEE
+            pf->filling = ft_strjoinfree_s2("+", pf->filling);////FREEEEE
         if (pf->precision != -5)
             handle_int_precision_oct(pf);
         if (pf->width != 0 && pf->precision == -5)
@@ -120,7 +120,7 @@ void		print_int_oct(t_pf *pf)
     pf->printed+=ft_strlen(pf->filling);
 }
 
-void		handle_oct(t_pf *pf)
+int		handle_oct(t_pf *pf)
 {
     unsigned long long int num;
     num = 0;
@@ -137,6 +137,7 @@ void		handle_oct(t_pf *pf)
         num = (unsigned long int)va_arg(pf->ap,  unsigned long int);
     pf->filling = ft_itoa_base_unsigned(num, 8);
     if (pf->need_format == 1 && num)
-        pf->filling = ft_strjoin("0", pf->filling);//FREEEE
+        pf->filling = ft_strjoinfree_s2("0", pf->filling);//FREEEE
     print_int_oct(pf);
+    return (pf->printed);
 };

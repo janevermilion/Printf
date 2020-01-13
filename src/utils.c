@@ -53,11 +53,16 @@ void		zero_pf(t_pf *pf)
 void        free_pf(t_pf *pf)
 {
     zero_pf(pf);
-    if (*pf->filling)
+    int len_of_filling;
+    int len_of_str_empty;
+
+    len_of_filling = ft_strlen(pf->filling);
+    len_of_str_empty = ft_strlen(pf->str_empty);
+
+    if (*pf->filling && len_of_filling)
         free(pf->filling);
-    if (*pf->str_empty)
+    if (*pf->str_empty && *pf->filling && pf->str_empty != pf->filling)
         free(pf->str_empty);
-   free(pf);
 }
 
 void        upper_symb(char *str)

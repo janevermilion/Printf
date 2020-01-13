@@ -2094,33 +2094,6 @@ src/ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.s
 .PHONY : src/ft_printf.c.s
 
-src/ft_strjoin_printf.o: src/ft_strjoin_printf.c.o
-
-.PHONY : src/ft_strjoin_printf.o
-
-# target to build an object file
-src/ft_strjoin_printf.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_strjoin_printf.c.o
-.PHONY : src/ft_strjoin_printf.c.o
-
-src/ft_strjoin_printf.i: src/ft_strjoin_printf.c.i
-
-.PHONY : src/ft_strjoin_printf.i
-
-# target to preprocess a source file
-src/ft_strjoin_printf.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_strjoin_printf.c.i
-.PHONY : src/ft_strjoin_printf.c.i
-
-src/ft_strjoin_printf.s: src/ft_strjoin_printf.c.s
-
-.PHONY : src/ft_strjoin_printf.s
-
-# target to generate assembly for a file
-src/ft_strjoin_printf.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_strjoin_printf.c.s
-.PHONY : src/ft_strjoin_printf.c.s
-
 src/hex.o: src/hex.c.o
 
 .PHONY : src/hex.o
@@ -2592,9 +2565,6 @@ help:
 	@echo "... src/ft_printf.o"
 	@echo "... src/ft_printf.i"
 	@echo "... src/ft_printf.s"
-	@echo "... src/ft_strjoin_printf.o"
-	@echo "... src/ft_strjoin_printf.i"
-	@echo "... src/ft_strjoin_printf.s"
 	@echo "... src/hex.o"
 	@echo "... src/hex.i"
 	@echo "... src/hex.s"

@@ -12,17 +12,18 @@
 
 #include "ft_printf.h"
 
-void		handle_pointer(t_pf *pf)
+int		handle_pointer(t_pf *pf)
 {
 	unsigned long long int pnt;
 
 	pnt = (unsigned long long int)va_arg(pf->ap, void *);//ширина и точность!!!!
 	pf->filling = ft_itoa_base_unsigned(pnt, 16);
-	pf->filling = ft_strjoin("0x", pf->filling);//LEAK
+	pf->filling = ft_strjoinfree_s2("0x", pf->filling);//LEAK
 	fill_and_print_string(pf);
+    return (pf->printed);
 }
 
-void        handle_unsigned(t_pf *pf)
+int       handle_unsigned(t_pf *pf)
 {
     unsigned long long int num;
 
@@ -42,9 +43,10 @@ void        handle_unsigned(t_pf *pf)
     else
         pf->filling = ft_itoa_base_unsigned(num, 10);
     print_int(pf);
+    return (pf->printed);
 }
 
-void		handle_hex(t_pf *pf)
+int		handle_hex(t_pf *pf)
 {
     unsigned long long int num;
 
@@ -64,4 +66,5 @@ void		handle_hex(t_pf *pf)
     else
         pf->filling = ft_itoa_base_unsigned(num, 16);
     print_int_hex(pf);
+    return (pf->printed);
 };

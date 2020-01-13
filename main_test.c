@@ -7,10 +7,10 @@
 int         main()
 {
 printf("mine:\n");
-int t = ft_printf("%#05X", 43);
+int t = ft_printf("%#-08x", 42);
 printf("<-\nreturned value : %i", t);
 printf("\norigin:\n");
- t = printf("%#05x", 43);
+ t = printf("%#-08x", 42);
 printf("<-\nreturned value : %i", t);
 printf("\n------------\n");
   return (0);

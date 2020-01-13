@@ -64,19 +64,19 @@ unsigned long long int				ft_atoi_long_long_uns(const char *str);
 /*
  * * chars-int-percent.c
  */
-void		handle_char(t_pf *pf);
-void		handle_string(t_pf *pf);
-void		handle_percent(t_pf *pf);
+int		handle_char(t_pf *pf);
+int		handle_string(t_pf *pf);
+int		handle_percent(t_pf *pf);
 /*
  * * ft_printf.c
  */
 int         ft_printf(const char *format, ...);
 int 		read_args(t_pf *pf, const char *format);
-void		print_all(t_pf *pf);
+int		print_all(t_pf *pf);
 /*
  * * ints.c
  */
-void		handle_int(t_pf *pf);
+int		handle_int(t_pf *pf);
 void		handle_int_precision(t_pf *pf);
 void		handle_int_width(t_pf *pf);
 void		handle_int_width_and_precision(t_pf *pf);
@@ -102,10 +102,9 @@ int			check_size_flag(const char *curr, t_pf *pf);
 /*
  * * print_oct_hex.c
  */
-void		handle_pointer(t_pf *pf);
-//void		handle_oct(t_pf *pf);
-void		handle_hex(t_pf *pf);
-void        handle_unsigned(t_pf *pf);
+int		handle_pointer(t_pf *pf);
+int		handle_hex(t_pf *pf);
+int       handle_unsigned(t_pf *pf);
 /*
  * precision.c
  */
@@ -125,13 +124,13 @@ char 		*cut_string(char *str, int q);
  */
 t_pf 		*init_pf();
 void		upper_symb(char *str);
-void		handle_float(t_pf *pf);
+int		handle_float(t_pf *pf);
 void		zero_pf(t_pf *pf);
 
 /*
  * oct_test.c
  */
-void		handle_oct(t_pf *pf);
+int		handle_oct(t_pf *pf);
 void		print_int_oct(t_pf *pf);
 void        handle_int_space_oct(t_pf *pf);
 void		handle_int_width_oct(t_pf *pf);

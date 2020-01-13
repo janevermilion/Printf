@@ -25,7 +25,7 @@ void        transform_hex_format(t_pf *pf)
     if (pf->precision == -5 && pf->width && pf->zero_filling && pf->filling[0] == '0' && pf->filling[1] == '0')
         pf->filling[1] = 'x';
     else if (i <= 1 && pf->filling[len -1] != ' ')
-        pf->filling = ft_strjoin("0x", &pf->filling[i]);///FREEEE
+        pf->filling = ft_strjoinfree_s2("0x", &pf->filling[i]);///FREEEE
     else if (i <= 1 && pf->filling[len -1] == ' ')
     {
         temp = ft_strnew(len);
@@ -61,7 +61,7 @@ void        print_int_hex(t_pf *pf)
 
     if (pf->precision == -5 && pf->width == 0 && pf->align_left == 0 &&
         (pf->need_sign == 1))
-        pf->filling = ft_strjoin("+", pf->filling);////FREEEEE
+        pf->filling = ft_strjoinfree_s2("+", pf->filling);////FREEEEE
     if (pf->precision != -5)
         handle_int_precision(pf);
     if (pf->width != 0 && pf->precision == -5)

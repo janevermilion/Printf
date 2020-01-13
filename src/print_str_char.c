@@ -35,7 +35,7 @@ void		transform_str_precision(t_pf *pf)
 	{
 		zero = ft_memalloc(pf->precision - len + 1);
 		ft_memset(zero, '0', pf->precision - len);
-		test = ft_strjoinfree(zero, pf->filling);
+		test = ft_strjoinfree_both(zero, pf->filling);
 		pf->filling = test;//LEAK
 	}
 	else if (pf->precision > 0 && pf->precision < len && pf->type == 's')
@@ -45,7 +45,15 @@ void		transform_str_precision(t_pf *pf)
 			pf->filling = test;//LEAK
 	}
 	else if (pf->precision == 0)
-		pf->filling = "";
+    {
+        pf->filling = "";
+	    if (pf->type == '%')
+        {
+	        pf->filling = ft_strnew(1);
+            pf->filling[0] = '%';
+        }
+
+    }
 }
 
 void 		print_char(t_pf *pf)

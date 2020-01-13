@@ -12,7 +12,8 @@
 
 #include "ft_printf.h"
 
-void		handle_float(t_pf *pf)
+int		handle_float(t_pf *pf)
 {
 	(void)pf;
+    return (0);
 };

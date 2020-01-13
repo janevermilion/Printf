@@ -37,7 +37,7 @@ void        put_sign(t_pf *pf, long long int num)
     else if (num > 0 && pf->need_sign == 1)
         pf->filling[0] = '+';
     else if (num == 0 && pf->need_sign == 1)
-        pf->filling = ft_strjoin("+", pf->filling);///FREEEE
+        pf->filling = ft_strjoinfree_s2("+", pf->filling);///FREEEE
 }
 
 void        fill_empty_str_neg_num(t_pf *pf, int len, long long num)
