@@ -13,8 +13,6 @@
 #ifndef FT_PRINTF_H
 #define FT_PRINTF_H
 
-//#-+.*0123456789hLljz
-//#include "libft.h"
 #include "../libft/includes/libft.h"
 #include <stdarg.h>
 #include <string.h>
@@ -23,7 +21,7 @@
 
 #define FLAGS " -+#0123456789"
 #define TYPES "cspdiouxXf%"
-
+#define INT_TYPES "diouxXf"
 /////////////////////////////////////////////
 
 #define ANSI_COLOR_RED     "\x1b[31m"
@@ -95,7 +93,7 @@ void         fill_empty_str_pos_num(t_pf *pf, int len);
  * * parsing.c
  */
 int			check_flags(const char *curr, t_pf *pf);
-int 		find_types(const char *str);
+int 		find_types(const char *str, char *parent);
 int 		check_types(const char *curr, t_pf *pf);
 int			zero_or_space_string(t_pf *pf);
 int			check_size_flag(const char *curr, t_pf *pf);

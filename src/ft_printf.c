@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int		print_all(t_pf *pf)
+int		                print_all(t_pf *pf)
 {
 	if (pf->width != 0)
 		if (zero_or_space_string(pf) == -1)
@@ -42,10 +42,11 @@ int 		read_args(t_pf *pf, const char *format)
 {
 	int i;
 	i = 0;
+	int len = ft_strlen(format);
 
-	while (format[i] != '\0')
+	while (format[i] != '\0' && i < len)
 	{
-		if (format[i] != '%')
+		if (format[i] != '%' && format[i] != '\0')
 		{
 			ft_putchar(format[i]);
 			pf->printed++;
@@ -58,7 +59,16 @@ int 		read_args(t_pf *pf, const char *format)
 			i+=check_precision(&format[i], pf);
 			i+=check_size_flag(&format[i], pf);
 			i+=check_types(&format[i], pf);
-			if (print_all(pf) >= 0)//Need to return success\fail?
+ /*           printf(ANSI_COLOR_YELLOW "\nwidth: %i\n", pf->width);
+            printf(ANSI_COLOR_YELLOW "align-left: %i\n", pf->align_left);
+            printf(ANSI_COLOR_YELLOW "need sign: %i\n", pf->need_sign);
+            printf(ANSI_COLOR_YELLOW "need space: %i\n", pf->need_spase);
+            printf(ANSI_COLOR_YELLOW "need_format: %i\n", pf->need_format);
+            printf(ANSI_COLOR_YELLOW "precision: %i\n", pf->precision);
+            printf(ANSI_COLOR_YELLOW "type: %c\n", pf->type);
+            printf(ANSI_COLOR_YELLOW "size_flag: %s\n", pf->size_flag);
+            printf(ANSI_COLOR_YELLOW "length: %i\n\n" ANSI_COLOR_RESET, pf->length);*/
+			if (print_all(pf) >= 0)
 			    zero_pf(pf);
 		}
 		i++;

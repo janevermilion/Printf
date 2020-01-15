@@ -25,7 +25,7 @@ int		handle_char(t_pf *pf)
 	else
 	{
 		pf->filling = ft_memalloc(sizeof(char));
-		pf->printed = 1;//////nado ili net?
+		pf->printed++;
 	}
 	fill_and_print_string(pf);
     return (pf->printed);

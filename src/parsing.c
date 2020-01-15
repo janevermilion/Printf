@@ -12,13 +12,13 @@
 
 #include "ft_printf.h"
 
-int 	find_types(const char *str)
+int 	find_types(const char *str, char *parent)
 {
 	char *flag;
 	char a;
 
 	a = *str;
-	flag = ft_strchr(TYPES, a);
+	flag = ft_strchr(parent, a);//TYPES
 	if (flag != NULL)//find flag
 		return (1);
 	return (0);
@@ -26,7 +26,7 @@ int 	find_types(const char *str)
 
 int		check_flags(const char *curr, t_pf *pf)
 {
-	if (*curr != '\0' && find_types(curr) == 0)//проверить не начался ли тип
+	if (*curr != '\0' && find_types(curr, TYPES) == 0)//проверить не начался ли тип
 	{
 		if (*curr == '-')
 		{
@@ -62,7 +62,9 @@ int		check_flags(const char *curr, t_pf *pf)
 int 		check_types(const char *curr, t_pf *pf)
 {
 	char a = *curr;
-	if (find_types(curr) == 1)
+	if(!*curr)
+	    return (0);
+	if (find_types(curr, TYPES) == 1)
 		pf->type = a;
 	return (0);
 }
@@ -74,8 +76,13 @@ int		zero_or_space_string(t_pf *pf)
 		return (-1);
 	if (pf->type != '%')
 	{
-		if (pf->zero_filling == 1)
-			ft_memset(pf->str_empty,'0', pf->width);
+		if (pf->zero_filling == 1 && (find_types(&pf->type, INT_TYPES) == 1 && pf->align_left != 1))//и то что нет минуса и числовое значение добавить ааааа
+        {
+		    if (pf->precision > pf->width || pf->precision == -5)
+                ft_memset(pf->str_empty,'0', pf->width);
+		    else
+                ft_memset(pf->str_empty,' ', pf->width);
+        }
 		else
 			ft_memset(pf->str_empty,' ', pf->width);
 	}

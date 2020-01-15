@@ -41,7 +41,7 @@ static void			reverse(char *src, long long int num)
 	}
 }
 
-static char			*check_validity(long long int n)
+static char			*check_validity_ll(long long int n)
 {
 	long long int		min;
 	char	*res;
@@ -51,7 +51,7 @@ static char			*check_validity(long long int n)
 	max = LLONG_MAX;
 	res = NULL;
 	if (n <= min)
-		return (res = ft_strdup("-2147483648"));
+		return (res = ft_strdup("-9223372036854775808"));
 	if (n < min)
 		return (res);
 	if (n == 0)
@@ -64,13 +64,36 @@ static char			*check_validity(long long int n)
 	return (res);
 }
 
+static char			*check_validity(long long int n)
+{
+    long long int		min;
+    char	*res;
+    long long int		max;
+
+    min = LLONG_MIN;
+    max = LLONG_MAX;
+    res = NULL;
+    if (n <= min)
+        return (res = ft_strdup("−2147483648"));
+    if (n < min)
+        return (res);
+    if (n == 0)
+    {
+        res = ft_strdup("0");
+        return (res);
+    }
+    if ((n > min && n < 0) || (n > 0 && n <= max))
+        res = ft_strnew(find_len(n));
+    return (res);
+}
+
 char				*ft_itoa_long_long(long long int n) {
     char *res;
     size_t i;
     long long int sign;
     size_t len;
 
-    res = check_validity(n);
+    res = check_validity_ll(n);
     i = 0;
     len = find_len(n);
     if (res && n != LLONG_MIN && n != 0) {

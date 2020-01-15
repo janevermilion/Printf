@@ -55,6 +55,7 @@ void		handle_int_precision(t_pf *pf)
 	}
 	else if (pf->need_sign == 1 && num >= 0)
 		pf->filling = ft_strjoinfree_s2("+", pf->filling);///FREEEEE
+
 }
 
 void		handle_int_width(t_pf *pf)
@@ -75,24 +76,42 @@ void		handle_int_width(t_pf *pf)
         free(pf->filling);///////////////
 		pf->filling = pf->str_empty;
 	}
+
 }
 
 void		handle_int_width_and_precision(t_pf *pf)
 {
 	int len;
+    long long int num;
 
+    num = ft_atoi_long_long(pf->filling);
 	len = ft_strlen(pf->filling);
-	if (pf->zero_filling == 1)
+	if (pf->precision > len && pf->zero_filling == 1)
 		ft_memset(pf->str_empty, ' ', pf->width);
 	if (pf->width > pf->precision)
 	{
 	    if (pf->precision != 0 && pf->precision != -1)
         {
-            if (pf->align_left != 1)
-                ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
+	        if (num >= 0)
+            {
+                if (pf->align_left != 1)
+                    ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
+                else
+                    ft_memcpy(pf->str_empty, pf->filling, len);
+                free(pf->filling);
+            }
             else
-                ft_memcpy(pf->str_empty, pf->filling, len);
-            free(pf->filling);
+            {
+                pf->filling = ft_itoa_long_long(num*=-1);
+                if (pf->zero_filling == 1)
+                    ft_memset(pf->str_empty, '0', ft_strlen(pf->str_empty));
+                if (pf->align_left != 1)
+                    ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
+                else
+                    ft_memcpy(pf->str_empty, pf->filling, len);
+                pf->str_empty = ft_strjoinfree_s2("-", pf->str_empty);
+                free(pf->filling);
+            }
         }
 		    pf->filling = pf->str_empty;
 	}
@@ -179,6 +198,8 @@ void		print_int(t_pf *pf)
 	    else
 	        pf->filling[ft_strlen(pf->filling) - 1] = '+';
     }
+	if (pf->precision == -5 && (size_t)pf->width <= ft_strlen(pf->filling) && pf->need_sign == 1 && ft_atoi_long_long(pf->filling) > 0 && pf->filling[0] != '+')
+	    pf->filling = ft_strjoinfree_s2("+", pf->filling);
 	ft_putstr(pf->filling);
 	pf->printed+=ft_strlen(pf->filling);
 }

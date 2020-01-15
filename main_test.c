@@ -7,11 +7,17 @@
 int         main()
 {
 printf("mine:\n");
-int t = ft_printf("%#-08x", 42);
+int t = ft_printf("%+d", -42);
+//int t = ft_printf("text: %#.o %#.0o", 0, 0);
+
 printf("<-\nreturned value : %i", t);
+
 printf("\norigin:\n");
- t = printf("%#-08x", 42);
+    t = printf("%+d", -42);
 printf("<-\nreturned value : %i", t);
 printf("\n------------\n");
   return (0);
 }
+/*
+ *  перекопать все на предсет маллока и фри со строками
+ */

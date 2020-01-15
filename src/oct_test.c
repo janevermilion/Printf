@@ -82,7 +82,7 @@ void        handle_zero_oct(t_pf *pf)
         if (pf->precision == 0 || pf->precision == -1)
             pf->filling = "";
         if (pf->width <= 0 && pf->need_format == 1 && pf->precision != -5)
-            pf->filling = ft_strjoinfree_s2("0", pf->filling);//FREEEE
+            pf->filling = ft_strjoin("0", pf->filling);//FREEEE
     }
     else if(pf->width > 1 && pf->precision <= 0)
         change_str_empty_pos_width_neg_pres(pf);

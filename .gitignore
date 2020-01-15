@@ -1,7 +1,8 @@
 pft/
-cmake_build_debug/
 a.out
 .idea/
 */*.o
 .DS_Store
 CMakeLists.txt
+/cmake-build-debug/
+/a.out.dSYM/
