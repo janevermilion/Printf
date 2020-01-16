@@ -78,7 +78,7 @@ int		handle_int(t_pf *pf);
 void		handle_int_precision(t_pf *pf);
 void		handle_int_width(t_pf *pf);
 void		handle_int_width_and_precision(t_pf *pf);
-void		print_int(t_pf *pf);
+void		print_int(t_pf *pf, long long int num);
 void        handle_int_space(t_pf *pf);
 int         handle_max_and_min_long_long(t_pf *pf);
 void        ft_str_overlap_copy(char *str);
