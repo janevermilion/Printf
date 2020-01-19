@@ -6,3 +6,4 @@ a.out
 CMakeLists.txt
 /cmake-build-debug/
 /a.out.dSYM/
+pft/

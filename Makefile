@@ -19,7 +19,7 @@ LIBFT_INCLUDES = libft/includes
 
 INCLUDES = inc/
 
-FLAGS =  -Wall -Wextra -Werror
+FLAGS = -Wunused-but-set-variable -Wunused-but-set-parameter
 
 SRC = src/chars-int-percent.c src/precision.c src/floats.c \
 src/ft_itoa_new.c src/ft_printf.c src/ints.c src/parsing.c \

@@ -12,11 +12,38 @@
 
 #include "ft_printf.h"
 
-void        handle_int_zero(t_pf *pf, long long int num)
+void        handle_int_zero(t_pf *pf)
 {
-    (void)pf;
-    (void)num;
-    pf->filling = "0";///temporary
+
+    if (pf->precision > 1)
+    {
+        //free(pf->filling);
+       pf->filling = ft_memalloc(pf->precision);
+       ft_memset(pf->filling, '0', pf->precision);
+    }
+    else if (pf->precision <= 0 && pf->width > 1)
+    {
+        free(pf->filling);
+        pf->filling = pf->str_empty;
+        if (pf->align_left != 1)
+        {
+            pf->filling[pf->width - 1] = '0';
+            if (pf->need_sign == 1 && pf->filling > 2 && pf->zero_filling != 1)
+                pf->filling[pf->width - 2] = '+';
+            else if (pf->need_sign == 1 && pf->filling > 2 && pf->zero_filling == 1)
+                pf->filling[0] = '+';
+        } else
+        {
+
+            if (pf->need_sign == 1 && pf->filling > 2)
+            {
+                pf->filling[0] = '+';
+                pf->filling[1] = '0';
+            } else
+                pf->filling[0] = '0';
+        }
+    }
+
 }
 
 
@@ -137,7 +164,9 @@ void        handle_int_sign(t_pf *pf, long long int num)
        stop = ' ';
        while (pf->filling[i] == stop && pf->filling[i] != '\0')
            i++;
-       if ((i == len || i == 0) && pf->filling[pf->width -1] != stop)
+       if (i == 0 && pf->zero_filling == 1 && pf->width > find_step(num) && pf->align_left != 1)
+           pf->filling[0] = '+';
+       else if ((i == len || i == 0) && pf->filling[pf->width -1] != stop)
            pf->filling = ft_strjoinfree_s2("+", pf->filling);
        else if ((i == len || i == 0) && pf->filling[pf->width -1] == stop)
        {
@@ -181,27 +210,31 @@ void        handle_int_space_sec(t_pf *pf, long long int num)
 
 void        print_int_second_edition(t_pf *pf, long long int num)
 {
-   // if (num == 0)
-    //    handle_int_zero(pf, num);
-    //else
-        if (pf->precision > 0 && pf->width > 0)
-        handle_int_width_and_precision_sec(pf, num);
-    else if (pf->precision < 0)
+    if (num == 0)
+        handle_int_zero(pf);
+    else
     {
-        if (pf->width != 0)
-            handle_int_width_sec(pf, num);
-        else
+        if (pf->precision > 0 && pf->width > 0)
+            handle_int_width_and_precision_sec(pf, num);
+        else if (pf->precision < 0)
+        {
+            if (pf->width != 0)
+                handle_int_width_sec(pf, num);
+            else
+                handle_int_precision_sec(pf, num);
+        }
+        else if (pf->precision > 0 && pf->precision > find_step(num))
             handle_int_precision_sec(pf, num);
+        if (pf->need_sign == 1 && num >= 0)
+            handle_int_sign(pf, num);
+        if (pf->need_spase == 1 && pf->need_sign != 1)
+            handle_int_space_sec(pf, num);
+
     }
-    else if (pf->precision > 0 && pf->precision > find_step(num))
-        handle_int_precision_sec(pf, num);
-    if (pf->need_sign == 1 && num >= 0)
-        handle_int_sign(pf, num);
-    if (pf->need_spase == 1 && pf->need_sign != 1)
-        handle_int_space_sec(pf, num);
     ft_putstr(pf->filling);
     pf->printed+=ft_strlen(pf->filling);
-}
+    }
+
 
 int		    handle_int(t_pf *pf)
 {

@@ -7,13 +7,13 @@
 int         main()
 {
 printf("mine:\n");
-int t = ft_printf("% +05i", 432);
+int t = ft_printf("%.3i", 0);
 //int t = ft_printf("text: %#.o %#.0o", 0, 0);
 
 printf("<-\nreturned value : %i", t);
 
 printf("\norigin:\n");
-    t = printf("% +05i", 432);
+    t = printf("%.3i", 0);
 printf("<-\nreturned value : %i", t);
 printf("\n------------\n");
   return (0);
