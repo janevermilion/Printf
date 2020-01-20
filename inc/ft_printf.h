@@ -82,6 +82,16 @@ void		print_int(t_pf *pf, long long int num);
 void        handle_int_space(t_pf *pf);
 int         handle_max_and_min_long_long(t_pf *pf);
 void        ft_str_overlap_copy(char *str);
+void        print_int_second_edition(t_pf *pf, long long int num);
+void        turn_width_more_prec(t_pf *pf, long long int num, int len);
+void        handle_int_precision_sec(t_pf *pf, long long int num);
+void        handle_int_width_and_precision_sec(t_pf *pf, long long int num);
+void        handle_int_width_sec(t_pf *pf, long long int num);
+void        turn_width_more_prec_prec_more_num(t_pf *pf, int len , int i);
+void        turn_width_more_prec_prec_less_num(t_pf *pf, int len, int i, int num);
+void        handle_int_sign(t_pf *pf, long long int num);
+void        handle_int_space_sec(t_pf *pf, long long int num);
+void        print_int_second_edition(t_pf *pf, long long int num);
 /*
  * * ints_utils
  */

@@ -34,7 +34,7 @@ OUT = $(SRC:%.c=%.o)
 
 INCLUDES = includes
 
-FLAG =
+FLAG = -Wall -Wextra -Werror
 
 all: $(NAME)
 

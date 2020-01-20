@@ -44,7 +44,8 @@ int       handle_unsigned(t_pf *pf)
         pf->filling = ft_itoa_base_unsigned(num, 10);
     pf->need_spase = 0;
     pf->need_sign = 0;
-    print_int(pf,num);
+    //print_int(pf,num);
+    print_int_second_edition(pf, num);
     return (pf->printed);
 }
 

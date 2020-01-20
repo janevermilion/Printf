@@ -25,7 +25,7 @@ void        transform_hex_format(t_pf *pf)
     if (pf->precision == -5 && pf->width && pf->zero_filling && pf->filling[0] == '0' && pf->filling[1] == '0')
         pf->filling[1] = 'x';
     else if (i <= 1 && pf->filling[len -1] != ' ')
-        pf->filling = ft_strjoinfree_s2("0x", &pf->filling[i]);///FREEEE
+        pf->filling = ft_strjoin("0x", &pf->filling[i]);///FREEEE
     else if (i <= 1 && pf->filling[len -1] == ' ')
     {
         temp = ft_strnew(len);
@@ -58,23 +58,25 @@ void        print_int_hex(t_pf *pf)
     unsigned long long int num;
 
     num = ft_atoi_long_long_uns(pf->filling);
-
-    if (pf->precision == -5 && pf->width == 0 && pf->align_left == 0 &&
-        (pf->need_sign == 1))
-        pf->filling = ft_strjoinfree_s2("+", pf->filling);////FREEEEE
-    if (pf->precision != -5)
-        handle_int_precision(pf);
-    if (pf->width != 0 && pf->precision == -5)
-        handle_int_width(pf);
-    else if (pf->width != 0 && pf->precision != -5)
-        handle_int_width_and_precision(pf);
-    if (pf->need_spase == 1)
-        handle_int_space(pf);
+    if (pf->precision >= 0 && pf->width > 0)
+        handle_int_width_and_precision_sec(pf, num);
+    else if (pf->precision < 0)
+    {
+        if (pf->width != 0)
+            handle_int_width_sec(pf, num);
+        else
+            handle_int_precision_sec(pf, num);
+    }
+    else if (pf->precision > 0 && pf->precision > find_step(num))
+        handle_int_precision_sec(pf, num);
+    if (pf->need_sign == 1 && num)
+        handle_int_sign(pf, num);
+    if (pf->need_spase == 1 && pf->need_sign != 1)
+        handle_int_space_sec(pf, num);
     if (pf->need_format == 1 && ft_atoi_base(pf->filling, 16) != 0)
         transform_hex_format(pf);
     if (pf->type == 'X')
         upper_symb(pf->filling);
     ft_putstr(pf->filling);
     pf->printed+=ft_strlen(pf->filling);
-
 }

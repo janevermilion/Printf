@@ -102,17 +102,21 @@ void		print_int_oct(t_pf *pf)
     num = ft_atoi_long_long_uns(pf->filling);
     if (num != 0)
     {
-        if (pf->precision == -5 && pf->width == 0 && pf->align_left == 0 &&
-            (pf->need_sign == 1))
-            pf->filling = ft_strjoinfree_s2("+", pf->filling);////FREEEEE
-        if (pf->precision != -5)
-            handle_int_precision_oct(pf);
-        if (pf->width != 0 && pf->precision == -5)
-            handle_int_width_oct(pf);
-        else if (pf->width != 0 && pf->precision != -5)
-            handle_int_width_and_precision(pf);
-        if (pf->need_spase == 1)
-            handle_int_space_oct(pf);
+        if (pf->precision >= 0 && pf->width > 0)
+            handle_int_width_and_precision_sec(pf, num);
+        else if (pf->precision < 0)
+        {
+            if (pf->width != 0)
+                handle_int_width_sec(pf, num);
+            else
+                handle_int_precision_sec(pf, num);
+        }
+        else if (pf->precision > 0 && pf->precision > find_step(num))
+            handle_int_precision_sec(pf, num);
+        if (pf->need_sign == 1 && num)
+            handle_int_sign(pf, num);
+        if (pf->need_spase == 1 && pf->need_sign != 1)
+            handle_int_space_sec(pf, num);
     }
     else
       handle_zero_oct(pf);
@@ -125,19 +129,19 @@ int		handle_oct(t_pf *pf)
     unsigned long long int num;
     num = 0;
 
-    if (pf->size_flag == NULL)
+   if (pf->size_flag == NULL)
         num = (unsigned int)va_arg(pf->ap, unsigned int);
-    else if (ft_strequ(pf->size_flag, "hh") == 1)
+   else if (ft_strequ(pf->size_flag, "hh") == 1)
         num = (unsigned char)va_arg(pf->ap, unsigned int);
-    else if (ft_strequ(pf->size_flag, "h") == 1)
+   else if (ft_strequ(pf->size_flag, "h") == 1)
         num = (unsigned short)va_arg(pf->ap, unsigned int);
-    else if (ft_strequ(pf->size_flag, "ll") == 1)
+   else if (ft_strequ(pf->size_flag, "ll") == 1)
         num = (unsigned long long int)va_arg(pf->ap, unsigned long long int);
-    else if (ft_strequ(pf->size_flag, "l") == 1)
+   else if (ft_strequ(pf->size_flag, "l") == 1)
         num = (unsigned long int)va_arg(pf->ap,  unsigned long int);
-    pf->filling = ft_itoa_base_unsigned(num, 8);
-    if (pf->need_format == 1 && num)
-        pf->filling = ft_strjoinfree_s2("0", pf->filling);//FREEEE
-    print_int_oct(pf);
-    return (pf->printed);
+   pf->filling = ft_itoa_base_unsigned(num, 8);
+   if (pf->need_format == 1 && num)
+        pf->filling = ft_strjoinfree_s2("0", pf->filling);//
+   print_int_oct(pf);
+   return (pf->printed);
 };
