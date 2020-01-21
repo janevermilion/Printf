@@ -13,96 +13,13 @@
   <component name="ChangeListManager">
     <list default="true" id="639c2068-db75-42f5-83c8-f52b47cf25de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_base.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_base.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_bzero.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_bzero.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_count_if.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_count_if.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_foreach.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_foreach.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalnum.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalnum.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalpha.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalpha.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isascii.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isascii.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isdigit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isdigit.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isprint.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isprint.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstadd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstadd.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstappendelem.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstappendelem.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdel.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdellast.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdellast.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdelone.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdelone.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstiter.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstiter.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstmap.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstmap.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstnew.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstpushelem.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstpushelem.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memalloc.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memalloc.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memccpy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memccpy.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memchr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memchr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcmp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcmp.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcpy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcpy.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memdel.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memmove.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memmove.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memset.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memset.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar_fd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar_fd.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl_fd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl_fd.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr_fd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr_fd.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr_fd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr_fd.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcat.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcat.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strchr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strchr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strclr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strclr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcmp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcmp.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcpy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcpy.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdel.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdup.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdup.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strequ.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strequ.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striter.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striter.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striteri.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striteri.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoin.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoin.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoinfree.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoinfree.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlcat.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlcat.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlen.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlen.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmap.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmap.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmapi.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmapi.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncat.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncat.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncmp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncmp.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncpy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncpy.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnequ.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnequ.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnew.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnstr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strrchr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strrchr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsplit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsplit.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strstr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsub.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsub.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strtrim.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strtrim.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_tolower.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_tolower.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_toupper.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_toupper.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/floats.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/floats.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/hex.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/hex.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ints.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ints.c.o" afterDir="false" />
@@ -110,92 +27,20 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/precision.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/precision.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/utils.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/utils.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/ft_printf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_atoi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_atoi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_atoi_base.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_atoi_base.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_bzero.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_bzero.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_count_if.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_count_if.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isalnum.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_isalnum.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isalpha.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_isalpha.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isascii.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_isascii.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isdigit.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_isdigit.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isprint.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_isprint.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_itoa.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_itoa_base.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_itoa_base.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_itoa_base_unsigned.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_itoa_base_unsigned.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstadd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_lstadd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstappendelem.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_lstappendelem.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstdel.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_lstdel.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstdellast.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_lstdellast.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstdelone.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_lstdelone.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstiter.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_lstiter.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstmap.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_lstmap.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstnew.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_lstnew.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstpushelem.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_lstpushelem.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memalloc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_memalloc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memccpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_memccpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_memchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_memcmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_memcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memdel.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_memdel.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memmove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_memmove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memset.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_memset.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putchar.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_putchar.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putchar_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_putchar_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putendl.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_putendl.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putendl_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_putendl_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putnbr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_putnbr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putnbr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_putnbr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_putstr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putstr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_putstr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strcat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strclr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strclr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strcmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strdel.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strdel.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strdup.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strdup.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strequ.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strequ.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_striter.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_striter.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_striteri.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_striteri.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strjoin.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strjoin.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strjoinfree.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strjoinfree.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strlcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strlcat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strlen.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strlen.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strmap.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strmap.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strmapi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strmapi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strncat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strncat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strncmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strncmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strncpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strncpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strnequ.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strnequ.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strnew.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strnew.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strnstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strnstr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strrchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strrchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strsplit.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strsplit.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strstr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strsub.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strsub.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strtrim.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strtrim.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_tolower.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_tolower.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_toupper.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_toupper.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/get_next_line.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/get_next_line.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libftprintf.a" beforeDir="false" afterPath="$PROJECT_DIR$/libftprintf.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/main_test.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pft/unit_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/pft/unit_tests.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hex.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/hex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_printf.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ints.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ints.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ints_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ints_utils.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/oct_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/oct_test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsing.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsing.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pnt-oct-hex.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/pnt-oct-hex.c" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -230,19 +75,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="effective_waffle_printf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="effective_waffle_printf" TARGET_NAME="effective_waffle_printf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="effective_waffle_printf" RUN_TARGET_NAME="effective_waffle_printf">
@@ -250,6 +83,18 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -320,7 +165,11 @@
       <workItem from="1579428964736" duration="36000" />
       <workItem from="1579429012590" duration="5254000" />
       <workItem from="1579514644486" duration="2058000" />
-      <workItem from="1579518733029" duration="12038000" />
+      <workItem from="1579518733029" duration="12199000" />
+      <workItem from="1579599636791" duration="1057000" />
+      <workItem from="1579601411137" duration="17000" />
+      <workItem from="1579601465500" duration="6767000" />
+      <workItem from="1579612460739" duration="6219000" />
     </task>
     <servers />
   </component>
@@ -345,38 +194,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="277" width="426" height="481" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579428999860" />
-    <state width="1876" height="263" key="GridCell.Tab.0.bottom" timestamp="1579433834285">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2473" height="339" key="GridCell.Tab.0.bottom" timestamp="1579618829296">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579433834285" />
-    <state width="1876" height="263" key="GridCell.Tab.0.center" timestamp="1579433834285">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2473" height="339" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1579618829296" />
+    <state width="2473" height="339" key="GridCell.Tab.0.center" timestamp="1579618829295">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="263" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579433834285" />
-    <state width="1876" height="263" key="GridCell.Tab.0.left" timestamp="1579433834284">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2473" height="339" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1579618829295" />
+    <state width="2473" height="339" key="GridCell.Tab.0.left" timestamp="1579618829295">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="263" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579433834284" />
-    <state width="1876" height="263" key="GridCell.Tab.0.right" timestamp="1579433834285">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2473" height="339" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1579618829295" />
+    <state width="2473" height="339" key="GridCell.Tab.0.right" timestamp="1579618829296">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="263" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579433834285" />
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1579429470655">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2473" height="339" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1579618829296" />
+    <state width="2473" height="389" key="GridCell.Tab.1.bottom" timestamp="1579618828910">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579429470655" />
-    <state width="1876" height="340" key="GridCell.Tab.1.center" timestamp="1579429470653">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2473" height="389" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1579618828910" />
+    <state width="2473" height="389" key="GridCell.Tab.1.center" timestamp="1579618828910">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="340" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579429470653" />
-    <state width="1876" height="340" key="GridCell.Tab.1.left" timestamp="1579429470652">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2473" height="389" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1579618828910" />
+    <state width="2473" height="389" key="GridCell.Tab.1.left" timestamp="1579618828909">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="340" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579429470652" />
-    <state width="1876" height="340" key="GridCell.Tab.1.right" timestamp="1579429470654">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2473" height="389" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1579618828909" />
+    <state width="2473" height="389" key="GridCell.Tab.1.right" timestamp="1579618828910">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="340" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579429470654" />
+    <state width="2473" height="389" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1579618828910" />
     <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1579429002760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -385,9 +242,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.0.1920.1040@0.0.1920.1040" timestamp="1579429002759" />
-    <state x="653" y="82" width="994" height="847" key="SettingsEditor" timestamp="1579434294725">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="871" y="128" width="994" height="847" key="SettingsEditor" timestamp="1579601427446">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="653" y="82" width="994" height="847" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579434294725" />
+    <state x="871" y="128" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1579601427446" />
+    <state x="947" y="347" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579614488653">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="947" y="347" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1579614488653" />
+    <state x="922" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1579601672686">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="922" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1579601672686" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ints.c</url>
+          <line>14</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -7,13 +7,13 @@
 int         main()
 {
 printf("mine:\n");
-int t = ft_printf("%#5x", 52625);
+int t = ft_printf("%03.2d", -1);
 //int t = ft_printf("text: %#.o %#.0o", 0, 0);
 
 printf("<-\nreturned value : %i", t);
 
 printf("\norigin:\n");
-    t = printf("%#5x", 52625);
+    t = printf("%03.2d", -1);
 printf("<-\nreturned value : %i", t);
 printf("\n------------\n");
   return (0);

@@ -80,6 +80,8 @@ int		zero_or_space_string(t_pf *pf)
         {
 		    if (pf->precision > pf->width || pf->precision == -5)
                 ft_memset(pf->str_empty,'0', pf->width);
+		    //else if (pf->zero_filling == 1 && pf->precision < pf->width && pf->precision > 0)
+                //ft_memset(pf->str_empty,'0', pf->width);
 		    else
                 ft_memset(pf->str_empty,' ', pf->width);
         }

@@ -75,11 +75,6 @@ int		print_all(t_pf *pf);
  * * ints.c
  */
 int		handle_int(t_pf *pf);
-void		handle_int_precision(t_pf *pf);
-void		handle_int_width(t_pf *pf);
-void		handle_int_width_and_precision(t_pf *pf);
-void		print_int(t_pf *pf, long long int num);
-void        handle_int_space(t_pf *pf);
 int         handle_max_and_min_long_long(t_pf *pf);
 void        ft_str_overlap_copy(char *str);
 void        print_int_second_edition(t_pf *pf, long long int num);
@@ -140,9 +135,6 @@ void		zero_pf(t_pf *pf);
  */
 int		handle_oct(t_pf *pf);
 void		print_int_oct(t_pf *pf);
-void        handle_int_space_oct(t_pf *pf);
-void		handle_int_width_oct(t_pf *pf);
-void		handle_int_precision_oct(t_pf *pf);
 char		*ft_itoa_long_long_uns(unsigned long long int n);
 void        free_pf(t_pf *pf);
 

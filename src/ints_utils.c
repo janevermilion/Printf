@@ -60,11 +60,7 @@ void        fill_empty_str_neg_num(t_pf *pf, int len, long long num)
 void         fill_empty_str_pos_num(t_pf *pf, int len)
 {
     if (pf->align_left != 1)
-    {
         ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
-       // if (pf->need_sign == 1 && pf->zero_filling != 0)
-       //     pf->str_empty[0] = '+';
-    }
     else
         ft_memcpy(pf->str_empty, pf->filling, len);
 }

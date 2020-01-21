@@ -11,9 +11,19 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
+/*
+void                    check_specialities(t_pf *pf)
+{
+    if (pf->type == 'd' || pf->type == 'i')
+    {
+        if(pf->precision > 0 && pf->zero_filling == 1)
+            pf->zero_filling = 0;
+    }
+}
+*/
 int		                print_all(t_pf *pf)
 {
+    //check_specialities(pf);
 	if (pf->width != 0)
 		if (zero_or_space_string(pf) == -1)
 			return (-1);
@@ -59,15 +69,6 @@ int 		read_args(t_pf *pf, const char *format)
 			i+=check_precision(&format[i], pf);
 			i+=check_size_flag(&format[i], pf);
 			i+=check_types(&format[i], pf);
- /*           printf(ANSI_COLOR_YELLOW "\nwidth: %i\n", pf->width);
-            printf(ANSI_COLOR_YELLOW "align-left: %i\n", pf->align_left);
-            printf(ANSI_COLOR_YELLOW "need sign: %i\n", pf->need_sign);
-            printf(ANSI_COLOR_YELLOW "need space: %i\n", pf->need_spase);
-            printf(ANSI_COLOR_YELLOW "need_format: %i\n", pf->need_format);
-            printf(ANSI_COLOR_YELLOW "precision: %i\n", pf->precision);
-            printf(ANSI_COLOR_YELLOW "type: %c\n", pf->type);
-            printf(ANSI_COLOR_YELLOW "size_flag: %s\n", pf->size_flag);
-            printf(ANSI_COLOR_YELLOW "length: %i\n\n" ANSI_COLOR_RESET, pf->length);*/
 			if (print_all(pf) >= 0)
 			    zero_pf(pf);
 		}

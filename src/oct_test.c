@@ -4,95 +4,23 @@
 
 #include "ft_printf.h"
 
-void		handle_int_precision_oct(t_pf *pf)
+void        check_zero(t_pf *pf)
 {
-    char *zero;
-    int len;
-    unsigned long long int num = ft_atoi_long_long_uns(pf->filling);
-
-    len = ft_strlen(pf->filling);
-    if (pf->precision > len)
+    if (pf->width < 1 && (pf->precision == 0 || pf->precision == -1))
     {
-        zero = fill_zero_string(pf, len, num);
-        pf->filling = ft_strjoinfree_both(zero, pf->filling);////FREEEEEE
-        put_sign(pf, num);
+        pf->filling = "";
+        if (pf->need_format == 1)
+            pf->filling = "0";
     }
-    else if (pf->need_sign == 1)
-        pf->filling = ft_strjoinfree_both("+", pf->filling);///FREEEEE
-}
+   else if (pf->width > 1 && (pf->precision == 0 || pf->precision == -1))
+   {
+       ft_memset(pf->filling, ' ', pf->width);
+       if (pf->need_format == 1 && pf->align_left == 0)
+           pf->filling[pf->width - 1] = '0';
+       if (pf->need_format == 1 && pf->align_left == 1)
+           pf->filling[0] = '0';
+   }
 
-void		handle_int_width_oct(t_pf *pf)
-{
-    int len;
-    unsigned long long int num;
-
-    num = ft_atoi_long_long_uns(pf->filling);
-    if (pf->need_sign == 1 && pf->zero_filling == 0)
-        pf->filling = ft_strjoinfree_s2("+", pf->filling);//FREEEEE
-    len = ft_strlen(pf->filling);
-    if (pf->width > len)
-    {
-        fill_empty_str_pos_num(pf, len);
-        free(pf->filling);
-        pf->filling = pf->str_empty;
-    }
-}
-
-void        handle_int_space_oct(t_pf *pf)
-{
-    int len;
-    unsigned long long num;
-
-    if (handle_max_and_min_long_long(pf) == 1)
-        return;
-    num = ft_atoi_long_long_uns(pf->filling);
-    len = find_step((int)num);
-    if (pf->need_sign != 1)
-    {
-        if (pf->width <= len)
-            pf->filling = ft_strjoinfree_s2(" ", pf->filling);////FREEEE
-        if (pf->width > len + 1 && pf->align_left == 1)
-            ft_str_overlap_copy(pf->filling);
-        pf->filling[0] = ' ';
-    }
-}
-
-void        change_str_empty_pos_width_neg_pres(t_pf *pf)
-{
-    free(pf->filling);
-    pf->filling = pf->str_empty;
-    if (pf->align_left == 1)
-    {
-        if ((pf->precision != 0  && pf->precision != -1 )|| pf->need_format == 1)
-            pf->str_empty[0] = '0';
-    }
-    else if (pf->align_left != 1)
-    {
-        if ((pf->precision != 0 && pf->precision != -1)|| pf->need_format == 1)
-            pf->str_empty[pf->width -1] = '0';
-    }
-}
-
-void        handle_zero_oct(t_pf *pf)
-{
-    char *zero;
-
-    if (pf->width <= 0 && pf->precision < 1)
-    {
-        if (pf->precision == 0 || pf->precision == -1)
-            pf->filling = "";
-        if (pf->width <= 0 && pf->need_format == 1 && pf->precision != -5)
-            pf->filling = ft_strjoin("0", pf->filling);//FREEEE
-    }
-    else if(pf->width > 1 && pf->precision <= 0)
-        change_str_empty_pos_width_neg_pres(pf);
-    else if (pf->precision > 1)
-    {
-        zero = fill_zero_string(pf, 1, 0);
-        pf->filling = ft_strjoinfree_both(zero, pf->filling);////FREEEEEE
-        if (pf->width > pf->precision)
-            handle_int_width_and_precision(pf);
-    }
 }
 
 void		print_int_oct(t_pf *pf)
@@ -100,26 +28,23 @@ void		print_int_oct(t_pf *pf)
     unsigned long long int num;
 
     num = ft_atoi_long_long_uns(pf->filling);
-    if (num != 0)
+    if (pf->precision >= 0 && pf->width > 0)
+        handle_int_width_and_precision_sec(pf, num);
+    else if (pf->precision < 0)
     {
-        if (pf->precision >= 0 && pf->width > 0)
-            handle_int_width_and_precision_sec(pf, num);
-        else if (pf->precision < 0)
-        {
-            if (pf->width != 0)
-                handle_int_width_sec(pf, num);
-            else
-                handle_int_precision_sec(pf, num);
-        }
-        else if (pf->precision > 0 && pf->precision > find_step(num))
+        if (pf->width != 0)
+            handle_int_width_sec(pf, num);
+        else
             handle_int_precision_sec(pf, num);
-        if (pf->need_sign == 1 && num)
-            handle_int_sign(pf, num);
-        if (pf->need_spase == 1 && pf->need_sign != 1)
-            handle_int_space_sec(pf, num);
     }
-    else
-      handle_zero_oct(pf);
+    else if (pf->precision > 0 && pf->precision > find_step(num))
+        handle_int_precision_sec(pf, num);
+    if (pf->need_sign == 1 && num)
+        handle_int_sign(pf, num);
+    if (pf->need_spase == 1 && pf->need_sign != 1)
+        handle_int_space_sec(pf, num);
+    if (num == 0)
+        check_zero(pf);
     ft_putstr(pf->filling);
     pf->printed+=ft_strlen(pf->filling);
 }
