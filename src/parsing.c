@@ -26,6 +26,7 @@ int 	find_types(const char *str, char *parent)
 
 int		check_flags(const char *curr, t_pf *pf)
 {
+
 	if (*curr != '\0' && find_types(curr, TYPES) == 0)//проверить не начался ли тип
 	{
 		if (*curr == '-')
@@ -80,8 +81,6 @@ int		zero_or_space_string(t_pf *pf)
         {
 		    if (pf->precision > pf->width || pf->precision == -5)
                 ft_memset(pf->str_empty,'0', pf->width);
-		    //else if (pf->zero_filling == 1 && pf->precision < pf->width && pf->precision > 0)
-                //ft_memset(pf->str_empty,'0', pf->width);
 		    else
                 ft_memset(pf->str_empty,' ', pf->width);
         }
@@ -100,24 +99,29 @@ int		zero_or_space_string(t_pf *pf)
 
 int			check_size_flag(const char *curr, t_pf *pf)
 {
+
 	if (*curr == 'h' && *(curr + 1) == 'h')
 	{
-		pf->size_flag = "hh";
+        free(pf->size_flag);
+		pf->size_flag = ft_strdup("hh");
 		return (2);
 	}
 	else if (*curr == 'h')
 	{
-		pf->size_flag = "h";
+        free(pf->size_flag);
+		pf->size_flag = ft_strdup("h");
 		return (1);
 	}
 	else if (*curr == 'l' && *(curr +1) == 'l')
 	{
-		pf->size_flag = "ll";
+        free(pf->size_flag);
+		pf->size_flag = ft_strdup("ll");
 		return (2);
 	}
 	else if (*curr == 'l')
 	{
-		pf->size_flag = "l";
+        free(pf->size_flag);
+		pf->size_flag = ft_strdup("l");
 		return (1);
 	}
 	return (0);

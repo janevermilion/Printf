@@ -17,8 +17,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdup.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdup.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/hex.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/hex.c.o" afterDir="false" />
@@ -27,20 +27,94 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/utils.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/utils.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/ft_printf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf.dSYM/Contents/Resources/DWARF/effective_waffle_printf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/effective_waffle_printf.dSYM/Contents/Resources/DWARF/effective_waffle_printf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_atoi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_atoi_base.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_bzero.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_count_if.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isalnum.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isalpha.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isascii.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isdigit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_isprint.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_itoa.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_itoa_base.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_itoa_base_unsigned.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstadd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstappendelem.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstdellast.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstdelone.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstiter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_lstpushelem.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memalloc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memccpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memmove.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memset.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putchar.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putchar_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putendl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putendl_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putnbr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putnbr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_putstr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strclr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/srcs/ft_strdup.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strdup.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_striter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_striteri.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strjoin.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strjoinfree.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strlcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strlen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strmapi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strncat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strncmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strncpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strnequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strnstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strrchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strsplit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strsub.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strtrim.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_tolower.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_toupper.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/get_next_line.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libftprintf.a" beforeDir="false" afterPath="$PROJECT_DIR$/libftprintf.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/main_test.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pft/unit_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/pft/unit_tests.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_printf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hex.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/hex.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ints.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ints.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ints_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ints_utils.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/oct_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/oct_test.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parsing.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsing.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pnt-oct-hex.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/pnt-oct-hex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/print_str_char.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/print_str_char.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.c" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +149,19 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="effective_waffle_printf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="effective_waffle_printf" TARGET_NAME="effective_waffle_printf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="effective_waffle_printf" RUN_TARGET_NAME="effective_waffle_printf">
@@ -83,18 +169,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -169,7 +243,14 @@
       <workItem from="1579599636791" duration="1057000" />
       <workItem from="1579601411137" duration="17000" />
       <workItem from="1579601465500" duration="6767000" />
-      <workItem from="1579612460739" duration="6219000" />
+      <workItem from="1579612460739" duration="6603000" />
+      <workItem from="1579685728985" duration="195000" />
+      <workItem from="1579685954470" duration="102000" />
+      <workItem from="1579686123362" duration="10759000" />
+      <workItem from="1579767616467" duration="61000" />
+      <workItem from="1579788748733" duration="102000" />
+      <workItem from="1579792968717" duration="85000" />
+      <workItem from="1579794637568" duration="4041000" />
     </task>
     <servers />
   </component>
@@ -194,46 +275,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="277" width="426" height="481" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579428999860" />
-    <state width="2473" height="339" key="GridCell.Tab.0.bottom" timestamp="1579618829296">
+    <state width="2473" height="339" key="GridCell.Tab.0.bottom" timestamp="1579619246363">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579433834285" />
-    <state width="2473" height="339" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1579618829296" />
-    <state width="2473" height="339" key="GridCell.Tab.0.center" timestamp="1579618829295">
+    <state width="2473" height="339" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1579619246363" />
+    <state width="2473" height="339" key="GridCell.Tab.0.center" timestamp="1579619246363">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="263" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579433834285" />
-    <state width="2473" height="339" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1579618829295" />
-    <state width="2473" height="339" key="GridCell.Tab.0.left" timestamp="1579618829295">
+    <state width="2473" height="339" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1579619246363" />
+    <state width="2473" height="339" key="GridCell.Tab.0.left" timestamp="1579619246363">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="263" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579433834284" />
-    <state width="2473" height="339" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1579618829295" />
-    <state width="2473" height="339" key="GridCell.Tab.0.right" timestamp="1579618829296">
+    <state width="2473" height="339" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1579619246363" />
+    <state width="2473" height="339" key="GridCell.Tab.0.right" timestamp="1579619246363">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="263" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579433834285" />
-    <state width="2473" height="339" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1579618829296" />
-    <state width="2473" height="389" key="GridCell.Tab.1.bottom" timestamp="1579618828910">
+    <state width="2473" height="339" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1579619246363" />
+    <state width="2473" height="389" key="GridCell.Tab.1.bottom" timestamp="1579619246361">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579429470655" />
-    <state width="2473" height="389" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1579618828910" />
-    <state width="2473" height="389" key="GridCell.Tab.1.center" timestamp="1579618828910">
+    <state width="2473" height="389" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1579619246361" />
+    <state width="2473" height="389" key="GridCell.Tab.1.center" timestamp="1579619246360">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="340" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579429470653" />
-    <state width="2473" height="389" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1579618828910" />
-    <state width="2473" height="389" key="GridCell.Tab.1.left" timestamp="1579618828909">
+    <state width="2473" height="389" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1579619246360" />
+    <state width="2473" height="389" key="GridCell.Tab.1.left" timestamp="1579619246360">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="340" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579429470652" />
-    <state width="2473" height="389" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1579618828909" />
-    <state width="2473" height="389" key="GridCell.Tab.1.right" timestamp="1579618828910">
+    <state width="2473" height="389" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1579619246360" />
+    <state width="2473" height="389" key="GridCell.Tab.1.right" timestamp="1579619246361">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1876" height="340" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579429470654" />
-    <state width="2473" height="389" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1579618828910" />
+    <state width="2473" height="389" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1579619246361" />
     <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1579429002760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -260,9 +341,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/pnt-oct-hex.c</url>
+          <line>20</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/print_str_char.c</url>
+          <line>102</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/ints.c</url>
-          <line>14</line>
-          <option name="timeStamp" value="9" />
+          <line>229</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

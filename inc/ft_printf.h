@@ -125,7 +125,7 @@ char 		*cut_string(char *str, int q);
 /*
  * * utils.c
  */
-t_pf 		*init_pf();
+t_pf 		*init_pf(t_pf *pf);
 void		upper_symb(char *str);
 int		handle_float(t_pf *pf);
 void		zero_pf(t_pf *pf);

@@ -35,18 +35,21 @@ void		transform_str_precision(t_pf *pf)
 	{
 		zero = ft_memalloc(pf->precision - len + 1);
 		ft_memset(zero, '0', pf->precision - len);
-		test = ft_strjoinfree_both(zero, pf->filling);
-		pf->filling = test;//LEAK
+		pf->filling = ft_strjoinfree_both(zero, pf->filling);;//LEAK
 	}
 	else if (pf->precision > 0 && pf->precision < len && pf->type == 's')
 	{
 		test = cut_string(pf->filling, (pf->precision));
 		if (*test)
-			pf->filling = test;//LEAK
+        {
+		   // free(pf->filling);
+            pf->filling = ft_strdup(test);//LEAK
+            free(test);
+        }
 	}
 	else if (pf->precision == 0)
     {
-        pf->filling = "";
+        pf->filling = ft_strdup("");
 	    if (pf->type == '%')
         {
 	        pf->filling = ft_strnew(1);

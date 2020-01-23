@@ -8,9 +8,9 @@ void        check_zero(t_pf *pf)
 {
     if (pf->width < 1 && (pf->precision == 0 || pf->precision == -1))
     {
-        pf->filling = "";
+        pf->filling = ft_strdup("");
         if (pf->need_format == 1)
-            pf->filling = "0";
+            pf->filling = ft_strjoinfree_both(ft_strdup("0"), pf->filling);
     }
    else if (pf->width > 1 && (pf->precision == 0 || pf->precision == -1))
    {
@@ -20,7 +20,6 @@ void        check_zero(t_pf *pf)
        if (pf->need_format == 1 && pf->align_left == 1)
            pf->filling[0] = '0';
    }
-
 }
 
 void		print_int_oct(t_pf *pf)
@@ -66,7 +65,7 @@ int		handle_oct(t_pf *pf)
         num = (unsigned long int)va_arg(pf->ap,  unsigned long int);
    pf->filling = ft_itoa_base_unsigned(num, 8);
    if (pf->need_format == 1 && num)
-        pf->filling = ft_strjoinfree_s2("0", pf->filling);//
+        pf->filling = ft_strjoinfree_both(ft_strdup("0"), pf->filling);//
    print_int_oct(pf);
    return (pf->printed);
 };

@@ -18,8 +18,18 @@ int		handle_pointer(t_pf *pf)
 
 	pnt = (unsigned long long int)va_arg(pf->ap, void *);//ширина и точность!!!!
 	pf->filling = ft_itoa_base_unsigned(pnt, 16);
-	pf->filling = ft_strjoinfree_s2("0x", pf->filling);//LEAK
-	fill_and_print_string(pf);
+	if (ft_strequ("0", pf->filling) == 1 && (pf->precision < 1 && pf->precision != -5))
+    {
+        pf->filling = ft_strdup("0x");
+        pf->printed+=2;
+        ft_putstr(pf->filling);
+    }
+	else
+    {
+        pf->filling = ft_strjoinfree_both(ft_strdup("0x"), pf->filling);//LEAK
+        fill_and_print_string(pf);
+    }
+	pf->need_format = 1;
     return (pf->printed);
 }
 
@@ -39,7 +49,7 @@ int       handle_unsigned(t_pf *pf)
     else if (ft_strequ(pf->size_flag, "l") == 1)
         num = (unsigned long int)va_arg(pf->ap,  unsigned long int);
     if (num == 0 && (pf->precision == -1 || pf->precision == 0))
-        pf->filling = "";
+        pf->filling = ft_strdup("");
     else
         pf->filling = ft_itoa_base_unsigned(num, 10);
     pf->need_spase = 0;
@@ -64,7 +74,7 @@ int		handle_hex(t_pf *pf)
     else if (ft_strequ(pf->size_flag, "l") == 1)
         num = (unsigned long int)va_arg(pf->ap,  unsigned long int);
     if (num == 0 && (pf->precision == -1 || pf->precision == 0))
-        pf->filling = "";
+        pf->filling = ft_strdup("");
     else
         pf->filling = ft_itoa_base_unsigned(num, 16);
     print_int_hex(pf);

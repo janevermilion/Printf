@@ -14,20 +14,34 @@
 
 void        turn_width_more_prec(t_pf *pf, long long int num, int len)
 {
-    if (num < 0 && ft_strlen(pf->str_empty) > find_step(num))
+    char *zero;
+    if (num < 0 && ft_strlen(pf->str_empty) > (size_t)find_step(num))
     {
-       if (pf->precision >= find_step(num))
-       {
-           ft_memset(pf->str_empty,'0', pf->width);
-           pf->str_empty[0] = '-';
-           pf->filling = ft_itoa_long_long(num*(-1));
-       }
-           if (pf->align_left != 1)
-               ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
-           else
-               ft_memcpy(pf->str_empty, pf->filling, len);
-        free(pf->filling);
-        pf->filling = pf->str_empty;/////////////////problem is here
+        if (pf->precision < pf->width)
+        {
+            if (pf->align_left == 1)
+            {
+                ft_memcpy(pf->str_empty, pf->filling, ft_strlen(pf->filling));
+            }
+            else
+            {
+                int test = find_step(num);
+                if (pf->precision >= test)
+                {
+                   pf->filling = ft_itoa_long_long(num * -1);///FREEE
+                    int test2 = pf->precision - ft_strlen(pf->filling);
+                    zero = ft_strnew(test2);
+                    ft_memset(zero, '0', test2);
+                    pf->filling = ft_strjoinfree_both(zero, pf->filling);////FREEEEEE
+                    pf->filling = ft_strjoinfree_both(ft_strdup("-"), pf->filling);
+                    ft_memcpy(&pf->str_empty[pf->width - ft_strlen(pf->filling)], pf->filling, ft_strlen(pf->filling));
+                }
+                else
+                    ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, ft_strlen(pf->filling));
+            }
+            free(pf->filling);
+            pf->filling = ft_strdup(pf->str_empty);
+        }
     }
     else if (ft_strlen(pf->str_empty) > (size_t)len)
     {
@@ -36,9 +50,8 @@ void        turn_width_more_prec(t_pf *pf, long long int num, int len)
         else
             ft_memcpy(pf->str_empty, pf->filling, len);
         free(pf->filling);
-        pf->filling = pf->str_empty;//////
+        pf->filling = ft_strdup(pf->str_empty);
     }
-
 }
 
 void        handle_int_precision_sec(t_pf *pf, long long int num)
@@ -73,8 +86,8 @@ void        handle_int_width_and_precision_sec(t_pf *pf, long long int num)
             turn_width_more_prec(pf, num, len);
         else if (pf->precision <= 0 && num == 0)
         {
-            //free(pf->filling);
-            pf->filling = pf->str_empty;///leak
+            free(pf->filling);
+            pf->filling = ft_strdup(pf->str_empty);
             if (pf->need_sign == 1 && pf->align_left != 1)
                 pf->filling[ft_strlen(pf->filling) - 1] = '+';
             else if (pf->need_sign == 1 && pf->align_left == 1)
@@ -96,14 +109,14 @@ void        handle_int_width_sec(t_pf *pf, long long int num)
             fill_empty_str_neg_num(pf, len, num);
         else
             fill_empty_str_pos_num(pf, len);
-        pf->filling = pf->str_empty;/////freee
+        pf->filling = ft_strdup(pf->str_empty);
     }
 }
 
 void        turn_width_more_prec_prec_more_num(t_pf *pf, int len , int i)
 {
     if ((i == len || i == 0) && pf->filling[pf->width -1] != ' ')
-        pf->filling = ft_strjoinfree_s2("+", pf->filling);
+        pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
     else if ((i == len || i == 0) && pf->filling[pf->width -1] == ' ')
     {
         i = pf->width -1;
@@ -130,7 +143,7 @@ void        turn_width_more_prec_prec_less_num(t_pf *pf, int len, int i, int num
     if (i == 0 && pf->zero_filling == 1 && pf->width > find_step(num) && pf->align_left != 1)
         pf->filling[0] = '+';
     else if ((i == len || i == 0) && pf->filling[pf->width -1] != ' ')
-        pf->filling = ft_strlen(pf->filling) ? ft_strjoinfree_s2("+", pf->filling) : ft_strjoin("+", pf->filling);
+        pf->filling = ft_strlen(pf->filling) ? ft_strjoinfree_s2(ft_strdup("+"), pf->filling) : ft_strjoin(ft_strdup("+"), pf->filling);//////////leak
     else if ((i == len || i == 0) && pf->filling[pf->width -1] == ' ' && num)
     {
         i = pf->width -1;
@@ -167,7 +180,7 @@ void        handle_int_sign(t_pf *pf, long long int num)
    else if (pf->precision < find_step(num) && pf->width > pf->precision)
        turn_width_more_prec_prec_less_num(pf, len, i, num);
    else if ((pf->width == 0 && pf->precision < 0) || pf->width <= pf->precision)
-       pf->filling = ft_strlen(pf->filling) ? ft_strjoinfree_s2("+", pf->filling) : ft_strjoin("+", pf->filling);
+       pf->filling = ft_strlen(pf->filling) ? ft_strjoinfree_both(ft_strdup("+"), pf->filling) : ft_strjoin(ft_strdup("+"), pf->filling);/////////leak
 }
 
 void        handle_int_space_sec(t_pf *pf, long long int num)
@@ -180,7 +193,7 @@ void        handle_int_space_sec(t_pf *pf, long long int num)
     if (num >= 0 && pf->need_sign != 1)
     {
         if (pf->width <= len)
-            pf->filling = ft_strjoinfree_s2(" ", pf->filling);////FREEEE
+            pf->filling = ft_strjoinfree_both(ft_strdup(" "), pf->filling);////FREEEE
         if (pf->width > len + 1 && pf->align_left == 1)
             ft_str_overlap_copy(pf->filling);
         pf->filling[0] = ' ';
@@ -214,7 +227,8 @@ int		    handle_int(t_pf *pf)
 	long long int num;
 
 	num = 0;
-	if (pf->size_flag == NULL)
+	free(pf->filling);///TEST
+	if (ft_strequ(pf->size_flag, "") == 1)//////////////////////////EXAMPLEE
 		num = va_arg(pf->ap, int);
 	else if (ft_strequ(pf->size_flag, "hh") == 1)
 		num = (signed char)va_arg(pf->ap, int);

@@ -33,9 +33,10 @@ int		handle_char(t_pf *pf)
 
 int		handle_string(t_pf *pf)
 {
+    free(pf->filling);//TEST
 	pf->filling = (char *)va_arg(pf->ap, char *);///prec!!!!
 	if (pf->filling == NULL && pf->precision != -1)
-		pf->filling = ("(null)");
+		pf->filling = ft_strdup("(null)");
 	fill_and_print_string(pf);
     return (pf->printed);
 };
