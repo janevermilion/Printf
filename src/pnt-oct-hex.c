@@ -16,10 +16,43 @@ int		handle_pointer(t_pf *pf)
 {
 	unsigned long long int pnt;
 
+
 	pnt = (unsigned long long int)va_arg(pf->ap, void *);//ширина и точность!!!!
 	pf->filling = ft_itoa_base_unsigned(pnt, 16);
-	pf->filling = ft_strjoinfree_s2("0x", pf->filling);//LEAK
-	fill_and_print_string(pf);
+	if (pf->precision != -5)
+    {
+	    if (ft_strequ("0", pf->filling) == 1)
+        {
+            if (pf->precision >= 1)
+                pf->filling = ft_strjoinfree_both(ft_strdup("0x"), ft_memset(ft_strnew(pf->precision), '0',pf->precision));
+            else if (pf->precision < 1)
+                pf->filling = ft_strdup("0x");
+            pf->printed+=ft_strlen(pf->filling);
+            ft_putstr(pf->filling);
+        }
+	    else
+        {
+	        if (pf->width < pf->precision && pf->width != 0)
+            {
+                pf->filling = ft_strjoinfree_both(ft_memset(ft_strnew(pf->precision - ft_strlen(pf->filling)), '0',pf->precision  - ft_strlen(pf->filling)), pf->filling);
+               pf->filling = ft_strjoinfree_both(ft_strdup("0x"), pf->filling);
+                pf->printed+=ft_strlen(pf->filling);
+               ft_putstr(pf->filling);
+            }
+	        else if (pf->width > pf->precision && pf->precision != -1)
+            {
+	            if ((size_t)pf->precision > ft_strlen(pf->filling))
+                    pf->filling = ft_strjoinfree_both(ft_memset(ft_strnew(pf->precision - ft_strlen(pf->filling)), '0',pf->precision  - ft_strlen(pf->filling)), pf->filling);
+                pf->filling = ft_strjoinfree_both(ft_strdup("0x"), pf->filling);
+                fill_and_print_string(pf);
+            }
+        }
+    }
+    else
+    {
+        pf->filling = ft_strjoinfree_both(ft_strdup("0x"), pf->filling);//LEAK
+        fill_and_print_string(pf);
+    }
     return (pf->printed);
 }
 

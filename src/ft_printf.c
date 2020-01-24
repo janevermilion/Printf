@@ -11,19 +11,9 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-/*
-void                    check_specialities(t_pf *pf)
-{
-    if (pf->type == 'd' || pf->type == 'i')
-    {
-        if(pf->precision > 0 && pf->zero_filling == 1)
-            pf->zero_filling = 0;
-    }
-}
-*/
+
 int		                print_all(t_pf *pf)
 {
-    //check_specialities(pf);
 	if (pf->width != 0)
 		if (zero_or_space_string(pf) == -1)
 			return (-1);
@@ -87,12 +77,13 @@ int         ft_printf(const char *format, ...)
 	va_start(pf->ap, format);
 	if (read_args(pf, format) < 0)
     {
-	    free_pf(pf);
+	    //free_pf(pf);
+	    zero_pf(pf);
         return (-1);
     }
 	va_end(pf->ap);
 	i = pf->printed;
-    //free_pf(pf);
+    free(pf);
 	return (i);
 }
 

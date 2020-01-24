@@ -28,11 +28,13 @@ t_pf 		*init_pf()
 	pf->zero_filling = 0;
 	pf->precision = -5;
 	pf->type = '\0';
-
-	pf->size_flag = (char *)0;
-	pf->length = 0;
-	pf->str_empty = (char *)0;
-	pf->filling = (char *)0;
+    pf->length = 0;
+    pf->size_flag = "\0";
+    pf->str_empty = "\0";
+    pf->filling = "\0";
+	//pf->size_flag = (char *)0;
+	//pf->str_empty = (char *)0;
+	//pf->filling = (char *)0;
 	return (pf);
 }
 
@@ -47,6 +49,8 @@ void		zero_pf(t_pf *pf)
 	pf->precision = -5;
 	pf->type = '\0';
 	pf->size_flag = NULL;
+	//free(pf->filling);
+	//free(pf->str_empty);
 	pf->length = 0;
 }
 

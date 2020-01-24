@@ -14,20 +14,34 @@
 
 void        turn_width_more_prec(t_pf *pf, long long int num, int len)
 {
-    if (num < 0 && ft_strlen(pf->str_empty) > find_step(num))
+    char *zero;
+    if (num < 0 && ft_strlen(pf->str_empty) > (size_t)find_step(num))
     {
-       if (pf->precision >= find_step(num))
-       {
-           ft_memset(pf->str_empty,'0', pf->width);
-           pf->str_empty[0] = '-';
-           pf->filling = ft_itoa_long_long(num*(-1));
-       }
-           if (pf->align_left != 1)
-               ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
-           else
-               ft_memcpy(pf->str_empty, pf->filling, len);
-        free(pf->filling);
-        pf->filling = pf->str_empty;/////////////////problem is here
+        if (pf->precision < pf->width)
+        {
+            if (pf->align_left == 1)
+            {
+                ft_memcpy(pf->str_empty, pf->filling, ft_strlen(pf->filling));
+            }
+            else
+            {
+                int test = find_step(num);
+                if (pf->precision >= test)
+                {
+                    pf->filling = ft_itoa_long_long(num * -1);///FREEE
+                    int test2 = pf->precision - ft_strlen(pf->filling);
+                    zero = ft_strnew(test2);
+                    ft_memset(zero, '0', test2);
+                    pf->filling = ft_strjoinfree_both(zero, pf->filling);////FREEEEEE
+                    pf->filling = ft_strjoinfree_both(ft_strdup("-"), pf->filling);
+                    ft_memcpy(&pf->str_empty[pf->width - ft_strlen(pf->filling)], pf->filling, ft_strlen(pf->filling));
+                }
+                else
+                    ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, ft_strlen(pf->filling));
+            }
+            free(pf->filling);
+            pf->filling = ft_strdup(pf->str_empty);
+        }
     }
     else if (ft_strlen(pf->str_empty) > (size_t)len)
     {
@@ -36,9 +50,8 @@ void        turn_width_more_prec(t_pf *pf, long long int num, int len)
         else
             ft_memcpy(pf->str_empty, pf->filling, len);
         free(pf->filling);
-        pf->filling = pf->str_empty;//////
+        pf->filling = ft_strdup(pf->str_empty);
     }
-
 }
 
 void        handle_int_precision_sec(t_pf *pf, long long int num)
