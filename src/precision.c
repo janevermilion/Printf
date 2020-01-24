@@ -22,7 +22,6 @@ int			find_step(long long int num)
         res++;
         num*=-1;
     }
-
 	while (num)
 	{
 		res++;
@@ -49,6 +48,8 @@ int			check_width(const char *curr, t_pf *pf)
 	if (*curr == '*')
 	{
 		quan = (int)va_arg(pf->ap, int);
+		if (quan < 0)
+		    quan*=(-1);
 		pf->width = quan;
 		return (1);
 	}
@@ -102,7 +103,7 @@ int 	check_precision(const char *curr, t_pf *pf)
 	if (pf->precision > 0)
 	{
 		width = find_step(pf->precision);
-        if (i > width + 1)///////////////////////////////////////////////////////////
+        if (i > width + 1)
 		    return (i - width + 1);
         return (width + 1);
 	}

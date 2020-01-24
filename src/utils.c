@@ -48,10 +48,17 @@ void		zero_pf(t_pf *pf)
 	pf->zero_filling = 0;
 	pf->precision = -5;
 	pf->type = '\0';
-	pf->size_flag = NULL;
-	//free(pf->filling);
-	//free(pf->str_empty);
-	pf->length = 0;
+    pf->length = 0;
+	if(ft_strequ("\0", pf->size_flag) != 1)
+	    ft_memdel((void **)&pf->size_flag);
+    if (ft_strequ("\0", pf->filling) != 1)
+        ft_memdel((void **)&pf->filling);
+    if (ft_strequ("\0", pf->str_empty) != 1)
+        ft_memdel((void **)&pf->str_empty);
+   // pf->size_flag = (char *)0;
+  //  pf->str_empty = (char *)0;
+  //  pf->filling = (char *)0;
+
 }
 
 void        free_pf(t_pf *pf)

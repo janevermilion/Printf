@@ -35,7 +35,7 @@ int		                print_all(t_pf *pf)
 		return (handle_float(pf));
 	else if (pf->type == '%')
 		return (handle_percent(pf));
-    return (-1);//////?????????????
+    return (-1);
 }
 
 int 		read_args(t_pf *pf, const char *format)
