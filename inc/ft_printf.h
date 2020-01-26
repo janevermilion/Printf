@@ -22,6 +22,7 @@
 #define FLAGS " -+#0123456789"
 #define TYPES "cspdiouxXf%"
 #define INT_TYPES "diouxXf"
+
 /////////////////////////////////////////////
 
 #define ANSI_COLOR_RED     "\x1b[31m"
@@ -48,6 +49,7 @@ typedef struct  s_pf
     char 		type;
     char 		*size_flag;
     int 		length; //LL HH H L
+    char        *bits;
     char 		*filling;
     char 		*str_empty;
 
@@ -71,6 +73,7 @@ int		handle_percent(t_pf *pf);
 int         ft_printf(const char *format, ...);
 int 		read_args(t_pf *pf, const char *format);
 int		print_all(t_pf *pf);
+size_t		find_len(long long int n);
 /*
  * * ints.c
  */

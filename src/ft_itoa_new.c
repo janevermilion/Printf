@@ -1,7 +1,7 @@
 
 #include "ft_printf.h"
 
-static size_t		find_len(long long int n)
+size_t		find_len(long long int n)
 {
 	int len;
 
