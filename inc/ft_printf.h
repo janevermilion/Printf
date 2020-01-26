@@ -56,9 +56,8 @@ typedef struct  s_pf
 }               t_pf;
 
 /*
- * * ft_itoa_new.c
+ * * ft_itoa_new
  */
-long long int				ft_atoi_long_long(const char *str);
 char		                *ft_itoa_long_long(long long int n);
 unsigned long long int				ft_atoi_long_long_uns(const char *str);
 /*
@@ -73,7 +72,7 @@ int		handle_percent(t_pf *pf);
 int         ft_printf(const char *format, ...);
 int 		read_args(t_pf *pf, const char *format);
 int		print_all(t_pf *pf);
-size_t		find_len(long long int n);
+//size_t		find_len(long long int n);
 /*
  * * ints.c
  */
@@ -114,7 +113,7 @@ int       handle_unsigned(t_pf *pf);
 /*
  * precision.c
  */
-int			find_step(long long int num);
+//int			find_step(long long int num);
 int			check_width(const char *curr, t_pf *pf);
 int 		check_precision(const char *curr, t_pf *pf);
 int			check_all_precisions(const char *curr, t_pf *pf);
@@ -139,7 +138,6 @@ void		zero_pf(t_pf *pf);
 int		handle_oct(t_pf *pf);
 void		print_int_oct(t_pf *pf);
 char		*ft_itoa_long_long_uns(unsigned long long int n);
-void        free_pf(t_pf *pf);
 
 void        print_int_hex(t_pf *pf);
 #endif

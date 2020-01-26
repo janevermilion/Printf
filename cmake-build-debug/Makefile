@@ -123,6 +123,33 @@ effective_waffle_printf/fast:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/build
 .PHONY : effective_waffle_printf/fast
 
+libft/srcs/find_len_of_num.o: libft/srcs/find_len_of_num.c.o
+
+.PHONY : libft/srcs/find_len_of_num.o
+
+# target to build an object file
+libft/srcs/find_len_of_num.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/find_len_of_num.c.o
+.PHONY : libft/srcs/find_len_of_num.c.o
+
+libft/srcs/find_len_of_num.i: libft/srcs/find_len_of_num.c.i
+
+.PHONY : libft/srcs/find_len_of_num.i
+
+# target to preprocess a source file
+libft/srcs/find_len_of_num.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/find_len_of_num.c.i
+.PHONY : libft/srcs/find_len_of_num.c.i
+
+libft/srcs/find_len_of_num.s: libft/srcs/find_len_of_num.c.s
+
+.PHONY : libft/srcs/find_len_of_num.s
+
+# target to generate assembly for a file
+libft/srcs/find_len_of_num.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/find_len_of_num.c.s
+.PHONY : libft/srcs/find_len_of_num.c.s
+
 libft/srcs/ft_atoi.o: libft/srcs/ft_atoi.c.o
 
 .PHONY : libft/srcs/ft_atoi.o
@@ -176,6 +203,33 @@ libft/srcs/ft_atoi_base.s: libft/srcs/ft_atoi_base.c.s
 libft/srcs/ft_atoi_base.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_base.c.s
 .PHONY : libft/srcs/ft_atoi_base.c.s
+
+libft/srcs/ft_atoi_long_long.o: libft/srcs/ft_atoi_long_long.c.o
+
+.PHONY : libft/srcs/ft_atoi_long_long.o
+
+# target to build an object file
+libft/srcs/ft_atoi_long_long.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_long_long.c.o
+.PHONY : libft/srcs/ft_atoi_long_long.c.o
+
+libft/srcs/ft_atoi_long_long.i: libft/srcs/ft_atoi_long_long.c.i
+
+.PHONY : libft/srcs/ft_atoi_long_long.i
+
+# target to preprocess a source file
+libft/srcs/ft_atoi_long_long.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_long_long.c.i
+.PHONY : libft/srcs/ft_atoi_long_long.c.i
+
+libft/srcs/ft_atoi_long_long.s: libft/srcs/ft_atoi_long_long.c.s
+
+.PHONY : libft/srcs/ft_atoi_long_long.s
+
+# target to generate assembly for a file
+libft/srcs/ft_atoi_long_long.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_long_long.c.s
+.PHONY : libft/srcs/ft_atoi_long_long.c.s
 
 libft/srcs/ft_bzero.o: libft/srcs/ft_bzero.c.o
 
@@ -473,6 +527,33 @@ libft/srcs/ft_itoa_base_unsigned.s: libft/srcs/ft_itoa_base_unsigned.c.s
 libft/srcs/ft_itoa_base_unsigned.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.s
 .PHONY : libft/srcs/ft_itoa_base_unsigned.c.s
+
+libft/srcs/ft_itoa_long_long.o: libft/srcs/ft_itoa_long_long.c.o
+
+.PHONY : libft/srcs/ft_itoa_long_long.o
+
+# target to build an object file
+libft/srcs/ft_itoa_long_long.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_long_long.c.o
+.PHONY : libft/srcs/ft_itoa_long_long.c.o
+
+libft/srcs/ft_itoa_long_long.i: libft/srcs/ft_itoa_long_long.c.i
+
+.PHONY : libft/srcs/ft_itoa_long_long.i
+
+# target to preprocess a source file
+libft/srcs/ft_itoa_long_long.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_long_long.c.i
+.PHONY : libft/srcs/ft_itoa_long_long.c.i
+
+libft/srcs/ft_itoa_long_long.s: libft/srcs/ft_itoa_long_long.c.s
+
+.PHONY : libft/srcs/ft_itoa_long_long.s
+
+# target to generate assembly for a file
+libft/srcs/ft_itoa_long_long.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_long_long.c.s
+.PHONY : libft/srcs/ft_itoa_long_long.c.s
 
 libft/srcs/ft_lstadd.o: libft/srcs/ft_lstadd.c.o
 
@@ -1770,6 +1851,33 @@ libft/srcs/ft_strrchr.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strrchr.c.s
 .PHONY : libft/srcs/ft_strrchr.c.s
 
+libft/srcs/ft_strreverse.o: libft/srcs/ft_strreverse.c.o
+
+.PHONY : libft/srcs/ft_strreverse.o
+
+# target to build an object file
+libft/srcs/ft_strreverse.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strreverse.c.o
+.PHONY : libft/srcs/ft_strreverse.c.o
+
+libft/srcs/ft_strreverse.i: libft/srcs/ft_strreverse.c.i
+
+.PHONY : libft/srcs/ft_strreverse.i
+
+# target to preprocess a source file
+libft/srcs/ft_strreverse.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strreverse.c.i
+.PHONY : libft/srcs/ft_strreverse.c.i
+
+libft/srcs/ft_strreverse.s: libft/srcs/ft_strreverse.c.s
+
+.PHONY : libft/srcs/ft_strreverse.s
+
+# target to generate assembly for a file
+libft/srcs/ft_strreverse.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strreverse.c.s
+.PHONY : libft/srcs/ft_strreverse.c.s
+
 libft/srcs/ft_strsplit.o: libft/srcs/ft_strsplit.c.o
 
 .PHONY : libft/srcs/ft_strsplit.o
@@ -2039,33 +2147,6 @@ src/floats.s: src/floats.c.s
 src/floats.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats.c.s
 .PHONY : src/floats.c.s
-
-src/ft_itoa_new.o: src/ft_itoa_new.c.o
-
-.PHONY : src/ft_itoa_new.o
-
-# target to build an object file
-src/ft_itoa_new.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o
-.PHONY : src/ft_itoa_new.c.o
-
-src/ft_itoa_new.i: src/ft_itoa_new.c.i
-
-.PHONY : src/ft_itoa_new.i
-
-# target to preprocess a source file
-src/ft_itoa_new.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.i
-.PHONY : src/ft_itoa_new.c.i
-
-src/ft_itoa_new.s: src/ft_itoa_new.c.s
-
-.PHONY : src/ft_itoa_new.s
-
-# target to generate assembly for a file
-src/ft_itoa_new.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.s
-.PHONY : src/ft_itoa_new.c.s
 
 src/ft_printf.o: src/ft_printf.c.o
 
@@ -2346,12 +2427,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... effective_waffle_printf"
+	@echo "... libft/srcs/find_len_of_num.o"
+	@echo "... libft/srcs/find_len_of_num.i"
+	@echo "... libft/srcs/find_len_of_num.s"
 	@echo "... libft/srcs/ft_atoi.o"
 	@echo "... libft/srcs/ft_atoi.i"
 	@echo "... libft/srcs/ft_atoi.s"
 	@echo "... libft/srcs/ft_atoi_base.o"
 	@echo "... libft/srcs/ft_atoi_base.i"
 	@echo "... libft/srcs/ft_atoi_base.s"
+	@echo "... libft/srcs/ft_atoi_long_long.o"
+	@echo "... libft/srcs/ft_atoi_long_long.i"
+	@echo "... libft/srcs/ft_atoi_long_long.s"
 	@echo "... libft/srcs/ft_bzero.o"
 	@echo "... libft/srcs/ft_bzero.i"
 	@echo "... libft/srcs/ft_bzero.s"
@@ -2385,6 +2472,9 @@ help:
 	@echo "... libft/srcs/ft_itoa_base_unsigned.o"
 	@echo "... libft/srcs/ft_itoa_base_unsigned.i"
 	@echo "... libft/srcs/ft_itoa_base_unsigned.s"
+	@echo "... libft/srcs/ft_itoa_long_long.o"
+	@echo "... libft/srcs/ft_itoa_long_long.i"
+	@echo "... libft/srcs/ft_itoa_long_long.s"
 	@echo "... libft/srcs/ft_lstadd.o"
 	@echo "... libft/srcs/ft_lstadd.i"
 	@echo "... libft/srcs/ft_lstadd.s"
@@ -2529,6 +2619,9 @@ help:
 	@echo "... libft/srcs/ft_strrchr.o"
 	@echo "... libft/srcs/ft_strrchr.i"
 	@echo "... libft/srcs/ft_strrchr.s"
+	@echo "... libft/srcs/ft_strreverse.o"
+	@echo "... libft/srcs/ft_strreverse.i"
+	@echo "... libft/srcs/ft_strreverse.s"
 	@echo "... libft/srcs/ft_strsplit.o"
 	@echo "... libft/srcs/ft_strsplit.i"
 	@echo "... libft/srcs/ft_strsplit.s"
@@ -2559,9 +2652,6 @@ help:
 	@echo "... src/floats.o"
 	@echo "... src/floats.i"
 	@echo "... src/floats.s"
-	@echo "... src/ft_itoa_new.o"
-	@echo "... src/ft_itoa_new.i"
-	@echo "... src/ft_itoa_new.s"
 	@echo "... src/ft_printf.o"
 	@echo "... src/ft_printf.i"
 	@echo "... src/ft_printf.s"

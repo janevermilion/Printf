@@ -1,40 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_base_unsigned.c                            :+:      :+:    :+:   */
+/*   find_len_of_num.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jslave <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/06 20:25:58 by jslave            #+#    #+#             */
-/*   Updated: 2020/01/06 20:26:00 by jslave           ###   ########.fr       */
+/*   Created: 2020/01/26 19:49:19 by jslave            #+#    #+#             */
+/*   Updated: 2020/01/26 19:49:21 by jslave           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-char		*ft_itoa_base_unsigned(unsigned long long int num, int base)
+size_t		find_len_of_num(long long int n)
 {
-	size_t	i;
-	int		rem;
-	char	*str;
+    int len;
 
-	i = 0;
-	if (!(str = (char *)malloc(sizeof(char) * 21)))
-		return (NULL);
-	if (num == 0)
-	{
-		str[i++] = '0';
-		str[i] = '\0';
-		return (str);
-	}
-	while (num != 0)
-	{
-		rem = num % base;
-		str[i++] = (rem > 9) ? (rem - 10) + 'a' : rem + '0';
-		num = num / base;
-	}
-	str[i] = '\0';
-	return (ft_strreverse(str));
+    len = 0;
+    if (n < 0)
+    {
+        n = -n;
+        len++;
+    }
+    if (n > 0 && n < 10)
+        return (len + 1);
+    while (n != 0)
+    {
+        n = n / 10;
+        len++;
+    }
+    return (len);
 }
-

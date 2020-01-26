@@ -12,24 +12,6 @@
 
 #include "ft_printf.h"
 
-int			find_step(long long int num)
-{
-	int res;
-
-	res = 0;
-	if (num < 0)
-    {
-        res++;
-        num*=-1;
-    }
-	while (num)
-	{
-		res++;
-		num = num / 10;
-	}
-	return (res);
-}
-
 int			check_width(const char *curr, t_pf *pf)
 {
 	int quan;
@@ -41,7 +23,7 @@ int			check_width(const char *curr, t_pf *pf)
 		if (quan >= 0)
 		{
 			pf->width = quan;
-			width_of_num = find_step(quan);
+			width_of_num = find_len_of_num(quan);
 			return (width_of_num);
 		}
 	}
@@ -69,7 +51,7 @@ int			check_all_precisions(const char *curr, t_pf *pf)
             {
                 pf->precision = ft_atoi(&curr[i]);
                 if (ft_strchr(&curr[i], '.') == 0)
-                    return (find_step(pf->precision) + i);
+                    return (find_len_of_num(pf->precision) + i);
             }
 			else if (curr[i] == '*')
 				pf->precision = (int)va_arg(pf->ap, int);
@@ -102,7 +84,7 @@ int 	check_precision(const char *curr, t_pf *pf)
 		return (i);
 	if (pf->precision > 0)
 	{
-		width = find_step(pf->precision);
+		width = find_len_of_num(pf->precision);
         if (i > width + 1)
 		    return (i - width + 1);
         return (width + 1);

@@ -19,48 +19,6 @@ unsigned long long int		ft_pow(unsigned long long int nb, int pow)
 	else
 		return (nb * ft_pow(nb, pow - 1));
 }
-/*
-char	*ft_itoa_base(unsigned long long int value, int base)
-{
-	int		i;
-	char	*nbr;
-	int		neg;
-
-	i = 1;
-	neg = 0;
-	while (ft_pow(base, i) - 1 < value)
-		i++;
-	nbr = (char*)malloc(sizeof(nbr) * i);
-	nbr[i + neg] = '\0';
-	while (i-- > 0)
-	{
-		nbr[i + neg] = (value % base) + (value % base > 9 ? 'A' - 10 : '0');
-		value = value / base;
-	}
-	if (neg)
-		nbr[0] = '-';
-	return (nbr);
-}
-*/
-
-static char	*ft_strrev(char *str)
-{
-	int i;
-	int j;
-	int tmp;
-
-	i = 0;
-	j = ft_strlen(str);
-	while (j > i)
-	{
-		j--;
-		tmp = str[i];
-		str[i] = str[j];
-		str[j] = tmp;
-		i++;
-	}
-	return str;
-}
 
 char		*ft_itoa_base(unsigned long long int num, int base)
 {
@@ -84,6 +42,6 @@ char		*ft_itoa_base(unsigned long long int num, int base)
 		num = num / base;
 	}
 	str[i] = '\0';
-	return (ft_strrev(str));
+	return (ft_strreverse(str));
 }
 

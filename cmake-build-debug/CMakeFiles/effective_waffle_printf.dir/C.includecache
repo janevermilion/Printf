@@ -6,3 +6,17 @@
 
 #IncludeRegexTransform: 
 
+../libft/includes/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_itoa_long_long.c
+libft.h
+/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/libft.h
+limits.h
+/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/limits.h
+

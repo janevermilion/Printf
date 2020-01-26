@@ -14,7 +14,7 @@
 
 #include "ft_printf.h"
 #include <float.h>
-
+/*
 int     ft_if_in_str(char *s1, char s2)
 {
     int     i;
@@ -106,9 +106,9 @@ char    *ft_ftos_sec(long double num, int prec)
 int     ft_length(long double num, int prec)
 {
     if (prec >= 0)
-        return (find_len((int)num) + prec);
+        return (find_len_of_num((int)num) + prec);
     else
-        return (find_len((int)num) + 6);
+        return (find_len_of_num((int)num) + 6);
 }
 
 void    print_float(t_pf *pf, long double num)
@@ -269,4 +269,10 @@ int     handle_float(t_pf *pf)
     else
         print_float(pf, num);
     return (pf->printed);
+};
+ */
+int		handle_float(t_pf *pf)
+{
+    (void)pf;
+    return (0);
 };

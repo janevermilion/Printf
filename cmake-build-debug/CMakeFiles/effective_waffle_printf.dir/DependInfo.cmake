@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/find_len_of_num.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/find_len_of_num.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_atoi.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_atoi_base.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_base.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_atoi_long_long.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_long_long.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_bzero.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_bzero.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_count_if.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_count_if.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_foreach.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_foreach.c.o"
@@ -17,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_itoa.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_itoa_base.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_itoa_base_unsigned.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_itoa_long_long.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_long_long.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_lstadd.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstadd.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_lstappendelem.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstappendelem.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_lstdel.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdel.c.o"
@@ -65,6 +68,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strnew.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnew.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strnstr.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnstr.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strrchr.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strrchr.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strreverse.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strreverse.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strsplit.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsplit.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strstr.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strstr.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strsub.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsub.c.o"
@@ -75,7 +79,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jslave/PRINTF/effective-waffle-printf/main_test.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/chars-int-percent.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/floats.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/floats.c.o"
-  "/Users/jslave/PRINTF/effective-waffle-printf/src/ft_itoa_new.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_itoa_new.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/hex.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/hex.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/ints.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ints.c.o"

@@ -1,40 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_base_unsigned.c                            :+:      :+:    :+:   */
+/*   ft_strreverse.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jslave <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/06 20:25:58 by jslave            #+#    #+#             */
-/*   Updated: 2020/01/06 20:26:00 by jslave           ###   ########.fr       */
+/*   Created: 2020/01/26 20:01:42 by jslave            #+#    #+#             */
+/*   Updated: 2020/01/26 20:01:44 by jslave           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-char		*ft_itoa_base_unsigned(unsigned long long int num, int base)
+char	*ft_strreverse(char *str)
 {
-	size_t	i;
-	int		rem;
-	char	*str;
+    int		i;
+    int		j;
+    char	a;
+    size_t	len;
 
-	i = 0;
-	if (!(str = (char *)malloc(sizeof(char) * 21)))
-		return (NULL);
-	if (num == 0)
-	{
-		str[i++] = '0';
-		str[i] = '\0';
-		return (str);
-	}
-	while (num != 0)
-	{
-		rem = num % base;
-		str[i++] = (rem > 9) ? (rem - 10) + 'a' : rem + '0';
-		num = num / base;
-	}
-	str[i] = '\0';
-	return (ft_strreverse(str));
+    if (str)
+    {
+        len = ft_strlen((const char *)str);
+        i = 0;
+        j = len - 1;
+        while (i < j)
+        {
+            a = str[i];
+            str[i] = str[j];
+            str[j] = a;
+            i++;
+            j--;
+        }
+        return (str);
+    }
+    else
+        return (NULL);
 }
-

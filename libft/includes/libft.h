@@ -98,5 +98,11 @@ int                 get_next_line(int fd, char **line);
 int                 ft_atoi_base(const char *str, int base);
 char				*ft_itoa_base(unsigned long long int value, int base);
 char				*ft_itoa_base_unsigned(unsigned long long int num, int base);
+unsigned long long int				ft_atoi_long_long_uns(const char *str);
+size_t		find_len_of_num(long long int n);
+char				*ft_itoa_long_long_uns(unsigned long long int n);
+char				*ft_itoa_long_long(long long int n);
+
+        char	*ft_strreverse(char *str);
 
 #endif

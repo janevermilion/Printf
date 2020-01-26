@@ -93,10 +93,16 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/includes/libft.h">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/find_len_of_num.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_atoi.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_atoi_base.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_atoi_long_long.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_bzero.c">
@@ -130,6 +136,9 @@
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_itoa_base_unsigned.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_itoa_long_long.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_lstadd.c">
@@ -276,6 +285,9 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strrchr.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strreverse.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_strsplit.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
@@ -304,9 +316,6 @@
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/floats.c">
-			<Option target="effective_waffle_printf"/>
-		</Unit>
-		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/ft_itoa_new.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c">

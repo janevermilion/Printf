@@ -32,9 +32,6 @@ t_pf 		*init_pf()
     pf->size_flag = "\0";
     pf->str_empty = "\0";
     pf->filling = "\0";
-	//pf->size_flag = (char *)0;
-	//pf->str_empty = (char *)0;
-	//pf->filling = (char *)0;
 	return (pf);
 }
 
@@ -55,25 +52,6 @@ void		zero_pf(t_pf *pf)
         ft_memdel((void **)&pf->filling);
     if (ft_strequ("\0", pf->str_empty) != 1)
         ft_memdel((void **)&pf->str_empty);
-   // pf->size_flag = (char *)0;
-  //  pf->str_empty = (char *)0;
-  //  pf->filling = (char *)0;
-
-}
-
-void        free_pf(t_pf *pf)
-{
-    zero_pf(pf);
-    int len_of_filling;
-    int len_of_str_empty;
-
-    len_of_filling = ft_strlen(pf->filling);
-    len_of_str_empty = ft_strlen(pf->str_empty);
-
-    if (*pf->filling && len_of_filling)
-        free(pf->filling);
-    if (*pf->str_empty && *pf->filling && pf->str_empty != pf->filling)
-        free(pf->str_empty);
 }
 
 void        upper_symb(char *str)

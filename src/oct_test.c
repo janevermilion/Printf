@@ -41,7 +41,7 @@ void		print_int_oct(t_pf *pf)
         else
             handle_int_precision_sec(pf, num);
     }
-    else if (pf->precision > 0 && pf->precision > find_step(num))
+    else if (pf->precision > 0 && pf->precision > (int)find_len_of_num(num))
         handle_int_precision_sec(pf, num);
     if (pf->need_sign == 1 && num)
         handle_int_sign(pf, num);

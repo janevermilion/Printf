@@ -7,6 +7,7 @@
 
 int         main()//1698test
 {
+    /*
     static char	a01;
     static unsigned char a02;
     static short a03;
@@ -38,9 +39,9 @@ int         main()//1698test
     static long		lmin	= -9223372036854775807;
     static long long llmax = 9223372036854775807;
     static long long	llmin = -9223372036854775807ll;
+    ft_printf("%s\n", "Slaves of printf");
 
 
-/*
     printf("or: [%i] [%i]\n", i_pos_1, i_pos_1);
     ft_printf("[%i] [%i]", i_pos_1, i_pos_1);
 printf("hello, %s.          ", NULL);
@@ -82,15 +83,16 @@ printf("hello, %s.          ", NULL);
     printf("  %c    %i    %hi    %o    %x    %u  ", mx_c, mx_i, mx_hi, mx_u, mx_u, mx_u);printf("    ");
 
 ft_printf("  %c    %i    %hi    %o    %x    %u  ", mx_c, mx_i, mx_hi, mx_u, mx_u, mx_u);printf("\n");
- */
 
+*/
 printf("mine:\n");
-int t = ft_printf("%%");
+int t = ft_printf("{%*d}", -6, 42);
 printf("<-\nreturned value : %i", t);
 printf("\norigin:\n");
-t = printf("%%");
+t = printf("{%*d}", -6, 42);
 printf("<-\nreturned value : %i", t);
 printf("\n------------\n");
+/*
     ft_printf("\n");
     ft_printf("%%\n");
     ft_printf("%d\n", 42);
@@ -120,11 +122,7 @@ printf("\n------------\n");
     ft_printf("%s%s\n", "test", "test");
     ft_printf("%s%s%s\n", "test", "test", "test");
     ft_printf("%C\n", 15000);
-
+*/
 return (0);
 }
-/*
- *  перекопать все на предсет маллока и фри со строками
- */
 
-//transform hex format in hex.c refactor

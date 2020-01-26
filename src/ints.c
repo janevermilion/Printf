@@ -15,7 +15,7 @@
 void        turn_width_more_prec(t_pf *pf, long long int num, int len)
 {
     char *zero;
-    if (num < 0 && ft_strlen(pf->str_empty) > (size_t)find_step(num))
+    if (num < 0 && ft_strlen(pf->str_empty) > (size_t)find_len_of_num(num))
     {
         if (pf->precision < pf->width)
         {
@@ -23,7 +23,7 @@ void        turn_width_more_prec(t_pf *pf, long long int num, int len)
                 ft_memcpy(pf->str_empty, pf->filling, ft_strlen(pf->filling));
             else
             {
-                int test = find_step(num);
+                int test = find_len_of_num(num);
                 if (pf->precision >= test)
                 {
                     pf->filling = ft_itoa_long_long(num * -1);///FREEE
@@ -139,7 +139,7 @@ void        turn_width_more_prec_prec_more_num(t_pf *pf, int len , int i)
 
 void        turn_width_more_prec_prec_less_num(t_pf *pf, int len, int i, int num)
 {
-    if (i == 0 && pf->zero_filling == 1 && pf->width > find_step(num) && pf->align_left != 1)
+    if (i == 0 && pf->zero_filling == 1 && pf->width > (int)find_len_of_num(num) && pf->align_left != 1)
         pf->filling[0] = '+';
     else if ((i == len || i == 0) && pf->filling[pf->width -1] != ' ')
         pf->filling = ft_strlen(pf->filling) ? ft_strjoinfree_both(ft_strdup("+"), pf->filling) : ft_strjoinfree_s1(ft_strdup("+"), pf->filling);
@@ -174,9 +174,9 @@ void        handle_int_sign(t_pf *pf, long long int num)
     stop = ' ';
     while (pf->filling[i] == stop && pf->filling[i] != '\0')
         i++;
-   if (pf->precision > find_step(num) && pf->width > pf->precision)
+   if (pf->precision > (int)find_len_of_num(num) && pf->width > pf->precision)
        turn_width_more_prec_prec_more_num(pf, len , i);
-   else if (pf->precision < find_step(num) && pf->width > pf->precision)
+   else if (pf->precision < (int)find_len_of_num(num) && pf->width > pf->precision)
        turn_width_more_prec_prec_less_num(pf, len, i, num);
    else if ((pf->width == 0 && pf->precision < 0) || pf->width <= pf->precision)
        pf->filling = ft_strlen(pf->filling) ? ft_strjoinfree_both(ft_strdup("+"), pf->filling) : ft_strjoinfree_s1(ft_strdup("+"), pf->filling);
@@ -188,7 +188,7 @@ void        handle_int_space_sec(t_pf *pf, long long int num)
 
     if (handle_max_and_min_long_long(pf) == 1)
         return;
-    len = find_step((int)num);
+    len = find_len_of_num((int)num);
     if (num >= 0 && pf->need_sign != 1)
     {
         if (pf->width <= len)
@@ -210,7 +210,7 @@ void        print_int_second_edition(t_pf *pf, long long int num)
         else
             handle_int_precision_sec(pf, num);
     }
-    else if (pf->precision > 0 && pf->precision > find_step(num))
+    else if (pf->precision > 0 && pf->precision > (int)find_len_of_num(num))
         handle_int_precision_sec(pf, num);
     if (pf->need_sign == 1 && num >= 0)
         handle_int_sign(pf, num);
