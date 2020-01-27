@@ -16,7 +16,7 @@
 #include "../libft/includes/libft.h"
 #include <stdarg.h>
 #include <string.h>
-#include "stdio.h"
+#include <stdio.h>
 #include <limits.h>
 #include <float.h>
 
@@ -150,6 +150,23 @@ void        print_int_hex(t_pf *pf);
 /*
  * *floats.c
  */
-int			handle_float(t_pf *pf);
+int         handle_float(t_pf *pf);
+int         ft_length(long double num, int prec);
+char        *ft_ftos_sec(long double num, int prec);
+long double ft_round(long double x, long double acc);
+char        *spaces(char c, int n);
+double      ft_power(double nb, double power);
+int         ft_if_in_str(char *s1, char s2);
+void        printf_fill(t_pf *pf, long double tmp, int len);
+void        printf_float_2(long double tmp, int len, t_pf *pf);
+void        sign_2(t_pf *pf);
+void        printf_fill_4(t_pf *pf);
+void        printf_fill_3(t_pf *pf);
+void        printf_fill_2(t_pf *pf);
+void        printf_float_3(long double tmp, t_pf *pf);
+void        print_float(t_pf *pf, long double num);
+int         dbl_2(t_pf *pf);
+int         dbl(t_pf *pf);
+int         sign(t_pf *pf, long double tmp, int len);
 
 #endif
