@@ -318,6 +318,15 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/floats.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/floats_2.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/floats_3.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/floats_4.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>

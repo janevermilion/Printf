@@ -2148,6 +2148,87 @@ src/floats.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats.c.s
 .PHONY : src/floats.c.s
 
+src/floats_2.o: src/floats_2.c.o
+
+.PHONY : src/floats_2.o
+
+# target to build an object file
+src/floats_2.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats_2.c.o
+.PHONY : src/floats_2.c.o
+
+src/floats_2.i: src/floats_2.c.i
+
+.PHONY : src/floats_2.i
+
+# target to preprocess a source file
+src/floats_2.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats_2.c.i
+.PHONY : src/floats_2.c.i
+
+src/floats_2.s: src/floats_2.c.s
+
+.PHONY : src/floats_2.s
+
+# target to generate assembly for a file
+src/floats_2.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats_2.c.s
+.PHONY : src/floats_2.c.s
+
+src/floats_3.o: src/floats_3.c.o
+
+.PHONY : src/floats_3.o
+
+# target to build an object file
+src/floats_3.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats_3.c.o
+.PHONY : src/floats_3.c.o
+
+src/floats_3.i: src/floats_3.c.i
+
+.PHONY : src/floats_3.i
+
+# target to preprocess a source file
+src/floats_3.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats_3.c.i
+.PHONY : src/floats_3.c.i
+
+src/floats_3.s: src/floats_3.c.s
+
+.PHONY : src/floats_3.s
+
+# target to generate assembly for a file
+src/floats_3.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats_3.c.s
+.PHONY : src/floats_3.c.s
+
+src/floats_4.o: src/floats_4.c.o
+
+.PHONY : src/floats_4.o
+
+# target to build an object file
+src/floats_4.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats_4.c.o
+.PHONY : src/floats_4.c.o
+
+src/floats_4.i: src/floats_4.c.i
+
+.PHONY : src/floats_4.i
+
+# target to preprocess a source file
+src/floats_4.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats_4.c.i
+.PHONY : src/floats_4.c.i
+
+src/floats_4.s: src/floats_4.c.s
+
+.PHONY : src/floats_4.s
+
+# target to generate assembly for a file
+src/floats_4.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats_4.c.s
+.PHONY : src/floats_4.c.s
+
 src/ft_printf.o: src/ft_printf.c.o
 
 .PHONY : src/ft_printf.o
@@ -2706,6 +2787,15 @@ help:
 	@echo "... src/floats.o"
 	@echo "... src/floats.i"
 	@echo "... src/floats.s"
+	@echo "... src/floats_2.o"
+	@echo "... src/floats_2.i"
+	@echo "... src/floats_2.s"
+	@echo "... src/floats_3.o"
+	@echo "... src/floats_3.i"
+	@echo "... src/floats_3.s"
+	@echo "... src/floats_4.o"
+	@echo "... src/floats_4.i"
+	@echo "... src/floats_4.s"
 	@echo "... src/ft_printf.o"
 	@echo "... src/ft_printf.i"
 	@echo "... src/ft_printf.s"
