@@ -12,6 +12,8 @@
 
 #include "ft_printf.h"
 
+
+
 int			check_width(const char *curr, t_pf *pf)
 {
 	int quan;
@@ -38,34 +40,50 @@ int			check_width(const char *curr, t_pf *pf)
 	return (0);
 }
 
+int         prec_check_point(const char *curr, t_pf *pf, int *i)
+{
+    int j;
+    j = 0;
+    if (curr[j] == '.')
+    {
+        if (ft_isdigit(curr[++j]) == 1 && curr[j] != '0' &&
+        find_types(&(curr[j]), TYPES) != 1 && (pf->precision = ft_atoi(&curr[j])) > 0)
+        {
+           // pf->precision = ft_atoi(&curr[j]);
+            if (ft_strchr(&curr[j], '.') == 0)
+                return (find_len_of_num(pf->precision) + j);
+        }
+        else if (curr[j] == '*')
+            pf->precision = (int)va_arg(pf->ap, int);
+        else if (curr[j] == '0')
+            pf->precision = ft_atoi(&curr[j]);
+        else if (find_types(&(curr[j]), TYPES) == 1)
+        {
+            pf->precision = -1;
+           j++;
+           *i+=j;
+            return (-1);
+        }
+        else
+            pf->precision = -1;
+    }
+    *i+=j;
+    return (0);
+}
+
 int			check_all_precisions(const char *curr, t_pf *pf)
 {
 	int i;
+	int test;
 
 	i = 0;
 	while (*curr && curr[i] != '\0' && find_types(&(curr[i]), TYPES) != 1)
 	{
-		if (curr[i] == '.')
-		{
-			if (ft_isdigit(curr[++i]) == 1 && curr[i] != '0' && find_types(&(curr[i]), TYPES) != 1 && (ft_atoi(&curr[i])) > 0)
-            {
-                pf->precision = ft_atoi(&curr[i]);
-                if (ft_strchr(&curr[i], '.') == 0)
-                    return (find_len_of_num(pf->precision) + i);
-            }
-			else if (curr[i] == '*')
-				pf->precision = (int)va_arg(pf->ap, int);
-			else if (curr[i] == '0')
-				pf->precision = ft_atoi(&curr[i]);
-			else if (find_types(&(curr[i]), TYPES) == 1)
-			{
-				pf->precision = -1;
-				i+=1;
-				break;
-			}
-			else
-				pf->precision = -1;
-		}
+	    test = prec_check_point(&curr[i], pf, &i);
+	    if (test == -1)
+            break;
+	    if (test)
+            return (test);
 		i++;
 	}
 	return (i);
@@ -73,7 +91,6 @@ int			check_all_precisions(const char *curr, t_pf *pf)
 
 int 	check_precision(const char *curr, t_pf *pf)
 {
-
 	int i;
 	int width;
 
