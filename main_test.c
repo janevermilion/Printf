@@ -86,10 +86,10 @@ ft_printf("  %c    %i    %hi    %o    %x    %u  ", mx_c, mx_i, mx_hi, mx_u, mx_u
 
 */
 printf("mine:\n");
-int t = ft_printf("{%*d}", -6, 42);
+int t = ft_printf("%.7s", "hello");
 printf("<-\nreturned value : %i", t);
 printf("\norigin:\n");
-t = printf("{%*d}", -6, 42);
+t = printf("%.7s", "hello");
 printf("<-\nreturned value : %i", t);
 printf("\n------------\n");
 /*
