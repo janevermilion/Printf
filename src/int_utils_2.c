@@ -12,11 +12,11 @@
 
 #include "ft_printf.h"
 
-void        handle_int_width_and_precision_sec(t_pf *pf, long long int num)
+void        handle_int_width_and_precision(t_pf *pf, long long int num)
 {
 	int len;
 
-	handle_int_precision_sec(pf, num);
+	handle_int_precision(pf, num);
 	len = ft_strlen(pf->filling);
 	if (pf->width > pf->precision)
 	{
@@ -33,10 +33,10 @@ void        handle_int_width_and_precision_sec(t_pf *pf, long long int num)
 		}
 	}
 	else
-		handle_int_precision_sec(pf, num);
+		handle_int_precision(pf, num);
 }
 
-void        handle_int_width_sec(t_pf *pf, long long int num)
+void        handle_int_width(t_pf *pf, long long int num)
 {
 	int len;
 

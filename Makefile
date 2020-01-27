@@ -21,10 +21,10 @@ INCLUDES = inc/
 
 FLAGS = -Wall -Wextra -Werror
 
-SRC = src/chars-int-percent.c src/precision.c src/floats.c \
+SRC = src/char_str_perc.c src/precision.c src/floats.c \
 src/ft_printf.c src/ints.c src/parsing.c \
-src/pnt-oct-hex.c src/print_str_char.c src/utils.c \
-src/int_utils_1.c src/int_utils_2.c src/int_utils_3.c src/oct_test.c src/hex.c
+src/pnt_uns_hex.c src/str.c src/utils.c \
+src/int_utils_1.c src/int_utils_2.c src/int_utils_3.c src/oct.c src/hex.c
 
 OUT = $(SRC:%.c=%.o)
 

@@ -61,7 +61,7 @@ void        turn_width_more_prec(t_pf *pf, long long int num, int len)
 	}
 }
 
-void        handle_int_precision_sec(t_pf *pf, long long int num)
+void        handle_int_precision(t_pf *pf, long long int num)
 {
 	char *zero;
 	int len;

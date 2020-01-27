@@ -59,70 +59,70 @@ typedef struct  s_pf
 }               t_pf;
 
 /*
- * * ft_itoa_new
+ * * char-str-percent.c
  */
-char		                *ft_itoa_long_long(long long int n);
-unsigned long long int				ft_atoi_long_long_uns(const char *str);
-/*
- * * chars-int-percent.c
- */
-void	put_flag(char curr, t_pf *pf);
-int		handle_char(t_pf *pf);
-int		handle_string(t_pf *pf);
-int		handle_percent(t_pf *pf);
+int			handle_char(t_pf *pf);
+int			handle_string(t_pf *pf);
+int			handle_percent(t_pf *pf);
 /*
  * * ft_printf.c
  */
 int         ft_printf(const char *format, ...);
 int 		read_args(t_pf *pf, const char *format);
 int			print_all(t_pf *pf);
-
 /*
  * * ints.c
  */
 int			handle_int(t_pf *pf);
-int         handle_max_and_min_long_long(t_pf *pf);
-void        ft_str_overlap_copy(char *str);
-void        print_int_second_edition(t_pf *pf, long long int num);
-void        turn_width_more_prec(t_pf *pf, long long int num, int len);
-void        handle_int_precision_sec(t_pf *pf, long long int num);
-void        handle_int_width_and_precision_sec(t_pf *pf, long long int num);
-void        handle_int_width_sec(t_pf *pf, long long int num);
-void        turn_width_more_prec_more_num(t_pf *pf, int len , int i);
 void        turn_width_more_prec_less_num(t_pf *pf, int len, int i, int num);
 void        handle_int_sign(t_pf *pf, long long int num);
-void        handle_int_space_sec(t_pf *pf, long long int num);
+void        handle_int_space(t_pf *pf, long long int num);
 void        print_int(t_pf *pf, long long int num);
 /*
- * * ints_utils
+ * * ints_utils_1.c
  */
+int         handle_max_and_min_long_long(t_pf *pf);
 char        *fill_zero_string(t_pf *pf, int len, long long int num);
 void        put_sign(t_pf *pf, long long int num);
 void        fill_empty_str_neg_num(t_pf *pf, int len, long long num);
-void         fill_empty_str_pos_num(t_pf *pf, int len);
+void        fill_empty_str_pos_num(t_pf *pf, int len);
+/*
+ * *  int_utils_2.c
+ */
+void        handle_int_width_and_precision(t_pf *pf, long long int num);//
+void        handle_int_width(t_pf *pf, long long int num);//
+void		width_more_prec_plus(t_pf *pf);//
+void        turn_width_more_prec_more_num(t_pf *pf, int len , int i);//
+void        ft_str_overlap_copy(char *str);//
+/*
+ * * int_utils_3.c
+ */
+void        handle_int_precision(t_pf *pf, long long int num);
+void        turn_width_more_prec(t_pf *pf, long long int num, int len);
+void		prec_less_width(t_pf *pf, long long int num, int len);
 /*
  * * parsing.c
  */
-int			check_flags(const char *curr, t_pf *pf);
 int 		find_types(const char *str, char *parent);
 int 		check_types(const char *curr, t_pf *pf);
 int			zero_or_space_string(t_pf *pf);
 int			check_size_flag(const char *curr, t_pf *pf);
 /*
- * * print_oct_hex.c
+ * * pnt_uns_hex.c
  */
-int		handle_pointer(t_pf *pf);
-int		handle_hex(t_pf *pf);
-int       handle_unsigned(t_pf *pf);
+void		handle_pnt_no_prec(t_pf *pf);
+int			handle_pointer(t_pf *pf);
+int			handle_hex(t_pf *pf);
+int			handle_unsigned(t_pf *pf);
 /*
  * precision.c
  */
-//int			find_step(long long int num);
 int			check_width(const char *curr, t_pf *pf);
+int			prec_check_point(const char *curr, t_pf *pf, int *i);
 int 		check_precision(const char *curr, t_pf *pf);
 int			check_all_precisions(const char *curr, t_pf *pf);
 /*
- * * print_str_char.c
+ * * str.c
  */
 void		fill_and_print_string(t_pf *pf);
 void 		print_char(t_pf *pf);
@@ -133,25 +133,23 @@ char 		*cut_string(char *str, int q);
  */
 t_pf 		*init_pf();
 void		upper_symb(char *str);
-int		handle_float(t_pf *pf);
 void		zero_pf(t_pf *pf);
-
 /*
  * oct_test.c
  */
-int		handle_oct(t_pf *pf);
+int			handle_oct(t_pf *pf);
 void		print_int_oct(t_pf *pf);
-char		*ft_itoa_long_long_uns(unsigned long long int n);
+void        check_zero(t_pf *pf);
 
+/*
+ * *hex.c
+ */
+void		hex_i_less_one(t_pf *pf, int len);
+void		transform_hex_format(t_pf *pf);
 void        print_int_hex(t_pf *pf);
-
-void		prec_less_width(t_pf *pf, long long int num, int len);
-void        turn_width_more_prec(t_pf *pf, long long int num, int len);
-void        handle_int_precision_sec(t_pf *pf, long long int num);
-void        handle_int_width_and_precision_sec(t_pf *pf, long long int num);
-void        handle_int_width_sec(t_pf *pf, long long int num);
-void		width_more_prec_plus(t_pf *pf);
-void        turn_width_more_prec_more_num(t_pf *pf, int len , int i);
-void        ft_str_overlap_copy(char *str);
+/*
+ * *floats.c
+ */
+int			handle_float(t_pf *pf);
 
 #endif

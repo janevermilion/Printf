@@ -312,7 +312,7 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/main_test.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
-		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/chars-int-percent.c">
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/char_str_perc.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/floats.c">
@@ -336,19 +336,19 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/ints.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
-		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/oct_test.c">
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/oct.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/parsing.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
-		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/pnt-oct-hex.c">
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/pnt_uns_hex.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/precision.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
-		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c">
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/str.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/utils.c">

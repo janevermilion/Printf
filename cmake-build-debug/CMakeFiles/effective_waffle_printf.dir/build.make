@@ -993,18 +993,18 @@ CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/get_next_line.c -o CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.s
 
-CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
-CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o: ../src/chars-int-percent.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/chars-int-percent.c
+CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
+CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o: ../src/char_str_perc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/char_str_perc.c
 
-CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/chars-int-percent.c > CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.i
+CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/char_str_perc.c > CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.i
 
-CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/chars-int-percent.c -o CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.s
+CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/char_str_perc.c -o CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.s
 
 CMakeFiles/effective_waffle_printf.dir/src/floats.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
 CMakeFiles/effective_waffle_printf.dir/src/floats.c.o: ../src/floats.c
@@ -1097,18 +1097,18 @@ CMakeFiles/effective_waffle_printf.dir/src/ints.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/ints.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/ints.c -o CMakeFiles/effective_waffle_printf.dir/src/ints.c.s
 
-CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
-CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o: ../src/oct_test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/oct_test.c
+CMakeFiles/effective_waffle_printf.dir/src/oct.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
+CMakeFiles/effective_waffle_printf.dir/src/oct.c.o: ../src/oct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/effective_waffle_printf.dir/src/oct.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/oct.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/oct.c
 
-CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/oct_test.c > CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.i
+CMakeFiles/effective_waffle_printf.dir/src/oct.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/oct.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/oct.c > CMakeFiles/effective_waffle_printf.dir/src/oct.c.i
 
-CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/oct_test.c -o CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.s
+CMakeFiles/effective_waffle_printf.dir/src/oct.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/oct.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/oct.c -o CMakeFiles/effective_waffle_printf.dir/src/oct.c.s
 
 CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
 CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o: ../src/parsing.c
@@ -1123,18 +1123,18 @@ CMakeFiles/effective_waffle_printf.dir/src/parsing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/parsing.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/parsing.c -o CMakeFiles/effective_waffle_printf.dir/src/parsing.c.s
 
-CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
-CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o: ../src/pnt-oct-hex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/pnt-oct-hex.c
+CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
+CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o: ../src/pnt_uns_hex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/pnt_uns_hex.c
 
-CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/pnt-oct-hex.c > CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.i
+CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/pnt_uns_hex.c > CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.i
 
-CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/pnt-oct-hex.c -o CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.s
+CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/pnt_uns_hex.c -o CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.s
 
 CMakeFiles/effective_waffle_printf.dir/src/precision.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
 CMakeFiles/effective_waffle_printf.dir/src/precision.c.o: ../src/precision.c
@@ -1149,18 +1149,18 @@ CMakeFiles/effective_waffle_printf.dir/src/precision.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/precision.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/precision.c -o CMakeFiles/effective_waffle_printf.dir/src/precision.c.s
 
-CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
-CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: ../src/print_str_char.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c
+CMakeFiles/effective_waffle_printf.dir/src/str.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
+CMakeFiles/effective_waffle_printf.dir/src/str.c.o: ../src/str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/effective_waffle_printf.dir/src/str.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/effective_waffle_printf.dir/src/str.c.o   -c /Users/jslave/PRINTF/effective-waffle-printf/src/str.c
 
-CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c > CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.i
+CMakeFiles/effective_waffle_printf.dir/src/str.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/effective_waffle_printf.dir/src/str.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jslave/PRINTF/effective-waffle-printf/src/str.c > CMakeFiles/effective_waffle_printf.dir/src/str.c.i
 
-CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c -o CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.s
+CMakeFiles/effective_waffle_printf.dir/src/str.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/effective_waffle_printf.dir/src/str.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jslave/PRINTF/effective-waffle-printf/src/str.c -o CMakeFiles/effective_waffle_printf.dir/src/str.c.s
 
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o: CMakeFiles/effective_waffle_printf.dir/flags.make
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o: ../src/utils.c
@@ -1262,7 +1262,7 @@ effective_waffle_printf_OBJECTS = \
 "CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_tolower.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_toupper.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.o" \
-"CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o" \
+"CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/floats.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/hex.c.o" \
@@ -1270,11 +1270,11 @@ effective_waffle_printf_OBJECTS = \
 "CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/ints.c.o" \
-"CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o" \
+"CMakeFiles/effective_waffle_printf.dir/src/oct.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o" \
-"CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o" \
+"CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/precision.c.o" \
-"CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o" \
+"CMakeFiles/effective_waffle_printf.dir/src/str.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/src/utils.c.o" \
 "CMakeFiles/effective_waffle_printf.dir/main_test.c.o"
 
@@ -1353,7 +1353,7 @@ effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_st
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_tolower.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_toupper.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.o
-effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o
+effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/floats.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/hex.c.o
@@ -1361,11 +1361,11 @@ effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/int_utils_1.
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/ints.c.o
-effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o
+effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/oct.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o
-effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o
+effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/precision.c.o
-effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o
+effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/str.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/src/utils.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/main_test.c.o
 effective_waffle_printf: CMakeFiles/effective_waffle_printf.dir/build.make
