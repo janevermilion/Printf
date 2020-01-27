@@ -118,5 +118,10 @@ int			check_size_flag(const char *curr, t_pf *pf)
 		pf->size_flag = ft_strdup("l");
 		return (1);
 	}
+	else if (*curr == 'L')
+    {
+        pf->size_flag = ft_strdup("L");
+        return (1);
+    }
 	return (0);
 }

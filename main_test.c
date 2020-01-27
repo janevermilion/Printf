@@ -85,11 +85,21 @@ printf("hello, %s.          ", NULL);
 ft_printf("  %c    %i    %hi    %o    %x    %u  ", mx_c, mx_i, mx_hi, mx_u, mx_u, mx_u);printf("\n");
 
 */
+    static unsigned int		mx_u = 235;
+    static long double			mx_Lf = 0.375l;
+    static double				mx_f = 0.625;
+    static long				mx_li =  4223372036854775800;
+    static long long			mx_lli = 3223372036654775200;
+    static char				mx_c = 'G';
+    static short				mx_hi = -3244;
+    static char				mx_hhi = 'F';
+    static char			   *mx_s = "Hello, World!";
+    static int					mx_i = 42;
 printf("mine:\n");
-int t = ft_printf("%.7s", "hello");
+int t = ft_printf("%f", DBL_MAX);
 printf("<-\nreturned value : %i", t);
 printf("\norigin:\n");
-t = printf("%.7s", "hello");
+t = printf("%f", DBL_MAX);
 printf("<-\nreturned value : %i", t);
 printf("\n------------\n");
 /*

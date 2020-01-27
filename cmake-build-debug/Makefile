@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/3E0D4196-E30F-4327-803C-B2C3D014CEBD/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/3E0D4196-E30F-4327-803C-B2C3D014CEBD/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jslave/PRINTF/effective-waffle-printf
+CMAKE_SOURCE_DIR = /Users/jterrell/brrrrr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jterrell/brrrrr/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/3E0D4196-E30F-4327-803C-B2C3D014CEBD/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00018xh000_7c/T/AppTranslocation/3E0D4196-E30F-4327-803C-B2C3D014CEBD/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jterrell/brrrrr/cmake-build-debug/CMakeFiles /Users/jterrell/brrrrr/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jterrell/brrrrr/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named effective_waffle_printf
+# Target rules for targets named brrrrr
 
 # Build rule for target.
-effective_waffle_printf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 effective_waffle_printf
-.PHONY : effective_waffle_printf
+brrrrr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 brrrrr
+.PHONY : brrrrr
 
 # fast build rule for target.
-effective_waffle_printf/fast:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/build
-.PHONY : effective_waffle_printf/fast
+brrrrr/fast:
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/build
+.PHONY : brrrrr/fast
 
 libft/srcs/find_len_of_num.o: libft/srcs/find_len_of_num.c.o
 
@@ -129,7 +129,7 @@ libft/srcs/find_len_of_num.o: libft/srcs/find_len_of_num.c.o
 
 # target to build an object file
 libft/srcs/find_len_of_num.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/find_len_of_num.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/find_len_of_num.c.o
 .PHONY : libft/srcs/find_len_of_num.c.o
 
 libft/srcs/find_len_of_num.i: libft/srcs/find_len_of_num.c.i
@@ -138,7 +138,7 @@ libft/srcs/find_len_of_num.i: libft/srcs/find_len_of_num.c.i
 
 # target to preprocess a source file
 libft/srcs/find_len_of_num.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/find_len_of_num.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/find_len_of_num.c.i
 .PHONY : libft/srcs/find_len_of_num.c.i
 
 libft/srcs/find_len_of_num.s: libft/srcs/find_len_of_num.c.s
@@ -147,7 +147,7 @@ libft/srcs/find_len_of_num.s: libft/srcs/find_len_of_num.c.s
 
 # target to generate assembly for a file
 libft/srcs/find_len_of_num.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/find_len_of_num.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/find_len_of_num.c.s
 .PHONY : libft/srcs/find_len_of_num.c.s
 
 libft/srcs/ft_atoi.o: libft/srcs/ft_atoi.c.o
@@ -156,7 +156,7 @@ libft/srcs/ft_atoi.o: libft/srcs/ft_atoi.c.o
 
 # target to build an object file
 libft/srcs/ft_atoi.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_atoi.c.o
 .PHONY : libft/srcs/ft_atoi.c.o
 
 libft/srcs/ft_atoi.i: libft/srcs/ft_atoi.c.i
@@ -165,7 +165,7 @@ libft/srcs/ft_atoi.i: libft/srcs/ft_atoi.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_atoi.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_atoi.c.i
 .PHONY : libft/srcs/ft_atoi.c.i
 
 libft/srcs/ft_atoi.s: libft/srcs/ft_atoi.c.s
@@ -174,7 +174,7 @@ libft/srcs/ft_atoi.s: libft/srcs/ft_atoi.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_atoi.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_atoi.c.s
 .PHONY : libft/srcs/ft_atoi.c.s
 
 libft/srcs/ft_atoi_base.o: libft/srcs/ft_atoi_base.c.o
@@ -183,7 +183,7 @@ libft/srcs/ft_atoi_base.o: libft/srcs/ft_atoi_base.c.o
 
 # target to build an object file
 libft/srcs/ft_atoi_base.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_base.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_atoi_base.c.o
 .PHONY : libft/srcs/ft_atoi_base.c.o
 
 libft/srcs/ft_atoi_base.i: libft/srcs/ft_atoi_base.c.i
@@ -192,7 +192,7 @@ libft/srcs/ft_atoi_base.i: libft/srcs/ft_atoi_base.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_atoi_base.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_base.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_atoi_base.c.i
 .PHONY : libft/srcs/ft_atoi_base.c.i
 
 libft/srcs/ft_atoi_base.s: libft/srcs/ft_atoi_base.c.s
@@ -201,7 +201,7 @@ libft/srcs/ft_atoi_base.s: libft/srcs/ft_atoi_base.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_atoi_base.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_base.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_atoi_base.c.s
 .PHONY : libft/srcs/ft_atoi_base.c.s
 
 libft/srcs/ft_atoi_long_long.o: libft/srcs/ft_atoi_long_long.c.o
@@ -210,7 +210,7 @@ libft/srcs/ft_atoi_long_long.o: libft/srcs/ft_atoi_long_long.c.o
 
 # target to build an object file
 libft/srcs/ft_atoi_long_long.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_long_long.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_atoi_long_long.c.o
 .PHONY : libft/srcs/ft_atoi_long_long.c.o
 
 libft/srcs/ft_atoi_long_long.i: libft/srcs/ft_atoi_long_long.c.i
@@ -219,7 +219,7 @@ libft/srcs/ft_atoi_long_long.i: libft/srcs/ft_atoi_long_long.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_atoi_long_long.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_long_long.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_atoi_long_long.c.i
 .PHONY : libft/srcs/ft_atoi_long_long.c.i
 
 libft/srcs/ft_atoi_long_long.s: libft/srcs/ft_atoi_long_long.c.s
@@ -228,7 +228,7 @@ libft/srcs/ft_atoi_long_long.s: libft/srcs/ft_atoi_long_long.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_atoi_long_long.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_atoi_long_long.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_atoi_long_long.c.s
 .PHONY : libft/srcs/ft_atoi_long_long.c.s
 
 libft/srcs/ft_bzero.o: libft/srcs/ft_bzero.c.o
@@ -237,7 +237,7 @@ libft/srcs/ft_bzero.o: libft/srcs/ft_bzero.c.o
 
 # target to build an object file
 libft/srcs/ft_bzero.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_bzero.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_bzero.c.o
 .PHONY : libft/srcs/ft_bzero.c.o
 
 libft/srcs/ft_bzero.i: libft/srcs/ft_bzero.c.i
@@ -246,7 +246,7 @@ libft/srcs/ft_bzero.i: libft/srcs/ft_bzero.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_bzero.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_bzero.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_bzero.c.i
 .PHONY : libft/srcs/ft_bzero.c.i
 
 libft/srcs/ft_bzero.s: libft/srcs/ft_bzero.c.s
@@ -255,7 +255,7 @@ libft/srcs/ft_bzero.s: libft/srcs/ft_bzero.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_bzero.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_bzero.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_bzero.c.s
 .PHONY : libft/srcs/ft_bzero.c.s
 
 libft/srcs/ft_count_if.o: libft/srcs/ft_count_if.c.o
@@ -264,7 +264,7 @@ libft/srcs/ft_count_if.o: libft/srcs/ft_count_if.c.o
 
 # target to build an object file
 libft/srcs/ft_count_if.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_count_if.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_count_if.c.o
 .PHONY : libft/srcs/ft_count_if.c.o
 
 libft/srcs/ft_count_if.i: libft/srcs/ft_count_if.c.i
@@ -273,7 +273,7 @@ libft/srcs/ft_count_if.i: libft/srcs/ft_count_if.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_count_if.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_count_if.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_count_if.c.i
 .PHONY : libft/srcs/ft_count_if.c.i
 
 libft/srcs/ft_count_if.s: libft/srcs/ft_count_if.c.s
@@ -282,7 +282,7 @@ libft/srcs/ft_count_if.s: libft/srcs/ft_count_if.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_count_if.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_count_if.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_count_if.c.s
 .PHONY : libft/srcs/ft_count_if.c.s
 
 libft/srcs/ft_foreach.o: libft/srcs/ft_foreach.c.o
@@ -291,7 +291,7 @@ libft/srcs/ft_foreach.o: libft/srcs/ft_foreach.c.o
 
 # target to build an object file
 libft/srcs/ft_foreach.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_foreach.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_foreach.c.o
 .PHONY : libft/srcs/ft_foreach.c.o
 
 libft/srcs/ft_foreach.i: libft/srcs/ft_foreach.c.i
@@ -300,7 +300,7 @@ libft/srcs/ft_foreach.i: libft/srcs/ft_foreach.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_foreach.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_foreach.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_foreach.c.i
 .PHONY : libft/srcs/ft_foreach.c.i
 
 libft/srcs/ft_foreach.s: libft/srcs/ft_foreach.c.s
@@ -309,7 +309,7 @@ libft/srcs/ft_foreach.s: libft/srcs/ft_foreach.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_foreach.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_foreach.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_foreach.c.s
 .PHONY : libft/srcs/ft_foreach.c.s
 
 libft/srcs/ft_isalnum.o: libft/srcs/ft_isalnum.c.o
@@ -318,7 +318,7 @@ libft/srcs/ft_isalnum.o: libft/srcs/ft_isalnum.c.o
 
 # target to build an object file
 libft/srcs/ft_isalnum.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalnum.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isalnum.c.o
 .PHONY : libft/srcs/ft_isalnum.c.o
 
 libft/srcs/ft_isalnum.i: libft/srcs/ft_isalnum.c.i
@@ -327,7 +327,7 @@ libft/srcs/ft_isalnum.i: libft/srcs/ft_isalnum.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_isalnum.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalnum.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isalnum.c.i
 .PHONY : libft/srcs/ft_isalnum.c.i
 
 libft/srcs/ft_isalnum.s: libft/srcs/ft_isalnum.c.s
@@ -336,7 +336,7 @@ libft/srcs/ft_isalnum.s: libft/srcs/ft_isalnum.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_isalnum.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalnum.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isalnum.c.s
 .PHONY : libft/srcs/ft_isalnum.c.s
 
 libft/srcs/ft_isalpha.o: libft/srcs/ft_isalpha.c.o
@@ -345,7 +345,7 @@ libft/srcs/ft_isalpha.o: libft/srcs/ft_isalpha.c.o
 
 # target to build an object file
 libft/srcs/ft_isalpha.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalpha.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isalpha.c.o
 .PHONY : libft/srcs/ft_isalpha.c.o
 
 libft/srcs/ft_isalpha.i: libft/srcs/ft_isalpha.c.i
@@ -354,7 +354,7 @@ libft/srcs/ft_isalpha.i: libft/srcs/ft_isalpha.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_isalpha.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalpha.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isalpha.c.i
 .PHONY : libft/srcs/ft_isalpha.c.i
 
 libft/srcs/ft_isalpha.s: libft/srcs/ft_isalpha.c.s
@@ -363,7 +363,7 @@ libft/srcs/ft_isalpha.s: libft/srcs/ft_isalpha.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_isalpha.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalpha.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isalpha.c.s
 .PHONY : libft/srcs/ft_isalpha.c.s
 
 libft/srcs/ft_isascii.o: libft/srcs/ft_isascii.c.o
@@ -372,7 +372,7 @@ libft/srcs/ft_isascii.o: libft/srcs/ft_isascii.c.o
 
 # target to build an object file
 libft/srcs/ft_isascii.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isascii.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isascii.c.o
 .PHONY : libft/srcs/ft_isascii.c.o
 
 libft/srcs/ft_isascii.i: libft/srcs/ft_isascii.c.i
@@ -381,7 +381,7 @@ libft/srcs/ft_isascii.i: libft/srcs/ft_isascii.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_isascii.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isascii.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isascii.c.i
 .PHONY : libft/srcs/ft_isascii.c.i
 
 libft/srcs/ft_isascii.s: libft/srcs/ft_isascii.c.s
@@ -390,7 +390,7 @@ libft/srcs/ft_isascii.s: libft/srcs/ft_isascii.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_isascii.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isascii.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isascii.c.s
 .PHONY : libft/srcs/ft_isascii.c.s
 
 libft/srcs/ft_isdigit.o: libft/srcs/ft_isdigit.c.o
@@ -399,7 +399,7 @@ libft/srcs/ft_isdigit.o: libft/srcs/ft_isdigit.c.o
 
 # target to build an object file
 libft/srcs/ft_isdigit.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isdigit.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isdigit.c.o
 .PHONY : libft/srcs/ft_isdigit.c.o
 
 libft/srcs/ft_isdigit.i: libft/srcs/ft_isdigit.c.i
@@ -408,7 +408,7 @@ libft/srcs/ft_isdigit.i: libft/srcs/ft_isdigit.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_isdigit.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isdigit.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isdigit.c.i
 .PHONY : libft/srcs/ft_isdigit.c.i
 
 libft/srcs/ft_isdigit.s: libft/srcs/ft_isdigit.c.s
@@ -417,7 +417,7 @@ libft/srcs/ft_isdigit.s: libft/srcs/ft_isdigit.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_isdigit.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isdigit.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isdigit.c.s
 .PHONY : libft/srcs/ft_isdigit.c.s
 
 libft/srcs/ft_isprint.o: libft/srcs/ft_isprint.c.o
@@ -426,7 +426,7 @@ libft/srcs/ft_isprint.o: libft/srcs/ft_isprint.c.o
 
 # target to build an object file
 libft/srcs/ft_isprint.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isprint.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isprint.c.o
 .PHONY : libft/srcs/ft_isprint.c.o
 
 libft/srcs/ft_isprint.i: libft/srcs/ft_isprint.c.i
@@ -435,7 +435,7 @@ libft/srcs/ft_isprint.i: libft/srcs/ft_isprint.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_isprint.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isprint.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isprint.c.i
 .PHONY : libft/srcs/ft_isprint.c.i
 
 libft/srcs/ft_isprint.s: libft/srcs/ft_isprint.c.s
@@ -444,7 +444,7 @@ libft/srcs/ft_isprint.s: libft/srcs/ft_isprint.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_isprint.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isprint.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_isprint.c.s
 .PHONY : libft/srcs/ft_isprint.c.s
 
 libft/srcs/ft_itoa.o: libft/srcs/ft_itoa.c.o
@@ -453,7 +453,7 @@ libft/srcs/ft_itoa.o: libft/srcs/ft_itoa.c.o
 
 # target to build an object file
 libft/srcs/ft_itoa.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa.c.o
 .PHONY : libft/srcs/ft_itoa.c.o
 
 libft/srcs/ft_itoa.i: libft/srcs/ft_itoa.c.i
@@ -462,7 +462,7 @@ libft/srcs/ft_itoa.i: libft/srcs/ft_itoa.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_itoa.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa.c.i
 .PHONY : libft/srcs/ft_itoa.c.i
 
 libft/srcs/ft_itoa.s: libft/srcs/ft_itoa.c.s
@@ -471,7 +471,7 @@ libft/srcs/ft_itoa.s: libft/srcs/ft_itoa.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_itoa.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa.c.s
 .PHONY : libft/srcs/ft_itoa.c.s
 
 libft/srcs/ft_itoa_base.o: libft/srcs/ft_itoa_base.c.o
@@ -480,7 +480,7 @@ libft/srcs/ft_itoa_base.o: libft/srcs/ft_itoa_base.c.o
 
 # target to build an object file
 libft/srcs/ft_itoa_base.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa_base.c.o
 .PHONY : libft/srcs/ft_itoa_base.c.o
 
 libft/srcs/ft_itoa_base.i: libft/srcs/ft_itoa_base.c.i
@@ -489,7 +489,7 @@ libft/srcs/ft_itoa_base.i: libft/srcs/ft_itoa_base.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_itoa_base.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa_base.c.i
 .PHONY : libft/srcs/ft_itoa_base.c.i
 
 libft/srcs/ft_itoa_base.s: libft/srcs/ft_itoa_base.c.s
@@ -498,7 +498,7 @@ libft/srcs/ft_itoa_base.s: libft/srcs/ft_itoa_base.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_itoa_base.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa_base.c.s
 .PHONY : libft/srcs/ft_itoa_base.c.s
 
 libft/srcs/ft_itoa_base_unsigned.o: libft/srcs/ft_itoa_base_unsigned.c.o
@@ -507,7 +507,7 @@ libft/srcs/ft_itoa_base_unsigned.o: libft/srcs/ft_itoa_base_unsigned.c.o
 
 # target to build an object file
 libft/srcs/ft_itoa_base_unsigned.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa_base_unsigned.c.o
 .PHONY : libft/srcs/ft_itoa_base_unsigned.c.o
 
 libft/srcs/ft_itoa_base_unsigned.i: libft/srcs/ft_itoa_base_unsigned.c.i
@@ -516,7 +516,7 @@ libft/srcs/ft_itoa_base_unsigned.i: libft/srcs/ft_itoa_base_unsigned.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_itoa_base_unsigned.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa_base_unsigned.c.i
 .PHONY : libft/srcs/ft_itoa_base_unsigned.c.i
 
 libft/srcs/ft_itoa_base_unsigned.s: libft/srcs/ft_itoa_base_unsigned.c.s
@@ -525,7 +525,7 @@ libft/srcs/ft_itoa_base_unsigned.s: libft/srcs/ft_itoa_base_unsigned.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_itoa_base_unsigned.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_base_unsigned.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa_base_unsigned.c.s
 .PHONY : libft/srcs/ft_itoa_base_unsigned.c.s
 
 libft/srcs/ft_itoa_long_long.o: libft/srcs/ft_itoa_long_long.c.o
@@ -534,7 +534,7 @@ libft/srcs/ft_itoa_long_long.o: libft/srcs/ft_itoa_long_long.c.o
 
 # target to build an object file
 libft/srcs/ft_itoa_long_long.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_long_long.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa_long_long.c.o
 .PHONY : libft/srcs/ft_itoa_long_long.c.o
 
 libft/srcs/ft_itoa_long_long.i: libft/srcs/ft_itoa_long_long.c.i
@@ -543,7 +543,7 @@ libft/srcs/ft_itoa_long_long.i: libft/srcs/ft_itoa_long_long.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_itoa_long_long.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_long_long.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa_long_long.c.i
 .PHONY : libft/srcs/ft_itoa_long_long.c.i
 
 libft/srcs/ft_itoa_long_long.s: libft/srcs/ft_itoa_long_long.c.s
@@ -552,7 +552,7 @@ libft/srcs/ft_itoa_long_long.s: libft/srcs/ft_itoa_long_long.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_itoa_long_long.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_itoa_long_long.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_itoa_long_long.c.s
 .PHONY : libft/srcs/ft_itoa_long_long.c.s
 
 libft/srcs/ft_lstadd.o: libft/srcs/ft_lstadd.c.o
@@ -561,7 +561,7 @@ libft/srcs/ft_lstadd.o: libft/srcs/ft_lstadd.c.o
 
 # target to build an object file
 libft/srcs/ft_lstadd.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstadd.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstadd.c.o
 .PHONY : libft/srcs/ft_lstadd.c.o
 
 libft/srcs/ft_lstadd.i: libft/srcs/ft_lstadd.c.i
@@ -570,7 +570,7 @@ libft/srcs/ft_lstadd.i: libft/srcs/ft_lstadd.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_lstadd.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstadd.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstadd.c.i
 .PHONY : libft/srcs/ft_lstadd.c.i
 
 libft/srcs/ft_lstadd.s: libft/srcs/ft_lstadd.c.s
@@ -579,7 +579,7 @@ libft/srcs/ft_lstadd.s: libft/srcs/ft_lstadd.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_lstadd.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstadd.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstadd.c.s
 .PHONY : libft/srcs/ft_lstadd.c.s
 
 libft/srcs/ft_lstappendelem.o: libft/srcs/ft_lstappendelem.c.o
@@ -588,7 +588,7 @@ libft/srcs/ft_lstappendelem.o: libft/srcs/ft_lstappendelem.c.o
 
 # target to build an object file
 libft/srcs/ft_lstappendelem.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstappendelem.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstappendelem.c.o
 .PHONY : libft/srcs/ft_lstappendelem.c.o
 
 libft/srcs/ft_lstappendelem.i: libft/srcs/ft_lstappendelem.c.i
@@ -597,7 +597,7 @@ libft/srcs/ft_lstappendelem.i: libft/srcs/ft_lstappendelem.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_lstappendelem.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstappendelem.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstappendelem.c.i
 .PHONY : libft/srcs/ft_lstappendelem.c.i
 
 libft/srcs/ft_lstappendelem.s: libft/srcs/ft_lstappendelem.c.s
@@ -606,7 +606,7 @@ libft/srcs/ft_lstappendelem.s: libft/srcs/ft_lstappendelem.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_lstappendelem.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstappendelem.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstappendelem.c.s
 .PHONY : libft/srcs/ft_lstappendelem.c.s
 
 libft/srcs/ft_lstdel.o: libft/srcs/ft_lstdel.c.o
@@ -615,7 +615,7 @@ libft/srcs/ft_lstdel.o: libft/srcs/ft_lstdel.c.o
 
 # target to build an object file
 libft/srcs/ft_lstdel.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdel.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstdel.c.o
 .PHONY : libft/srcs/ft_lstdel.c.o
 
 libft/srcs/ft_lstdel.i: libft/srcs/ft_lstdel.c.i
@@ -624,7 +624,7 @@ libft/srcs/ft_lstdel.i: libft/srcs/ft_lstdel.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_lstdel.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdel.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstdel.c.i
 .PHONY : libft/srcs/ft_lstdel.c.i
 
 libft/srcs/ft_lstdel.s: libft/srcs/ft_lstdel.c.s
@@ -633,7 +633,7 @@ libft/srcs/ft_lstdel.s: libft/srcs/ft_lstdel.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_lstdel.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdel.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstdel.c.s
 .PHONY : libft/srcs/ft_lstdel.c.s
 
 libft/srcs/ft_lstdellast.o: libft/srcs/ft_lstdellast.c.o
@@ -642,7 +642,7 @@ libft/srcs/ft_lstdellast.o: libft/srcs/ft_lstdellast.c.o
 
 # target to build an object file
 libft/srcs/ft_lstdellast.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdellast.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstdellast.c.o
 .PHONY : libft/srcs/ft_lstdellast.c.o
 
 libft/srcs/ft_lstdellast.i: libft/srcs/ft_lstdellast.c.i
@@ -651,7 +651,7 @@ libft/srcs/ft_lstdellast.i: libft/srcs/ft_lstdellast.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_lstdellast.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdellast.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstdellast.c.i
 .PHONY : libft/srcs/ft_lstdellast.c.i
 
 libft/srcs/ft_lstdellast.s: libft/srcs/ft_lstdellast.c.s
@@ -660,7 +660,7 @@ libft/srcs/ft_lstdellast.s: libft/srcs/ft_lstdellast.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_lstdellast.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdellast.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstdellast.c.s
 .PHONY : libft/srcs/ft_lstdellast.c.s
 
 libft/srcs/ft_lstdelone.o: libft/srcs/ft_lstdelone.c.o
@@ -669,7 +669,7 @@ libft/srcs/ft_lstdelone.o: libft/srcs/ft_lstdelone.c.o
 
 # target to build an object file
 libft/srcs/ft_lstdelone.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdelone.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstdelone.c.o
 .PHONY : libft/srcs/ft_lstdelone.c.o
 
 libft/srcs/ft_lstdelone.i: libft/srcs/ft_lstdelone.c.i
@@ -678,7 +678,7 @@ libft/srcs/ft_lstdelone.i: libft/srcs/ft_lstdelone.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_lstdelone.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdelone.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstdelone.c.i
 .PHONY : libft/srcs/ft_lstdelone.c.i
 
 libft/srcs/ft_lstdelone.s: libft/srcs/ft_lstdelone.c.s
@@ -687,7 +687,7 @@ libft/srcs/ft_lstdelone.s: libft/srcs/ft_lstdelone.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_lstdelone.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstdelone.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstdelone.c.s
 .PHONY : libft/srcs/ft_lstdelone.c.s
 
 libft/srcs/ft_lstiter.o: libft/srcs/ft_lstiter.c.o
@@ -696,7 +696,7 @@ libft/srcs/ft_lstiter.o: libft/srcs/ft_lstiter.c.o
 
 # target to build an object file
 libft/srcs/ft_lstiter.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstiter.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstiter.c.o
 .PHONY : libft/srcs/ft_lstiter.c.o
 
 libft/srcs/ft_lstiter.i: libft/srcs/ft_lstiter.c.i
@@ -705,7 +705,7 @@ libft/srcs/ft_lstiter.i: libft/srcs/ft_lstiter.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_lstiter.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstiter.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstiter.c.i
 .PHONY : libft/srcs/ft_lstiter.c.i
 
 libft/srcs/ft_lstiter.s: libft/srcs/ft_lstiter.c.s
@@ -714,7 +714,7 @@ libft/srcs/ft_lstiter.s: libft/srcs/ft_lstiter.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_lstiter.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstiter.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstiter.c.s
 .PHONY : libft/srcs/ft_lstiter.c.s
 
 libft/srcs/ft_lstmap.o: libft/srcs/ft_lstmap.c.o
@@ -723,7 +723,7 @@ libft/srcs/ft_lstmap.o: libft/srcs/ft_lstmap.c.o
 
 # target to build an object file
 libft/srcs/ft_lstmap.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstmap.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstmap.c.o
 .PHONY : libft/srcs/ft_lstmap.c.o
 
 libft/srcs/ft_lstmap.i: libft/srcs/ft_lstmap.c.i
@@ -732,7 +732,7 @@ libft/srcs/ft_lstmap.i: libft/srcs/ft_lstmap.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_lstmap.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstmap.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstmap.c.i
 .PHONY : libft/srcs/ft_lstmap.c.i
 
 libft/srcs/ft_lstmap.s: libft/srcs/ft_lstmap.c.s
@@ -741,7 +741,7 @@ libft/srcs/ft_lstmap.s: libft/srcs/ft_lstmap.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_lstmap.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstmap.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstmap.c.s
 .PHONY : libft/srcs/ft_lstmap.c.s
 
 libft/srcs/ft_lstnew.o: libft/srcs/ft_lstnew.c.o
@@ -750,7 +750,7 @@ libft/srcs/ft_lstnew.o: libft/srcs/ft_lstnew.c.o
 
 # target to build an object file
 libft/srcs/ft_lstnew.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstnew.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstnew.c.o
 .PHONY : libft/srcs/ft_lstnew.c.o
 
 libft/srcs/ft_lstnew.i: libft/srcs/ft_lstnew.c.i
@@ -759,7 +759,7 @@ libft/srcs/ft_lstnew.i: libft/srcs/ft_lstnew.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_lstnew.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstnew.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstnew.c.i
 .PHONY : libft/srcs/ft_lstnew.c.i
 
 libft/srcs/ft_lstnew.s: libft/srcs/ft_lstnew.c.s
@@ -768,7 +768,7 @@ libft/srcs/ft_lstnew.s: libft/srcs/ft_lstnew.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_lstnew.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstnew.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstnew.c.s
 .PHONY : libft/srcs/ft_lstnew.c.s
 
 libft/srcs/ft_lstpushelem.o: libft/srcs/ft_lstpushelem.c.o
@@ -777,7 +777,7 @@ libft/srcs/ft_lstpushelem.o: libft/srcs/ft_lstpushelem.c.o
 
 # target to build an object file
 libft/srcs/ft_lstpushelem.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstpushelem.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstpushelem.c.o
 .PHONY : libft/srcs/ft_lstpushelem.c.o
 
 libft/srcs/ft_lstpushelem.i: libft/srcs/ft_lstpushelem.c.i
@@ -786,7 +786,7 @@ libft/srcs/ft_lstpushelem.i: libft/srcs/ft_lstpushelem.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_lstpushelem.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstpushelem.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstpushelem.c.i
 .PHONY : libft/srcs/ft_lstpushelem.c.i
 
 libft/srcs/ft_lstpushelem.s: libft/srcs/ft_lstpushelem.c.s
@@ -795,7 +795,7 @@ libft/srcs/ft_lstpushelem.s: libft/srcs/ft_lstpushelem.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_lstpushelem.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_lstpushelem.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_lstpushelem.c.s
 .PHONY : libft/srcs/ft_lstpushelem.c.s
 
 libft/srcs/ft_memalloc.o: libft/srcs/ft_memalloc.c.o
@@ -804,7 +804,7 @@ libft/srcs/ft_memalloc.o: libft/srcs/ft_memalloc.c.o
 
 # target to build an object file
 libft/srcs/ft_memalloc.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memalloc.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memalloc.c.o
 .PHONY : libft/srcs/ft_memalloc.c.o
 
 libft/srcs/ft_memalloc.i: libft/srcs/ft_memalloc.c.i
@@ -813,7 +813,7 @@ libft/srcs/ft_memalloc.i: libft/srcs/ft_memalloc.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_memalloc.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memalloc.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memalloc.c.i
 .PHONY : libft/srcs/ft_memalloc.c.i
 
 libft/srcs/ft_memalloc.s: libft/srcs/ft_memalloc.c.s
@@ -822,7 +822,7 @@ libft/srcs/ft_memalloc.s: libft/srcs/ft_memalloc.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_memalloc.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memalloc.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memalloc.c.s
 .PHONY : libft/srcs/ft_memalloc.c.s
 
 libft/srcs/ft_memccpy.o: libft/srcs/ft_memccpy.c.o
@@ -831,7 +831,7 @@ libft/srcs/ft_memccpy.o: libft/srcs/ft_memccpy.c.o
 
 # target to build an object file
 libft/srcs/ft_memccpy.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memccpy.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memccpy.c.o
 .PHONY : libft/srcs/ft_memccpy.c.o
 
 libft/srcs/ft_memccpy.i: libft/srcs/ft_memccpy.c.i
@@ -840,7 +840,7 @@ libft/srcs/ft_memccpy.i: libft/srcs/ft_memccpy.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_memccpy.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memccpy.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memccpy.c.i
 .PHONY : libft/srcs/ft_memccpy.c.i
 
 libft/srcs/ft_memccpy.s: libft/srcs/ft_memccpy.c.s
@@ -849,7 +849,7 @@ libft/srcs/ft_memccpy.s: libft/srcs/ft_memccpy.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_memccpy.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memccpy.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memccpy.c.s
 .PHONY : libft/srcs/ft_memccpy.c.s
 
 libft/srcs/ft_memchr.o: libft/srcs/ft_memchr.c.o
@@ -858,7 +858,7 @@ libft/srcs/ft_memchr.o: libft/srcs/ft_memchr.c.o
 
 # target to build an object file
 libft/srcs/ft_memchr.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memchr.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memchr.c.o
 .PHONY : libft/srcs/ft_memchr.c.o
 
 libft/srcs/ft_memchr.i: libft/srcs/ft_memchr.c.i
@@ -867,7 +867,7 @@ libft/srcs/ft_memchr.i: libft/srcs/ft_memchr.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_memchr.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memchr.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memchr.c.i
 .PHONY : libft/srcs/ft_memchr.c.i
 
 libft/srcs/ft_memchr.s: libft/srcs/ft_memchr.c.s
@@ -876,7 +876,7 @@ libft/srcs/ft_memchr.s: libft/srcs/ft_memchr.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_memchr.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memchr.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memchr.c.s
 .PHONY : libft/srcs/ft_memchr.c.s
 
 libft/srcs/ft_memcmp.o: libft/srcs/ft_memcmp.c.o
@@ -885,7 +885,7 @@ libft/srcs/ft_memcmp.o: libft/srcs/ft_memcmp.c.o
 
 # target to build an object file
 libft/srcs/ft_memcmp.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcmp.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memcmp.c.o
 .PHONY : libft/srcs/ft_memcmp.c.o
 
 libft/srcs/ft_memcmp.i: libft/srcs/ft_memcmp.c.i
@@ -894,7 +894,7 @@ libft/srcs/ft_memcmp.i: libft/srcs/ft_memcmp.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_memcmp.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcmp.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memcmp.c.i
 .PHONY : libft/srcs/ft_memcmp.c.i
 
 libft/srcs/ft_memcmp.s: libft/srcs/ft_memcmp.c.s
@@ -903,7 +903,7 @@ libft/srcs/ft_memcmp.s: libft/srcs/ft_memcmp.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_memcmp.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcmp.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memcmp.c.s
 .PHONY : libft/srcs/ft_memcmp.c.s
 
 libft/srcs/ft_memcpy.o: libft/srcs/ft_memcpy.c.o
@@ -912,7 +912,7 @@ libft/srcs/ft_memcpy.o: libft/srcs/ft_memcpy.c.o
 
 # target to build an object file
 libft/srcs/ft_memcpy.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcpy.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memcpy.c.o
 .PHONY : libft/srcs/ft_memcpy.c.o
 
 libft/srcs/ft_memcpy.i: libft/srcs/ft_memcpy.c.i
@@ -921,7 +921,7 @@ libft/srcs/ft_memcpy.i: libft/srcs/ft_memcpy.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_memcpy.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcpy.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memcpy.c.i
 .PHONY : libft/srcs/ft_memcpy.c.i
 
 libft/srcs/ft_memcpy.s: libft/srcs/ft_memcpy.c.s
@@ -930,7 +930,7 @@ libft/srcs/ft_memcpy.s: libft/srcs/ft_memcpy.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_memcpy.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memcpy.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memcpy.c.s
 .PHONY : libft/srcs/ft_memcpy.c.s
 
 libft/srcs/ft_memdel.o: libft/srcs/ft_memdel.c.o
@@ -939,7 +939,7 @@ libft/srcs/ft_memdel.o: libft/srcs/ft_memdel.c.o
 
 # target to build an object file
 libft/srcs/ft_memdel.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memdel.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memdel.c.o
 .PHONY : libft/srcs/ft_memdel.c.o
 
 libft/srcs/ft_memdel.i: libft/srcs/ft_memdel.c.i
@@ -948,7 +948,7 @@ libft/srcs/ft_memdel.i: libft/srcs/ft_memdel.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_memdel.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memdel.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memdel.c.i
 .PHONY : libft/srcs/ft_memdel.c.i
 
 libft/srcs/ft_memdel.s: libft/srcs/ft_memdel.c.s
@@ -957,7 +957,7 @@ libft/srcs/ft_memdel.s: libft/srcs/ft_memdel.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_memdel.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memdel.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memdel.c.s
 .PHONY : libft/srcs/ft_memdel.c.s
 
 libft/srcs/ft_memmove.o: libft/srcs/ft_memmove.c.o
@@ -966,7 +966,7 @@ libft/srcs/ft_memmove.o: libft/srcs/ft_memmove.c.o
 
 # target to build an object file
 libft/srcs/ft_memmove.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memmove.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memmove.c.o
 .PHONY : libft/srcs/ft_memmove.c.o
 
 libft/srcs/ft_memmove.i: libft/srcs/ft_memmove.c.i
@@ -975,7 +975,7 @@ libft/srcs/ft_memmove.i: libft/srcs/ft_memmove.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_memmove.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memmove.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memmove.c.i
 .PHONY : libft/srcs/ft_memmove.c.i
 
 libft/srcs/ft_memmove.s: libft/srcs/ft_memmove.c.s
@@ -984,7 +984,7 @@ libft/srcs/ft_memmove.s: libft/srcs/ft_memmove.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_memmove.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memmove.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memmove.c.s
 .PHONY : libft/srcs/ft_memmove.c.s
 
 libft/srcs/ft_memset.o: libft/srcs/ft_memset.c.o
@@ -993,7 +993,7 @@ libft/srcs/ft_memset.o: libft/srcs/ft_memset.c.o
 
 # target to build an object file
 libft/srcs/ft_memset.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memset.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memset.c.o
 .PHONY : libft/srcs/ft_memset.c.o
 
 libft/srcs/ft_memset.i: libft/srcs/ft_memset.c.i
@@ -1002,7 +1002,7 @@ libft/srcs/ft_memset.i: libft/srcs/ft_memset.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_memset.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memset.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memset.c.i
 .PHONY : libft/srcs/ft_memset.c.i
 
 libft/srcs/ft_memset.s: libft/srcs/ft_memset.c.s
@@ -1011,7 +1011,7 @@ libft/srcs/ft_memset.s: libft/srcs/ft_memset.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_memset.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_memset.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_memset.c.s
 .PHONY : libft/srcs/ft_memset.c.s
 
 libft/srcs/ft_putchar.o: libft/srcs/ft_putchar.c.o
@@ -1020,7 +1020,7 @@ libft/srcs/ft_putchar.o: libft/srcs/ft_putchar.c.o
 
 # target to build an object file
 libft/srcs/ft_putchar.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putchar.c.o
 .PHONY : libft/srcs/ft_putchar.c.o
 
 libft/srcs/ft_putchar.i: libft/srcs/ft_putchar.c.i
@@ -1029,7 +1029,7 @@ libft/srcs/ft_putchar.i: libft/srcs/ft_putchar.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_putchar.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putchar.c.i
 .PHONY : libft/srcs/ft_putchar.c.i
 
 libft/srcs/ft_putchar.s: libft/srcs/ft_putchar.c.s
@@ -1038,7 +1038,7 @@ libft/srcs/ft_putchar.s: libft/srcs/ft_putchar.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_putchar.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putchar.c.s
 .PHONY : libft/srcs/ft_putchar.c.s
 
 libft/srcs/ft_putchar_fd.o: libft/srcs/ft_putchar_fd.c.o
@@ -1047,7 +1047,7 @@ libft/srcs/ft_putchar_fd.o: libft/srcs/ft_putchar_fd.c.o
 
 # target to build an object file
 libft/srcs/ft_putchar_fd.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar_fd.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putchar_fd.c.o
 .PHONY : libft/srcs/ft_putchar_fd.c.o
 
 libft/srcs/ft_putchar_fd.i: libft/srcs/ft_putchar_fd.c.i
@@ -1056,7 +1056,7 @@ libft/srcs/ft_putchar_fd.i: libft/srcs/ft_putchar_fd.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_putchar_fd.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar_fd.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putchar_fd.c.i
 .PHONY : libft/srcs/ft_putchar_fd.c.i
 
 libft/srcs/ft_putchar_fd.s: libft/srcs/ft_putchar_fd.c.s
@@ -1065,7 +1065,7 @@ libft/srcs/ft_putchar_fd.s: libft/srcs/ft_putchar_fd.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_putchar_fd.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putchar_fd.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putchar_fd.c.s
 .PHONY : libft/srcs/ft_putchar_fd.c.s
 
 libft/srcs/ft_putendl.o: libft/srcs/ft_putendl.c.o
@@ -1074,7 +1074,7 @@ libft/srcs/ft_putendl.o: libft/srcs/ft_putendl.c.o
 
 # target to build an object file
 libft/srcs/ft_putendl.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putendl.c.o
 .PHONY : libft/srcs/ft_putendl.c.o
 
 libft/srcs/ft_putendl.i: libft/srcs/ft_putendl.c.i
@@ -1083,7 +1083,7 @@ libft/srcs/ft_putendl.i: libft/srcs/ft_putendl.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_putendl.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putendl.c.i
 .PHONY : libft/srcs/ft_putendl.c.i
 
 libft/srcs/ft_putendl.s: libft/srcs/ft_putendl.c.s
@@ -1092,7 +1092,7 @@ libft/srcs/ft_putendl.s: libft/srcs/ft_putendl.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_putendl.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putendl.c.s
 .PHONY : libft/srcs/ft_putendl.c.s
 
 libft/srcs/ft_putendl_fd.o: libft/srcs/ft_putendl_fd.c.o
@@ -1101,7 +1101,7 @@ libft/srcs/ft_putendl_fd.o: libft/srcs/ft_putendl_fd.c.o
 
 # target to build an object file
 libft/srcs/ft_putendl_fd.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl_fd.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putendl_fd.c.o
 .PHONY : libft/srcs/ft_putendl_fd.c.o
 
 libft/srcs/ft_putendl_fd.i: libft/srcs/ft_putendl_fd.c.i
@@ -1110,7 +1110,7 @@ libft/srcs/ft_putendl_fd.i: libft/srcs/ft_putendl_fd.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_putendl_fd.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl_fd.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putendl_fd.c.i
 .PHONY : libft/srcs/ft_putendl_fd.c.i
 
 libft/srcs/ft_putendl_fd.s: libft/srcs/ft_putendl_fd.c.s
@@ -1119,7 +1119,7 @@ libft/srcs/ft_putendl_fd.s: libft/srcs/ft_putendl_fd.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_putendl_fd.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putendl_fd.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putendl_fd.c.s
 .PHONY : libft/srcs/ft_putendl_fd.c.s
 
 libft/srcs/ft_putnbr.o: libft/srcs/ft_putnbr.c.o
@@ -1128,7 +1128,7 @@ libft/srcs/ft_putnbr.o: libft/srcs/ft_putnbr.c.o
 
 # target to build an object file
 libft/srcs/ft_putnbr.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putnbr.c.o
 .PHONY : libft/srcs/ft_putnbr.c.o
 
 libft/srcs/ft_putnbr.i: libft/srcs/ft_putnbr.c.i
@@ -1137,7 +1137,7 @@ libft/srcs/ft_putnbr.i: libft/srcs/ft_putnbr.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_putnbr.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putnbr.c.i
 .PHONY : libft/srcs/ft_putnbr.c.i
 
 libft/srcs/ft_putnbr.s: libft/srcs/ft_putnbr.c.s
@@ -1146,7 +1146,7 @@ libft/srcs/ft_putnbr.s: libft/srcs/ft_putnbr.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_putnbr.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putnbr.c.s
 .PHONY : libft/srcs/ft_putnbr.c.s
 
 libft/srcs/ft_putnbr_fd.o: libft/srcs/ft_putnbr_fd.c.o
@@ -1155,7 +1155,7 @@ libft/srcs/ft_putnbr_fd.o: libft/srcs/ft_putnbr_fd.c.o
 
 # target to build an object file
 libft/srcs/ft_putnbr_fd.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr_fd.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putnbr_fd.c.o
 .PHONY : libft/srcs/ft_putnbr_fd.c.o
 
 libft/srcs/ft_putnbr_fd.i: libft/srcs/ft_putnbr_fd.c.i
@@ -1164,7 +1164,7 @@ libft/srcs/ft_putnbr_fd.i: libft/srcs/ft_putnbr_fd.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_putnbr_fd.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr_fd.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putnbr_fd.c.i
 .PHONY : libft/srcs/ft_putnbr_fd.c.i
 
 libft/srcs/ft_putnbr_fd.s: libft/srcs/ft_putnbr_fd.c.s
@@ -1173,7 +1173,7 @@ libft/srcs/ft_putnbr_fd.s: libft/srcs/ft_putnbr_fd.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_putnbr_fd.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putnbr_fd.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putnbr_fd.c.s
 .PHONY : libft/srcs/ft_putnbr_fd.c.s
 
 libft/srcs/ft_putstr.o: libft/srcs/ft_putstr.c.o
@@ -1182,7 +1182,7 @@ libft/srcs/ft_putstr.o: libft/srcs/ft_putstr.c.o
 
 # target to build an object file
 libft/srcs/ft_putstr.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putstr.c.o
 .PHONY : libft/srcs/ft_putstr.c.o
 
 libft/srcs/ft_putstr.i: libft/srcs/ft_putstr.c.i
@@ -1191,7 +1191,7 @@ libft/srcs/ft_putstr.i: libft/srcs/ft_putstr.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_putstr.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putstr.c.i
 .PHONY : libft/srcs/ft_putstr.c.i
 
 libft/srcs/ft_putstr.s: libft/srcs/ft_putstr.c.s
@@ -1200,7 +1200,7 @@ libft/srcs/ft_putstr.s: libft/srcs/ft_putstr.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_putstr.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putstr.c.s
 .PHONY : libft/srcs/ft_putstr.c.s
 
 libft/srcs/ft_putstr_fd.o: libft/srcs/ft_putstr_fd.c.o
@@ -1209,7 +1209,7 @@ libft/srcs/ft_putstr_fd.o: libft/srcs/ft_putstr_fd.c.o
 
 # target to build an object file
 libft/srcs/ft_putstr_fd.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr_fd.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putstr_fd.c.o
 .PHONY : libft/srcs/ft_putstr_fd.c.o
 
 libft/srcs/ft_putstr_fd.i: libft/srcs/ft_putstr_fd.c.i
@@ -1218,7 +1218,7 @@ libft/srcs/ft_putstr_fd.i: libft/srcs/ft_putstr_fd.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_putstr_fd.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr_fd.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putstr_fd.c.i
 .PHONY : libft/srcs/ft_putstr_fd.c.i
 
 libft/srcs/ft_putstr_fd.s: libft/srcs/ft_putstr_fd.c.s
@@ -1227,7 +1227,7 @@ libft/srcs/ft_putstr_fd.s: libft/srcs/ft_putstr_fd.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_putstr_fd.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_putstr_fd.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_putstr_fd.c.s
 .PHONY : libft/srcs/ft_putstr_fd.c.s
 
 libft/srcs/ft_strcat.o: libft/srcs/ft_strcat.c.o
@@ -1236,7 +1236,7 @@ libft/srcs/ft_strcat.o: libft/srcs/ft_strcat.c.o
 
 # target to build an object file
 libft/srcs/ft_strcat.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcat.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strcat.c.o
 .PHONY : libft/srcs/ft_strcat.c.o
 
 libft/srcs/ft_strcat.i: libft/srcs/ft_strcat.c.i
@@ -1245,7 +1245,7 @@ libft/srcs/ft_strcat.i: libft/srcs/ft_strcat.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strcat.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcat.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strcat.c.i
 .PHONY : libft/srcs/ft_strcat.c.i
 
 libft/srcs/ft_strcat.s: libft/srcs/ft_strcat.c.s
@@ -1254,7 +1254,7 @@ libft/srcs/ft_strcat.s: libft/srcs/ft_strcat.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strcat.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcat.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strcat.c.s
 .PHONY : libft/srcs/ft_strcat.c.s
 
 libft/srcs/ft_strchr.o: libft/srcs/ft_strchr.c.o
@@ -1263,7 +1263,7 @@ libft/srcs/ft_strchr.o: libft/srcs/ft_strchr.c.o
 
 # target to build an object file
 libft/srcs/ft_strchr.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strchr.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strchr.c.o
 .PHONY : libft/srcs/ft_strchr.c.o
 
 libft/srcs/ft_strchr.i: libft/srcs/ft_strchr.c.i
@@ -1272,7 +1272,7 @@ libft/srcs/ft_strchr.i: libft/srcs/ft_strchr.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strchr.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strchr.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strchr.c.i
 .PHONY : libft/srcs/ft_strchr.c.i
 
 libft/srcs/ft_strchr.s: libft/srcs/ft_strchr.c.s
@@ -1281,7 +1281,7 @@ libft/srcs/ft_strchr.s: libft/srcs/ft_strchr.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strchr.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strchr.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strchr.c.s
 .PHONY : libft/srcs/ft_strchr.c.s
 
 libft/srcs/ft_strclr.o: libft/srcs/ft_strclr.c.o
@@ -1290,7 +1290,7 @@ libft/srcs/ft_strclr.o: libft/srcs/ft_strclr.c.o
 
 # target to build an object file
 libft/srcs/ft_strclr.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strclr.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strclr.c.o
 .PHONY : libft/srcs/ft_strclr.c.o
 
 libft/srcs/ft_strclr.i: libft/srcs/ft_strclr.c.i
@@ -1299,7 +1299,7 @@ libft/srcs/ft_strclr.i: libft/srcs/ft_strclr.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strclr.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strclr.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strclr.c.i
 .PHONY : libft/srcs/ft_strclr.c.i
 
 libft/srcs/ft_strclr.s: libft/srcs/ft_strclr.c.s
@@ -1308,7 +1308,7 @@ libft/srcs/ft_strclr.s: libft/srcs/ft_strclr.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strclr.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strclr.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strclr.c.s
 .PHONY : libft/srcs/ft_strclr.c.s
 
 libft/srcs/ft_strcmp.o: libft/srcs/ft_strcmp.c.o
@@ -1317,7 +1317,7 @@ libft/srcs/ft_strcmp.o: libft/srcs/ft_strcmp.c.o
 
 # target to build an object file
 libft/srcs/ft_strcmp.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcmp.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strcmp.c.o
 .PHONY : libft/srcs/ft_strcmp.c.o
 
 libft/srcs/ft_strcmp.i: libft/srcs/ft_strcmp.c.i
@@ -1326,7 +1326,7 @@ libft/srcs/ft_strcmp.i: libft/srcs/ft_strcmp.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strcmp.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcmp.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strcmp.c.i
 .PHONY : libft/srcs/ft_strcmp.c.i
 
 libft/srcs/ft_strcmp.s: libft/srcs/ft_strcmp.c.s
@@ -1335,7 +1335,7 @@ libft/srcs/ft_strcmp.s: libft/srcs/ft_strcmp.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strcmp.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcmp.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strcmp.c.s
 .PHONY : libft/srcs/ft_strcmp.c.s
 
 libft/srcs/ft_strcpy.o: libft/srcs/ft_strcpy.c.o
@@ -1344,7 +1344,7 @@ libft/srcs/ft_strcpy.o: libft/srcs/ft_strcpy.c.o
 
 # target to build an object file
 libft/srcs/ft_strcpy.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcpy.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strcpy.c.o
 .PHONY : libft/srcs/ft_strcpy.c.o
 
 libft/srcs/ft_strcpy.i: libft/srcs/ft_strcpy.c.i
@@ -1353,7 +1353,7 @@ libft/srcs/ft_strcpy.i: libft/srcs/ft_strcpy.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strcpy.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcpy.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strcpy.c.i
 .PHONY : libft/srcs/ft_strcpy.c.i
 
 libft/srcs/ft_strcpy.s: libft/srcs/ft_strcpy.c.s
@@ -1362,7 +1362,7 @@ libft/srcs/ft_strcpy.s: libft/srcs/ft_strcpy.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strcpy.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strcpy.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strcpy.c.s
 .PHONY : libft/srcs/ft_strcpy.c.s
 
 libft/srcs/ft_strdel.o: libft/srcs/ft_strdel.c.o
@@ -1371,7 +1371,7 @@ libft/srcs/ft_strdel.o: libft/srcs/ft_strdel.c.o
 
 # target to build an object file
 libft/srcs/ft_strdel.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdel.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strdel.c.o
 .PHONY : libft/srcs/ft_strdel.c.o
 
 libft/srcs/ft_strdel.i: libft/srcs/ft_strdel.c.i
@@ -1380,7 +1380,7 @@ libft/srcs/ft_strdel.i: libft/srcs/ft_strdel.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strdel.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdel.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strdel.c.i
 .PHONY : libft/srcs/ft_strdel.c.i
 
 libft/srcs/ft_strdel.s: libft/srcs/ft_strdel.c.s
@@ -1389,7 +1389,7 @@ libft/srcs/ft_strdel.s: libft/srcs/ft_strdel.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strdel.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdel.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strdel.c.s
 .PHONY : libft/srcs/ft_strdel.c.s
 
 libft/srcs/ft_strdup.o: libft/srcs/ft_strdup.c.o
@@ -1398,7 +1398,7 @@ libft/srcs/ft_strdup.o: libft/srcs/ft_strdup.c.o
 
 # target to build an object file
 libft/srcs/ft_strdup.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdup.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strdup.c.o
 .PHONY : libft/srcs/ft_strdup.c.o
 
 libft/srcs/ft_strdup.i: libft/srcs/ft_strdup.c.i
@@ -1407,7 +1407,7 @@ libft/srcs/ft_strdup.i: libft/srcs/ft_strdup.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strdup.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdup.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strdup.c.i
 .PHONY : libft/srcs/ft_strdup.c.i
 
 libft/srcs/ft_strdup.s: libft/srcs/ft_strdup.c.s
@@ -1416,7 +1416,7 @@ libft/srcs/ft_strdup.s: libft/srcs/ft_strdup.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strdup.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strdup.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strdup.c.s
 .PHONY : libft/srcs/ft_strdup.c.s
 
 libft/srcs/ft_strequ.o: libft/srcs/ft_strequ.c.o
@@ -1425,7 +1425,7 @@ libft/srcs/ft_strequ.o: libft/srcs/ft_strequ.c.o
 
 # target to build an object file
 libft/srcs/ft_strequ.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strequ.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strequ.c.o
 .PHONY : libft/srcs/ft_strequ.c.o
 
 libft/srcs/ft_strequ.i: libft/srcs/ft_strequ.c.i
@@ -1434,7 +1434,7 @@ libft/srcs/ft_strequ.i: libft/srcs/ft_strequ.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strequ.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strequ.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strequ.c.i
 .PHONY : libft/srcs/ft_strequ.c.i
 
 libft/srcs/ft_strequ.s: libft/srcs/ft_strequ.c.s
@@ -1443,7 +1443,7 @@ libft/srcs/ft_strequ.s: libft/srcs/ft_strequ.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strequ.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strequ.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strequ.c.s
 .PHONY : libft/srcs/ft_strequ.c.s
 
 libft/srcs/ft_striter.o: libft/srcs/ft_striter.c.o
@@ -1452,7 +1452,7 @@ libft/srcs/ft_striter.o: libft/srcs/ft_striter.c.o
 
 # target to build an object file
 libft/srcs/ft_striter.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striter.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_striter.c.o
 .PHONY : libft/srcs/ft_striter.c.o
 
 libft/srcs/ft_striter.i: libft/srcs/ft_striter.c.i
@@ -1461,7 +1461,7 @@ libft/srcs/ft_striter.i: libft/srcs/ft_striter.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_striter.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striter.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_striter.c.i
 .PHONY : libft/srcs/ft_striter.c.i
 
 libft/srcs/ft_striter.s: libft/srcs/ft_striter.c.s
@@ -1470,7 +1470,7 @@ libft/srcs/ft_striter.s: libft/srcs/ft_striter.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_striter.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striter.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_striter.c.s
 .PHONY : libft/srcs/ft_striter.c.s
 
 libft/srcs/ft_striteri.o: libft/srcs/ft_striteri.c.o
@@ -1479,7 +1479,7 @@ libft/srcs/ft_striteri.o: libft/srcs/ft_striteri.c.o
 
 # target to build an object file
 libft/srcs/ft_striteri.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striteri.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_striteri.c.o
 .PHONY : libft/srcs/ft_striteri.c.o
 
 libft/srcs/ft_striteri.i: libft/srcs/ft_striteri.c.i
@@ -1488,7 +1488,7 @@ libft/srcs/ft_striteri.i: libft/srcs/ft_striteri.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_striteri.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striteri.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_striteri.c.i
 .PHONY : libft/srcs/ft_striteri.c.i
 
 libft/srcs/ft_striteri.s: libft/srcs/ft_striteri.c.s
@@ -1497,7 +1497,7 @@ libft/srcs/ft_striteri.s: libft/srcs/ft_striteri.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_striteri.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_striteri.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_striteri.c.s
 .PHONY : libft/srcs/ft_striteri.c.s
 
 libft/srcs/ft_strjoin.o: libft/srcs/ft_strjoin.c.o
@@ -1506,7 +1506,7 @@ libft/srcs/ft_strjoin.o: libft/srcs/ft_strjoin.c.o
 
 # target to build an object file
 libft/srcs/ft_strjoin.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoin.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strjoin.c.o
 .PHONY : libft/srcs/ft_strjoin.c.o
 
 libft/srcs/ft_strjoin.i: libft/srcs/ft_strjoin.c.i
@@ -1515,7 +1515,7 @@ libft/srcs/ft_strjoin.i: libft/srcs/ft_strjoin.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strjoin.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoin.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strjoin.c.i
 .PHONY : libft/srcs/ft_strjoin.c.i
 
 libft/srcs/ft_strjoin.s: libft/srcs/ft_strjoin.c.s
@@ -1524,7 +1524,7 @@ libft/srcs/ft_strjoin.s: libft/srcs/ft_strjoin.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strjoin.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoin.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strjoin.c.s
 .PHONY : libft/srcs/ft_strjoin.c.s
 
 libft/srcs/ft_strjoinfree.o: libft/srcs/ft_strjoinfree.c.o
@@ -1533,7 +1533,7 @@ libft/srcs/ft_strjoinfree.o: libft/srcs/ft_strjoinfree.c.o
 
 # target to build an object file
 libft/srcs/ft_strjoinfree.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoinfree.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strjoinfree.c.o
 .PHONY : libft/srcs/ft_strjoinfree.c.o
 
 libft/srcs/ft_strjoinfree.i: libft/srcs/ft_strjoinfree.c.i
@@ -1542,7 +1542,7 @@ libft/srcs/ft_strjoinfree.i: libft/srcs/ft_strjoinfree.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strjoinfree.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoinfree.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strjoinfree.c.i
 .PHONY : libft/srcs/ft_strjoinfree.c.i
 
 libft/srcs/ft_strjoinfree.s: libft/srcs/ft_strjoinfree.c.s
@@ -1551,7 +1551,7 @@ libft/srcs/ft_strjoinfree.s: libft/srcs/ft_strjoinfree.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strjoinfree.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strjoinfree.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strjoinfree.c.s
 .PHONY : libft/srcs/ft_strjoinfree.c.s
 
 libft/srcs/ft_strlcat.o: libft/srcs/ft_strlcat.c.o
@@ -1560,7 +1560,7 @@ libft/srcs/ft_strlcat.o: libft/srcs/ft_strlcat.c.o
 
 # target to build an object file
 libft/srcs/ft_strlcat.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlcat.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strlcat.c.o
 .PHONY : libft/srcs/ft_strlcat.c.o
 
 libft/srcs/ft_strlcat.i: libft/srcs/ft_strlcat.c.i
@@ -1569,7 +1569,7 @@ libft/srcs/ft_strlcat.i: libft/srcs/ft_strlcat.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strlcat.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlcat.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strlcat.c.i
 .PHONY : libft/srcs/ft_strlcat.c.i
 
 libft/srcs/ft_strlcat.s: libft/srcs/ft_strlcat.c.s
@@ -1578,7 +1578,7 @@ libft/srcs/ft_strlcat.s: libft/srcs/ft_strlcat.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strlcat.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlcat.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strlcat.c.s
 .PHONY : libft/srcs/ft_strlcat.c.s
 
 libft/srcs/ft_strlen.o: libft/srcs/ft_strlen.c.o
@@ -1587,7 +1587,7 @@ libft/srcs/ft_strlen.o: libft/srcs/ft_strlen.c.o
 
 # target to build an object file
 libft/srcs/ft_strlen.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlen.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strlen.c.o
 .PHONY : libft/srcs/ft_strlen.c.o
 
 libft/srcs/ft_strlen.i: libft/srcs/ft_strlen.c.i
@@ -1596,7 +1596,7 @@ libft/srcs/ft_strlen.i: libft/srcs/ft_strlen.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strlen.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlen.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strlen.c.i
 .PHONY : libft/srcs/ft_strlen.c.i
 
 libft/srcs/ft_strlen.s: libft/srcs/ft_strlen.c.s
@@ -1605,7 +1605,7 @@ libft/srcs/ft_strlen.s: libft/srcs/ft_strlen.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strlen.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strlen.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strlen.c.s
 .PHONY : libft/srcs/ft_strlen.c.s
 
 libft/srcs/ft_strmap.o: libft/srcs/ft_strmap.c.o
@@ -1614,7 +1614,7 @@ libft/srcs/ft_strmap.o: libft/srcs/ft_strmap.c.o
 
 # target to build an object file
 libft/srcs/ft_strmap.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmap.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strmap.c.o
 .PHONY : libft/srcs/ft_strmap.c.o
 
 libft/srcs/ft_strmap.i: libft/srcs/ft_strmap.c.i
@@ -1623,7 +1623,7 @@ libft/srcs/ft_strmap.i: libft/srcs/ft_strmap.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strmap.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmap.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strmap.c.i
 .PHONY : libft/srcs/ft_strmap.c.i
 
 libft/srcs/ft_strmap.s: libft/srcs/ft_strmap.c.s
@@ -1632,7 +1632,7 @@ libft/srcs/ft_strmap.s: libft/srcs/ft_strmap.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strmap.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmap.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strmap.c.s
 .PHONY : libft/srcs/ft_strmap.c.s
 
 libft/srcs/ft_strmapi.o: libft/srcs/ft_strmapi.c.o
@@ -1641,7 +1641,7 @@ libft/srcs/ft_strmapi.o: libft/srcs/ft_strmapi.c.o
 
 # target to build an object file
 libft/srcs/ft_strmapi.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmapi.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strmapi.c.o
 .PHONY : libft/srcs/ft_strmapi.c.o
 
 libft/srcs/ft_strmapi.i: libft/srcs/ft_strmapi.c.i
@@ -1650,7 +1650,7 @@ libft/srcs/ft_strmapi.i: libft/srcs/ft_strmapi.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strmapi.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmapi.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strmapi.c.i
 .PHONY : libft/srcs/ft_strmapi.c.i
 
 libft/srcs/ft_strmapi.s: libft/srcs/ft_strmapi.c.s
@@ -1659,7 +1659,7 @@ libft/srcs/ft_strmapi.s: libft/srcs/ft_strmapi.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strmapi.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strmapi.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strmapi.c.s
 .PHONY : libft/srcs/ft_strmapi.c.s
 
 libft/srcs/ft_strncat.o: libft/srcs/ft_strncat.c.o
@@ -1668,7 +1668,7 @@ libft/srcs/ft_strncat.o: libft/srcs/ft_strncat.c.o
 
 # target to build an object file
 libft/srcs/ft_strncat.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncat.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strncat.c.o
 .PHONY : libft/srcs/ft_strncat.c.o
 
 libft/srcs/ft_strncat.i: libft/srcs/ft_strncat.c.i
@@ -1677,7 +1677,7 @@ libft/srcs/ft_strncat.i: libft/srcs/ft_strncat.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strncat.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncat.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strncat.c.i
 .PHONY : libft/srcs/ft_strncat.c.i
 
 libft/srcs/ft_strncat.s: libft/srcs/ft_strncat.c.s
@@ -1686,7 +1686,7 @@ libft/srcs/ft_strncat.s: libft/srcs/ft_strncat.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strncat.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncat.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strncat.c.s
 .PHONY : libft/srcs/ft_strncat.c.s
 
 libft/srcs/ft_strncmp.o: libft/srcs/ft_strncmp.c.o
@@ -1695,7 +1695,7 @@ libft/srcs/ft_strncmp.o: libft/srcs/ft_strncmp.c.o
 
 # target to build an object file
 libft/srcs/ft_strncmp.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncmp.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strncmp.c.o
 .PHONY : libft/srcs/ft_strncmp.c.o
 
 libft/srcs/ft_strncmp.i: libft/srcs/ft_strncmp.c.i
@@ -1704,7 +1704,7 @@ libft/srcs/ft_strncmp.i: libft/srcs/ft_strncmp.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strncmp.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncmp.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strncmp.c.i
 .PHONY : libft/srcs/ft_strncmp.c.i
 
 libft/srcs/ft_strncmp.s: libft/srcs/ft_strncmp.c.s
@@ -1713,7 +1713,7 @@ libft/srcs/ft_strncmp.s: libft/srcs/ft_strncmp.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strncmp.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncmp.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strncmp.c.s
 .PHONY : libft/srcs/ft_strncmp.c.s
 
 libft/srcs/ft_strncpy.o: libft/srcs/ft_strncpy.c.o
@@ -1722,7 +1722,7 @@ libft/srcs/ft_strncpy.o: libft/srcs/ft_strncpy.c.o
 
 # target to build an object file
 libft/srcs/ft_strncpy.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncpy.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strncpy.c.o
 .PHONY : libft/srcs/ft_strncpy.c.o
 
 libft/srcs/ft_strncpy.i: libft/srcs/ft_strncpy.c.i
@@ -1731,7 +1731,7 @@ libft/srcs/ft_strncpy.i: libft/srcs/ft_strncpy.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strncpy.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncpy.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strncpy.c.i
 .PHONY : libft/srcs/ft_strncpy.c.i
 
 libft/srcs/ft_strncpy.s: libft/srcs/ft_strncpy.c.s
@@ -1740,7 +1740,7 @@ libft/srcs/ft_strncpy.s: libft/srcs/ft_strncpy.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strncpy.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strncpy.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strncpy.c.s
 .PHONY : libft/srcs/ft_strncpy.c.s
 
 libft/srcs/ft_strnequ.o: libft/srcs/ft_strnequ.c.o
@@ -1749,7 +1749,7 @@ libft/srcs/ft_strnequ.o: libft/srcs/ft_strnequ.c.o
 
 # target to build an object file
 libft/srcs/ft_strnequ.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnequ.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strnequ.c.o
 .PHONY : libft/srcs/ft_strnequ.c.o
 
 libft/srcs/ft_strnequ.i: libft/srcs/ft_strnequ.c.i
@@ -1758,7 +1758,7 @@ libft/srcs/ft_strnequ.i: libft/srcs/ft_strnequ.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strnequ.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnequ.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strnequ.c.i
 .PHONY : libft/srcs/ft_strnequ.c.i
 
 libft/srcs/ft_strnequ.s: libft/srcs/ft_strnequ.c.s
@@ -1767,7 +1767,7 @@ libft/srcs/ft_strnequ.s: libft/srcs/ft_strnequ.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strnequ.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnequ.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strnequ.c.s
 .PHONY : libft/srcs/ft_strnequ.c.s
 
 libft/srcs/ft_strnew.o: libft/srcs/ft_strnew.c.o
@@ -1776,7 +1776,7 @@ libft/srcs/ft_strnew.o: libft/srcs/ft_strnew.c.o
 
 # target to build an object file
 libft/srcs/ft_strnew.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnew.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strnew.c.o
 .PHONY : libft/srcs/ft_strnew.c.o
 
 libft/srcs/ft_strnew.i: libft/srcs/ft_strnew.c.i
@@ -1785,7 +1785,7 @@ libft/srcs/ft_strnew.i: libft/srcs/ft_strnew.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strnew.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnew.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strnew.c.i
 .PHONY : libft/srcs/ft_strnew.c.i
 
 libft/srcs/ft_strnew.s: libft/srcs/ft_strnew.c.s
@@ -1794,7 +1794,7 @@ libft/srcs/ft_strnew.s: libft/srcs/ft_strnew.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strnew.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnew.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strnew.c.s
 .PHONY : libft/srcs/ft_strnew.c.s
 
 libft/srcs/ft_strnstr.o: libft/srcs/ft_strnstr.c.o
@@ -1803,7 +1803,7 @@ libft/srcs/ft_strnstr.o: libft/srcs/ft_strnstr.c.o
 
 # target to build an object file
 libft/srcs/ft_strnstr.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnstr.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strnstr.c.o
 .PHONY : libft/srcs/ft_strnstr.c.o
 
 libft/srcs/ft_strnstr.i: libft/srcs/ft_strnstr.c.i
@@ -1812,7 +1812,7 @@ libft/srcs/ft_strnstr.i: libft/srcs/ft_strnstr.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strnstr.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnstr.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strnstr.c.i
 .PHONY : libft/srcs/ft_strnstr.c.i
 
 libft/srcs/ft_strnstr.s: libft/srcs/ft_strnstr.c.s
@@ -1821,7 +1821,7 @@ libft/srcs/ft_strnstr.s: libft/srcs/ft_strnstr.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strnstr.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strnstr.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strnstr.c.s
 .PHONY : libft/srcs/ft_strnstr.c.s
 
 libft/srcs/ft_strrchr.o: libft/srcs/ft_strrchr.c.o
@@ -1830,7 +1830,7 @@ libft/srcs/ft_strrchr.o: libft/srcs/ft_strrchr.c.o
 
 # target to build an object file
 libft/srcs/ft_strrchr.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strrchr.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strrchr.c.o
 .PHONY : libft/srcs/ft_strrchr.c.o
 
 libft/srcs/ft_strrchr.i: libft/srcs/ft_strrchr.c.i
@@ -1839,7 +1839,7 @@ libft/srcs/ft_strrchr.i: libft/srcs/ft_strrchr.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strrchr.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strrchr.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strrchr.c.i
 .PHONY : libft/srcs/ft_strrchr.c.i
 
 libft/srcs/ft_strrchr.s: libft/srcs/ft_strrchr.c.s
@@ -1848,7 +1848,7 @@ libft/srcs/ft_strrchr.s: libft/srcs/ft_strrchr.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strrchr.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strrchr.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strrchr.c.s
 .PHONY : libft/srcs/ft_strrchr.c.s
 
 libft/srcs/ft_strreverse.o: libft/srcs/ft_strreverse.c.o
@@ -1857,7 +1857,7 @@ libft/srcs/ft_strreverse.o: libft/srcs/ft_strreverse.c.o
 
 # target to build an object file
 libft/srcs/ft_strreverse.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strreverse.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strreverse.c.o
 .PHONY : libft/srcs/ft_strreverse.c.o
 
 libft/srcs/ft_strreverse.i: libft/srcs/ft_strreverse.c.i
@@ -1866,7 +1866,7 @@ libft/srcs/ft_strreverse.i: libft/srcs/ft_strreverse.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strreverse.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strreverse.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strreverse.c.i
 .PHONY : libft/srcs/ft_strreverse.c.i
 
 libft/srcs/ft_strreverse.s: libft/srcs/ft_strreverse.c.s
@@ -1875,7 +1875,7 @@ libft/srcs/ft_strreverse.s: libft/srcs/ft_strreverse.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strreverse.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strreverse.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strreverse.c.s
 .PHONY : libft/srcs/ft_strreverse.c.s
 
 libft/srcs/ft_strsplit.o: libft/srcs/ft_strsplit.c.o
@@ -1884,7 +1884,7 @@ libft/srcs/ft_strsplit.o: libft/srcs/ft_strsplit.c.o
 
 # target to build an object file
 libft/srcs/ft_strsplit.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsplit.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strsplit.c.o
 .PHONY : libft/srcs/ft_strsplit.c.o
 
 libft/srcs/ft_strsplit.i: libft/srcs/ft_strsplit.c.i
@@ -1893,7 +1893,7 @@ libft/srcs/ft_strsplit.i: libft/srcs/ft_strsplit.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strsplit.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsplit.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strsplit.c.i
 .PHONY : libft/srcs/ft_strsplit.c.i
 
 libft/srcs/ft_strsplit.s: libft/srcs/ft_strsplit.c.s
@@ -1902,7 +1902,7 @@ libft/srcs/ft_strsplit.s: libft/srcs/ft_strsplit.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strsplit.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsplit.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strsplit.c.s
 .PHONY : libft/srcs/ft_strsplit.c.s
 
 libft/srcs/ft_strstr.o: libft/srcs/ft_strstr.c.o
@@ -1911,7 +1911,7 @@ libft/srcs/ft_strstr.o: libft/srcs/ft_strstr.c.o
 
 # target to build an object file
 libft/srcs/ft_strstr.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strstr.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strstr.c.o
 .PHONY : libft/srcs/ft_strstr.c.o
 
 libft/srcs/ft_strstr.i: libft/srcs/ft_strstr.c.i
@@ -1920,7 +1920,7 @@ libft/srcs/ft_strstr.i: libft/srcs/ft_strstr.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strstr.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strstr.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strstr.c.i
 .PHONY : libft/srcs/ft_strstr.c.i
 
 libft/srcs/ft_strstr.s: libft/srcs/ft_strstr.c.s
@@ -1929,7 +1929,7 @@ libft/srcs/ft_strstr.s: libft/srcs/ft_strstr.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strstr.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strstr.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strstr.c.s
 .PHONY : libft/srcs/ft_strstr.c.s
 
 libft/srcs/ft_strsub.o: libft/srcs/ft_strsub.c.o
@@ -1938,7 +1938,7 @@ libft/srcs/ft_strsub.o: libft/srcs/ft_strsub.c.o
 
 # target to build an object file
 libft/srcs/ft_strsub.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsub.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strsub.c.o
 .PHONY : libft/srcs/ft_strsub.c.o
 
 libft/srcs/ft_strsub.i: libft/srcs/ft_strsub.c.i
@@ -1947,7 +1947,7 @@ libft/srcs/ft_strsub.i: libft/srcs/ft_strsub.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strsub.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsub.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strsub.c.i
 .PHONY : libft/srcs/ft_strsub.c.i
 
 libft/srcs/ft_strsub.s: libft/srcs/ft_strsub.c.s
@@ -1956,7 +1956,7 @@ libft/srcs/ft_strsub.s: libft/srcs/ft_strsub.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strsub.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strsub.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strsub.c.s
 .PHONY : libft/srcs/ft_strsub.c.s
 
 libft/srcs/ft_strtrim.o: libft/srcs/ft_strtrim.c.o
@@ -1965,7 +1965,7 @@ libft/srcs/ft_strtrim.o: libft/srcs/ft_strtrim.c.o
 
 # target to build an object file
 libft/srcs/ft_strtrim.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strtrim.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strtrim.c.o
 .PHONY : libft/srcs/ft_strtrim.c.o
 
 libft/srcs/ft_strtrim.i: libft/srcs/ft_strtrim.c.i
@@ -1974,7 +1974,7 @@ libft/srcs/ft_strtrim.i: libft/srcs/ft_strtrim.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_strtrim.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strtrim.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strtrim.c.i
 .PHONY : libft/srcs/ft_strtrim.c.i
 
 libft/srcs/ft_strtrim.s: libft/srcs/ft_strtrim.c.s
@@ -1983,7 +1983,7 @@ libft/srcs/ft_strtrim.s: libft/srcs/ft_strtrim.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_strtrim.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_strtrim.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_strtrim.c.s
 .PHONY : libft/srcs/ft_strtrim.c.s
 
 libft/srcs/ft_tolower.o: libft/srcs/ft_tolower.c.o
@@ -1992,7 +1992,7 @@ libft/srcs/ft_tolower.o: libft/srcs/ft_tolower.c.o
 
 # target to build an object file
 libft/srcs/ft_tolower.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_tolower.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_tolower.c.o
 .PHONY : libft/srcs/ft_tolower.c.o
 
 libft/srcs/ft_tolower.i: libft/srcs/ft_tolower.c.i
@@ -2001,7 +2001,7 @@ libft/srcs/ft_tolower.i: libft/srcs/ft_tolower.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_tolower.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_tolower.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_tolower.c.i
 .PHONY : libft/srcs/ft_tolower.c.i
 
 libft/srcs/ft_tolower.s: libft/srcs/ft_tolower.c.s
@@ -2010,7 +2010,7 @@ libft/srcs/ft_tolower.s: libft/srcs/ft_tolower.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_tolower.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_tolower.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_tolower.c.s
 .PHONY : libft/srcs/ft_tolower.c.s
 
 libft/srcs/ft_toupper.o: libft/srcs/ft_toupper.c.o
@@ -2019,7 +2019,7 @@ libft/srcs/ft_toupper.o: libft/srcs/ft_toupper.c.o
 
 # target to build an object file
 libft/srcs/ft_toupper.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_toupper.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_toupper.c.o
 .PHONY : libft/srcs/ft_toupper.c.o
 
 libft/srcs/ft_toupper.i: libft/srcs/ft_toupper.c.i
@@ -2028,7 +2028,7 @@ libft/srcs/ft_toupper.i: libft/srcs/ft_toupper.c.i
 
 # target to preprocess a source file
 libft/srcs/ft_toupper.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_toupper.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_toupper.c.i
 .PHONY : libft/srcs/ft_toupper.c.i
 
 libft/srcs/ft_toupper.s: libft/srcs/ft_toupper.c.s
@@ -2037,7 +2037,7 @@ libft/srcs/ft_toupper.s: libft/srcs/ft_toupper.c.s
 
 # target to generate assembly for a file
 libft/srcs/ft_toupper.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_toupper.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/ft_toupper.c.s
 .PHONY : libft/srcs/ft_toupper.c.s
 
 libft/srcs/get_next_line.o: libft/srcs/get_next_line.c.o
@@ -2046,7 +2046,7 @@ libft/srcs/get_next_line.o: libft/srcs/get_next_line.c.o
 
 # target to build an object file
 libft/srcs/get_next_line.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/get_next_line.c.o
 .PHONY : libft/srcs/get_next_line.c.o
 
 libft/srcs/get_next_line.i: libft/srcs/get_next_line.c.i
@@ -2055,7 +2055,7 @@ libft/srcs/get_next_line.i: libft/srcs/get_next_line.c.i
 
 # target to preprocess a source file
 libft/srcs/get_next_line.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/get_next_line.c.i
 .PHONY : libft/srcs/get_next_line.c.i
 
 libft/srcs/get_next_line.s: libft/srcs/get_next_line.c.s
@@ -2064,7 +2064,7 @@ libft/srcs/get_next_line.s: libft/srcs/get_next_line.c.s
 
 # target to generate assembly for a file
 libft/srcs/get_next_line.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/libft/srcs/get_next_line.c.s
 .PHONY : libft/srcs/get_next_line.c.s
 
 main_test.o: main_test.c.o
@@ -2073,7 +2073,7 @@ main_test.o: main_test.c.o
 
 # target to build an object file
 main_test.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/main_test.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/main_test.c.o
 .PHONY : main_test.c.o
 
 main_test.i: main_test.c.i
@@ -2082,7 +2082,7 @@ main_test.i: main_test.c.i
 
 # target to preprocess a source file
 main_test.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/main_test.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/main_test.c.i
 .PHONY : main_test.c.i
 
 main_test.s: main_test.c.s
@@ -2091,7 +2091,7 @@ main_test.s: main_test.c.s
 
 # target to generate assembly for a file
 main_test.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/main_test.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/main_test.c.s
 .PHONY : main_test.c.s
 
 src/chars-int-percent.o: src/chars-int-percent.c.o
@@ -2100,7 +2100,7 @@ src/chars-int-percent.o: src/chars-int-percent.c.o
 
 # target to build an object file
 src/chars-int-percent.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/chars-int-percent.c.o
 .PHONY : src/chars-int-percent.c.o
 
 src/chars-int-percent.i: src/chars-int-percent.c.i
@@ -2109,7 +2109,7 @@ src/chars-int-percent.i: src/chars-int-percent.c.i
 
 # target to preprocess a source file
 src/chars-int-percent.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/chars-int-percent.c.i
 .PHONY : src/chars-int-percent.c.i
 
 src/chars-int-percent.s: src/chars-int-percent.c.s
@@ -2118,7 +2118,7 @@ src/chars-int-percent.s: src/chars-int-percent.c.s
 
 # target to generate assembly for a file
 src/chars-int-percent.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/chars-int-percent.c.s
 .PHONY : src/chars-int-percent.c.s
 
 src/floats.o: src/floats.c.o
@@ -2127,7 +2127,7 @@ src/floats.o: src/floats.c.o
 
 # target to build an object file
 src/floats.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/floats.c.o
 .PHONY : src/floats.c.o
 
 src/floats.i: src/floats.c.i
@@ -2136,7 +2136,7 @@ src/floats.i: src/floats.c.i
 
 # target to preprocess a source file
 src/floats.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/floats.c.i
 .PHONY : src/floats.c.i
 
 src/floats.s: src/floats.c.s
@@ -2145,7 +2145,7 @@ src/floats.s: src/floats.c.s
 
 # target to generate assembly for a file
 src/floats.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/floats.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/floats.c.s
 .PHONY : src/floats.c.s
 
 src/ft_printf.o: src/ft_printf.c.o
@@ -2154,7 +2154,7 @@ src/ft_printf.o: src/ft_printf.c.o
 
 # target to build an object file
 src/ft_printf.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/ft_printf.c.o
 .PHONY : src/ft_printf.c.o
 
 src/ft_printf.i: src/ft_printf.c.i
@@ -2163,7 +2163,7 @@ src/ft_printf.i: src/ft_printf.c.i
 
 # target to preprocess a source file
 src/ft_printf.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/ft_printf.c.i
 .PHONY : src/ft_printf.c.i
 
 src/ft_printf.s: src/ft_printf.c.s
@@ -2172,7 +2172,7 @@ src/ft_printf.s: src/ft_printf.c.s
 
 # target to generate assembly for a file
 src/ft_printf.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/ft_printf.c.s
 .PHONY : src/ft_printf.c.s
 
 src/hex.o: src/hex.c.o
@@ -2181,7 +2181,7 @@ src/hex.o: src/hex.c.o
 
 # target to build an object file
 src/hex.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/hex.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/hex.c.o
 .PHONY : src/hex.c.o
 
 src/hex.i: src/hex.c.i
@@ -2190,7 +2190,7 @@ src/hex.i: src/hex.c.i
 
 # target to preprocess a source file
 src/hex.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/hex.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/hex.c.i
 .PHONY : src/hex.c.i
 
 src/hex.s: src/hex.c.s
@@ -2199,7 +2199,7 @@ src/hex.s: src/hex.c.s
 
 # target to generate assembly for a file
 src/hex.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/hex.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/hex.c.s
 .PHONY : src/hex.c.s
 
 src/ints.o: src/ints.c.o
@@ -2208,7 +2208,7 @@ src/ints.o: src/ints.c.o
 
 # target to build an object file
 src/ints.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/ints.c.o
 .PHONY : src/ints.c.o
 
 src/ints.i: src/ints.c.i
@@ -2217,7 +2217,7 @@ src/ints.i: src/ints.c.i
 
 # target to preprocess a source file
 src/ints.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/ints.c.i
 .PHONY : src/ints.c.i
 
 src/ints.s: src/ints.c.s
@@ -2226,7 +2226,7 @@ src/ints.s: src/ints.c.s
 
 # target to generate assembly for a file
 src/ints.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/ints.c.s
 .PHONY : src/ints.c.s
 
 src/ints_utils.o: src/ints_utils.c.o
@@ -2235,7 +2235,7 @@ src/ints_utils.o: src/ints_utils.c.o
 
 # target to build an object file
 src/ints_utils.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/ints_utils.c.o
 .PHONY : src/ints_utils.c.o
 
 src/ints_utils.i: src/ints_utils.c.i
@@ -2244,7 +2244,7 @@ src/ints_utils.i: src/ints_utils.c.i
 
 # target to preprocess a source file
 src/ints_utils.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/ints_utils.c.i
 .PHONY : src/ints_utils.c.i
 
 src/ints_utils.s: src/ints_utils.c.s
@@ -2253,7 +2253,7 @@ src/ints_utils.s: src/ints_utils.c.s
 
 # target to generate assembly for a file
 src/ints_utils.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/ints_utils.c.s
 .PHONY : src/ints_utils.c.s
 
 src/oct_test.o: src/oct_test.c.o
@@ -2262,7 +2262,7 @@ src/oct_test.o: src/oct_test.c.o
 
 # target to build an object file
 src/oct_test.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/oct_test.c.o
 .PHONY : src/oct_test.c.o
 
 src/oct_test.i: src/oct_test.c.i
@@ -2271,7 +2271,7 @@ src/oct_test.i: src/oct_test.c.i
 
 # target to preprocess a source file
 src/oct_test.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/oct_test.c.i
 .PHONY : src/oct_test.c.i
 
 src/oct_test.s: src/oct_test.c.s
@@ -2280,7 +2280,7 @@ src/oct_test.s: src/oct_test.c.s
 
 # target to generate assembly for a file
 src/oct_test.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/oct_test.c.s
 .PHONY : src/oct_test.c.s
 
 src/parsing.o: src/parsing.c.o
@@ -2289,7 +2289,7 @@ src/parsing.o: src/parsing.c.o
 
 # target to build an object file
 src/parsing.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/parsing.c.o
 .PHONY : src/parsing.c.o
 
 src/parsing.i: src/parsing.c.i
@@ -2298,7 +2298,7 @@ src/parsing.i: src/parsing.c.i
 
 # target to preprocess a source file
 src/parsing.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/parsing.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/parsing.c.i
 .PHONY : src/parsing.c.i
 
 src/parsing.s: src/parsing.c.s
@@ -2307,7 +2307,7 @@ src/parsing.s: src/parsing.c.s
 
 # target to generate assembly for a file
 src/parsing.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/parsing.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/parsing.c.s
 .PHONY : src/parsing.c.s
 
 src/pnt-oct-hex.o: src/pnt-oct-hex.c.o
@@ -2316,7 +2316,7 @@ src/pnt-oct-hex.o: src/pnt-oct-hex.c.o
 
 # target to build an object file
 src/pnt-oct-hex.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/pnt-oct-hex.c.o
 .PHONY : src/pnt-oct-hex.c.o
 
 src/pnt-oct-hex.i: src/pnt-oct-hex.c.i
@@ -2325,7 +2325,7 @@ src/pnt-oct-hex.i: src/pnt-oct-hex.c.i
 
 # target to preprocess a source file
 src/pnt-oct-hex.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/pnt-oct-hex.c.i
 .PHONY : src/pnt-oct-hex.c.i
 
 src/pnt-oct-hex.s: src/pnt-oct-hex.c.s
@@ -2334,7 +2334,7 @@ src/pnt-oct-hex.s: src/pnt-oct-hex.c.s
 
 # target to generate assembly for a file
 src/pnt-oct-hex.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/pnt-oct-hex.c.s
 .PHONY : src/pnt-oct-hex.c.s
 
 src/precision.o: src/precision.c.o
@@ -2343,7 +2343,7 @@ src/precision.o: src/precision.c.o
 
 # target to build an object file
 src/precision.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/precision.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/precision.c.o
 .PHONY : src/precision.c.o
 
 src/precision.i: src/precision.c.i
@@ -2352,7 +2352,7 @@ src/precision.i: src/precision.c.i
 
 # target to preprocess a source file
 src/precision.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/precision.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/precision.c.i
 .PHONY : src/precision.c.i
 
 src/precision.s: src/precision.c.s
@@ -2361,7 +2361,7 @@ src/precision.s: src/precision.c.s
 
 # target to generate assembly for a file
 src/precision.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/precision.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/precision.c.s
 .PHONY : src/precision.c.s
 
 src/print_str_char.o: src/print_str_char.c.o
@@ -2370,7 +2370,7 @@ src/print_str_char.o: src/print_str_char.c.o
 
 # target to build an object file
 src/print_str_char.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/print_str_char.c.o
 .PHONY : src/print_str_char.c.o
 
 src/print_str_char.i: src/print_str_char.c.i
@@ -2379,7 +2379,7 @@ src/print_str_char.i: src/print_str_char.c.i
 
 # target to preprocess a source file
 src/print_str_char.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/print_str_char.c.i
 .PHONY : src/print_str_char.c.i
 
 src/print_str_char.s: src/print_str_char.c.s
@@ -2388,7 +2388,7 @@ src/print_str_char.s: src/print_str_char.c.s
 
 # target to generate assembly for a file
 src/print_str_char.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/print_str_char.c.s
 .PHONY : src/print_str_char.c.s
 
 src/utils.o: src/utils.c.o
@@ -2397,7 +2397,7 @@ src/utils.o: src/utils.c.o
 
 # target to build an object file
 src/utils.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/utils.c.o
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/utils.c.o
 .PHONY : src/utils.c.o
 
 src/utils.i: src/utils.c.i
@@ -2406,7 +2406,7 @@ src/utils.i: src/utils.c.i
 
 # target to preprocess a source file
 src/utils.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/utils.c.i
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/utils.c.i
 .PHONY : src/utils.c.i
 
 src/utils.s: src/utils.c.s
@@ -2415,7 +2415,7 @@ src/utils.s: src/utils.c.s
 
 # target to generate assembly for a file
 src/utils.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/utils.c.s
+	$(MAKE) -f CMakeFiles/brrrrr.dir/build.make CMakeFiles/brrrrr.dir/src/utils.c.s
 .PHONY : src/utils.c.s
 
 # Help Target
@@ -2426,7 +2426,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... effective_waffle_printf"
+	@echo "... brrrrr"
 	@echo "... libft/srcs/find_len_of_num.o"
 	@echo "... libft/srcs/find_len_of_num.i"
 	@echo "... libft/srcs/find_len_of_num.s"

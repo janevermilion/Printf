@@ -18,10 +18,13 @@
 #include <string.h>
 #include "stdio.h"
 #include <limits.h>
+#include <float.h>
 
 #define FLAGS " -+#0123456789"
 #define TYPES "cspdiouxXf%"
 #define INT_TYPES "diouxXf"
+#define MAX_DBL "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000"
+#define MAX_DBL_PREC "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368"
 
 /////////////////////////////////////////////
 
@@ -52,6 +55,8 @@ typedef struct  s_pf
     char        *bits;
     char 		*filling;
     char 		*str_empty;
+    long double num;
+    int         flag;
 
 }               t_pf;
 
@@ -129,9 +134,29 @@ char 		*cut_string(char *str, int q);
  */
 t_pf 		*init_pf();
 void		upper_symb(char *str);
-int		handle_float(t_pf *pf);
 void		zero_pf(t_pf *pf);
 
+/*
+ * floats
+ * */
+int		handle_float(t_pf *pf);
+int		ft_length(long double num, int prec);
+char	*ft_ftos_sec(long double num, int prec);
+long double	ft_round(long double x, long double acc);
+char	*spaces(char c, int n);
+double	ft_power(double nb, double power);
+int		ft_if_in_str(char *s1, char s2);
+void	printf_fill(t_pf *pf, long double tmp, int len);
+void	printf_float_2(long double tmp, int len, t_pf *pf);
+void	sign_2(t_pf *pf);
+void	printf_fill_4(t_pf *pf);
+void	printf_fill_3(t_pf *pf);
+void	printf_fill_2(t_pf *pf);
+void	printf_float_3(long double tmp, t_pf *pf);
+void	print_float(t_pf *pf, long double num);
+int		dbl_2(t_pf *pf);
+int		dbl(t_pf *pf);
+int		sign(t_pf *pf, long double tmp, int len);
 /*
  * oct_test.c
  */
