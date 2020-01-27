@@ -18,44 +18,9 @@ int 	find_types(const char *str, char *parent)
 	char a;
 
 	a = *str;
-	flag = ft_strchr(parent, a);//TYPES
-	if (flag != NULL)//find flag
+	flag = ft_strchr(parent, a);
+	if (flag != NULL)
 		return (1);
-	return (0);
-}
-
-int		check_flags(const char *curr, t_pf *pf)
-{
-	if (*curr != '\0' && find_types(curr, TYPES) == 0)//проверить не начался ли тип
-	{
-		if (*curr == '-')
-		{
-			pf->align_left = 1;
-			return (check_flags((curr + 1), pf) + 1);
-		}
-		else if (*curr == '+')
-		{
-			pf->need_sign = 1;
-			return (check_flags((curr + 1), pf) + 1);
-		}
-		else if (*curr == ' ')
-		{
-			pf->need_spase = 1;
-			return (check_flags((curr + 1), pf) + 1);
-		}
-		else if (*curr == '#')
-		{
-			pf->need_format = 1;
-			return (check_flags((curr + 1), pf) + 1);
-		}
-		else if (*curr == '0')
-		{
-			pf->zero_filling = 1;
-			return (check_flags((curr + 1), pf) + 1);
-		}
-	}
-	else if (*curr == '%')
-		return (0);
 	return (0);
 }
 
@@ -76,7 +41,8 @@ int		zero_or_space_string(t_pf *pf)
 		return (-1);
 	if (pf->type != '%')
 	{
-		if (pf->zero_filling == 1 && (find_types(&pf->type, INT_TYPES) == 1 && pf->align_left != 1))//и то что нет минуса и числовое значение добавить ааааа
+		if (pf->zero_filling == 1 && (find_types(&pf->type, INT_TYPES) == 1 &&
+		pf->align_left != 1))
         {
 		    if (pf->precision > pf->width || pf->precision == -5)
                 ft_memset(pf->str_empty,'0', pf->width);
@@ -116,6 +82,11 @@ int			check_size_flag(const char *curr, t_pf *pf)
 	else if (*curr == 'l')
 	{
 		pf->size_flag = ft_strdup("l");
+		return (1);
+	}
+	else if (*curr == 'L')
+	{
+		pf->size_flag = ft_strdup("L");
 		return (1);
 	}
 	return (0);

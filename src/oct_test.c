@@ -14,7 +14,6 @@ void        check_zero(t_pf *pf)
             ft_memdel((void **)&pf->filling);
             pf->filling = ft_strdup("0");
         }
-
     }
     else if (pf->width > 1 && (pf->precision == 0 || pf->precision == -1))
     {
@@ -24,7 +23,6 @@ void        check_zero(t_pf *pf)
        if (pf->need_format == 1 && pf->align_left == 1)
            pf->filling[0] = '0';
     }
-
 }
 
 void		print_int_oct(t_pf *pf)

@@ -18,6 +18,7 @@
 #include <string.h>
 #include "stdio.h"
 #include <limits.h>
+#include <float.h>
 
 #define FLAGS " -+#0123456789"
 #define TYPES "cspdiouxXf%"
@@ -52,6 +53,8 @@ typedef struct  s_pf
     char        *bits;
     char 		*filling;
     char 		*str_empty;
+    int			flag;
+    long double num;
 
 }               t_pf;
 
@@ -63,6 +66,7 @@ unsigned long long int				ft_atoi_long_long_uns(const char *str);
 /*
  * * chars-int-percent.c
  */
+void	put_flag(char curr, t_pf *pf);
 int		handle_char(t_pf *pf);
 int		handle_string(t_pf *pf);
 int		handle_percent(t_pf *pf);
@@ -71,12 +75,12 @@ int		handle_percent(t_pf *pf);
  */
 int         ft_printf(const char *format, ...);
 int 		read_args(t_pf *pf, const char *format);
-int		print_all(t_pf *pf);
-//size_t		find_len(long long int n);
+int			print_all(t_pf *pf);
+
 /*
  * * ints.c
  */
-int		handle_int(t_pf *pf);
+int			handle_int(t_pf *pf);
 int         handle_max_and_min_long_long(t_pf *pf);
 void        ft_str_overlap_copy(char *str);
 void        print_int_second_edition(t_pf *pf, long long int num);
@@ -84,11 +88,11 @@ void        turn_width_more_prec(t_pf *pf, long long int num, int len);
 void        handle_int_precision_sec(t_pf *pf, long long int num);
 void        handle_int_width_and_precision_sec(t_pf *pf, long long int num);
 void        handle_int_width_sec(t_pf *pf, long long int num);
-void        turn_width_more_prec_prec_more_num(t_pf *pf, int len , int i);
-void        turn_width_more_prec_prec_less_num(t_pf *pf, int len, int i, int num);
+void        turn_width_more_prec_more_num(t_pf *pf, int len , int i);
+void        turn_width_more_prec_less_num(t_pf *pf, int len, int i, int num);
 void        handle_int_sign(t_pf *pf, long long int num);
 void        handle_int_space_sec(t_pf *pf, long long int num);
-void        print_int_second_edition(t_pf *pf, long long int num);
+void        print_int(t_pf *pf, long long int num);
 /*
  * * ints_utils
  */
@@ -140,4 +144,14 @@ void		print_int_oct(t_pf *pf);
 char		*ft_itoa_long_long_uns(unsigned long long int n);
 
 void        print_int_hex(t_pf *pf);
+
+void		prec_less_width(t_pf *pf, long long int num, int len);
+void        turn_width_more_prec(t_pf *pf, long long int num, int len);
+void        handle_int_precision_sec(t_pf *pf, long long int num);
+void        handle_int_width_and_precision_sec(t_pf *pf, long long int num);
+void        handle_int_width_sec(t_pf *pf, long long int num);
+void		width_more_prec_plus(t_pf *pf);
+void        turn_width_more_prec_more_num(t_pf *pf, int len , int i);
+void        ft_str_overlap_copy(char *str);
+
 #endif

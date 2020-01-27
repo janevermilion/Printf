@@ -2202,6 +2202,87 @@ src/hex.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/hex.c.s
 .PHONY : src/hex.c.s
 
+src/int_utils_1.o: src/int_utils_1.c.o
+
+.PHONY : src/int_utils_1.o
+
+# target to build an object file
+src/int_utils_1.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/int_utils_1.c.o
+.PHONY : src/int_utils_1.c.o
+
+src/int_utils_1.i: src/int_utils_1.c.i
+
+.PHONY : src/int_utils_1.i
+
+# target to preprocess a source file
+src/int_utils_1.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/int_utils_1.c.i
+.PHONY : src/int_utils_1.c.i
+
+src/int_utils_1.s: src/int_utils_1.c.s
+
+.PHONY : src/int_utils_1.s
+
+# target to generate assembly for a file
+src/int_utils_1.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/int_utils_1.c.s
+.PHONY : src/int_utils_1.c.s
+
+src/int_utils_2.o: src/int_utils_2.c.o
+
+.PHONY : src/int_utils_2.o
+
+# target to build an object file
+src/int_utils_2.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.o
+.PHONY : src/int_utils_2.c.o
+
+src/int_utils_2.i: src/int_utils_2.c.i
+
+.PHONY : src/int_utils_2.i
+
+# target to preprocess a source file
+src/int_utils_2.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.i
+.PHONY : src/int_utils_2.c.i
+
+src/int_utils_2.s: src/int_utils_2.c.s
+
+.PHONY : src/int_utils_2.s
+
+# target to generate assembly for a file
+src/int_utils_2.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.s
+.PHONY : src/int_utils_2.c.s
+
+src/int_utils_3.o: src/int_utils_3.c.o
+
+.PHONY : src/int_utils_3.o
+
+# target to build an object file
+src/int_utils_3.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.o
+.PHONY : src/int_utils_3.c.o
+
+src/int_utils_3.i: src/int_utils_3.c.i
+
+.PHONY : src/int_utils_3.i
+
+# target to preprocess a source file
+src/int_utils_3.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.i
+.PHONY : src/int_utils_3.c.i
+
+src/int_utils_3.s: src/int_utils_3.c.s
+
+.PHONY : src/int_utils_3.s
+
+# target to generate assembly for a file
+src/int_utils_3.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.s
+.PHONY : src/int_utils_3.c.s
+
 src/ints.o: src/ints.c.o
 
 .PHONY : src/ints.o
@@ -2228,33 +2309,6 @@ src/ints.s: src/ints.c.s
 src/ints.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints.c.s
 .PHONY : src/ints.c.s
-
-src/ints_utils.o: src/ints_utils.c.o
-
-.PHONY : src/ints_utils.o
-
-# target to build an object file
-src/ints_utils.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o
-.PHONY : src/ints_utils.c.o
-
-src/ints_utils.i: src/ints_utils.c.i
-
-.PHONY : src/ints_utils.i
-
-# target to preprocess a source file
-src/ints_utils.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.i
-.PHONY : src/ints_utils.c.i
-
-src/ints_utils.s: src/ints_utils.c.s
-
-.PHONY : src/ints_utils.s
-
-# target to generate assembly for a file
-src/ints_utils.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.s
-.PHONY : src/ints_utils.c.s
 
 src/oct_test.o: src/oct_test.c.o
 
@@ -2658,12 +2712,18 @@ help:
 	@echo "... src/hex.o"
 	@echo "... src/hex.i"
 	@echo "... src/hex.s"
+	@echo "... src/int_utils_1.o"
+	@echo "... src/int_utils_1.i"
+	@echo "... src/int_utils_1.s"
+	@echo "... src/int_utils_2.o"
+	@echo "... src/int_utils_2.i"
+	@echo "... src/int_utils_2.s"
+	@echo "... src/int_utils_3.o"
+	@echo "... src/int_utils_3.i"
+	@echo "... src/int_utils_3.s"
 	@echo "... src/ints.o"
 	@echo "... src/ints.i"
 	@echo "... src/ints.s"
-	@echo "... src/ints_utils.o"
-	@echo "... src/ints_utils.i"
-	@echo "... src/ints_utils.s"
 	@echo "... src/oct_test.o"
 	@echo "... src/oct_test.i"
 	@echo "... src/oct_test.s"

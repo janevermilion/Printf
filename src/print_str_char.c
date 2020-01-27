@@ -23,15 +23,23 @@ char 		*cut_string(char *str, int q)
 	return (res);
 }
 
+void		handle_zero_prec(t_pf *pf)
+{
+	pf->filling = ft_strdup("");
+	if (pf->type == '%')
+	{
+		pf->filling = ft_strnew(1);
+		pf->filling[0] = '%';
+	}
+}
+
 void		transform_str_precision(t_pf *pf)
 {
 	int len;
 	char *zero;
-	char *test;
 
 	len = ft_strlen(pf->filling);
-	if (pf->precision > len && (pf->type == 'i' || pf->type == 'd' || pf->type == 'o'
-	|| pf->type == 'x' || pf->type == 'X' || pf->type == 'u' || pf->type == 'f'))///ADD TYPES INT
+	if (pf->precision > len && (find_types(&pf->type, INT_TYPES)))
 	{
 		zero = ft_memalloc(pf->precision - len + 1);
 		ft_memset(zero, '0', pf->precision - len);
@@ -39,23 +47,16 @@ void		transform_str_precision(t_pf *pf)
 	}
 	else if (pf->precision > 0 && pf->precision < len && pf->type == 's')
 	{
-		test = cut_string(pf->filling, pf->precision);
-		if (*test)
+		zero = cut_string(pf->filling, pf->precision);
+		if (*zero)
         {
 		    ft_memdel((void **)&pf->filling);
-            pf->filling = ft_strdup(test);
-            ft_memdel((void **)&test);
+            pf->filling = ft_strdup(zero);
+            ft_memdel((void **)&zero);
         }
 	}
 	else if (pf->precision == 0)
-    {
-        pf->filling = ft_strdup("");
-	    if (pf->type == '%')
-        {
-	        pf->filling = ft_strnew(1);
-            pf->filling[0] = '%';
-        }
-    }
+		handle_zero_prec(pf);
 }
 
 void 		print_char(t_pf *pf)
@@ -92,7 +93,7 @@ void		fill_and_print_string(t_pf *pf)
 
 	transform_str_precision(pf);
 	len = ft_strlen(pf->filling);
-	if (len == 0 && pf->type == 'c')//for char test nullterm
+	if (len == 0 && pf->type == 'c')
 		print_char(pf);
 	else if (pf->precision != -1 && (pf->width == 0 || pf->width < len))
 	{
@@ -104,7 +105,8 @@ void		fill_and_print_string(t_pf *pf)
 		if (pf->align_left == 1)
 			ft_memcpy(pf->str_empty, pf->filling, len);
 		else
-			ft_memcpy((pf->str_empty + ft_strlen(pf->str_empty)) - len, pf->filling, len);
+			ft_memcpy((pf->str_empty + ft_strlen(pf->str_empty)) - len,
+					pf->filling, len);
 		ft_putstr(pf->str_empty);
 		pf->printed+=ft_strlen(pf->str_empty);
 	}

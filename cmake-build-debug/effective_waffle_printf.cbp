@@ -324,10 +324,16 @@
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/hex.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
-		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/ints.c">
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/int_utils_1.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
-		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/ints_utils.c">
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/int_utils_2.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/int_utils_3.c">
+			<Option target="effective_waffle_printf"/>
+		</Unit>
+		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/ints.c">
 			<Option target="effective_waffle_printf"/>
 		</Unit>
 		<Unit filename="/Users/jslave/PRINTF/effective-waffle-printf/src/oct_test.c">
