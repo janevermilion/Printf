@@ -11,10 +11,8 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-#include "ft_printf.h"
 #include <float.h>
-/*
+
 int     ft_if_in_str(char *s1, char s2)
 {
     int     i;
@@ -135,14 +133,14 @@ void    print_float(t_pf *pf, long double num)
         if (pf->need_format == 0)
             pf->filling = spaces(' ', pf->width - len - pf->need_spase);
         if ((pf->need_spase == 1)  && (tmp > 0) && (pf->need_sign == 0))
-            pf->filling = ft_strjoinfree_s1(pf->filling, " ");
+            pf->filling = ft_strjoinfree_s2(pf->filling, ft_strdup(" "));
         if ((tmp < 0))
         {
-            pf->filling = ft_strjoinfree_s2("-", pf->filling);
+            pf->filling = ft_strjoinfree_s1(ft_strdup("-"), pf->filling);
             tmp = -tmp;
         }
         else if (pf->need_sign == 1)
-            pf->filling = ft_strjoinfree_s2("+", pf->filling);
+            pf->filling = ft_strjoinfree_s1(ft_strdup("+"), pf->filling);
         left = (int)tmp;
         tmp -= left;
         if (flag == 1 && tmp > 0.5)
@@ -154,7 +152,7 @@ void    print_float(t_pf *pf, long double num)
         }
         src = ft_strnew(ft_strlen(ft_itoa_long_long(left)));
         src = ft_itoa_long_long_uns(left);
-        src = reverse_str(src);
+        //src = reverse_str(src);
         pf->filling = ft_strjoinfree_s2(pf->filling, src);
         if ((flag == 1) && (pf->need_format == 1))
             pf->filling = ft_strjoin(pf->filling, ".");
@@ -168,7 +166,7 @@ void    print_float(t_pf *pf, long double num)
             pf->filling = ft_strjoinfree_s1(pf->filling, spaces('0', 6));
         }
         if (pf->need_format == 1)
-            pf->filling = ft_strjoinfree_s2(pf->filling, spaces(' ', pf->width - len - pf->need_spase));
+            pf->filling = ft_strjoinfree_s1(pf->filling, spaces(' ', pf->width - len - pf->need_spase));
     }
     else
     {
@@ -178,10 +176,10 @@ void    print_float(t_pf *pf, long double num)
         tmp -= left;
         src = ft_strnew(ft_strlen(ft_itoa_long_long(left)));
         src = ft_itoa_long_long_uns(left);
-        src = reverse_str(src);
+        //src = reverse_str(src);
         pf->filling = ft_strjoinfree_s2(pf->filling, src);
         if ((flag == 1) && (pf->need_format == 1))
-            pf->filling = ft_strjoin(pf->filling, ".");
+            pf->filling = ft_strjoinfree_s1(pf->filling, ".");
         flag = 0;
         pf->filling = ft_strjoinfree_s2(pf->filling, ft_ftos_sec(ft_round(tmp, ft_power(0.1, pf->precision)), pf->precision));
         if (num < 0 && pf->zero_filling == 0)
@@ -269,10 +267,4 @@ int     handle_float(t_pf *pf)
     else
         print_float(pf, num);
     return (pf->printed);
-};
- */
-int		handle_float(t_pf *pf)
-{
-    (void)pf;
-    return (0);
 };
