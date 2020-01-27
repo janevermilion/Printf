@@ -77,7 +77,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_toupper.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_toupper.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/get_next_line.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/libft/srcs/get_next_line.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/main_test.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/main_test.c.o"
-  "/Users/jslave/PRINTF/effective-waffle-printf/src/chars-int-percent.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/src/char_str_perc.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/floats.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/floats.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/ft_printf.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/hex.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/hex.c.o"
@@ -85,11 +85,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jslave/PRINTF/effective-waffle-printf/src/int_utils_2.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/int_utils_3.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/ints.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/ints.c.o"
-  "/Users/jslave/PRINTF/effective-waffle-printf/src/oct_test.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/src/oct.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/oct.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/parsing.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o"
-  "/Users/jslave/PRINTF/effective-waffle-printf/src/pnt-oct-hex.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/src/pnt_uns_hex.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/precision.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/precision.c.o"
-  "/Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o"
+  "/Users/jslave/PRINTF/effective-waffle-printf/src/str.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/str.c.o"
   "/Users/jslave/PRINTF/effective-waffle-printf/src/utils.c" "/Users/jslave/PRINTF/effective-waffle-printf/cmake-build-debug/CMakeFiles/effective_waffle_printf.dir/src/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

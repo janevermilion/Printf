@@ -2094,32 +2094,32 @@ main_test.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/main_test.c.s
 .PHONY : main_test.c.s
 
-src/chars-int-percent.o: src/chars-int-percent.c.o
+src/char_str_perc.o: src/char_str_perc.c.o
 
-.PHONY : src/chars-int-percent.o
+.PHONY : src/char_str_perc.o
 
 # target to build an object file
-src/chars-int-percent.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o
-.PHONY : src/chars-int-percent.c.o
+src/char_str_perc.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o
+.PHONY : src/char_str_perc.c.o
 
-src/chars-int-percent.i: src/chars-int-percent.c.i
+src/char_str_perc.i: src/char_str_perc.c.i
 
-.PHONY : src/chars-int-percent.i
+.PHONY : src/char_str_perc.i
 
 # target to preprocess a source file
-src/chars-int-percent.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.i
-.PHONY : src/chars-int-percent.c.i
+src/char_str_perc.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.i
+.PHONY : src/char_str_perc.c.i
 
-src/chars-int-percent.s: src/chars-int-percent.c.s
+src/char_str_perc.s: src/char_str_perc.c.s
 
-.PHONY : src/chars-int-percent.s
+.PHONY : src/char_str_perc.s
 
 # target to generate assembly for a file
-src/chars-int-percent.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.s
-.PHONY : src/chars-int-percent.c.s
+src/char_str_perc.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.s
+.PHONY : src/char_str_perc.c.s
 
 src/floats.o: src/floats.c.o
 
@@ -2310,32 +2310,32 @@ src/ints.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/ints.c.s
 .PHONY : src/ints.c.s
 
-src/oct_test.o: src/oct_test.c.o
+src/oct.o: src/oct.c.o
 
-.PHONY : src/oct_test.o
+.PHONY : src/oct.o
 
 # target to build an object file
-src/oct_test.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o
-.PHONY : src/oct_test.c.o
+src/oct.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct.c.o
+.PHONY : src/oct.c.o
 
-src/oct_test.i: src/oct_test.c.i
+src/oct.i: src/oct.c.i
 
-.PHONY : src/oct_test.i
+.PHONY : src/oct.i
 
 # target to preprocess a source file
-src/oct_test.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.i
-.PHONY : src/oct_test.c.i
+src/oct.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct.c.i
+.PHONY : src/oct.c.i
 
-src/oct_test.s: src/oct_test.c.s
+src/oct.s: src/oct.c.s
 
-.PHONY : src/oct_test.s
+.PHONY : src/oct.s
 
 # target to generate assembly for a file
-src/oct_test.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.s
-.PHONY : src/oct_test.c.s
+src/oct.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/oct.c.s
+.PHONY : src/oct.c.s
 
 src/parsing.o: src/parsing.c.o
 
@@ -2364,32 +2364,32 @@ src/parsing.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/parsing.c.s
 .PHONY : src/parsing.c.s
 
-src/pnt-oct-hex.o: src/pnt-oct-hex.c.o
+src/pnt_uns_hex.o: src/pnt_uns_hex.c.o
 
-.PHONY : src/pnt-oct-hex.o
+.PHONY : src/pnt_uns_hex.o
 
 # target to build an object file
-src/pnt-oct-hex.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o
-.PHONY : src/pnt-oct-hex.c.o
+src/pnt_uns_hex.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o
+.PHONY : src/pnt_uns_hex.c.o
 
-src/pnt-oct-hex.i: src/pnt-oct-hex.c.i
+src/pnt_uns_hex.i: src/pnt_uns_hex.c.i
 
-.PHONY : src/pnt-oct-hex.i
+.PHONY : src/pnt_uns_hex.i
 
 # target to preprocess a source file
-src/pnt-oct-hex.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.i
-.PHONY : src/pnt-oct-hex.c.i
+src/pnt_uns_hex.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.i
+.PHONY : src/pnt_uns_hex.c.i
 
-src/pnt-oct-hex.s: src/pnt-oct-hex.c.s
+src/pnt_uns_hex.s: src/pnt_uns_hex.c.s
 
-.PHONY : src/pnt-oct-hex.s
+.PHONY : src/pnt_uns_hex.s
 
 # target to generate assembly for a file
-src/pnt-oct-hex.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.s
-.PHONY : src/pnt-oct-hex.c.s
+src/pnt_uns_hex.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.s
+.PHONY : src/pnt_uns_hex.c.s
 
 src/precision.o: src/precision.c.o
 
@@ -2418,32 +2418,32 @@ src/precision.c.s:
 	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/precision.c.s
 .PHONY : src/precision.c.s
 
-src/print_str_char.o: src/print_str_char.c.o
+src/str.o: src/str.c.o
 
-.PHONY : src/print_str_char.o
+.PHONY : src/str.o
 
 # target to build an object file
-src/print_str_char.c.o:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o
-.PHONY : src/print_str_char.c.o
+src/str.c.o:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/str.c.o
+.PHONY : src/str.c.o
 
-src/print_str_char.i: src/print_str_char.c.i
+src/str.i: src/str.c.i
 
-.PHONY : src/print_str_char.i
+.PHONY : src/str.i
 
 # target to preprocess a source file
-src/print_str_char.c.i:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.i
-.PHONY : src/print_str_char.c.i
+src/str.c.i:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/str.c.i
+.PHONY : src/str.c.i
 
-src/print_str_char.s: src/print_str_char.c.s
+src/str.s: src/str.c.s
 
-.PHONY : src/print_str_char.s
+.PHONY : src/str.s
 
 # target to generate assembly for a file
-src/print_str_char.c.s:
-	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.s
-.PHONY : src/print_str_char.c.s
+src/str.c.s:
+	$(MAKE) -f CMakeFiles/effective_waffle_printf.dir/build.make CMakeFiles/effective_waffle_printf.dir/src/str.c.s
+.PHONY : src/str.c.s
 
 src/utils.o: src/utils.c.o
 
@@ -2700,9 +2700,9 @@ help:
 	@echo "... main_test.o"
 	@echo "... main_test.i"
 	@echo "... main_test.s"
-	@echo "... src/chars-int-percent.o"
-	@echo "... src/chars-int-percent.i"
-	@echo "... src/chars-int-percent.s"
+	@echo "... src/char_str_perc.o"
+	@echo "... src/char_str_perc.i"
+	@echo "... src/char_str_perc.s"
 	@echo "... src/floats.o"
 	@echo "... src/floats.i"
 	@echo "... src/floats.s"
@@ -2724,21 +2724,21 @@ help:
 	@echo "... src/ints.o"
 	@echo "... src/ints.i"
 	@echo "... src/ints.s"
-	@echo "... src/oct_test.o"
-	@echo "... src/oct_test.i"
-	@echo "... src/oct_test.s"
+	@echo "... src/oct.o"
+	@echo "... src/oct.i"
+	@echo "... src/oct.s"
 	@echo "... src/parsing.o"
 	@echo "... src/parsing.i"
 	@echo "... src/parsing.s"
-	@echo "... src/pnt-oct-hex.o"
-	@echo "... src/pnt-oct-hex.i"
-	@echo "... src/pnt-oct-hex.s"
+	@echo "... src/pnt_uns_hex.o"
+	@echo "... src/pnt_uns_hex.i"
+	@echo "... src/pnt_uns_hex.s"
 	@echo "... src/precision.o"
 	@echo "... src/precision.i"
 	@echo "... src/precision.s"
-	@echo "... src/print_str_char.o"
-	@echo "... src/print_str_char.i"
-	@echo "... src/print_str_char.s"
+	@echo "... src/str.o"
+	@echo "... src/str.i"
+	@echo "... src/str.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"

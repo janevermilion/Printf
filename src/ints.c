@@ -55,7 +55,7 @@ void        handle_int_sign(t_pf *pf, long long int num)
        		ft_strjoinfree_s1(ft_strdup("+"), pf->filling);
 }
 
-void        handle_int_space_sec(t_pf *pf, long long int num)
+void        handle_int_space(t_pf *pf, long long int num)
 {
     int len;
 
@@ -76,20 +76,20 @@ void        handle_int_space_sec(t_pf *pf, long long int num)
 void        print_int(t_pf *pf, long long int num)
 {
     if (pf->precision >= 0 && pf->width > 0)
-        handle_int_width_and_precision_sec(pf, num);
+        handle_int_width_and_precision(pf, num);
     else if (pf->precision < 0)
     {
         if (pf->width != 0)
-            handle_int_width_sec(pf, num);
+            handle_int_width(pf, num);
         else
-            handle_int_precision_sec(pf, num);
+            handle_int_precision(pf, num);
     }
     else if (pf->precision > 0 && pf->precision > (int)find_len_of_num(num))
-        handle_int_precision_sec(pf, num);
+        handle_int_precision(pf, num);
     if (pf->need_sign == 1 && num >= 0)
         handle_int_sign(pf, num);
     if (pf->need_spase == 1 && pf->need_sign != 1)
-        handle_int_space_sec(pf, num);
+        handle_int_space(pf, num);
     ft_putstr(pf->filling);
     pf->printed+=ft_strlen(pf->filling);
 }
