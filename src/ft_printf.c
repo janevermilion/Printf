@@ -38,6 +38,41 @@ int		                print_all(t_pf *pf)
     return (-1);
 }
 
+void	put_flag(char curr, t_pf *pf)
+{
+	if (curr == '-')
+		pf->align_left = 1;
+	else if (curr == '+')
+		pf->need_sign = 1;
+	else if (curr == ' ')
+		pf->need_spase = 1;
+	else if (curr == '#')
+		pf->need_format = 1;
+	else if (curr == '0')
+		pf->zero_filling = 1;
+}
+
+int		check_flags(const char *curr, t_pf *pf)
+{
+	if (*curr != '\0' && find_types(curr, TYPES) == 0)
+	{
+		put_flag(*curr, pf);
+		if (*curr == '-')
+			return (check_flags((curr + 1), pf) + 1);
+		else if (*curr == '+')
+			return (check_flags((curr + 1), pf) + 1);
+		else if (*curr == ' ')
+			return (check_flags((curr + 1), pf) + 1);
+		else if (*curr == '#')
+			return (check_flags((curr + 1), pf) + 1);
+		else if (*curr == '0')
+			return (check_flags((curr + 1), pf) + 1);
+	}
+	else if (*curr == '%')
+		return (0);
+	return (0);
+}
+
 int 		read_args(t_pf *pf, const char *format)
 {
 	int i;
@@ -77,7 +112,6 @@ int         ft_printf(const char *format, ...)
 	va_start(pf->ap, format);
 	if (read_args(pf, format) < 0)
     {
-	    //free_pf(pf);
 	    zero_pf(pf);
         return (-1);
     }

@@ -12,11 +12,24 @@
 
 #include "ft_printf.h"
 
+int handle_max_and_min_long_long(t_pf *pf)
+{
+	if (ft_strequ(pf->filling, "9223372036854775807") == 1)
+	{
+		pf->filling = ft_strdup(" 9223372036854775807");
+		return (1);
+	}
+	else if (ft_strequ(pf->filling, "-9223372036854775807") == 1)
+	{
+		pf->filling = ft_strdup("-9223372036854775807");
+		return (1);
+	}
+	return (0);
+}
+
 char        *fill_zero_string(t_pf *pf, int len, long long int num)
 {
     char *zero;
-
-    zero = NULL;
 
     if (num < 0)
     {
@@ -36,7 +49,7 @@ void        put_sign(t_pf *pf, long long int num)
     if (num < 0)
         pf->filling[0] = '-';
     else if (num == 0 && pf->need_sign == 1)
-        pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);///FREEEE
+        pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
 }
 
 void        fill_empty_str_neg_num(t_pf *pf, int len, long long num)
