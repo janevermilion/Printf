@@ -6,7 +6,10 @@
 
 int         main()
 {
-    ft_printf("\n");
+	ft_printf("% +d", 42);
+	/*
+	ft_printf("%+d", 0);
+	ft_printf("\n");
     ft_printf("%%\n");
     ft_printf("%d\n", 42);
     ft_printf("%d%d\n", 42, 41);
@@ -35,6 +38,15 @@ int         main()
     ft_printf("%s%s\n", "test", "test");
     ft_printf("%s%s%s\n", "test", "test", "test");
     ft_printf("%C\n", 15000);
+	printf("mine:\n");
+	int t = ft_printf("%2c", 0);
+	printf("<-\nreturned value : %i", t);
+	printf("\norigin:\n");
+	t = printf("%2c", 0);
+	printf("<-\nreturned value : %i", t);
+	printf("\n------------\n");
+
+ */
 	return (0);
 }
 

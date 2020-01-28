@@ -99,18 +99,18 @@ void			fill_and_print_string(t_pf *pf)
 	{
 		ft_putstr(pf->filling);
 		pf->printed += len;
-		return ;
 	}
 	else if (pf->width >= len && pf->precision != -1)
 	{
-		if (pf->align_left == 1)
-			ft_memcpy(pf->str_empty, pf->filling, len);
-		else
-			ft_memcpy((pf->str_empty + ft_strlen(pf->str_empty)) - len,
-					pf->filling, len);
+		(pf->align_left == 1) ? (ft_memcpy(pf->str_empty, pf->filling, len))
+		: (ft_memcpy((pf->str_empty + ft_strlen(pf->str_empty)) - len,
+				pf->filling, len));
 		ft_putstr(pf->str_empty);
+		pf->printed += ft_strlen(pf->str_empty);
 	}
 	else if (ft_strlen(pf->str_empty) && pf->precision == -1)
+	{
 		ft_putstr(pf->str_empty);
-	pf->printed += ft_strlen(pf->str_empty);
+		pf->printed += ft_strlen(pf->str_empty);
+	}
 }
