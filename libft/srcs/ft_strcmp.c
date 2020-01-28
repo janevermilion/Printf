@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <libft.h>
-/*
+
 int		ft_strcmp(const char *s1, const char *s2)
 {
 	int				i;
@@ -24,15 +24,4 @@ int		ft_strcmp(const char *s1, const char *s2)
 	while (ps1[i] == ps2[i] && ps1[i] != '\0' && ps2[i] != '\0')
 		i++;
 	return (ps1[i] - ps2[i]);
-}*/
-int		ft_strcmp(const char *s1, const char *s2)
-{
-    while (*s1 != '\0' && *s2 != '\0' && *s1 == *s2)
-    {
-        s1++;
-        s2++;
-    }
-    if (*s1 == *s2)
-        return (0);
-    return (*(const unsigned char *)s1 - *(const unsigned char *)s2);
 }

@@ -14,26 +14,26 @@
 
 char	*ft_strreverse(char *str)
 {
-    int		i;
-    int		j;
-    char	a;
-    size_t	len;
+	int		i;
+	int		j;
+	char	a;
+	size_t	len;
 
-    if (str)
-    {
-        len = ft_strlen((const char *)str);
-        i = 0;
-        j = len - 1;
-        while (i < j)
-        {
-            a = str[i];
-            str[i] = str[j];
-            str[j] = a;
-            i++;
-            j--;
-        }
-        return (str);
-    }
-    else
-        return (NULL);
+	if (str)
+	{
+		len = ft_strlen((const char *)str);
+		i = 0;
+		j = len - 1;
+		while (i < j)
+		{
+			a = str[i];
+			str[i] = str[j];
+			str[j] = a;
+			i++;
+			j--;
+		}
+		return (str);
+	}
+	else
+		return (NULL);
 }

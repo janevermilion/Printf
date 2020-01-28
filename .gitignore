@@ -1,10 +1,9 @@
 pft/
-a.out
-.idea/
-*/*.o
-.DS_Store
-CMakeLists.txt
+/a.out
+/.idea/
+/*/*.o
+/.DS_Store
+/CMakeLists.txt
 /cmake-build-debug/
 /a.out.dSYM/
-pft/
-pft/
+/pft/

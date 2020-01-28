@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void				hex_i_less_one(t_pf *pf, int len)   //NORME OK
+void				hex_i_less_one(t_pf *pf, int len)
 {
 	char *temp;
 

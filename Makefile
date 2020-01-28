@@ -50,7 +50,3 @@ re: fclean all
 test: libftprintf.a main_test.c
 	gcc libftprintf.a main_test.c
 
-cake: all main_test.c
-	make re
-	make test
-	make clean

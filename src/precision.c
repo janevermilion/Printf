@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int				check_width(const char *curr, t_pf *pf)//NORME OK
+int				check_width(const char *curr, t_pf *pf)
 {
 	int quan;
 	int width_of_num;

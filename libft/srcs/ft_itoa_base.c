@@ -20,7 +20,7 @@ unsigned long long int		ft_pow(unsigned long long int nb, int pow)
 		return (nb * ft_pow(nb, pow - 1));
 }
 
-char		*ft_itoa_base(unsigned long long int num, int base)
+char						*ft_itoa_base(unsigned long long int num, int base)
 {
 	size_t	i;
 	int		rem;
@@ -44,4 +44,3 @@ char		*ft_itoa_base(unsigned long long int num, int base)
 	str[i] = '\0';
 	return (ft_strreverse(str));
 }
-

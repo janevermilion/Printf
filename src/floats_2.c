@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int		ft_if_in_str(char *s1, char s2)
+int				ft_if_in_str(char *s1, char s2)
 {
 	int		i;
 
@@ -26,7 +26,7 @@ int		ft_if_in_str(char *s1, char s2)
 	return (0);
 }
 
-double	ft_power(double nb, double power)
+double			ft_power(double nb, double power)
 {
 	if (power < 0.0)
 		return (0);
@@ -37,7 +37,7 @@ double	ft_power(double nb, double power)
 	return (nb * ft_power(nb, power - 1));
 }
 
-char	*spaces(char c, int n)
+char			*spaces(char c, int n)
 {
 	char	*res;
 	int		i;
@@ -59,7 +59,7 @@ char	*spaces(char c, int n)
 	return (res);
 }
 
-long double	ft_round(long double x, long double acc)
+long double		ft_round(long double x, long double acc)
 {
 	if (acc < 308)
 		return ((x / acc + 0.5) * acc);
@@ -67,7 +67,7 @@ long double	ft_round(long double x, long double acc)
 		return (x);
 }
 
-char	*ft_ftos_sec(long double num, int prec)
+char			*ft_ftos_sec(long double num, int prec)
 {
 	int			i;
 	long double tmp;

@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-char 		*cut_string(char *str, int q)
+char			*cut_string(char *str, int q)
 {
 	char *res;
 
@@ -23,7 +23,7 @@ char 		*cut_string(char *str, int q)
 	return (res);
 }
 
-void		handle_zero_prec(t_pf *pf)
+void			handle_zero_prec(t_pf *pf)
 {
 	pf->filling = ft_strdup("");
 	if (pf->type == '%')
@@ -33,33 +33,33 @@ void		handle_zero_prec(t_pf *pf)
 	}
 }
 
-void		transform_str_precision(t_pf *pf)
+void			transform_str_precision(t_pf *pf)
 {
-	int len;
-	char *zero;
+	int		len;
+	char	*zero;
 
 	len = ft_strlen(pf->filling);
 	if (pf->precision > len && (find_types(&pf->type, INT_TYPES)))
 	{
 		zero = ft_memalloc(pf->precision - len + 1);
 		ft_memset(zero, '0', pf->precision - len);
-		pf->filling  = ft_strjoinfree_both(zero, pf->filling);
+		pf->filling = ft_strjoinfree_both(zero, pf->filling);
 	}
 	else if (pf->precision > 0 && pf->precision < len && pf->type == 's')
 	{
 		zero = cut_string(pf->filling, pf->precision);
 		if (*zero)
-        {
-		    ft_memdel((void **)&pf->filling);
-            pf->filling = ft_strdup(zero);
-            ft_memdel((void **)&zero);
-        }
+		{
+			ft_memdel((void **)&pf->filling);
+			pf->filling = ft_strdup(zero);
+			ft_memdel((void **)&zero);
+		}
 	}
 	else if (pf->precision == 0)
 		handle_zero_prec(pf);
 }
 
-void 		print_char(t_pf *pf)
+void			print_char(t_pf *pf)
 {
 	int i;
 	int len;
@@ -69,7 +69,7 @@ void 		print_char(t_pf *pf)
 		ft_putchar('\0');
 	else
 	{
-		pf->printed+=len - 1;
+		pf->printed += len - 1;
 		if (pf->align_left == 1)
 		{
 			ft_putchar('\0');
@@ -87,7 +87,7 @@ void 		print_char(t_pf *pf)
 	}
 }
 
-void		fill_and_print_string(t_pf *pf)
+void			fill_and_print_string(t_pf *pf)
 {
 	int len;
 
@@ -98,7 +98,8 @@ void		fill_and_print_string(t_pf *pf)
 	else if (pf->precision != -1 && (pf->width == 0 || pf->width < len))
 	{
 		ft_putstr(pf->filling);
-		pf->printed+=len;
+		pf->printed += len;
+		return ;
 	}
 	else if (pf->width >= len && pf->precision != -1)
 	{
@@ -108,11 +109,8 @@ void		fill_and_print_string(t_pf *pf)
 			ft_memcpy((pf->str_empty + ft_strlen(pf->str_empty)) - len,
 					pf->filling, len);
 		ft_putstr(pf->str_empty);
-		pf->printed+=ft_strlen(pf->str_empty);
 	}
 	else if (ft_strlen(pf->str_empty) && pf->precision == -1)
-	{
 		ft_putstr(pf->str_empty);
-		pf->printed+=ft_strlen(pf->str_empty);
-	}
+	pf->printed += ft_strlen(pf->str_empty);
 }

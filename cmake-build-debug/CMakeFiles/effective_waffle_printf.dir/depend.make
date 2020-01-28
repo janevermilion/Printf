@@ -26,6 +26,7 @@ CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalnum.c.o: ../libft/srcs/
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalpha.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalpha.c.o: ../libft/srcs/ft_isalpha.c
 
+CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isascii.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isascii.c.o: ../libft/srcs/ft_isascii.c
 
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isdigit.c.o: ../libft/includes/libft.h
@@ -217,13 +218,25 @@ CMakeFiles/effective_waffle_printf.dir/main_test.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/main_test.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/main_test.c.o: ../main_test.c
 
-CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o: ../inc/ft_printf.h
-CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o: ../libft/includes/libft.h
-CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o: ../src/chars-int-percent.c
+CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o: ../src/char_str_perc.c
 
 CMakeFiles/effective_waffle_printf.dir/src/floats.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/floats.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/src/floats.c.o: ../src/floats.c
+
+CMakeFiles/effective_waffle_printf.dir/src/floats_2.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/floats_2.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/floats_2.c.o: ../src/floats_2.c
+
+CMakeFiles/effective_waffle_printf.dir/src/floats_3.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/floats_3.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/floats_3.c.o: ../src/floats_3.c
+
+CMakeFiles/effective_waffle_printf.dir/src/floats_4.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/floats_4.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/floats_4.c.o: ../src/floats_4.c
 
 CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o: ../libft/includes/libft.h
@@ -233,33 +246,41 @@ CMakeFiles/effective_waffle_printf.dir/src/hex.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/hex.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/src/hex.c.o: ../src/hex.c
 
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_1.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_1.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_1.c.o: ../src/int_utils_1.c
+
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.o: ../src/int_utils_2.c
+
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.o: ../src/int_utils_3.c
+
 CMakeFiles/effective_waffle_printf.dir/src/ints.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/ints.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/src/ints.c.o: ../src/ints.c
 
-CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o: ../inc/ft_printf.h
-CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o: ../libft/includes/libft.h
-CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o: ../src/ints_utils.c
-
-CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o: ../inc/ft_printf.h
-CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o: ../libft/includes/libft.h
-CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o: ../src/oct_test.c
+CMakeFiles/effective_waffle_printf.dir/src/oct.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/oct.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/oct.c.o: ../src/oct.c
 
 CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o: ../src/parsing.c
 
-CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o: ../inc/ft_printf.h
-CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o: ../libft/includes/libft.h
-CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o: ../src/pnt-oct-hex.c
+CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o: ../src/pnt_uns_hex.c
 
 CMakeFiles/effective_waffle_printf.dir/src/precision.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/precision.c.o: ../libft/includes/libft.h
 CMakeFiles/effective_waffle_printf.dir/src/precision.c.o: ../src/precision.c
 
-CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: ../inc/ft_printf.h
-CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: ../libft/includes/libft.h
-CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o: ../src/print_str_char.c
+CMakeFiles/effective_waffle_printf.dir/src/str.c.o: ../inc/ft_printf.h
+CMakeFiles/effective_waffle_printf.dir/src/str.c.o: ../libft/includes/libft.h
+CMakeFiles/effective_waffle_printf.dir/src/str.c.o: ../src/str.c
 
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o: ../inc/ft_printf.h
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o: ../libft/includes/libft.h

@@ -14,20 +14,20 @@
 
 size_t		find_len_of_num(long long int n)
 {
-    int len;
+	int len;
 
-    len = 0;
-    if (n < 0)
-    {
-        n = -n;
-        len++;
-    }
-    if (n > 0 && n < 10)
-        return (len + 1);
-    while (n != 0)
-    {
-        n = n / 10;
-        len++;
-    }
-    return (len);
+	len = 0;
+	if (n < 0)
+	{
+		n = -n;
+		len++;
+	}
+	if (n > 0 && n < 10)
+		return (len + 1);
+	while (n != 0)
+	{
+		n = n / 10;
+		len++;
+	}
+	return (len);
 }
