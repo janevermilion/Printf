@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void        handle_int_width_and_precision(t_pf *pf, long long int num)
+void			handle_int_width_and_precision(t_pf *pf, long long int num)
 {
 	int len;
 
@@ -36,7 +36,7 @@ void        handle_int_width_and_precision(t_pf *pf, long long int num)
 		handle_int_precision(pf, num);
 }
 
-void        handle_int_width(t_pf *pf, long long int num)
+void			handle_int_width(t_pf *pf, long long int num)
 {
 	int len;
 
@@ -52,11 +52,11 @@ void        handle_int_width(t_pf *pf, long long int num)
 	}
 }
 
-void		width_more_prec_plus(t_pf *pf)
+void			width_more_prec_plus(t_pf *pf)
 {
 	int i;
 
-	i = pf->width -1;
+	i = pf->width - 1;
 	while (pf->filling[i] == ' ')
 		i--;
 	while (i >= 0)
@@ -67,11 +67,11 @@ void		width_more_prec_plus(t_pf *pf)
 	pf->filling[0] = '+';
 }
 
-void        turn_width_more_prec_more_num(t_pf *pf, int len , int i)
+void			turn_width_more_prec_more_num(t_pf *pf, int len, int i)
 {
-	if ((i == len || i == 0) && pf->filling[pf->width -1] != ' ')
+	if ((i == len || i == 0) && pf->filling[pf->width - 1] != ' ')
 		pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
-	else if ((i == len || i == 0) && pf->filling[pf->width -1] == ' ')
+	else if ((i == len || i == 0) && pf->filling[pf->width - 1] == ' ')
 		width_more_prec_plus(pf);
 	else if (i < len && i)
 	{
@@ -82,20 +82,19 @@ void        turn_width_more_prec_more_num(t_pf *pf, int len , int i)
 	}
 }
 
-void        ft_str_overlap_copy(char *str)
+void			ft_str_overlap_copy(char *str)
 {
-	char *tmp;
-	size_t len;
-	int i;
-	int j;
+	char	*tmp;
+	size_t	len;
+	int		i;
+	int		j;
 
 	i = 1;
 	j = 0;
 	len = ft_strlen(str);
-
 	tmp = ft_strnew(len);
 	ft_memcpy(tmp, str, len);
-	while (len-1)
+	while (len - 1)
 	{
 		str[i] = tmp[j];
 		i++;
@@ -104,6 +103,3 @@ void        ft_str_overlap_copy(char *str)
 	}
 	free(tmp);
 }
-
-
-

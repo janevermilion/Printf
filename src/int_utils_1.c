@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int handle_max_and_min_long_long(t_pf *pf)
+int				handle_max_and_min_long_long(t_pf *pf)
 {
 	if (ft_strequ(pf->filling, "9223372036854775807") == 1)
 	{
@@ -27,53 +27,53 @@ int handle_max_and_min_long_long(t_pf *pf)
 	return (0);
 }
 
-char        *fill_zero_string(t_pf *pf, int len, long long int num)
+char			*fill_zero_string(t_pf *pf, int len, long long int num)
 {
-    char *zero;
+	char *zero;
 
-    if (num < 0)
-    {
-        zero = ft_memalloc(sizeof(char) * (pf->precision - len + 2));
-        ft_memset(zero, '0', pf->precision - len + 1);
-    }
-    else
-    {
-        zero = ft_memalloc(sizeof(char) * (pf->precision - len + 1));
-        ft_memset(zero, '0', pf->precision - len);
-    }
-    return (zero);
+	if (num < 0)
+	{
+		zero = ft_memalloc(sizeof(char) * (pf->precision - len + 2));
+		ft_memset(zero, '0', pf->precision - len + 1);
+	}
+	else
+	{
+		zero = ft_memalloc(sizeof(char) * (pf->precision - len + 1));
+		ft_memset(zero, '0', pf->precision - len);
+	}
+	return (zero);
 }
 
-void        put_sign(t_pf *pf, long long int num)
+void			put_sign(t_pf *pf, long long int num)
 {
-    if (num < 0)
-        pf->filling[0] = '-';
-    else if (num == 0 && pf->need_sign == 1)
-        pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
+	if (num < 0)
+		pf->filling[0] = '-';
+	else if (num == 0 && pf->need_sign == 1)
+		pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
 }
 
-void        fill_empty_str_neg_num(t_pf *pf, int len, long long num)
+void			fill_empty_str_neg_num(t_pf *pf, int len, long long num)
 {
-    pf->filling = ft_itoa_long_long(num*(-1));
-    if (pf->align_left != 1)
-    {
-        ft_memcpy(&pf->str_empty[pf->width - len + 1], pf->filling,len);
-        if (pf->zero_filling != 1)
-            pf->str_empty[pf->width - len] = '-';
-        else
-            pf->str_empty[0] = '-';
-    }
-    else
-    {
-        ft_memcpy(&pf->str_empty[1], pf->filling, ft_strlen(pf->filling));
-        pf->str_empty[0] = '-';
-    }
+	pf->filling = ft_itoa_long_long(num * (-1));
+	if (pf->align_left != 1)
+	{
+		ft_memcpy(&pf->str_empty[pf->width - len + 1], pf->filling, len);
+		if (pf->zero_filling != 1)
+			pf->str_empty[pf->width - len] = '-';
+		else
+			pf->str_empty[0] = '-';
+	}
+	else
+	{
+		ft_memcpy(&pf->str_empty[1], pf->filling, ft_strlen(pf->filling));
+		pf->str_empty[0] = '-';
+	}
 }
 
-void         fill_empty_str_pos_num(t_pf *pf, int len)
+void			fill_empty_str_pos_num(t_pf *pf, int len)
 {
-    if (pf->align_left != 1)
-        ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
-    else
-        ft_memcpy(pf->str_empty, pf->filling, len);
+	if (pf->align_left != 1)
+		ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
+	else
+		ft_memcpy(pf->str_empty, pf->filling, len);
 }

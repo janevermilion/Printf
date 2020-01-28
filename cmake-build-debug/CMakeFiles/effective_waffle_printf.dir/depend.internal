@@ -27,6 +27,7 @@ CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isalpha.c.o
  ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_isalpha.c
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isascii.c.o
+ ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/libft/srcs/ft_isascii.c
 CMakeFiles/effective_waffle_printf.dir/libft/srcs/ft_isdigit.c.o
  ../libft/includes/libft.h
@@ -217,14 +218,26 @@ CMakeFiles/effective_waffle_printf.dir/main_test.c.o
  /Users/jslave/PRINTF/effective-waffle-printf/inc/ft_printf.h
  /Users/jslave/PRINTF/effective-waffle-printf/libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/main_test.c
-CMakeFiles/effective_waffle_printf.dir/src/chars-int-percent.c.o
+CMakeFiles/effective_waffle_printf.dir/src/char_str_perc.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
- /Users/jslave/PRINTF/effective-waffle-printf/src/chars-int-percent.c
+ /Users/jslave/PRINTF/effective-waffle-printf/src/char_str_perc.c
 CMakeFiles/effective_waffle_printf.dir/src/floats.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/src/floats.c
+CMakeFiles/effective_waffle_printf.dir/src/floats_2.c.o
+ ../inc/ft_printf.h
+ ../libft/includes/libft.h
+ /Users/jslave/PRINTF/effective-waffle-printf/src/floats_2.c
+CMakeFiles/effective_waffle_printf.dir/src/floats_3.c.o
+ ../inc/ft_printf.h
+ ../libft/includes/libft.h
+ /Users/jslave/PRINTF/effective-waffle-printf/src/floats_3.c
+CMakeFiles/effective_waffle_printf.dir/src/floats_4.c.o
+ ../inc/ft_printf.h
+ ../libft/includes/libft.h
+ /Users/jslave/PRINTF/effective-waffle-printf/src/floats_4.c
 CMakeFiles/effective_waffle_printf.dir/src/ft_printf.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
@@ -233,34 +246,42 @@ CMakeFiles/effective_waffle_printf.dir/src/hex.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/src/hex.c
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_1.c.o
+ ../inc/ft_printf.h
+ ../libft/includes/libft.h
+ /Users/jslave/PRINTF/effective-waffle-printf/src/int_utils_1.c
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_2.c.o
+ ../inc/ft_printf.h
+ ../libft/includes/libft.h
+ /Users/jslave/PRINTF/effective-waffle-printf/src/int_utils_2.c
+CMakeFiles/effective_waffle_printf.dir/src/int_utils_3.c.o
+ ../inc/ft_printf.h
+ ../libft/includes/libft.h
+ /Users/jslave/PRINTF/effective-waffle-printf/src/int_utils_3.c
 CMakeFiles/effective_waffle_printf.dir/src/ints.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/src/ints.c
-CMakeFiles/effective_waffle_printf.dir/src/ints_utils.c.o
+CMakeFiles/effective_waffle_printf.dir/src/oct.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
- /Users/jslave/PRINTF/effective-waffle-printf/src/ints_utils.c
-CMakeFiles/effective_waffle_printf.dir/src/oct_test.c.o
- ../inc/ft_printf.h
- ../libft/includes/libft.h
- /Users/jslave/PRINTF/effective-waffle-printf/src/oct_test.c
+ /Users/jslave/PRINTF/effective-waffle-printf/src/oct.c
 CMakeFiles/effective_waffle_printf.dir/src/parsing.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/src/parsing.c
-CMakeFiles/effective_waffle_printf.dir/src/pnt-oct-hex.c.o
+CMakeFiles/effective_waffle_printf.dir/src/pnt_uns_hex.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
- /Users/jslave/PRINTF/effective-waffle-printf/src/pnt-oct-hex.c
+ /Users/jslave/PRINTF/effective-waffle-printf/src/pnt_uns_hex.c
 CMakeFiles/effective_waffle_printf.dir/src/precision.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
  /Users/jslave/PRINTF/effective-waffle-printf/src/precision.c
-CMakeFiles/effective_waffle_printf.dir/src/print_str_char.c.o
+CMakeFiles/effective_waffle_printf.dir/src/str.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h
- /Users/jslave/PRINTF/effective-waffle-printf/src/print_str_char.c
+ /Users/jslave/PRINTF/effective-waffle-printf/src/str.c
 CMakeFiles/effective_waffle_printf.dir/src/utils.c.o
  ../inc/ft_printf.h
  ../libft/includes/libft.h

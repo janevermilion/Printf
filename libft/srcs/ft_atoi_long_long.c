@@ -12,33 +12,37 @@
 
 #include "libft.h"
 
-static long long  int		ft_return(unsigned long long int res, long long int neg)
+static long long int			ft_return(unsigned long long int res,
+		long long int neg)
 {
-    if (res >= 9223372036854775807 && neg == 1)
-        return (-1);
-    if (res >= 9223372036854775807 && neg == -1)
-        return (0);
-    return (res * neg);
+	if (res >= 9223372036854775807 && neg == 1)
+		return (-1);
+	if (res >= 9223372036854775807 && neg == -1)
+		return (0);
+	return (res * neg);
 }
 
-unsigned long long int				ft_atoi_long_long_uns(const char *str) {
-    int i;
-    unsigned long long int result;
-    long long int neg;
+unsigned long long int			ft_atoi_long_long_uns(const char *str)
+{
+	int							i;
+	unsigned long long int		result;
+	long long int				neg;
 
-    result = 0;
-    i = 0;
-    neg = 1;
-    while (str[i] == 32 || (str[i] > 8 && str[i] < 14))
-        i++;
-    if (str[i] == '-' || str[i] == '+') {
-        if (str[i] == '-')
-            neg = -1;
-        i++;
-    }
-    while (str[i] > 47 && str[i] < 58) {
-        result = result * 10 + (str[i] - 48);
-        i++;
-    }
-    return (ft_return(result, neg));
+	result = 0;
+	i = 0;
+	neg = 1;
+	while (str[i] == 32 || (str[i] > 8 && str[i] < 14))
+		i++;
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			neg = -1;
+		i++;
+	}
+	while (str[i] > 47 && str[i] < 58)
+	{
+		result = result * 10 + (str[i] - 48);
+		i++;
+	}
+	return (ft_return(result, neg));
 }

@@ -3,9 +3,8 @@
 //
 
 #include "inc/ft_printf.h"
-//c s p d i o u x X hh, h, l and ll %% #0-+
 
-int         main()//1698test
+int         main()
 {
     ft_printf("\n");
     ft_printf("%%\n");
@@ -36,6 +35,6 @@ int         main()//1698test
     ft_printf("%s%s\n", "test", "test");
     ft_printf("%s%s%s\n", "test", "test", "test");
     ft_printf("%C\n", 15000);
-return (0);
+	return (0);
 }
 

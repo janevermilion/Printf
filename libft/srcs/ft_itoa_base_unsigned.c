@@ -12,7 +12,6 @@
 
 #include "libft.h"
 
-
 char		*ft_itoa_base_unsigned(unsigned long long int num, int base)
 {
 	size_t	i;
@@ -37,4 +36,3 @@ char		*ft_itoa_base_unsigned(unsigned long long int num, int base)
 	str[i] = '\0';
 	return (ft_strreverse(str));
 }
-

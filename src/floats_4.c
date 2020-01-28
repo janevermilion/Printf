@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   floats_4.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jslave <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/28 12:31:38 by jslave            #+#    #+#             */
+/*   Updated: 2020/01/28 12:31:47 by jslave           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 #include "limits.h"
 
-void	printf_fill_3(t_pf *pf)
+void	printf_fill_3(t_pf *pf)//NORME OK
 {
 	if (pf->align_left == 1 && pf->need_sign == 1)
 	{
@@ -89,13 +101,13 @@ int		dbl_2(t_pf *pf)
 {
 	if (pf->num == DBL_MAX && pf->precision == -5)
 	{
-		ft_putstr(MAX_DBL);
+		//ft_putstr(MAX_DBL);////////////////////////////////////
 		pf->printed += 316;
 		return (1);
 	}
 	else if (pf->num == DBL_MAX && pf->precision != -5)
 	{
-		ft_putstr(MAX_DBL);
+		//ft_putstr(MAX_DBL);///////////////////////////////////////
 		pf->printed += 313;
 		return (1);
 	}
