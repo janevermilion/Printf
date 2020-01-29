@@ -162,6 +162,5 @@ void				printf_fill_3(t_pf *pf);
 void				printf_fill_2(t_pf *pf);
 void				printf_float_3(long double tmp, t_pf *pf);
 void				print_float(t_pf *pf, long double num);
-int					dbl_2(t_pf *pf);
 
 #endif

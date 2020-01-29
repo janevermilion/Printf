@@ -24,6 +24,6 @@ void		*ft_memalloc(size_t size)
 		ft_memset(mem, '\0', size);
 	}
 	else
-		return (NULL);
+		exit(1);
 	return (res);
 }

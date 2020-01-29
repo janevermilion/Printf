@@ -6,7 +6,7 @@
 
 int         main()
 {
-	ft_printf("% +d", 42);
+	ft_printf("%++ d", 42);
 	/*
 	ft_printf("%+d", 0);
 	ft_printf("\n");

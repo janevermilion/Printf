@@ -21,7 +21,7 @@ char			*ft_strjoinfree_s1(char *s1, char *s2)
 	i = 0;
 	j = 0;
 	if (!(ptr = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char))))
-		return (NULL);
+		exit(1);
 	while (s1 && s1[i] != '\0')
 	{
 		ptr[i] = s1[i];
@@ -47,7 +47,7 @@ char			*ft_strjoinfree_s2(char *s1, char *s2)
 	i = 0;
 	j = 0;
 	if (!(ptr = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char))))
-		return (NULL);
+		exit(1);
 	while (s1 && s1[i] != '\0')
 	{
 		ptr[i] = s1[i];
@@ -73,7 +73,7 @@ char			*ft_strjoinfree_both(char *s1, char *s2)
 	i = 0;
 	j = 0;
 	if (!(ptr = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char))))
-		return (NULL);
+		exit(1);
 	while (s1 && s1[i] != '\0')
 	{
 		ptr[i] = s1[i];

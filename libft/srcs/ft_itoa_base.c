@@ -28,7 +28,7 @@ char						*ft_itoa_base(unsigned long long int num, int base)
 
 	i = 0;
 	if (!(str = (char *)malloc(sizeof(char) * 21)))
-		return (NULL);
+		exit(1);
 	if (num == 0)
 	{
 		str[i++] = '0';

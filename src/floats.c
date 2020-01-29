@@ -32,7 +32,7 @@ int		dbl(t_pf *pf)
 		pf->printed += 2;
 		return (1);
 	}
-	return (dbl_2(pf));
+	return (0);
 }
 
 int		handle_float(t_pf *pf)

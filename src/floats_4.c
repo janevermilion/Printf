@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 #include "limits.h"
 
-void	printf_fill_3(t_pf *pf)//NORME OK
+void	printf_fill_3(t_pf *pf)
 {
 	if (pf->align_left == 1 && pf->need_sign == 1)
 	{
@@ -95,21 +95,4 @@ void	print_float(t_pf *pf, long double num)
 		printf_float_3(tmp, pf);
 	pf->printed += ft_strlen(pf->filling);
 	ft_putstr(pf->filling);
-}
-
-int		dbl_2(t_pf *pf)
-{
-	if (pf->num == DBL_MAX && pf->precision == -5)
-	{
-		//ft_putstr(MAX_DBL);////////////////////////////////////
-		pf->printed += 316;
-		return (1);
-	}
-	else if (pf->num == DBL_MAX && pf->precision != -5)
-	{
-		//ft_putstr(MAX_DBL);///////////////////////////////////////
-		pf->printed += 313;
-		return (1);
-	}
-	return (0);
 }
