@@ -59,10 +59,8 @@ int					print_all(t_pf *pf);
 ** ints.c
 */
 int					handle_int(t_pf *pf);
-void				turn_width_more_prec_less_num(t_pf *pf, int len, int i,
-		int num);
-void				handle_int_sign(t_pf *pf, long long int num);
-void				handle_int_space(t_pf *pf, long long int num);
+void				handle_int_sign(t_pf *pf, int num);
+void				push_string_one_sign(t_pf *pf);
 void				print_int(t_pf *pf, long long int num);
 /*
 ** ints_utils_1.c
@@ -77,8 +75,7 @@ void				fill_empty_str_pos_num(t_pf *pf, int len);
 */
 void				handle_int_width_and_precision(t_pf *pf, long long int num);
 void				handle_int_width(t_pf *pf, long long int num);
-void				width_more_prec_plus(t_pf *pf);
-void				turn_width_more_prec_more_num(t_pf *pf, int len, int i);
+void				handle_int_space(t_pf *pf, long long int num);
 void				ft_str_overlap_copy(char *str);
 /*
 ** int_utils_3.c

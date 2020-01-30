@@ -6,8 +6,18 @@
 
 int         main()
 {
-	ft_printf("%++ d", 42);
+/*
+	ft_printf("%+d", 42);printf("\n");
+	ft_printf("%+d", 0);printf("\n");
+	ft_printf("% +d", 42);printf("\n");
+	ft_printf("%+ d", 42);printf("\n");
+	ft_printf("%  +d", 42);printf("\n");
+	ft_printf("%+  d", 42);printf("\n");
+	ft_printf("% ++d", 42);printf("\n");
+	ft_printf("%++ d", 42);printf("\n");
+
 	/*
+	ft_printf("%++ d", 42);
 	ft_printf("%+d", 0);
 	ft_printf("\n");
     ft_printf("%%\n");
@@ -38,15 +48,26 @@ int         main()
     ft_printf("%s%s\n", "test", "test");
     ft_printf("%s%s%s\n", "test", "test", "test");
     ft_printf("%C\n", 15000);
+
+/*
+int i = 0;
+while (i++ < 10000)
+{
+	ft_printf("%++ d", 42);
+	printf(" ");
+	if (i % 100 == 0)
+		printf("\n");
+}
+*/
 	printf("mine:\n");
-	int t = ft_printf("%2c", 0);
+	int t = ft_printf("%+-5.i", 0);
 	printf("<-\nreturned value : %i", t);
 	printf("\norigin:\n");
-	t = printf("%2c", 0);
+	t = printf("%+-5.i", 0);
 	printf("<-\nreturned value : %i", t);
 	printf("\n------------\n");
 
- */
+
 	return (0);
 }
 
