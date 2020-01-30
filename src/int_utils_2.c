@@ -12,6 +12,24 @@
 
 #include "ft_printf.h"
 
+void			handle_int_space(t_pf *pf, long long int num)
+{
+	int len;
+
+	if (handle_max_and_min_long_long(pf) == 1)
+		return ;
+	len = find_len_of_num((int)num);
+	if (num >= 0 && pf->need_sign != 1)
+	{
+		if (pf->width <= len)
+			pf->filling = ft_strjoinfree_both(ft_strdup(" "),
+					pf->filling);
+		if (pf->width > len + 1 && pf->align_left == 1)
+			ft_str_overlap_copy(pf->filling);
+		pf->filling[0] = ' ';
+	}
+}
+
 void			handle_int_width_and_precision(t_pf *pf, long long int num)
 {
 	int len;
@@ -30,6 +48,7 @@ void			handle_int_width_and_precision(t_pf *pf, long long int num)
 				pf->filling[ft_strlen(pf->filling) - 1] = '+';
 			else if (pf->need_sign == 1 && pf->align_left == 1)
 				pf->filling[0] = '+';
+			pf->need_sign = 0;
 		}
 	}
 	else
@@ -49,36 +68,6 @@ void			handle_int_width(t_pf *pf, long long int num)
 			fill_empty_str_pos_num(pf, len);
 		ft_memdel((void **)&pf->filling);
 		pf->filling = ft_strdup(pf->str_empty);
-	}
-}
-
-void			width_more_prec_plus(t_pf *pf)
-{
-	int i;
-
-	i = pf->width - 1;
-	while (pf->filling[i] == ' ')
-		i--;
-	while (i >= 0)
-	{
-		pf->filling[i + 1] = pf->filling[i];
-		i--;
-	}
-	pf->filling[0] = '+';
-}
-
-void			turn_width_more_prec_more_num(t_pf *pf, int len, int i)
-{
-	if ((i == len || i == 0) && pf->filling[pf->width - 1] != ' ')
-		pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
-	else if ((i == len || i == 0) && pf->filling[pf->width - 1] == ' ')
-		width_more_prec_plus(pf);
-	else if (i < len && i)
-	{
-		if (pf->filling[0] == '0')
-			pf->filling[0] = '+';
-		else if (pf->filling[i - 1])
-			pf->filling[i - 1] = '+';
 	}
 }
 
