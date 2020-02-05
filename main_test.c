@@ -59,11 +59,11 @@ while (i++ < 10000)
 		printf("\n");
 }
 */
-	printf("mine:\n");
-	int t = ft_printf("%+-5.i", 0);
+	printf("mine:\n");//"%.5lld|%-.5lld|%+.5lld|% .5lld|%0.5lld", LLONG_MAX, LLONG_MAX, LLONG_MAX, LLONG_MAX, LLONG_MAX
+	int t = ft_printf("%023lld", LLONG_MIN);
 	printf("<-\nreturned value : %i", t);
 	printf("\norigin:\n");
-	t = printf("%+-5.i", 0);
+	t = printf("%023lld", LLONG_MIN);
 	printf("<-\nreturned value : %i", t);
 	printf("\n------------\n");
 
