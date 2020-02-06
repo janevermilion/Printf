@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void			handle_int_space(t_pf *pf, long long int num)
+void			handle_int_space(t_pf *pf, long long int num)///////////////////////////////////////////////////
 {
 	int len;
 
@@ -21,12 +21,18 @@ void			handle_int_space(t_pf *pf, long long int num)
 	len = find_len_of_num((int)num);
 	if (num >= 0 && pf->need_sign != 1)
 	{
-		if (pf->width <= len && ft_strequ(pf->filling, " ") != 1)
-			pf->filling = ft_strjoinfree_both(ft_strdup(" "),
-					pf->filling);
+		if ((pf->width <= len && ft_strequ(pf->filling, " ") != 1) || (pf->width > len + 1 && ft_strequ(pf->filling, " ") != 1 && pf->filling[pf->width - 1] != ' ' && pf->filling[0] != '0'))
+		{
+			pf->filling = ft_strjoinfree_both(ft_strdup(" "), pf->filling);
+			return;
+		}
 		if (pf->width > len + 1 && pf->align_left == 1)
+		{
 			ft_str_overlap_copy(pf->filling);
-		pf->filling[0] = ' ';
+			pf->filling[0] = ' ';
+		}
+		else if (pf->filling[0] == '0' && (pf->width > (int)ft_strlen(pf->filling)))
+			pf->filling[0] = ' ';
 	}
 }
 

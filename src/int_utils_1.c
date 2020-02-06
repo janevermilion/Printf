@@ -86,7 +86,7 @@ void			fill_empty_str_neg_num(t_pf *pf, int len, long long num)
 		ft_memcpy(&pf->str_empty[pf->width - len], pf->filling, len);
 	else if(pf->zero_filling == 1 && pf->align_left != 1)
     {
-	    if (check_llmax_and_llmin(pf, num) != 1)
+	    if (check_llmax_and_llmin(pf, num) == 1)
             return;
         pf->filling = ft_itoa_long_long(num * (-1));
         if (pf->align_left != 1)
