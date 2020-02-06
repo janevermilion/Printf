@@ -49,7 +49,7 @@ void			handle_int_sign(t_pf *pf, int num)
 	int i;
 
 	i = 0;
-	if (pf->width > pf->precision)
+	if (pf->width > pf->precision && pf->width > 1)
 	{
 		if (pf->precision != -5 && pf->precision != -1)
 			handle_int_sign_pos_prec(pf);
@@ -61,12 +61,16 @@ void			handle_int_sign(t_pf *pf, int num)
 					i++;
 				pf->filling[i - 1] = '+';
 			}
+			else if (pf->filling[0] != '0' && ft_isdigit(pf->filling[0])== 1)
+			    push_string_one_sign(pf);
 			else
 				pf->filling[0] = '+';
 		}
 		else
 			pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
 	}
+	else if(ft_strequ(" ", pf->filling) == 1)
+	    pf->filling[0] = '+';
 	else
 		pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
 }
@@ -77,7 +81,7 @@ void			print_int(t_pf *pf, long long int num)
 		handle_int_width_and_precision(pf, num);
 	else if (pf->precision < 0)
 	{
-		if (pf->width != 0)
+		if (pf->width > 1)
 			handle_int_width(pf, num);
 		else
 			handle_int_precision(pf, num);
@@ -108,9 +112,11 @@ int				handle_int(t_pf *pf)
 		num = (long long int)va_arg(pf->ap, long long int);
 	else if (ft_strequ(pf->size_flag, "l") == 1)
 		num = (long int)va_arg(pf->ap, long int);
-	if (num == 0 && (pf->precision == -1 || pf->precision == 0))
-		pf->filling = ft_strdup("");
-	else
+    if (num == 0 && pf->width == 1 && (pf->precision == -1 || pf->precision == 0))
+        pf->filling = ft_strdup(" ");
+    else if (num == 0 && (pf->precision == -1 || pf->precision == 0))
+        pf->filling = ft_strdup("");
+    else
 		pf->filling = ft_itoa_long_long(num);
 	print_int(pf, num);
 	return (pf->printed);

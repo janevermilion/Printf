@@ -21,7 +21,7 @@ void			handle_int_space(t_pf *pf, long long int num)
 	len = find_len_of_num((int)num);
 	if (num >= 0 && pf->need_sign != 1)
 	{
-		if (pf->width <= len)
+		if (pf->width <= len && ft_strequ(pf->filling, " ") != 1)
 			pf->filling = ft_strjoinfree_both(ft_strdup(" "),
 					pf->filling);
 		if (pf->width > len + 1 && pf->align_left == 1)
