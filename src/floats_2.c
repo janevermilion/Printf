@@ -43,6 +43,8 @@ char			*spaces(char c, int n)
 	int		i;
 
 	i = 0;
+	if (n < 0)
+		return ("");
 	res = ft_strnew(n);
 	if (n == 1 && c == '.')
 		return (".");

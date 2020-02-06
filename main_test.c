@@ -47,7 +47,7 @@ int         main()
     ft_printf("%s\n", NULL);
     ft_printf("%s%s\n", "test", "test");
     ft_printf("%s%s%s\n", "test", "test", "test");
-    ft_printf("%C\n", 15000);
+    ft_printf("%C\n", 15000);*/
 
 /*
 int i = 0;
@@ -60,10 +60,10 @@ while (i++ < 10000)
 }
 */
 	printf("mine:\n");
-	int t = ft_printf("%+-5.i", 0);
+	int t = ft_printf("%.1f", -0.00032);
 	printf("<-\nreturned value : %i", t);
 	printf("\norigin:\n");
-	t = printf("%+-5.i", 0);
+	t = printf("%.1f", -0.00032);
 	printf("<-\nreturned value : %i", t);
 	printf("\n------------\n");
 

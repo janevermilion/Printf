@@ -18,9 +18,9 @@ char		*ft_strnew(size_t size)
 	size_t	i;
 
 	str = NULL;
-	if (!(size + 1))
-		exit(1);
 	i = 0;
+	if (size < 0)
+		return (NULL);
 	str = (char *)malloc(sizeof(char) * (size + 1));
 	if (str)
 	{
@@ -31,7 +31,5 @@ char		*ft_strnew(size_t size)
 		}
 		str[i] = '\0';
 	}
-	else
-		exit(1);
 	return (str);
 }
