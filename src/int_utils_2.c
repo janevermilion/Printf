@@ -12,6 +12,25 @@
 
 #include "ft_printf.h"
 
+static  void    handle_int_space_2(t_pf *pf, long long int num, int len)
+{
+    if (pf->filling[0] == '0')
+    {
+        if (num != 0)
+            pf->filling[0] = ' ';
+        else
+            ft_str_overlap_copy(pf->filling);
+        pf->filling[0] = ' ';
+    }
+    else if (len >= pf->width)
+        pf->filling = ft_strjoinfree_both(ft_strdup(" "), pf->filling);
+    else
+    {
+        if (pf->width > len && pf->align_left == 1)
+            ft_str_overlap_copy(pf->filling);
+    }
+}
+
 void			handle_int_space(t_pf *pf, long long int num)///////////////////////////////////////////////////
 {
 	int len;
@@ -19,21 +38,22 @@ void			handle_int_space(t_pf *pf, long long int num)////////////////////////////
 	if (handle_max_and_min_long_long(pf) == 1)
 		return ;
 	len = find_len_of_num((int)num);
-	if (num >= 0 && pf->need_sign != 1)
-	{
-		if ((pf->width <= len && ft_strequ(pf->filling, " ") != 1) || (pf->width > len + 1 && ft_strequ(pf->filling, " ") != 1 && pf->filling[pf->width - 1] != ' ' && pf->filling[0] != '0'))
-		{
-			pf->filling = ft_strjoinfree_both(ft_strdup(" "), pf->filling);
-			return;
-		}
-		if (pf->width > len + 1 && pf->align_left == 1)
-		{
-			ft_str_overlap_copy(pf->filling);
-			pf->filling[0] = ' ';
-		}
-		else if (pf->filling[0] == '0' && (pf->width > (int)ft_strlen(pf->filling)))
-			pf->filling[0] = ' ';
-	}
+    if (pf->precision <= 0 && pf->width == 0 && num >= 0)
+        pf->filling = ft_strjoinfree_both(ft_strdup(" "), pf->filling);
+    else if (pf->precision <= 0 && pf->width > 0 && num > 0)
+        handle_int_space_2(pf, num, len);
+    else if (pf->width > pf->precision && num >= 0)
+    {
+        if (pf->align_left != 1)
+        {
+            if (pf->filling[0] == '0')
+                pf->filling[0] = ' ';
+        }
+        else
+            ft_str_overlap_copy(pf->filling);
+    }
+    else if (num >= 0)
+        pf->filling = ft_strjoinfree_both(ft_strdup(" "), pf->filling);
 }
 
 void			handle_int_width_and_precision(t_pf *pf, long long int num)
@@ -96,5 +116,6 @@ void			ft_str_overlap_copy(char *str)
 		j++;
 		len--;
 	}
+	str[0] = ' ';
 	free(tmp);
 }

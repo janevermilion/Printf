@@ -9,10 +9,10 @@ int         main()
 	int t;
 
 	printf("mine:\n");
-	t = ft_printf("% 4.5i", 43);
+	t = ft_printf("{%*d}", -5, 42);
 	printf("<-\nreturned value : %i", t);
 	printf("\norigin:\n");
-	t = printf("% 4.5i", 43);
+	t = printf("{%*d}", -5, 42);
 	printf("<-\nreturned value : %i", t);
 	printf("\n------------\n");
 
