@@ -45,7 +45,7 @@ int				prec_check_point(const char *curr, t_pf *pf, int *i)
 	j = 0;
 	if (ft_isdigit(curr[j]) == 1 && curr[j] != '0' &&
 find_types(&(curr[j]), TYPES) != 1 && find_types(&(curr[j]), "hl") != 1
-&& (pf->precision = ft_atoi(&curr[j])) > 0)
+	&& (pf->precision = ft_atoi(&curr[j])) > 0)
 	{
 		if (ft_strchr(&curr[j], '.') == 0)
 			return (find_len_of_num(pf->precision) + j);
@@ -73,7 +73,8 @@ int				check_all_precisions(const char *curr, t_pf *pf)
 	int test;
 
 	i = 0;
-	while (*curr && curr[i] != '\0' && find_types(&(curr[i]), TYPES) != 1 && find_types(&(curr[i]), "hl") != 1)
+	while (*curr && curr[i] != '\0' && find_types(&(curr[i]), TYPES) != 1 &&
+	find_types(&(curr[i]), "hl") != 1)
 	{
 		if (curr[i] == '.')
 		{

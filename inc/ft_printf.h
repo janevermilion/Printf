@@ -74,15 +74,16 @@ void				fill_empty_str_pos_num(t_pf *pf, int len);
 **  int_utils_2.c
 */
 void				handle_int_width_and_precision(t_pf *pf, long long int num);
-void				handle_int_width(t_pf *pf, long long int num);
 void				handle_int_space(t_pf *pf, long long int num);
 void				ft_str_overlap_copy(char *str);
+void				handle_int_width(t_pf *pf, long long int num);
 /*
 ** int_utils_3.c
 */
 void				handle_int_precision(t_pf *pf, long long int num);
 void				turn_width_more_prec(t_pf *pf, long long int num, int len);
 void				prec_less_width(t_pf *pf, long long int num, int len);
+void				put_sign(t_pf *pf, long long int num);
 /*
 ** parsing.c
 */

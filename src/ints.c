@@ -12,16 +12,6 @@
 
 #include "ft_printf.h"
 
-void			push_string_one_sign(t_pf *pf)
-{
-	char *test;
-
-	test = ft_strdup(pf->filling);
-	ft_memcpy(&pf->filling[1], test, ft_strlen(test) - 1);
-	ft_memdel((void **)&test);
-	pf->filling[0] = '+';
-}
-
 void			handle_int_sign_pos_prec(t_pf *pf)
 {
 	int i;
@@ -44,6 +34,14 @@ void			handle_int_sign_pos_prec(t_pf *pf)
 	}
 }
 
+static void		handle_int_sign_2(t_pf *pf)
+{
+	if (ft_strequ(" ", pf->filling) == 1)
+		pf->filling[0] = '+';
+	else
+		pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
+}
+
 void			handle_int_sign(t_pf *pf, int num)
 {
 	int i;
@@ -61,18 +59,16 @@ void			handle_int_sign(t_pf *pf, int num)
 					i++;
 				pf->filling[i - 1] = '+';
 			}
-			else if (pf->filling[0] != '0' && ft_isdigit(pf->filling[0])== 1)
-			    push_string_one_sign(pf);
+			else if (pf->filling[0] != '0' && ft_isdigit(pf->filling[0]) == 1)
+				push_string_one_sign(pf);
 			else
 				pf->filling[0] = '+';
 		}
 		else
 			pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
 	}
-	else if(ft_strequ(" ", pf->filling) == 1)
-	    pf->filling[0] = '+';
 	else
-		pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
+		handle_int_sign_2(pf);
 }
 
 void			print_int(t_pf *pf, long long int num)
@@ -112,11 +108,12 @@ int				handle_int(t_pf *pf)
 		num = (long long int)va_arg(pf->ap, long long int);
 	else if (ft_strequ(pf->size_flag, "l") == 1)
 		num = (long int)va_arg(pf->ap, long int);
-    if (num == 0 && pf->width == 1 && (pf->precision == -1 || pf->precision == 0))
-        pf->filling = ft_strdup(" ");
-    else if (num == 0 && (pf->precision == -1 || pf->precision == 0))
-        pf->filling = ft_strdup("");
-    else
+	if (num == 0 && pf->width == 1 && (pf->precision == -1 ||
+	pf->precision == 0))
+		pf->filling = ft_strdup(" ");
+	else if (num == 0 && (pf->precision == -1 || pf->precision == 0))
+		pf->filling = ft_strdup("");
+	else
 		pf->filling = ft_itoa_long_long(num);
 	print_int(pf, num);
 	return (pf->printed);
