@@ -67,7 +67,6 @@ void				print_int(t_pf *pf, long long int num);
 */
 int					handle_max_and_min_long_long(t_pf *pf);
 char				*fill_zero_string(t_pf *pf, int len, long long int num);
-void				put_sign(t_pf *pf, long long int num);
 void				fill_empty_str_neg_num(t_pf *pf, int len, long long num);
 void				fill_empty_str_pos_num(t_pf *pf, int len);
 /*
