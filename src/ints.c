@@ -42,7 +42,7 @@ static void		handle_int_sign_2(t_pf *pf)
 		pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
 }
 
-void			handle_int_sign(t_pf *pf, int num)
+void			handle_int_sign(t_pf *pf, long long int num)
 {
 	int i;
 
@@ -70,6 +70,8 @@ void			handle_int_sign(t_pf *pf, int num)
 	else
 		handle_int_sign_2(pf);
 }
+
+
 
 void			print_int(t_pf *pf, long long int num)
 {

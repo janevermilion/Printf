@@ -65,6 +65,24 @@ ft_memset(ft_strnew(pf->precision), '0', pf->precision));
 	return (pf->printed);
 }
 
+static int      handle_uns_zero_and_ll(t_pf *pf, unsigned long long int num)
+{
+	if (num == 0 && (pf->precision == -1 || pf->precision == 0))
+	{
+		if (pf->width != 1)
+			pf->filling = ft_strdup("");
+		else
+			pf->filling = ft_strdup(" ");
+		return (1);
+	}
+	if (num == ULLONG_MAX)
+	{
+		pf->filling = ft_strdup("18446744073709551615");
+		return (1);
+	}
+	return (0);
+}
+
 int				handle_unsigned(t_pf *pf)
 {
 	unsigned long long int num;
@@ -82,13 +100,11 @@ int				handle_unsigned(t_pf *pf)
 		long int);
 	else if (ft_strequ(pf->size_flag, "l") == 1)
 		num = (unsigned long int)va_arg(pf->ap, unsigned long int);
-	if (num == 0 && (pf->precision == -1 || pf->precision == 0))
-		pf->filling = ft_strdup("");
-	else
+	if (handle_uns_zero_and_ll(pf, num) != 1)
 		pf->filling = ft_itoa_base_unsigned(num, 10);
 	pf->need_spase = 0;
 	pf->need_sign = 0;
-	print_int(pf, num);
+	print_int_uns(pf, num);
 	return (pf->printed);
 }
 

@@ -21,6 +21,8 @@ static void		handle_int_space_2(t_pf *pf, long long int num, int len)
 		else
 			ft_str_overlap_copy(pf->filling);
 		pf->filling[0] = ' ';
+		if (num == 0 && pf->width == 1)
+			pf->filling = ft_strjoinfree_both(pf->filling, ft_strdup("0"));
 	}
 	else if (len >= pf->width)
 		pf->filling = ft_strjoinfree_both(ft_strdup(" "), pf->filling);
@@ -56,7 +58,7 @@ void			handle_int_space(t_pf *pf, long long int num)
 	len = find_len_of_num((int)num);
 	if (pf->precision <= 0 && pf->width == 0 && num >= 0)
 		pf->filling = ft_strjoinfree_both(ft_strdup(" "), pf->filling);
-	else if (pf->precision <= 0 && pf->width > 0 && num > 0)
+	else if (pf->precision <= 0 && pf->width > 0 && num >= 0)////
 		handle_int_space_2(pf, num, len);
 	else if (pf->width > pf->precision && num >= 0)
 	{
