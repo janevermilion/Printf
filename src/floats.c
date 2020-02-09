@@ -38,7 +38,7 @@ int		dbl(t_pf *pf)
 int		handle_float(t_pf *pf)
 {
 	if (ft_strequ(pf->size_flag, "\0") == 1 || (pf->printed > 0 &&\
-	pf->size_flag == NULL))
+	pf->size_flag == NULL) || (ft_strequ(pf->size_flag, "l") == 1))
 		pf->num = va_arg(pf->ap, double);
 	else if (ft_strequ(pf->size_flag, "L") == 1)
 		pf->num = (long double)va_arg(pf->ap, long double);
@@ -52,17 +52,18 @@ int		handle_float(t_pf *pf)
 int		sign(t_pf *pf, long double tmp, int len)
 {
 	if (pf->need_format == 0)
-		pf->filling = spaces(' ', pf->width - len - pf->need_spase);
+		pf->filling = ft_strjoinfree_both(spaces(' ', pf->width - len -
+		pf->need_spase), pf->filling);
 	if ((pf->need_spase == 1) && (tmp > 0) && (pf->need_sign == 0))
-		pf->filling = ft_strjoinfree_s2(pf->filling, ft_strdup(" "));
+		pf->filling = ft_strjoinfree_both(pf->filling, ft_strdup(" "));
 	if ((tmp < 0))
 	{
-		pf->filling = ft_strjoinfree_s1(ft_strdup("-"), pf->filling);
+		pf->filling = ft_strjoinfree_both(ft_strdup("-"), pf->filling);
 		tmp = -tmp;
 		return (-1);
 	}
 	else if (pf->need_sign == 1)
-		pf->filling = ft_strjoinfree_s1(ft_strdup("+"), pf->filling);
+		pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
 	return (1);
 }
 

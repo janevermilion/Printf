@@ -44,12 +44,12 @@ char			*spaces(char c, int n)
 
 	i = 0;
 	if (n < 0)
-		return ("");
+		return (ft_strdup(""));
 	res = ft_strnew(n);
 	if (n == 1 && c == '.')
-		return (".");
+		return (ft_strdup("."));
 	if (n == 1 && c == '0')
-		return ("0");
+		return (ft_strdup("0"));
 	if (n > 0 && n != 1)
 		while (i < n)
 		{
@@ -57,7 +57,7 @@ char			*spaces(char c, int n)
 			i++;
 		}
 	else if (n == 1)
-		return (" ");
+		return (ft_strdup(" "));
 	return (res);
 }
 
@@ -81,7 +81,8 @@ char			*ft_ftos_sec(long double num, int prec)
 		return (NULL);
 	tmp = num - (int)num;
 	i = 0;
-	res[0] = '.';
+	if (prec > 0)
+		res[0] = '.';
 	while (i < prec)
 	{
 		res[i + 1] = (int)(tmp * 10) + 48;
