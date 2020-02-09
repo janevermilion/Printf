@@ -160,12 +160,13 @@ void				printf_fill_2(t_pf *pf);
 void				printf_float_3(long double tmp, t_pf *pf);
 void				print_float(t_pf *pf, long double num);
 
-
 void			print_int_uns(t_pf *pf, unsigned long long int num);
 void			handle_int_space_uns(t_pf *pf, unsigned long long int num);
-void			handle_int_width_and_precision_uns(t_pf *pf, unsigned long long int num);
+void			handle_int_width_and_precision_uns(t_pf *pf, unsigned long long
+int num);
 void			handle_int_width_uns(t_pf *pf);
 void			handle_int_precision_uns(t_pf *pf, unsigned long long int num);
-void		    handle_int_space_2_uns(t_pf *pf, unsigned long long int num, int len);
+void		    handle_int_space_2_uns(t_pf *pf, unsigned long long int num,
+		int len);
 void			turn_width_more_prec_uns(t_pf *pf, int len);
 #endif
