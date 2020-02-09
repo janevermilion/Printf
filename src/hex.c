@@ -66,21 +66,20 @@ void				print_int_hex(t_pf *pf)
 	unsigned long long int num;
 
 	num = ft_atoi_long_long_uns(pf->filling);
+	pf->need_sign = 0;
 	if (pf->precision >= 0 && pf->width > 0)
-		handle_int_width_and_precision(pf, num);
+		handle_int_width_and_precision_uns(pf, num);
 	else if (pf->precision < 0)
 	{
 		if (pf->width != 0)
-			handle_int_width(pf, num);
+			handle_int_width_uns(pf);
 		else
-			handle_int_precision(pf, num);
+			handle_int_precision_uns(pf, num);
 	}
 	else if (pf->precision > 0 && pf->precision > (int)find_len_of_num(num))
-		handle_int_precision(pf, num);
-	if (pf->need_sign == 1 && num)
-		handle_int_sign(pf, num);
-	if (pf->need_spase == 1 && pf->need_sign != 1)
-		handle_int_space(pf, num);
+		handle_int_precision_uns(pf, num);
+	if (pf->need_spase == 1)
+		handle_int_space_uns(pf, num);
 	if (pf->need_format == 1 && ft_atoi_base(pf->filling, 16) != 0)
 		transform_hex_format(pf);
 	if (pf->type == 'X')

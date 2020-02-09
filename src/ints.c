@@ -71,8 +71,6 @@ void			handle_int_sign(t_pf *pf, long long int num)
 		handle_int_sign_2(pf);
 }
 
-
-
 void			print_int(t_pf *pf, long long int num)
 {
 	if (pf->precision >= 0 && pf->width > 0)

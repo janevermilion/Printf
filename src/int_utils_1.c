@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int				handle_max_and_min_long_long(t_pf *pf)
+int				handle_max_and_min_long_long_sp(t_pf *pf)
 {
 	if (ft_strequ(pf->filling, "9223372036854775807") == 1)
 	{
@@ -27,44 +27,43 @@ int				handle_max_and_min_long_long(t_pf *pf)
 	return (0);
 }
 
-char			*fill_zero_string(t_pf *pf, int len, long long int num)
+static void		check_llmax(t_pf *pf, long long int num)
 {
-	char *zero;
-
-	if (num < 0)
+	if (num == LLONG_MAX && pf->width > (int)find_len_of_num(num))
 	{
-		zero = ft_memalloc(sizeof(char) * (pf->precision - len + 2));
-		ft_memset(zero, '0', pf->precision - len + 1);
+		pf->filling = ft_strdup("9223372036854775807");
+		ft_memcpy(&pf->str_empty[1], pf->filling, ft_strlen(pf->filling));
 	}
-	else
+	else if (num == LLONG_MAX && pf->width < (int)find_len_of_num(num))
 	{
-		zero = ft_memalloc(sizeof(char) * (pf->precision - len + 1));
-		ft_memset(zero, '0', pf->precision - len);
+		pf->filling = ft_strdup(" 9223372036854775807");
 	}
-	return (zero);
 }
 
 int				check_llmax_and_llmin(t_pf *pf, long long int num)
 {
+	if (ft_strequ("-9223372036854775808", pf->filling) == 1 ||
+	ft_strequ("9223372036854775807", pf->filling) == 1)
+		ft_memdel((void **)&pf->filling);
 	if (num == LLONG_MIN)
 	{
-		if (pf->zero_filling == 1 && pf->align_left != 1)
+		if ((pf->zero_filling == 1 && pf->align_left != 1) ||
+		pf->width > (int)find_len_of_num(num))
 		{
 			pf->filling = ft_strdup("9223372036854775808");
 			pf->str_empty[0] = '-';
+			ft_memcpy(&pf->str_empty[pf->width - 20], pf->filling,
+					ft_strlen(pf->filling));
 		}
 		else
+		{
 			pf->filling = ft_strdup("-9223372036854775808");
-		ft_memcpy(pf->str_empty, pf->filling, ft_strlen(pf->filling));
-		return (1);
+			ft_memcpy(pf->str_empty, pf->filling, ft_strlen(pf->filling));
+		}
 	}
-	if (num == LLONG_MAX)
-	{
-		pf->filling = ft_strdup("9223372036854775807");
-		ft_memcpy(&pf->str_empty[1], pf->filling, ft_strlen(pf->filling));
-		return (1);
-	}
-	return (0);
+	else
+		check_llmax(pf, num);
+	return ((num == LLONG_MIN || num == LLONG_MAX) ? 1 : 0);
 }
 
 void			fill_empty_str_neg_num(t_pf *pf, int len, long long num)

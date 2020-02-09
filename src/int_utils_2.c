@@ -33,32 +33,16 @@ static void		handle_int_space_2(t_pf *pf, long long int num, int len)
 	}
 }
 
-void			handle_int_width(t_pf *pf, long long int num)
-{
-	int len;
-
-	len = ft_strlen(pf->filling);
-	if (pf->width > len)
-	{
-		if (num < 0)
-			fill_empty_str_neg_num(pf, len, num);
-		else
-			fill_empty_str_pos_num(pf, len);
-		ft_memdel((void **)&pf->filling);
-		pf->filling = ft_strdup(pf->str_empty);
-	}
-}
-
 void			handle_int_space(t_pf *pf, long long int num)
 {
 	int len;
 
-	if (handle_max_and_min_long_long(pf) == 1)
+	if (check_llmax_and_llmin(pf, num) == 1)
 		return ;
 	len = find_len_of_num((int)num);
 	if (pf->precision <= 0 && pf->width == 0 && num >= 0)
 		pf->filling = ft_strjoinfree_both(ft_strdup(" "), pf->filling);
-	else if (pf->precision <= 0 && pf->width > 0 && num >= 0)////
+	else if (pf->precision <= 0 && pf->width > 0 && num >= 0)
 		handle_int_space_2(pf, num, len);
 	else if (pf->width > pf->precision && num >= 0)
 	{

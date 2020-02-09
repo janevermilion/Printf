@@ -65,7 +65,7 @@ ft_memset(ft_strnew(pf->precision), '0', pf->precision));
 	return (pf->printed);
 }
 
-static int      handle_uns_zero_and_ll(t_pf *pf, unsigned long long int num)
+static int		handle_uns_zero_and_ll(t_pf *pf, unsigned long long int num)
 {
 	if (num == 0 && (pf->precision == -1 || pf->precision == 0))
 	{

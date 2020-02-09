@@ -23,7 +23,7 @@ FLAGS = -Wall -Wextra -Werror
 
 SRC = src/char_str_perc.c src/precision.c src/floats.c src/floats_2.c src/floats_3.c src/floats_4.c src/ft_printf.c src/ints.c src/parsing.c \
 src/pnt_uns_hex.c src/str.c src/utils.c \
-src/int_utils_1.c src/int_utils_2.c src/int_utils_3.c src/oct.c src/hex.c src/unsigned.c
+src/int_utils_1.c src/int_utils_2.c src/int_utils_3.c src/oct.c src/hex.c src/unsigned.c src/unsigned_2.c src/int_utils_4.c
 
 OUT = $(SRC:%.c=%.o)
 
