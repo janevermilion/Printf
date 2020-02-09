@@ -12,6 +12,14 @@
 
 #include "ft_printf.h"
 
+void			put_sign(t_pf *pf, long long int num)
+{
+	if (num < 0)
+		pf->filling[0] = '-';
+	else if (num == 0 && pf->need_sign == 1)
+		pf->filling = ft_strjoinfree_both(ft_strdup("+"), pf->filling);
+}
+
 void			prec_less_width(t_pf *pf, long long int num, int len)
 {
 	char	*zero;
@@ -61,7 +69,7 @@ void			turn_width_more_prec(t_pf *pf, long long int num, int len)
 	}
 }
 
-void			handle_int_precision(t_pf *pf, long long int num)
+void			handle_int_precision(t_pf *pf, long long int num)//149
 {
 	char		*zero;
 	int			len;
@@ -79,4 +87,14 @@ void			handle_int_precision(t_pf *pf, long long int num)
 		if (num < 0)
 			put_sign(pf, num);
 	}
+}
+
+void			push_string_one_sign(t_pf *pf)
+{
+	char *test;
+
+	test = ft_strdup(pf->filling);
+	ft_memcpy(&pf->filling[1], test, ft_strlen(test) - 1);
+	ft_memdel((void **)&test);
+	pf->filling[0] = '+';
 }

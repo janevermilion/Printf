@@ -59,7 +59,7 @@ int					print_all(t_pf *pf);
 ** ints.c
 */
 int					handle_int(t_pf *pf);
-void				handle_int_sign(t_pf *pf, int num);
+void				handle_int_sign(t_pf *pf, long long int num);
 void				push_string_one_sign(t_pf *pf);
 void				print_int(t_pf *pf, long long int num);
 /*
@@ -67,22 +67,22 @@ void				print_int(t_pf *pf, long long int num);
 */
 int					handle_max_and_min_long_long(t_pf *pf);
 char				*fill_zero_string(t_pf *pf, int len, long long int num);
-void				put_sign(t_pf *pf, long long int num);
 void				fill_empty_str_neg_num(t_pf *pf, int len, long long num);
 void				fill_empty_str_pos_num(t_pf *pf, int len);
 /*
 **  int_utils_2.c
 */
 void				handle_int_width_and_precision(t_pf *pf, long long int num);
-void				handle_int_width(t_pf *pf, long long int num);
 void				handle_int_space(t_pf *pf, long long int num);
 void				ft_str_overlap_copy(char *str);
+void				handle_int_width(t_pf *pf, long long int num);
 /*
 ** int_utils_3.c
 */
 void				handle_int_precision(t_pf *pf, long long int num);
 void				turn_width_more_prec(t_pf *pf, long long int num, int len);
 void				prec_less_width(t_pf *pf, long long int num, int len);
+void				put_sign(t_pf *pf, long long int num);
 /*
 ** parsing.c
 */
@@ -160,4 +160,12 @@ void				printf_fill_2(t_pf *pf);
 void				printf_float_3(long double tmp, t_pf *pf);
 void				print_float(t_pf *pf, long double num);
 
+
+void			print_int_uns(t_pf *pf, unsigned long long int num);
+void			handle_int_space_uns(t_pf *pf, unsigned long long int num);
+void			handle_int_width_and_precision_uns(t_pf *pf, unsigned long long int num);
+void			handle_int_width_uns(t_pf *pf);
+void			handle_int_precision_uns(t_pf *pf, unsigned long long int num);
+void		    handle_int_space_2_uns(t_pf *pf, unsigned long long int num, int len);
+void			turn_width_more_prec_uns(t_pf *pf, int len);
 #endif
