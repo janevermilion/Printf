@@ -86,7 +86,7 @@ void				put_sign(t_pf *pf, long long int num);
 **  int_utils_4.c
 */
 char				*fill_zero_string(t_pf *pf, int len, long long int num);
-void				handle_int_width(t_pf *pf, long long int num);git
+void				handle_int_width(t_pf *pf, long long int num);
 /*
 ** parsing.c
 */

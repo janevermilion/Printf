@@ -38,7 +38,7 @@ int		handle_string(t_pf *pf)
 	test = (char *)va_arg(pf->ap, char *);
 	if (test == NULL && pf->precision != -1)
 		pf->filling = ft_strdup(("(null)"));
-	if (test)
+	if (test && ft_strequ(test, "") != 1)
 		pf->filling = ft_strdup(test);
 	fill_and_print_string(pf);
 	return (pf->printed);
